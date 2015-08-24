@@ -1,0 +1,15 @@
+<JWM>
+
+    <!-- Startup for program. -->
+    <StartupCommand>nitrogen --restore</StartupCommand>
+    <StartupCommand>pamac-tray</StartupCommand>    
+    <StartupCommand>volumeicon</StartupCommand>
+    <StartupCommand>clipit</StartupCommand>
+    <StartupCommand>xscreensaver -no-splash</StartupCommand>
+    <StartupCommand>pcmanfm -d</StartupCommand>
+    <StartupCommand>nm-applet</StartupCommand>
+    <StartupCommand>cbatticon -u 120 -i standard -c "systemctl suspend" -l 20 -r 5</StartupCommand>
+    <StartupCommand>conky</StartupCommand>
+    <StartupCommand>/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</StartupCommand>
+            
+</JWM>

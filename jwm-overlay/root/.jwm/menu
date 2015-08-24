@@ -1,0 +1,97 @@
+<JWM>
+
+    <!-- The root menu. -->
+    <RootMenu onroot="3">
+	<Program label="Execute">gmrun</Program>
+	<Program label="Terminal">sakura</Program>
+	<Program label="Explorer">pcmanfm</Program>
+	<Program label="Browser">firefox</Program>
+	<Program label="Background">nitrogen</Program>
+	<Program label="Screenshot">gnome-screenshot</Program>
+        <Separator/>
+    <Menu label="Install Manjaro">
+	<Program label="Graphical">sudo thus</Program>
+	<Program label="CLI">sudo xterm /usr/bin/setup</Program>
+    </Menu>
+        <Separator/>
+    <Menu label="Accesories">
+	<Program label="Catfish Search">catfish</Program>
+	<Program label="ClipIt Manager">clipit</Program>
+	<Program label="Leafpad Editor">leafpad</Program>
+	<Program label="Root Terminal">gksu sakura</Program>
+	<Program label="Root Explorer">gksu pcmanfm</Program>
+	<Program label="Xarchiver Compact">xarchiver</Program>
+    </Menu>
+    <Menu label="Graphics">
+	<Program label="Viewnior Image">viewnior</Program>
+    </Menu>
+    <Menu label="Multimedia">
+	<Program label="SMPlayer Video">smplayer</Program>
+        <Program label="LXMusic Music">lxmusic</Program>
+        <Program label="XFBurn CD/DVD">xfburn</Program>
+    </Menu>
+    <Menu label="Network">
+	<Program label="Avahi SSH">/urs/bin/bssh</Program>
+        <Program label="Avahi VNC">/urs/bin/bvnc</Program>
+        <Program label="Firefox Browser">firefox</Program>
+        <Program label="XChat IRC">xchat</Program>
+    </Menu>
+    <Menu label="Office">
+	<Program label="AbiWord Write">abiword</Program>
+        <Program label="Gnumeric Calc">gnumeric</Program>
+        <Program label="Xournal Reader">xournal</Program>
+    </Menu>
+    <Menu label="Settings">
+	<Program label="Nitrogen Wall">nitrogen</Program>
+        <Program label="Manjaro Settings">gksu manjaro-settings-manager-gui</Program>
+        <Program label="Manager Monitor">lxrandr</Program>
+	<Program label="Configure keyboard">lxinput</Program>
+        <Program label="Settings Screen">xscreensaver-demo</Program>
+	<Program label="Manager Feel">lxappearance</Program>
+	<Program label="Network Connections">nm-connection-editor</Program>
+        <Program label="Privilege Granting">gksu-properties</Program>
+    </Menu>
+    <Menu label="System">
+	<Program label="Pamac Manager">pamac-manager</Program>
+        <Program label="Pamac Update">pamac-update</Program>
+        <Program label="PCManFM Explorer">pcmanfm</Program>
+        <Program label="GParted HD">/usr/bin/gparted_polkit</Program>
+        <Program label="Htop Process">xterm -e 'htop'</Program>
+	<Program label="Hard Info">hardinfo</Program>
+        <Program label="Medit Editor">medit</Program>
+        <Program label="Nano Editor">sakura -x nano</Program>
+        <Program label="GUFW">gksu gufw</Program>
+    </Menu>
+    <Menu label="Script All">
+	<Program label="AUR">gksu xterm ~/.scripts/aur.sh</Program>
+        <Program label="Multimedia">gksu xterm ~/.scripts/multimedia.sh</Program>
+        <Program label="OpenJDK">gksu xterm ~/.scripts/jdk.sh</Program>
+        <Program label="Printing">gksu xterm ~/.scripts/printing.sh</Program>
+        <Program label="Firewall">gksu xterm ~/.scripts/firewall.sh</Program>
+    </Menu>
+       <Separator/>
+    <Menu label="Configure">
+        <Program label="Settings Dunst">leafpad ~/.config/dunst/dunstrc</Program>
+        <Program label="Manager Conky">leafpad ~/.conkyrc</Program>        
+    <Menu label="JWM">
+        <Restart label="Reconfigure"/>
+        <Program label="Menu">leafpad ~/.jwm/menu</Program>
+        <Program label="Tray">leafpad ~/.jwm/tray</Program>
+        <Program label="Start">leafpad ~/.jwm/start</Program>
+        <Program label="Theme">leafpad ~/.jwm/theme</Program>
+        <Program label="Keys">leafpad ~/.jwm/keys</Program>
+        <Program label="Groups">leafpad ~/.jwm/groups</Program>
+        <Program label="Preferences">leafpad ~/.jwm/preferences</Program>
+    </Menu>
+    </Menu>    
+        <Separator/>
+    <Menu label="Session">
+        <Exit label="Logout" confirm="false"/>
+	<Program label="Restart">systemctl reboot</Program>
+        <Program label="Suspend">systemctl suspend</Program>
+        <Program label="Shutdown">systemctl poweroff</Program>
+        <Program label="Lock">i3lock -c 25aedf</Program>
+    </Menu>
+    </RootMenu>
+
+</JWM>

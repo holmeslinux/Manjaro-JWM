@@ -1,0 +1,101 @@
+#####################################################
+### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
+#####################################################
+
+## Sound and Audio
+manjaro-alsa
+volumeicon
+gnome-alsamixer
+
+## File Management
+pcmanfm
+udevil
+catfish
+file-roller	 # Archive support
+gvfs		 # Access file system
+gvfs-mtp
+gvfs-afc	 # Removable media support
+gvfs-smb	 # Samba support
+
+## Package Management
+pamac
+
+## Network and bluetooth
+netctl
+networkmanager
+networkmanager-dispatcher-ntpd
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+openresolv
+
+## Polkit
+gksu
+gnome-keyring
+polkit-gnome
+
+## Basic packages
+dconf
+desktop-file-utils
+
+## Display Manager
+slim
+slim-themes
+
+## Desktop Display
+dunst
+
+## JWM Core Packages
+jwm
+gnome-screenshot
+libgnomeui 	 
+nitrogen
+gmrun 
+clipit
+python2-xdg 	 
+xterm
+i3lock
+xautolock
+lxappearance
+dmenu-xft
+
+## Desktop Configuration
+lxinput
+lxrandr
+
+## Artwork, Icon, Mouse, and Desktop Themes
+xcursor-vanilla-dmz-aa
+gtk-engine-murrine
+
+## Applications
+medit
+epdfview
+gparted
+hardinfo
+htop
+leafpad
+abiword
+gnumeric
+openssh
+udisks
+firefox
+xchat
+lxmusic
+smplayer
+viewnior
+xarchiver
+cbatticon
+xfburn
+manjaro-settings-manager
+sakura
+conky
+screenfetch
+
+## Fonts
+adobe-source-sans-pro-fonts
+ttf-droid
+
+# Documentaion Guide
+manjaro-documentation

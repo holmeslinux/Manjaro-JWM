@@ -1,0 +1,10 @@
+<JWM>
+
+    <!-- Options for program groups. -->
+    <Group>
+      <Name>gmrun</Name>
+      <Option>noborder</Option>
+      <Option>nolist</Option>
+    </Group>    
+
+</JWM>
