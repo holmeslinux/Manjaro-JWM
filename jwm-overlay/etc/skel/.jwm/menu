@@ -41,6 +41,7 @@
         <Program label="Manager Monitor">lxrandr</Program>
 	<Program label="Configure keyboard">lxinput</Program>
         <Program label="Manager Feel">lxappearance</Program>
+        <Program label="Settings LightDM">gksu lightdm-gtk-greeter-settings</Program>
 	<Program label="Network Connections">nm-connection-editor</Program>
         <Program label="Privilege Granting">gksu-properties</Program>
     </Menu>
