@@ -41,8 +41,7 @@ dconf
 desktop-file-utils
 
 ## Display Manager
-slim
-slim-themes
+
 
 ## Desktop Display
 dunst
