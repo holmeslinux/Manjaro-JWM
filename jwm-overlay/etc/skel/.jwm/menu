@@ -12,9 +12,8 @@
     <Menu label="Accesories">
 	<Program label="Catfish Search">catfish</Program>
 	<Program label="ClipIt Manager">clipit</Program>
+        <Program label="Medit Editor">medit</Program>
 	<Program label="Leafpad Editor">leafpad</Program>
-	<Program label="Root Terminal">gksu sakura</Program>
-	<Program label="Root Explorer">gksu pcmanfm</Program>
 	<Program label="Xarchiver Compact">xarchiver</Program>
     </Menu>
     <Menu label="Graphics">
@@ -49,10 +48,12 @@
 	<Program label="Pamac Manager">pamac-manager</Program>
         <Program label="Pamac Update">pamac-update</Program>
         <Program label="PCManFM Explorer">pcmanfm</Program>
+	<Program label="Root PCManFM">gksu pcmanfm</Program>
         <Program label="GParted HD">/usr/bin/gparted_polkit</Program>
         <Program label="Htop Process">xterm -e 'htop'</Program>
 	<Program label="Hard Info">hardinfo</Program>
-        <Program label="Medit Editor">medit</Program>
+        <Program label="Terminal">sakura</Program>        
+        <Program label="Root Terminal">gksu sakura</Program>
         <Program label="Nano Editor">sakura -x nano</Program>
         <Program label="GUFW">gksu gufw</Program>
     </Menu>
