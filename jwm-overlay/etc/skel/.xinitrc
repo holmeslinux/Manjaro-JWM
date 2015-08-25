@@ -40,4 +40,4 @@ fi
 exec /usr/bin/jwm
 
 ##Information ~/.Xresources
-#[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
