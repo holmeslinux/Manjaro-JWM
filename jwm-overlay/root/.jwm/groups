@@ -5,6 +5,11 @@
       <Name>gmrun</Name>
       <Option>noborder</Option>
       <Option>nolist</Option>
+    </Group>
+    
+    <Group>
+      <Name>xterm</Name>
+      <Option>nolist</Option>
     </Group>    
 
 </JWM>

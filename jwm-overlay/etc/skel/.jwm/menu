@@ -9,7 +9,7 @@
 	<Program label="Background">nitrogen</Program>
 	<Program label="Screenshot">gnome-screenshot</Program>
         <Separator/>
-    <Menu label="Accesories">
+     <Menu label="Accesories">
 	<Program label="Catfish Search">catfish</Program>
 	<Program label="ClipIt Manager">clipit</Program>
         <Program label="Medit Editor">medit</Program>
@@ -86,7 +86,7 @@
 	<Program label="Restart">systemctl reboot</Program>
         <Program label="Suspend">systemctl suspend</Program>
         <Program label="Shutdown">systemctl poweroff</Program>
-        <Program label="Lock">xscreensaver-command -lock</Program>
+        <Program label="Lock">i3lock -c 25aedf</Program>
     </Menu>
     </RootMenu>
 

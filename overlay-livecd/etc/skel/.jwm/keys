@@ -45,7 +45,5 @@
     <Key mask="C" key="Down">maxbottom</Key>
     <Key mask="C" key="Left">maxleft</Key>
     <Key mask="C" key="Right">maxright</Key>
-    <Key mask="C" key="v">maxv</Key>
-    <Key mask="C" key="h">maxh</Key>
-
+    
 </JWM>

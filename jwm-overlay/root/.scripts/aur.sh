@@ -12,6 +12,6 @@ This will install the necessary software to run AUR.
 Press ${grnb}<enter>${nrml} to proceed. You may still cancel the process when prompted."
 
 read
-pacman -S autoconf automake binutils bison fakeroot flex gcc libtool m4 make patch yaourt
+pacman -S autoconf automake binutils bison fakeroot flex gcc m4 make patch subversion 
 read -p $'\n'"Process Complete. Press ${grnb}<enter>${nrml} to continue"$'\n'
 exit 0
