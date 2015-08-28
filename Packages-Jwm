@@ -5,30 +5,20 @@
 ## Sound and Audio
 manjaro-alsa
 volumeicon
-gnome-alsamixer
 
 ## File Management
 pcmanfm
 udevil
 catfish
-file-roller	 # Archive support
-gvfs		 # Access file system
-gvfs-mtp
-gvfs-afc	 # Removable media support
-gvfs-smb	 # Samba support
+file-roller
 
 ## Package Management
 pamac
 
 ## Network and bluetooth
-netctl
 networkmanager
 networkmanager-dispatcher-ntpd
 network-manager-applet
-networkmanager-openconnect
-networkmanager-openvpn
-networkmanager-pptp
-networkmanager-vpnc
 openresolv
 
 ## Polkit
@@ -50,7 +40,6 @@ dunst
 ## JWM Core Packages
 jwm
 gnome-screenshot
-libgnomeui 	 
 nitrogen
 gmrun 
 clipit
@@ -78,8 +67,6 @@ htop
 leafpad
 abiword
 gnumeric
-openssh
-udisks
 firefox
 xchat
 lxmusic
