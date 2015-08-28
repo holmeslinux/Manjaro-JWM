@@ -38,9 +38,8 @@
         <Program label="Manjaro Settings">gksu manjaro-settings-manager-gui</Program>
         <Program label="Monitor Manager">lxrandr</Program>
 	<Program label="Configure keyboard">lxinput</Program>
-        <Program label="Manage Feel">lxappearance</Program>
-        <Program label="Settings LightDM">gksu lightdm-gtk-greeter-settings</Program>
-	<Program label="Network Connections">nm-connection-editor</Program>
+        <Program label="Customize Look">lxappearance</Program>
+        <Program label="Network Connections">nm-connection-editor</Program>
         <Program label="Privilege Granting">gksu-properties</Program>
     </Menu>
     <Menu label="System">
@@ -65,10 +64,12 @@
     </Menu>
        <Separator/>
     <Menu label="Configure">
+	<Program label="LightDM Settings">gksu lightdm-gtk-greeter-settings</Program>
         <Program label="Conky Manager">leafpad ~/.conkyrc</Program>
-        <Program label="Settings Dunst">leafpad ~/.config/dunst/dunstrc</Program>      
+        <Program label="Dunst Settings">leafpad ~/.config/dunst/dunstrc</Program>      
     <Menu label="JWM Manager">
         <Restart label="Reconfigure"/>
+	<Program label="Integrity">xterm ~/.jwm/integrity.sh</Program>
         <Program label="Menu">leafpad ~/.jwm/menu</Program>
         <Program label="Tray">leafpad ~/.jwm/tray</Program>
         <Program label="Start">leafpad ~/.jwm/start</Program>

@@ -13,5 +13,5 @@ Press ${grnb}<enter>${nrml} to proceed. You may still cancel the process when pr
 
 read
 pacman -S manjaro-printer
-read -p $'\n'"Process Complete. Press ${grnb}<enter>${nrml} to continue"$'\n'
+read -p $'\n'"Process Complete. Press ${grnb}<enter>${nrml} to continue."$'\n'
 exit 0

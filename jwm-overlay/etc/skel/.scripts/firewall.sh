@@ -13,5 +13,5 @@ Press ${grnb}<enter>${nrml} to proceed. You may still cancel the process when pr
 
 read
 pacman -S gufw ufw && systemctl enable ufw -f && systemctl start ufw && ufw enable && ufw status
-read -p $'\n'"Process Complete. Press ${grnb}<enter>${nrml} to continue"$'\n'
+read -p $'\n'"Process Complete. Press ${grnb}<enter>${nrml} to continue."$'\n'
 exit 0

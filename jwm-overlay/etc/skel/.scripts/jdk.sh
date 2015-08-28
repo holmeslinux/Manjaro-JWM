@@ -13,5 +13,5 @@ Press ${grnb}<enter>${nrml} to proceed. You may still cancel the process when pr
 
 read
 pacman -S jre8-openjdk jre8-openjdk-headless icedtea-web
-read -p $'\n'"Process Complete. Press ${grnb}<enter>${nrml} to continue"$'\n'
+read -p $'\n'"Process Complete. Press ${grnb}<enter>${nrml} to continue."$'\n'
 exit 0
