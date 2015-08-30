@@ -7,7 +7,11 @@
 	<Program label="Explore Files">pcmanfm</Program>
 	<Program label="Browser">firefox</Program>
 	<Program label="Background">nitrogen</Program>
-	<Program label="Screenshot">gnome-screenshot</Program>
+     <Menu label="Screenshot">	
+        <Program label="Full Screen">scrot -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+        <Program label="Active Window">scrot -ue 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+        <Program label="Select Area">notify-send 'selection will be saved in ~/Pictures' & scrot -se 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+     </Menu>
         <Separator/>
      <Menu label="Accesories">
 	<Program label="Catfish Search">catfish</Program>
@@ -54,7 +58,6 @@
         <Program label="Root Terminal">gksu sakura</Program>
         <Program label="Nano Editor">sakura -x nano</Program>
         <Program label="GUFW">gksu gufw</Program>
-    </Menu>
     <Menu label="Script All">
 	<Program label="AUR">gksu xterm ~/.scripts/aur.sh</Program>
         <Program label="Multimedia">gksu xterm ~/.scripts/multimedia.sh</Program>
@@ -62,11 +65,13 @@
         <Program label="Printing">gksu xterm ~/.scripts/printing.sh</Program>
         <Program label="Firewall">gksu xterm ~/.scripts/firewall.sh</Program>
     </Menu>
+    </Menu>
        <Separator/>
     <Menu label="Configure">
 	<Program label="LightDM Settings">gksu lightdm-gtk-greeter-settings</Program>
         <Program label="Conky Manager">leafpad ~/.conkyrc</Program>
-        <Program label="Dunst Settings">leafpad ~/.config/dunst/dunstrc</Program>      
+        <Program label="Dunst Settings">leafpad ~/.config/dunst/dunstrc</Program>
+        <Program label="Printer Manager">system-config-printer</Program>      
     <Menu label="JWM Manager">
         <Restart label="Reconfigure"/>
 	<Program label="Integrity">xterm ~/.jwm/integrity.sh</Program>

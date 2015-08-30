@@ -8,9 +8,13 @@ volumeicon
 
 ## File Management
 pcmanfm
-udevil
-catfish
 file-roller
+gvfs		 
+gvfs-mtp
+gvfs-afc	 
+gvfs-smb	 
+tumbler		 
+wxgtk2.8
 
 ## Package Management
 pamac
@@ -39,7 +43,7 @@ dunst
 
 ## JWM Core Packages
 jwm
-gnome-screenshot
+scrot
 nitrogen
 gmrun 
 clipit
