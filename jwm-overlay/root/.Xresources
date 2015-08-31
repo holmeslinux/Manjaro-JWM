@@ -1,5 +1,0 @@
-*background: #25aedf
-*foreground: #333333
-XTerm*reverseVideo: on
-xterm*faceName: Monospace:size=10:antialias=true
-xterm*font: 7x13
