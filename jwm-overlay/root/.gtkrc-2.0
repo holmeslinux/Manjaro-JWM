@@ -5,7 +5,7 @@ include "/home/manjaro/.gtkrc-2.0.mine"
 gtk-theme-name="ME1"
 gtk-icon-theme-name="ultraflat"
 gtk-font-name="Roboto 10"
-gtk-cursor-theme-name="Breeze-Snow"
+gtk-cursor-theme-name="RezoBlue"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR

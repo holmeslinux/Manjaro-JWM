@@ -56,7 +56,7 @@ dmenu-xft
 
 ## Desktop Configuration
 lxinput
-lxrandr
+arandr
 
 ## Artwork, Icon, Mouse, and Desktop Themes
 xcursor-vanilla-dmz-aa
@@ -76,7 +76,6 @@ xchat
 lxmusic
 smplayer
 viewnior
-xarchiver
 cbatticon
 xfburn
 manjaro-settings-manager
