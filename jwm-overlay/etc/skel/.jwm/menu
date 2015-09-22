@@ -4,7 +4,7 @@
     <RootMenu onroot="3">
 	<Program label="Execute">gmrun</Program>
 	<Program label="Terminal">sakura</Program>
-	<Program label="Explore Files">pcmanfm</Program>
+	<Program label="Explore Files">spacefm</Program>
 	<Program label="Browser">firefox</Program>
 	<Program label="Background">nitrogen</Program>
      <Menu label="Screenshot">	
@@ -47,8 +47,8 @@
     <Menu label="System">
 	<Program label="Pamac Manager">pamac-manager</Program>
         <Program label="Pamac Update">pamac-update</Program>
-        <Program label="PCManFM Explore">pcmanfm</Program>
-	<Program label="Root PCManFM">gksu pcmanfm</Program>
+        <Program label="SpaceFM Explore">spacefm</Program>
+	<Program label="Root SpaceFM">gksu spacefm</Program>
         <Program label="GParted HD">/usr/bin/gparted_polkit</Program>
         <Program label="Htop Process">xterm -e 'htop'</Program>
 	<Program label="Hard Info">hardinfo</Program>
