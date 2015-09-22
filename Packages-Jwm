@@ -7,14 +7,9 @@ manjaro-alsa
 volumeicon
 
 ## File Management
-pcmanfm
+spacefm
+udevil
 file-roller
-gvfs		 
-gvfs-mtp
-gvfs-afc	 
-gvfs-smb	 
-tumbler		 
-wxgtk2.8
 
 ## Package Management
 pamac
@@ -83,6 +78,7 @@ sakura
 conky
 screenfetch
 libimobiledevice
+compton
 
 ## Fonts
 adobe-source-sans-pro-fonts

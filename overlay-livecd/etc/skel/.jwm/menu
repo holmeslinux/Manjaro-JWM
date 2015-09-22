@@ -14,15 +14,14 @@
      </Menu>
         <Separator/>
      <Menu label="Install Manjaro">
-	<Program label="Graphical">sudo thus</Program>
+	<Program label="Graphical">sudo calamares</Program>
 	<Program label="CLI">sudo xterm /usr/bin/setup</Program>
-    </Menu>
+     </Menu>
         <Separator/>
      <Menu label="Accesories">
 	<Program label="ClipIt Manager">clipit</Program>
         <Program label="Medit Editor">medit</Program>
 	<Program label="Leafpad Editor">leafpad</Program>
-	<Program label="Xarchiver Compact">xarchiver</Program>
     </Menu>
     <Menu label="Graphics">
 	<Program label="Viewnior Image">viewnior</Program>
@@ -44,7 +43,7 @@
     <Menu label="Settings">
 	<Program label="Nitrogen Wall">nitrogen</Program>
         <Program label="Manjaro Settings">gksu manjaro-settings-manager-gui</Program>
-        <Program label="Monitor Manager">lxrandr</Program>
+        <Program label="Monitor Manager">arandr</Program>
 	<Program label="Configure keyboard">lxinput</Program>
         <Program label="Customize Look">lxappearance</Program>
         <Program label="Network Connections">nm-connection-editor</Program>

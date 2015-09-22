@@ -6,5 +6,19 @@
       <Option>noborder</Option>
       <Option>nolist</Option>
     </Group>
+
+    <Group>
+      <Name>xterm</Name>
+      <Option>noborder</Option>
+      <Option>nolist</Option>
+      <Option>centered</Option>
+    </Group>
+
+    <Group>
+      <Name>sakura</Name>
+      <Option>noborder</Option>
+      <Option>nolist</Option>
+      <Option>centered</Option>
+    </Group>
     
 </JWM>
