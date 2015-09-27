@@ -25,7 +25,7 @@
 
     <!-- Key applications. -->
     <Key mask="4" key="b">exec:firefox</Key>
-    <Key mask="4" key="f">exec:pcmanfm</Key>
+    <Key mask="4" key="f">exec:spacefm</Key>
     <Key mask="4" key="r">exec:gmrun</Key>
     <Key mask="4" key="t">exec:sakura</Key>
     <Key mask="4" key="d">exec:dmenu_run -i -nb '#31363d' -nf '#25aedf' -sb '#a7a7a7' -fn 'roboto-11'</Key>

@@ -13,7 +13,7 @@
         <Active>
             <Foreground>#FFFFFF</Foreground>
             <Background>#25aedf</Background>
-            <Opacity>1.0</Opacity>
+            <Opacity>0.95</Opacity>
             <Outline>#25aedf</Outline>
         </Active>
     </WindowStyle>
@@ -55,7 +55,7 @@
             <Foreground>#FFFFFF</Foreground>
             <Background>#25aedf</Background>
         </Active>
-           <Opacity>0.85</Opacity>
+           <Opacity>0.75</Opacity>
     </MenuStyle>
 
     <!-- Visual Style Pop. -->
