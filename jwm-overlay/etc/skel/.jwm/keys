@@ -24,7 +24,7 @@
     <Key mask="A" key="Down">ddesktop</Key>
 
     <!-- Key applications. -->
-    <Key mask="4" key="b">exec:palemoon-bin</Key>
+    <Key mask="4" key="b">exec:palemoon</Key>
     <Key mask="4" key="f">exec:spacefm</Key>
     <Key mask="4" key="r">exec:gmrun</Key>
     <Key mask="4" key="t">exec:sakura</Key>
