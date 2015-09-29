@@ -5,7 +5,7 @@
 	<Program label="Execute">gmrun</Program>
 	<Program label="Terminal">sakura</Program>
 	<Program label="Explore Files">spacefm</Program>
-	<Program label="Browser">firefox</Program>
+	<Program label="Browser">palemoon-bin</Program>
 	<Program label="Background">nitrogen</Program>
      <Menu label="Screenshot">	
         <Program label="Full Screen">scrot -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
@@ -27,7 +27,7 @@
         <Program label="XFBurn CD/DVD">xfburn</Program>
     </Menu>
     <Menu label="Network">
-	<Program label="Firefox Browser">firefox</Program>
+	<Program label="Pale Moon Browser">palemoon-bin</Program>
         <Program label="XChat IRC">xchat</Program>
     </Menu>
     <Menu label="Office">
