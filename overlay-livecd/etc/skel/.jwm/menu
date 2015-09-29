@@ -13,7 +13,7 @@
         <Program label="Select Area">notify-send 'selection will be saved in ~/Pictures' & scrot -se 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
      </Menu>
         <Separator/>
-        <Menu label="Install Manjaro">
+     <Menu label="Install Manjaro">
 	<Program label="Graphical">sudo calamares</Program>
 	<Program label="CLI">sudo xterm /usr/bin/setup</Program>
      </Menu>
