@@ -24,15 +24,15 @@ $color${voffset -30}$color${font Roboto:size=18}${time %b}$font${voffset -3} $co
 ${voffset 10}$alignr$color Vitória (ES) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBVT temperature temperature 15}°C
 #
 ${voffset 10}${goto 40}${color}CPU$alignr$cpu%
-${voffset 5}${goto 40}$font$color2${top name 1}$alignr${color c0392b}${top cpu 1}%${color}
-${goto 40}$color2${top name 2}$alignr${color c0392b}${top cpu 2}%${color}
+${voffset 5}${goto 40}$font$color2${top name 1}$alignr$color${top cpu 1}%
+${goto 40}$color2${top name 2}$alignr$color${top cpu 2}%
 ${goto 40}$color2${top name 3}$alignr$color${top cpu 3}%
 ${goto 40}$color2${top name 4}$alignr$color${top cpu 4}%
 ${goto 40}$color2${top name 5}$alignr$color${top cpu 5}%
 #
 ${voffset 10}${goto 40}${color}RAM$alignr$mem$font
-${goto 40}${voffset 5}$color2${top_mem name 1}$alignr${color c0392b}${top_mem mem_res 1}${color}
-${goto 40}$color2${top_mem name 2}$alignr${color c0392b}${top_mem mem_res 2}${color}
+${goto 40}${voffset 5}$color2${top_mem name 1}$alignr$color${top_mem mem_res 1}
+${goto 40}$color2${top_mem name 2}$alignr$color${top_mem mem_res 2}
 ${goto 40}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
 ${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
 ${goto 40}$color2${top_mem name 5}$alignr$color${top_mem mem_res 5}
@@ -42,6 +42,6 @@ ${voffset 10}$alignr${execi 1200 whoami}${color 333333} ${nodename}${color}
 ${alignr}${color2}${font Roboto:size=8}uptime ${color}${uptime_short}
 ${alignr}${color2}${font Roboto:size=8}${alignr}kernel ${color}${kernel}
 ${alignr}${color2}${font Roboto:size=8}${alignr}architecture ${color}${machine}
-${alignr}${color2}${font Roboto:size=8}${alignr}update ${color}${execpi 12000 checkupdates | wc -l} package(s)
+${alignr}${color2}${font Roboto:size=8}${alignr}update ${color}${execpi 12000 checkupdates | wc -l} ${color 333333}package(s)${color}
 ${voffset 20}$alignr${font Roboto:size=8}${alignr}enjoy the freedom...
 ]]
