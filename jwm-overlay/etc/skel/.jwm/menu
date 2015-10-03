@@ -70,7 +70,8 @@
 	<Program label="LightDM Settings">gksu lightdm-gtk-greeter-settings</Program>
         <Program label="Conky Manager">leafpad ~/.conkyrc</Program>
         <Program label="Dunst Settings">leafpad ~/.config/dunst/dunstrc</Program>
-        <Program label="Printer Manager">system-config-printer</Program>      
+        <Program label="Printer Manager">system-config-printer</Program>
+        <Program label="Top Settings">leafpad ~/.toprc</Program>      
     <Menu label="JWM Manager">
         <Restart label="Reconfigure"/>
 	<Program label="Integrity">xterm ~/.jwm/integrity.sh</Program>
