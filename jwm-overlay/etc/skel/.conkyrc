@@ -1,43 +1,47 @@
 conky.config = {
-alignment = 'bottom_center',
-background = true,
---border_margin = 5,
---border_width = 5,
-border_inner_margin= 5,
-default_color = '333333',
-double_buffer = true,
-draw_borders = false,
-draw_outline = false,
-draw_shades = false,
-gap_x = 510,
-gap_y = 350,
-maximum_width = 500,
-minimum_width = 245,
-no_buffers = true,
-override_utf8_locale = true,
-own_window = true,
-own_window_title = 'conky',
-own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
-own_window_transparent = true,
-own_window_type = 'desktop',
-text_buffer_size = 8000,
-total_run_times = 0,
-update_interval = 1,
-uppercase = false,
-use_xft = true,
-xftalpha = 1
+	alignment = 'top_right',
+	background = true,
+	color2 = '333333',
+	cpu_avg_samples = 2,
+	default_color = '2938b9',
+        draw_shades = false,
+	double_buffer = true,
+	font = 'Roboto:size=8',
+	gap_x = 25,
+	gap_y = 40,
+	minimum_width = 200,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 1.0,
+	use_xft = true,
 }
 conky.text = [[
-${font Roboto:pixelsize=35}${alignc}${time %d %b, %Y}${font}
-
-${font Roboto:pixelsize=13}${alignc}${time %H:%M:%S I %a} I Frankfurt ${font Roboto:pixelsize=13}${alignc} ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ EDDF temperature temperature 15}°C
-
-${font Roboto:pixelsize=13}${alignc} User: ${execi 5000 whoami} I Machine: $nodename I Uptime: $uptime
-${font Roboto:pixelsize=13}${alignc} Distribution: ${execi 6000 awk -F'=' '/DESCRIPTION/ {print $2}' /etc/lsb-release |sed 's/"//g'} I Version: ${execi 6000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
-${font Roboto:pixelsize=13}${alignc} Architecture: ${machine} I Kernel: ${kernel}
-${font Roboto:pixelsize=13}${alignc} Root: ${fs_free /} / ${fs_used /} I Home: ${fs_free /home} / ${fs_used /home}
-${font Roboto:pixelsize=13}${alignc} Cpu: ${cpu cpu0}% I Hd: ${fs_used_perc}% I Sys Temp: ${hwmon temp 1}°C
-${font Roboto:pixelsize=13}${alignc} Wifi: ${wireless_link_qual wlp3s0}% I Battery: ${battery_percent BAT1}% I ${font Roboto:pixelsize=13}${alignc} Swap: $swap
-
-${font Roboto:pixelsize=13}${alignc} ${execi 5000 whoami}, you can install ${execpi 12000 checkupdates | wc -l} update(s)
+${voffset 8}$color2${font Roboto:size=16}${time %A}$font${voffset -8}$alignr$color${font Roboto:size=38}${time %e}$font
+$color${voffset -30}$color${font Roboto:size=18}${time %b}$font${voffset -3} $color${font Roboto:size=20}${time %Y}$font
+#
+${voffset 10}$alignr$color Vitória (ES) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBVT temperature temperature 15}°C
+#
+${voffset 10}${goto 40}${color}CPU$alignr$cpu%
+${voffset 5}${goto 40}$font$color2${top name 1}$alignr${color c0392b}${top cpu 1}%${color}
+${goto 40}$color2${top name 2}$alignr${color c0392b}${top cpu 2}%${color}
+${goto 40}$color2${top name 3}$alignr$color${top cpu 3}%
+${goto 40}$color2${top name 4}$alignr$color${top cpu 4}%
+${goto 40}$color2${top name 5}$alignr$color${top cpu 5}%
+#
+${voffset 10}${goto 40}${color}RAM$alignr$mem$font
+${goto 40}${voffset 5}$color2${top_mem name 1}$alignr${color c0392b}${top_mem mem_res 1}${color}
+${goto 40}$color2${top_mem name 2}$alignr${color c0392b}${top_mem mem_res 2}${color}
+${goto 40}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
+${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
+${goto 40}$color2${top_mem name 5}$alignr$color${top_mem mem_res 5}
+#
+${voffset 10}$alignr${execi 10000 awk -F'=' '/DESCRIPTION/ {print $2}' /etc/lsb-release |sed 's/"//g'} - ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
+${voffset 10}$alignr${execi 1200 whoami}${color 333333} ${nodename}${color}
+${alignr}${color2}${font Roboto:size=8}uptime ${color}${uptime_short}
+${alignr}${color2}${font Roboto:size=8}${alignr}kernel ${color}${kernel}
+${alignr}${color2}${font Roboto:size=8}${alignr}architecture ${color}${machine}
+${alignr}${color2}${font Roboto:size=8}${alignr}update ${color}${execpi 12000 checkupdates | wc -l} package(s)
+${voffset 20}$alignr${font Roboto:size=8}${alignr}enjoy the freedom...
 ]]
