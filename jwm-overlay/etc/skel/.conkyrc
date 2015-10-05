@@ -7,8 +7,8 @@ conky.config = {
         draw_shades = false,
 	double_buffer = true,
 	font = 'Roboto:size=8',
-	gap_x = 25,
-	gap_y = 40,
+	gap_x = 10,
+	gap_y = 35,
 	minimum_width = 200,
 	no_buffers = true,
 	own_window = true,
@@ -39,7 +39,7 @@ ${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
 ${goto 40}$color2${top_mem name 5}$alignr$color${top_mem mem_res 5}
 #
 ${voffset 10}$alignr${execi 10000 awk -F'=' '/DESCRIPTION/ {print $2}' /etc/lsb-release |sed 's/"//g'} ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
-${voffset 10}$alignr${execi 1200 whoami}${color 333333} ${nodename}${color}
+${voffset 10}$alignr${execi 1200 whoami}${color 333333}@${color}${nodename}
 ${alignr}${color2}${font Roboto:size=8}uptime ${color}${uptime_short}
 ${alignr}${color2}${font Roboto:size=8}${alignr}kernel ${color}${kernel}
 ${alignr}${color2}${font Roboto:size=8}${alignr}architecture ${color}${machine}
