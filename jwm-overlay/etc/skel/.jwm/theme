@@ -21,20 +21,16 @@
         <Font>Roboto-9</Font>
         <Background>#333333</Background>
         <Foreground>#FFFFFF</Foreground>
-    </TrayStyle>
-    <TaskListStyle>
-        <Foreground>#FFFFFF</Foreground>
-        <Background>#111111</Background>
         <Active>
             <Foreground>#FFFFFF</Foreground>
             <Background>#25aedf</Background>
         </Active>
-    </TaskListStyle>
-
+    
     <!-- Visual Style Pager. -->
     <PagerStyle>
-        <Outline>#000000</Outline>
-        <Foreground>#FFFFFF</Foreground>
+        <Outline>#333333</Outline>
+        <Font>Roboto-7</Font>
+        <Text>#FFFFFF</Text>
         <Foreground>#444444</Foreground>
         <Background>#111111</Background>
         <Active>
@@ -57,9 +53,9 @@
     <!-- Visual Style Pop. -->
     <PopupStyle>
         <Font>Roboto-9</Font>
-        <Outline>#000000</Outline>
+        <Outline>#FFFFFF</Outline>
         <Foreground>#000000</Foreground>
-        <Background>#999999</Background>
+        <Background>#FFFFFF</Background>
     </PopupStyle>
 
 </JWM>
