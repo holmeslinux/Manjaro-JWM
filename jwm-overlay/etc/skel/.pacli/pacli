@@ -21,7 +21,7 @@
 #################################################################
 # Design based on IceFox script                                 #
 # Modified, adapted and improved by pekman and excalibur1234    #
-# translation by spylinux										#
+# translation by spylinux					#
 # Contact and suggestions: pekman@openmailbox.org               #
 # Freenode: #manjaropek #manjaro-geek #manjaro			#
 # Topic discussion 						#
@@ -253,9 +253,9 @@ NC='\e[0m'
             ;;
         22)
             echo ""
-            cd /tmp; pacman -Qem >> unoficial.txt; $EDITOR unoficial.txt; rm unoficial.txt
+            pacman -Qem
             echo ""
-            echo -e "$NC Your list of packages was exported. Now press ENTER $NC"
+            echo -e "$NC Task completed. To return to pacli press ENTER $NC"
             read     
             ;;
         23)
