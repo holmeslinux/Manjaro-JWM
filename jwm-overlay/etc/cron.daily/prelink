@@ -1,0 +1,3 @@
+#!/bin/bash
+[[ -x /usr/bin/prelink ]] && 
+/usr/bin/prelink -amR &>/dev/null
