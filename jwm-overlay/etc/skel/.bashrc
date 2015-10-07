@@ -33,16 +33,6 @@ alias np='nano PKGBUILD'
 
 # Alias programmed 
 
-alias update='sudo pacman -Syyuu'	# update system
-alias install='sudo pacman -S'		# install package (obs.: install namepackage)
-alias remove='sudo pacman -Rsn'		# remove package + dependences (obs.: remove namepackage)
-alias helppacman='man pacman'		# pacman help
-alias updateaur='yaourt -Syyuua'	# update aur
-alias installaur='yaourt -S'		# install package aur (obs.: installaur namepackage)
-alias removeaur='yaourt -Rsn'		# remove package aur + dependences (obs.: removeaur namepackage)
-alias helpaur='man yaourt'		# yaourt help
-alias errordb='sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g && sudo pacman -Syyuu  && sudo pacman -Suu'		# unlock data the pacman (error db.lck) and update
-alias opupdate='sudo pacman-optimize && sudo pacman-mirrors -g && sudo pacman -Syyuu  && sudo pacman -Suu'	# optimize data the pacman and update
 alias usbiso='sudo mkusb'		# writes ISO in pendrive (obs.: usbiso nameiso)
 
 # ex - archive extractor
