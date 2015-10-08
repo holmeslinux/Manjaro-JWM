@@ -15,7 +15,7 @@
      </Menu>
         <Separator/>
      <Menu label="Install Manjaro">
-	<Program label="Graphical">sudo calamares</Program>
+	<Program label="Graphical">sudo thus</Program>
 	<Program label="CLI">sudo xterm /usr/bin/setup</Program>
      </Menu>
         <Separator/>
@@ -40,6 +40,7 @@
 	<Program label="AbiWord Write">abiword</Program>
         <Program label="Gnumeric Calc">gnumeric</Program>
         <Program label="Epdfview Reader">epdfview</Program>
+        <Program label="Google Drive">palemoon https://drive.google.com/</Program>
     </Menu>
     <Menu label="Settings">
 	<Program label="Nitrogen Wall">nitrogen</Program>

@@ -6,6 +6,7 @@
         <Spacer width="1"/>
         <TaskList maxwidth="120" border="false"/>
         <Pager labeled="true"/>
+        <Spacer width="5"/>        
         <Dock/>
         <Spacer width="5"/>
         <Clock format="%H : %M"></Clock>
