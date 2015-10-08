@@ -37,9 +37,9 @@ NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "               $NC Bash frontend for pacman or yaourt with pacli $NC "
+    echo -e "                         $NC Pacman and yaourt with pacli $NC "
     echo ""
-    echo -e "                      $NC ...WARNING! USE WITH CAUTION... $NC"
+    echo -e "                          $NC WARNING! USE WITH CAUTION $NC"
     echo -e " ┌────────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC  1 $NC  Update System                       $NC  2 $NC  Optimize Mirrors          │"
     echo -e " │  $NC  3 $NC  Optimize Database                   $NC  4 $NC  Clean Package Cache       │"

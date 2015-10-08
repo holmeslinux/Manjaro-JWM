@@ -25,7 +25,8 @@
             <Foreground>#FFFFFF</Foreground>
             <Background>#25aedf</Background>
         </Active>
-    
+    </TrayStyle>    
+
     <!-- Visual Style Pager. -->
     <PagerStyle>
         <Outline>#333333</Outline>

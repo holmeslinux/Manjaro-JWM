@@ -19,7 +19,7 @@ conky.config = {
 	use_xft = true,
 }
 conky.text = [[
-${voffset 8}$color2${font Roboto:size=16}${time %A}$font${voffset -8}$alignr$color${font Roboto:size=38}${time %e}$font
+${voffset 8}$color${font Roboto:size=16}${time %a}$font${voffset -8}$alignr$color${font Roboto:size=38}${time %e}$font
 $color${voffset -30}$color${font Roboto:size=18}${time %b}$font${voffset -3} $color${font Roboto:size=20}${time %Y}$font
 #
 ${voffset 10}$alignr$color Vitória (ES) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBVT temperature temperature 15}°C
