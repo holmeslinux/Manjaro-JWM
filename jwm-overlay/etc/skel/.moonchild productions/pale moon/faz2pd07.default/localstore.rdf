@@ -7,14 +7,29 @@
   <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#SanitizeDialog"
                    screenX="431"
                    screenY="300" />
+  <RDF:Description RDF:about="chrome://browser/content/places/bookmarkProperties.xul#bookmarkproperties"
+                   width="440"
+                   screenX="356"
+                   screenY="233" />
+  <RDF:Description RDF:about="chrome://browser/content/search/engineManager.xul#engineManager"
+                   screenX="440"
+                   screenY="174"
+                   width="486"
+                   height="367" />
+  <RDF:Description RDF:about="chrome://browser/content/places/bookmarkProperties.xul">
+    <NC:persist RDF:resource="chrome://browser/content/places/bookmarkProperties.xul#bookmarkproperties"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#toolbar-menubar"
+                   currentset="menubar-items"
+                   autohide="true" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#TabsToolbar"
+                   currentset="appmenu-toolbar-button,tabbrowser-tabs,new-tab-button,alltabs-button,tabs-closebutton,tabs-padlock-tbitem" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#nav-bar"
+                   collapsed="false"
+                   currentset="unified-back-forward-button,reload-button,stop-button,home-button,urlbar-container,search-container,downloads-button,window-controls,webrtc-status-button,social-share-button" />
   <RDF:Description RDF:about="chrome://browser/content/browser.xul#addon-bar"
                    currentset="addonbar-closebutton,status4evar-status-widget,status4evar-progress-widget,status-bar"
                    collapsed="false" />
-  <RDF:Description RDF:about="chrome://browser/content/search/engineManager.xul">
-    <NC:persist RDF:resource="chrome://browser/content/search/engineManager.xul#engineManager"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-title"
-                   value="" />
   <RDF:Description RDF:about="chrome://browser/content/browser.xul#main-window"
                    screenX="0"
                    screenY="0"
@@ -25,6 +40,29 @@
                    screenX="367"
                    screenY="91"
                    lastSelected="panePrivacy" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-box"
+                   sidebarcommand=""
+                   width=""
+                   src="" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#navigator-toolbox"
+                   abp-iconposition="visible,addon-bar,addonbar-closebutton" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#detailsExpander"
+                   class="expander-up" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul">
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#SanitizeDialog"/>
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#detailsExpander"/>
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#itemList"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://global/content/customizeToolbar.xul#CustomizeToolbarWindow"
+                   width="828"
+                   height="500" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#itemList"
+                   collapsed="false" />
+  <RDF:Description RDF:about="chrome://browser/content/search/engineManager.xul">
+    <NC:persist RDF:resource="chrome://browser/content/search/engineManager.xul#engineManager"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#PersonalToolbar"
+                   currentset="personal-bookmarks" />
   <RDF:Description RDF:about="chrome://browser/content/browser.xul">
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#main-window"/>
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"/>
@@ -34,42 +72,11 @@
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#toolbar-menubar"/>
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#PersonalToolbar"/>
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#TabsToolbar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#navigator-toolbox"/>
   </RDF:Description>
-  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul">
-    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#SanitizeDialog"/>
-    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#detailsExpander"/>
-    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#itemList"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#detailsExpander"
-                   class="expander-up" />
-  <RDF:Description RDF:about="chrome://browser/content/places/bookmarkProperties.xul">
-    <NC:persist RDF:resource="chrome://browser/content/places/bookmarkProperties.xul#bookmarkproperties"/>
-  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-title"
+                   value="" />
   <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul">
     <NC:persist RDF:resource="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"/>
   </RDF:Description>
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#TabsToolbar"
-                   currentset="appmenu-toolbar-button,tabbrowser-tabs,new-tab-button,alltabs-button,tabs-closebutton,tabs-padlock-tbitem" />
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#toolbar-menubar"
-                   currentset="menubar-items"
-                   autohide="true" />
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#PersonalToolbar"
-                   currentset="personal-bookmarks" />
-  <RDF:Description RDF:about="chrome://browser/content/search/engineManager.xul#engineManager"
-                   screenX="440"
-                   screenY="174"
-                   width="486"
-                   height="367" />
-  <RDF:Description RDF:about="chrome://global/content/customizeToolbar.xul#CustomizeToolbarWindow"
-                   width="828"
-                   height="500" />
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#nav-bar"
-                   collapsed="false"
-                   currentset="unified-back-forward-button,reload-button,stop-button,home-button,urlbar-container,search-container,downloads-button,window-controls,webrtc-status-button,social-share-button" />
-  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#itemList"
-                   collapsed="false" />
-  <RDF:Description RDF:about="chrome://browser/content/places/bookmarkProperties.xul#bookmarkproperties"
-                   width="440"
-                   screenX="356"
-                   screenY="233" />
 </RDF:RDF>
