@@ -5,6 +5,7 @@
 ## Sound and Audio
 manjaro-alsa
 volumeicon
+alsa-plugins
 
 ## File Management
 spacefm
