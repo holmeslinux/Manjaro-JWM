@@ -59,6 +59,7 @@
 	<Program label="Root SpaceFM">gksu spacefm</Program>
         <Program label="GParted HD">/usr/bin/gparted_polkit</Program>
         <Program label="Htop Process">xterm -e 'htop'</Program>
+        <Program label="Top Analysis">xterm top</Program>
 	<Program label="Hard Info">hardinfo</Program>
         <Program label="Terminal">sakura</Program>        
         <Program label="Root Terminal">gksu sakura</Program>
