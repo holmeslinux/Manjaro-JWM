@@ -15,7 +15,7 @@
      </Menu>
         <Separator/>
      <Menu label="Install Manjaro">
-	<Program label="Graphical">sudo thus</Program>
+	<Program label="Graphical">sudo calamares</Program>
 	<Program label="CLI">sudo xterm /usr/bin/setup</Program>
      </Menu>
         <Separator/>
