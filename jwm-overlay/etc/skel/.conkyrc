@@ -1,9 +1,9 @@
 conky.config = {
 	alignment = 'top_right',
 	background = true,
-	color2 = '333333',
+	color2 = 'FFFFFF',
 	cpu_avg_samples = 2,
-	default_color = '2938b9',
+	default_color = 'b1222b',
         draw_shades = false,
 	double_buffer = true,
 	font = 'Roboto:size=8',

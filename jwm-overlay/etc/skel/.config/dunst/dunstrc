@@ -131,7 +131,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = #25aedf
+    separator_color = #b1222b
     
     # Print a notification on startup.
     # This is mainly for error detection, since dbus (re-)starts dunst
@@ -139,7 +139,7 @@
     startup_notification = false
     
     # Browser for opening urls in context menu.
-    browser = firefox
+    browser = palemoon
     
 [frame]
     width = 1
@@ -171,15 +171,15 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#ffffff"
-    foreground = "#444444"
+    foreground = "#161616"
     timeout = 5
 
 [urgency_normal]
-    background = "#25aedf"
-    foreground = "#444444"
+    background = "#b1222b"
+    foreground = "#161616"
     timeout = 10
 
 [urgency_critical]
     background = "#999999"
-    foreground = "#444444"
+    foreground = "#161616"
     timeout = 0

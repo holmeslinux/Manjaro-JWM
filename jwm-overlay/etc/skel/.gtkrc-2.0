@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/manjaro/.gtkrc-2.0.mine"
-gtk-theme-name="ME1"
-gtk-icon-theme-name="ultraflat"
+gtk-theme-name="Boje-Red"
+gtk-icon-theme-name="AwOkenWhite"
 gtk-font-name="Roboto 10"
 gtk-cursor-theme-name="RezoWhite"
 gtk-cursor-theme-size=0

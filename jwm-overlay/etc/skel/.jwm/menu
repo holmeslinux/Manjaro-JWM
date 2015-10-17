@@ -94,7 +94,7 @@
 	<Program label="Restart">systemctl reboot</Program>
         <Program label="Suspend">systemctl suspend</Program>
         <Program label="Shutdown">systemctl poweroff</Program>
-        <Program label="Lock">i3lock -i $HOME/.i3lock/jolly_fusion-CharlieHenson.png</Program>
+        <Program label="Lock">i3lock -i $HOME/.i3lock/pretending_about_the_future.png</Program>
     </Menu>
     </RootMenu>
 

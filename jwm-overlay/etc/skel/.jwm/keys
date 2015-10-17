@@ -32,7 +32,7 @@
 
     <!-- Key system. -->
     <Key mask="C" key="p">exec:gksu xterm ~/.pacli/pacli</Key>
-    <Key mask="4" key="l">exec:i3lock -i $HOME/.i3lock/jolly_fusion-CharlieHenson.png</Key>
+    <Key mask="4" key="l">exec:i3lock -i $HOME/.i3lock/pretending_about_the_future.png</Key>
     <Key mask="C" key="r">exec:jwm -restart</Key>
     <Key mask="A" key="F1">root:1</Key>
 
