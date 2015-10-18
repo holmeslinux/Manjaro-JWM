@@ -11,6 +11,9 @@ alsa-plugins
 spacefm
 udevil
 file-roller
+gvfs		 
+gvfs-mtp
+gvfs-afc	 
 
 ## Package Management
 pamac
@@ -82,6 +85,7 @@ conky
 screenfetch
 libimobiledevice
 compton
+wbar
 
 ## Fonts
 adobe-source-sans-pro-fonts

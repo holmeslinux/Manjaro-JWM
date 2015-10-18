@@ -1,8 +1,8 @@
 i: /usr/share/pixmaps/wbar/nodock.png
-c: wbar --above-desk --pos left --isize 32 --idist 5 --nanim 4
-t: /usr/share/fonts/TTF/Roboto-Blod/9
+c: wbar --vbar --nofont --pos left --grow --isize 32 --idist 5 --nanim 5 --zoomf 1.200000
+t: /usr/share/fonts/TTF/Roboto/9
 
-i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/aptana.png
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/alunn-pacman-24.png
 c: gksu xterm ~/.pacli/pacli
 t: Pacli Frontend
 
@@ -18,7 +18,7 @@ i: /usr/share/icons/AwOkenWhite/clear/128x128/categories/applications-internet2.
 c: palemoon
 t: Pale Moon Browser
 
-i: /usr/share/icons/AwOkenWhite/clear/128x128/categories/applications-internet2.png
+i: /usr/share/icons/AwOkenWhite/clear/128x128/categories/emesene.png
 c: xchat
 t: XChat IRC
 
@@ -33,3 +33,4 @@ t: LXMusic Music
 i: /usr/share/icons/AwOkenWhite/clear/128x128/mimetypes/video-x-generic2.png
 c: smplayer
 t: SMPlayer Video
+

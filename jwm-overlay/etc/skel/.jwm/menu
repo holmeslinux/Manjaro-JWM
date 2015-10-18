@@ -43,6 +43,7 @@
         <Program label="Monitor Manager">arandr</Program>
 	<Program label="Configure keyboard">lxinput</Program>
         <Program label="Customize Look">lxappearance</Program>
+        <Program label="Configure Wbar">wbar-config</Program>
         <Program label="Network Connections">nm-connection-editor</Program>
         <Program label="Privilege Granting">gksu-properties</Program>
     </Menu>
@@ -59,7 +60,7 @@
         <Program label="Terminal">sakura</Program>        
         <Program label="Root Terminal">gksu sakura</Program>
         <Program label="Nano Editor">sakura -x nano</Program>
-        <Program label="Dmenu Run">dmenu_run -i -nb '#31363d' -nf '#25aedf' -sb '#a7a7a7' -fn 'roboto-11'</Program>
+        <Program label="Dmenu Run">dmenu_run -i -nb '#161616' -nf '#b1222b' -sb '#737373' -fn 'roboto-11'</Program>
         <Program label="GUFW">gksu gufw</Program>
     <Menu label="Script All">
 	<Program label="AUR">gksu xterm ~/.scripts/aur.sh</Program>

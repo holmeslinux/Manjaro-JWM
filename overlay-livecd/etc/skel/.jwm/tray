@@ -1,11 +1,9 @@
 <JWM>
 
     <!-- Tray at the bottom. -->
-        <Tray x="0" y="-1" height="22" width="1300" halign="center">
-        <TrayButton icon="/usr/share/icons/Faenza/places/96/logotray.png" popup="Applications">root:3</TrayButton>
+        <Tray x="0" y="-1" height="22" width="1366" halign="fixed" valign="bottom">
         <Spacer width="1"/>
         <TaskList maxwidth="120" border="false"/>
-        <Pager labeled="true"/>
         <Spacer width="5"/>        
         <Dock/>
         <Spacer width="5"/>

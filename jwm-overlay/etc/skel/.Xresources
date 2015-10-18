@@ -1,5 +1,5 @@
-*background: #161616
-*foreground: #b1222b
+*background: #b1222b
+*foreground: #161616
 XTerm*reverseVideo: on
 xterm*faceName: Monospace:size=10:antialias=true
 xterm*font: 7x13
