@@ -39,9 +39,9 @@ ${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
 ${goto 40}$color2${top_mem name 5}$alignr$color${top_mem mem_res 5}
 #
 ${voffset 10}$alignr${execi 10000 awk -F'=' '/DESCRIPTION/ {print $2}' /etc/lsb-release |sed 's/"//g'} ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
-${voffset 10}$alignr${execi 1200 whoami}${color 333333}@${color}${nodename}
+${voffset 10}$alignr${execi 1200 whoami}${color ffffff}@${color}${nodename}
 ${alignr}${color2}${font Roboto:size=8}uptime ${color}${uptime_short}
 ${alignr}${color2}${font Roboto:size=8}${alignr}kernel ${color}${kernel}
 ${alignr}${color2}${font Roboto:size=8}${alignr}architecture ${color}${machine}
-${alignr}${color2}${font Roboto:size=8}${alignr}update ${color}${execpi 12000 checkupdates | wc -l} ${color 333333}package(s)${color}
+${alignr}${color2}${font Roboto:size=8}${alignr}update ${color}${execpi 12000 checkupdates | wc -l} ${color ffffff}package(s)${color}
 ]]
