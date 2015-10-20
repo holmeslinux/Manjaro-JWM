@@ -11,5 +11,6 @@
     <StartupCommand>xautolock -time 20 -locker 'i3lock -i $HOME/.i3lock/pretending_about_the_future.png'</StartupCommand>
     <StartupCommand>notify-send "Welcome to Manjaro JWM Edition"</StartupCommand>
     <StartupCommand>/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</StartupCommand>
-           
+    <StartupCommand>xrdb -merge ~/.Xresources</StartupCommand>
+
 </JWM>
