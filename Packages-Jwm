@@ -34,8 +34,7 @@ dconf
 desktop-file-utils
 
 ## Display Manager
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+slim
 
 ## Desktop Display
 dunst
@@ -53,6 +52,7 @@ xautolock
 lxappearance
 dmenu-xft
 prelink
+preload
 
 ## Desktop Configuration
 lxinput

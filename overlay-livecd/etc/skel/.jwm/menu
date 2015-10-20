@@ -48,7 +48,7 @@
         <Program label="Monitor Manager">arandr</Program>
 	<Program label="Configure keyboard">lxinput</Program>
         <Program label="Customize Look">lxappearance</Program>
-        <Program label="Wbar Configure">wbar-config</Program>
+        <Program label="Configure Wbar">wbar-config</Program>
         <Program label="Network Connections">nm-connection-editor</Program>
         <Program label="Privilege Granting">gksu-properties</Program>
     </Menu>
@@ -56,8 +56,7 @@
         <Program label="Pacli Frontend">gksu xterm ~/.pacli/pacli</Program>
 	<Program label="Pamac Manager">pamac-manager</Program>
         <Program label="Pamac Update">pamac-update</Program>
-        <Program label="SpaceFM Explore">spacefm</Program>
-	<Program label="Root SpaceFM">gksu spacefm</Program>
+        <Program label="Root SpaceFM">gksu spacefm</Program>
         <Program label="GParted HD">/usr/bin/gparted_polkit</Program>
         <Program label="Htop Process">xterm -e 'htop'</Program>
         <Program label="Top Analysis">xterm top</Program>
@@ -77,8 +76,7 @@
     </Menu>
        <Separator/>
     <Menu label="Configure">
-	<Program label="LightDM Settings">gksu lightdm-gtk-greeter-settings</Program>
-        <Program label="Conky Manager">leafpad ~/.conkyrc</Program>
+	<Program label="Conky Manager">leafpad ~/.conkyrc</Program>
         <Program label="Dunst Settings">leafpad ~/.config/dunst/dunstrc</Program>
         <Program label="Printer Manager">system-config-printer</Program>
         <Program label="Top Settings">leafpad ~/.toprc</Program>      

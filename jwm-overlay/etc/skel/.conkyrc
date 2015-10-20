@@ -8,7 +8,7 @@ conky.config = {
 	double_buffer = true,
 	font = 'Roboto:size=8',
 	gap_x = 10,
-	gap_y = 35,
+	gap_y = 100,
 	minimum_width = 200,
 	no_buffers = true,
 	own_window = true,
