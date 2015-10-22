@@ -1,10 +1,10 @@
 i: /usr/share/pixmaps/wbar/nodock.png
-c: wbar --nofont --pos bottom --grow --isize 32 --idist 5 --nanim 5 --zoomf 1.200000
+c: wbar --above-desk --pos bottom --isize 32 --idist 5 --nanim 5
 t: /usr/share/fonts/TTF/Roboto/9
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/alunn-pacman-24.png
 c: gksu xterm ~/.pacli/pacli
-t: Pacli Frontend
+t: Pacli
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/terminal2.png
 c: sakura
@@ -12,7 +12,7 @@ t: Terminal
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/system-file-manager2.png
 c: spacefm
-t: Explore Files
+t: SpaceFM
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/categories/applications-internet2.png
 c: palemoon
@@ -20,20 +20,20 @@ t: Pale Moon Browser
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/emesene.png
 c: xchat
-t: XChat IRC
+t: XChat
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/abiword.png
 c: abiword
-t: Abiword Write
+t: Abiword
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/multimedia-audio-player.png
 c: lxmusic
-t: LXMusic Music
+t: LXMusic
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/mimetypes/video-x-generic2.png
 c: smplayer
-t: SMPlayer Video
+t: SMPlayer
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/aptana.png
 c: wbar-config
-t: Configure Wbar
+t: Wbar

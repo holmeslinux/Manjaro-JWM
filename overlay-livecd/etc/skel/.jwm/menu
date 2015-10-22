@@ -84,7 +84,6 @@
         <Restart label="Reconfigure"/>
 	<Program label="Integrity">xterm ~/.jwm/integrity.sh</Program>
         <Program label="Menu">leafpad ~/.jwm/menu</Program>
-        <Program label="Tray">leafpad ~/.jwm/tray</Program>
         <Program label="Start">leafpad ~/.jwm/start</Program>
         <Program label="Theme">leafpad ~/.jwm/theme</Program>
         <Program label="Keys">leafpad ~/.jwm/keys</Program>
