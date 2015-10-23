@@ -1,4 +1,4 @@
-i: /usr/share/pixmaps/wbar/nodock.png
+i: /usr/share/pixmaps/wbar/dock161616.png
 c: wbar --above-desk --pos bottom --isize 32 --idist 5 --nanim 5 --filter 1 --fc 0xffb1222b
 t: /usr/share/fonts/TTF/Roboto-Bold/9
 
