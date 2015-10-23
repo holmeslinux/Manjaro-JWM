@@ -57,7 +57,7 @@ NC='\e[0m'
     echo -e " │  $NC 21 $NC  Remove from AUR + Deps              $NC 22 $NC  Installed from AUR        │"
     echo " └────────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "    $NC Select a number between 1 and 22 and press [Enter]$NC $NC - 23 Exit pacli$NC"
+    echo -e "    $NC Select a number between 1 and 22 and press [Enter]$NC $NC - 0 Exit pacli$NC"
     echo ""
     read choix
     case $choix in
@@ -258,7 +258,7 @@ NC='\e[0m'
             echo -e "$NC Task completed. To return to pacli press [Enter] $NC"
             read     
             ;;
-        23)
+        0)
             clear && exit
             read
             ;;
