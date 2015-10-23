@@ -183,13 +183,3 @@
     background = "#999999"
     foreground = "#161616"
     timeout = 0
-
-[irc]
-    appname = "xchat"
-    format  = "%s: %b"
-    urgency = low
-    background = "#ffffff"
-    foreground = "#161616"
-
-
-

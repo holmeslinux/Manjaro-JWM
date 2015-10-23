@@ -1,6 +1,6 @@
 i: /usr/share/pixmaps/wbar/nodock.png
-c: wbar --above-desk --pos bottom --isize 32 --idist 5 --nanim 5
-t: /usr/share/fonts/TTF/Roboto/9
+c: wbar --above-desk --pos bottom --isize 32 --idist 5 --nanim 5 --filter 1 --fc 0xffb1222b
+t: /usr/share/fonts/TTF/Roboto-Bold/9
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/alunn-pacman-24.png
 c: gksu xterm ~/.pacli/pacli
@@ -16,7 +16,7 @@ t: SpaceFM
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/categories/applications-internet2.png
 c: palemoon
-t: Pale Moon Browser
+t: Pale Moon
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/emesene.png
 c: xchat
