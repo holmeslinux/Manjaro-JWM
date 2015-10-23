@@ -2,9 +2,9 @@
 
     <!-- Visual Style Window. -->
     <WindowStyle decorations="flat">
-        <Font>Roboto-9</Font>
-        <Width>3</Width>
-        <Height>16</Height>
+        <Font>Roboto-8</Font>
+        <Width>2</Width>
+        <Height>15</Height>
         <Corner>2</Corner>
         <Foreground>#FFFFFF</Foreground>
         <Background>#161616</Background>
@@ -32,6 +32,7 @@
         <Font>Roboto-9</Font>
         <Background>#161616</Background>
         <Foreground>#FFFFFF</Foreground>
+        <Outline>#161616</Outline>
         <Active>
             <Foreground>#FFFFFF</Foreground>
             <Background>#b1222b</Background>
