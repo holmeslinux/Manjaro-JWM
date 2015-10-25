@@ -16,5 +16,10 @@
       <Name>sakura</Name>
       <Option>centered</Option>
     </Group>
+
+    <Group>
+      <Name>rofi</Name>
+      <Option>centered</Option>
+    </Group>
     
 </JWM>

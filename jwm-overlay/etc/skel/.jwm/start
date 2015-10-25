@@ -6,7 +6,7 @@
     <StartupCommand>volumeicon</StartupCommand>
     <StartupCommand>nm-applet</StartupCommand>
     <StartupCommand>conky</StartupCommand>
-    <StartupCommand>compton -c</StartupCommand>
+    <StartupCommand>compton -c --shadow-exclude 'g:e:wbar'</StartupCommand>
     <StartupCommand>wbar</StartupCommand>
     <StartupCommand>xautolock -time 20 -locker 'i3lock -i $HOME/.i3lock/pretending_about_the_future.png'</StartupCommand>
     <StartupCommand>notify-send "Welcome to Manjaro JWM Edition"</StartupCommand>
