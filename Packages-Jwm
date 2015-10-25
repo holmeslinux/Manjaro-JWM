@@ -50,7 +50,7 @@ xterm
 i3lock
 xautolock
 lxappearance
-dmenu-xft
+rofi
 prelink
 preload
 

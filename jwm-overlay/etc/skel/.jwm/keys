@@ -26,9 +26,9 @@
     <!-- Key applications. -->
     <Key mask="4" key="b">exec:palemoon</Key>
     <Key mask="4" key="f">exec:spacefm</Key>
-    <Key mask="4" key="r">exec:gmrun</Key>
+    <Key mask="4" key="g">exec:gmrun</Key>
     <Key mask="4" key="t">exec:sakura</Key>
-    <Key mask="4" key="d">exec:dmenu_run -i -nb '#161616' -nf '#b1222b' -sb '#737373' -fn 'roboto-11'</Key>
+    <Key mask="4" key="r">exec:rofi -show run</Key>
 
     <!-- Key system. -->
     <Key mask="C" key="p">exec:gksu xterm ~/.pacli/pacli</Key>

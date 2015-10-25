@@ -1,5 +1,5 @@
 i: /usr/share/pixmaps/wbar/dock161616.png
-c: wbar --above-desk --pos bottom --isize 32 --idist 5 --nanim 5 --filter 1 --fc 0xffb1222b
+c: wbar --above-desk --pos bottom --offset 5 --isize 32 --idist 5 --nanim 5 --filter 1 --fc 0xffb1222b
 t: /usr/share/fonts/TTF/Roboto-Bold/9
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/alunn-pacman-24.png
