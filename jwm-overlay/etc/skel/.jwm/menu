@@ -71,7 +71,8 @@
     </Menu>
        <Separator/>
     <Menu label="Configure">
-	<Program label="Conky Manager">leafpad ~/.conkyrc</Program>
+        <Program label="Wbar Settings">wbar-config</Program>	
+        <Program label="Conky Manager">leafpad ~/.conkyrc</Program>
         <Program label="Dunst Settings">leafpad ~/.config/dunst/dunstrc</Program>
         <Program label="Printer Manager">system-config-printer</Program>
         <Program label="Top Settings">leafpad ~/.toprc</Program>      

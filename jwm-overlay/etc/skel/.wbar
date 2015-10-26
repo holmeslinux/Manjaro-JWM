@@ -8,7 +8,7 @@ t: Pacli
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/terminal2.png
 c: sakura
-t: Terminal
+t: Sakura
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/system-file-manager2.png
 c: spacefm
@@ -35,5 +35,5 @@ c: smplayer
 t: SMPlayer
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/aptana.png
-c: wbar-config
-t: Wbar
+c: rofi -show run
+t: Rofi
