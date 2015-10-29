@@ -5,7 +5,7 @@
 	<Program label="Execute">gmrun</Program>
 	<Program label="Terminal">sakura</Program>
         <Program label="Pacli Front">gksu xterm ~/.pacli/pacli</Program>
-	<Program label="Explore Files">spacefm</Program>
+	<Program label="Explore Files">sunflower</Program>
 	<Program label="Browser">palemoon</Program>
 	<Program label="Background">nitrogen</Program>
      <Menu label="Screenshot">	
@@ -51,7 +51,7 @@
         <Program label="Pacli Frontend">gksu xterm ~/.pacli/pacli</Program>
 	<Program label="Pamac Manager">pamac-manager</Program>
         <Program label="Pamac Update">pamac-update</Program>
-        <Program label="Root SpaceFM">gksu spacefm</Program>
+        <Program label="Root Sunflower">gksu sunflower</Program>
         <Program label="GParted HD">/usr/bin/gparted_polkit</Program>
         <Program label="Htop Process">xterm -e 'htop'</Program>
         <Program label="Top Analysis">xterm top</Program>
