@@ -37,7 +37,7 @@ NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                      $NC ::pacman and yaourt with pacli:: $NC "
+    echo -e "                         $NC ::Packager Manager pacli:: $NC "
     echo ""
     echo -e "                          $NC WARNING! USE WITH CAUTION $NC"
     echo -e " ┌────────────────────────────────────────────────────────────────────────────┐"

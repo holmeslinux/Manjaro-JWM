@@ -36,7 +36,8 @@ dconf
 desktop-file-utils
 
 ## Display Manager
-slim
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 
 ## Desktop Display
 dunst
