@@ -16,13 +16,13 @@ NC='\e[0m'
     echo -e " │  $NC  3 $NC  Edit Menu JWM                      $NC  4  $NC  Edit Panel JWM         │"
     echo -e " │  $NC  5 $NC  Edit Start JWM                     $NC  6  $NC  Edit Theme JWM         │"
     echo -e " │  $NC  7 $NC  Edit Keys JWM                      $NC  8  $NC  Edit Groups JWM        │"
-    echo -e " │  $NC  9 $NC  Edit Preferences JWM                                             │"
+    echo -e " │  $NC  9 $NC  Edit Preferences JWM               $NC  10 $NC  Edit JWMrc             │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 10 $NC  Edit Wbar                          $NC 11 $NC  Edit Conky              │"
-    echo -e " │  $NC 12 $NC  Edit Dunst                         $NC 13 $NC  Edit Top                │"
-    echo -e " │  $NC 14 $NC  Edit Slim                          $NC 15 $NC  Edit Rofi               │"
+    echo -e " │  $NC 11 $NC  Edit Wbar                          $NC 12 $NC  Edit Conky              │"
+    echo -e " │  $NC 13 $NC  Edit Dunst                         $NC 14 $NC  Edit Top                │"
+    echo -e " │  $NC 15 $NC  Edit Slim                          $NC 16 $NC  Edit Rofi               │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "            $NC Select a number and press [Enter]$NC $NC - 0 Exit jwmman$NC"
@@ -94,42 +94,49 @@ NC='\e[0m'
             ;;
         10)
             echo ""
-            wbar-config
+            nano ~/.jwmrc
             echo ""
             echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
             read
             ;;
         11)
             echo ""
-            nano ~/.conkyrc
+            wbar-config
             echo ""
             echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
             read
             ;;
         12)
             echo ""
-            nano ~/.config/dunst/dunstrc
+            nano ~/.conkyrc
             echo ""
             echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
             read
             ;;
         13)
             echo ""
-            nano ~/.toprc
+            nano ~/.config/dunst/dunstrc
             echo ""
             echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
             read
             ;;
         14)
             echo ""
-            sudo nano /etc/slim.conf
+            nano ~/.toprc
             echo ""
             echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
             read
             ;;
         15)
             echo ""
-            ~/.Xresources
+            sudo nano /etc/slim.conf
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        16)
+            echo ""
+            nano ~/.Xresources
             echo ""
             echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
             read
