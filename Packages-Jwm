@@ -9,13 +9,9 @@ alsa-plugins
 
 ## File Management
 sunflower
-udevil
-file-roller
 gvfs		 
-gvfs-mtp
 gvfs-afc	 
 gvfs-gphoto2
-mtpfs
 
 ## Package Management
 pamac
@@ -36,8 +32,7 @@ dconf
 desktop-file-utils
 
 ## Display Manager
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+slim
 
 ## Desktop Display
 dunst
@@ -69,7 +64,6 @@ gtk-engine-murrine
 ## Applications
 medit
 epdfview
-gparted
 hardinfo
 htop
 leafpad
@@ -81,7 +75,6 @@ lxmusic
 smplayer
 viewnior
 cbatticon
-xfburn
 manjaro-settings-manager
 sakura
 conky

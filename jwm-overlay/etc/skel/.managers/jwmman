@@ -1,0 +1,150 @@
+#!/bin/bash
+
+# set colors
+RED='\e[41m'
+BLUE='\e[44m'
+ORANGE='\e[46m'
+NC='\e[0m'
+    while true; do
+    clear
+    echo ""
+    echo -e "                $NC ::Configure Manjaro JWM Edition - jwmman:: $NC "
+    echo ""
+    echo -e "                        $NC WARNING! USE WITH CAUTION $NC"
+    echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
+    echo -e " │  $NC  1 $NC  Refresh Configuration JWM          $NC  2  $NC  Check Error JWM        │"
+    echo -e " │  $NC  3 $NC  Edit Menu JWM                      $NC  4  $NC  Edit Panel JWM         │"
+    echo -e " │  $NC  5 $NC  Edit Start JWM                     $NC  6  $NC  Edit Theme JWM         │"
+    echo -e " │  $NC  7 $NC  Edit Keys JWM                      $NC  8  $NC  Edit Groups JWM        │"
+    echo -e " │  $NC  9 $NC  Edit Preferences JWM                                             │"
+    echo " └─────────────────────────────────────────────────────────────────────────┘"
+    echo ""
+    echo " ┌─────────────────────────────────────────────────────────────────────────┐"
+    echo -e " │  $NC 10 $NC  Edit Wbar                          $NC 11 $NC  Edit Conky              │"
+    echo -e " │  $NC 12 $NC  Edit Dunst                         $NC 13 $NC  Edit Top                │"
+    echo -e " │  $NC 14 $NC  Edit Slim                          $NC 15 $NC  Edit Rofi               │"
+    echo " └─────────────────────────────────────────────────────────────────────────┘"
+    echo ""
+    echo -e "            $NC Select a number and press [Enter]$NC $NC - 0 Exit jwmman$NC"
+    echo ""
+    read choix
+    case $choix in
+        1)
+            echo
+            jwm -restart
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        2)
+            echo
+            jwm -p
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        3)
+            echo
+            nano ~/.jwm/menu
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        4)
+            echo
+            nano ~/.jwm/tray
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        5)
+            echo ""
+            nano ~/.jwm/start
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        6)
+            echo ""
+            nano ~/.jwm/theme
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read 
+	    ;;
+        7)
+            echo ""
+            nano ~/.jwm/keys
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        8)
+            echo ""
+            nano ~/.jwm/groups
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        9)
+            echo ""
+            nano ~/.jwm/preferences
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        10)
+            echo ""
+            wbar-config
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        11)
+            echo ""
+            nano ~/.conkyrc
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        12)
+            echo ""
+            nano ~/.config/dunst/dunstrc
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        13)
+            echo ""
+            nano ~/.toprc
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        14)
+            echo ""
+            sudo nano /etc/slim.conf
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        15)
+            echo ""
+            ~/.Xresources
+            echo ""
+            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
+            read
+            ;;
+        0)
+            clear && exit
+            read
+            ;;
+        *)
+            echo -e "$RED Wrong option $NC"
+            echo "Wait and try again later..."
+            echo ""
+            sleep 3
+            clear
+            ;;
+    esac
+    done
+fi
