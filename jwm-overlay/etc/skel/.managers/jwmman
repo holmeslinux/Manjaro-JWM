@@ -8,7 +8,7 @@ NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                $NC ::Configure Manjaro JWM Edition - jwmman:: $NC "
+    echo -e "                     $NC ::JWMman Control Center Configure:: $NC "
     echo ""
     echo -e "                        $NC WARNING! USE WITH CAUTION $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
@@ -22,7 +22,7 @@ NC='\e[0m'
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC 11 $NC  Edit Wbar                          $NC 12 $NC  Edit Conky              │"
     echo -e " │  $NC 13 $NC  Edit Dunst                         $NC 14 $NC  Edit Top                │"
-    echo -e " │  $NC 15 $NC  Edit Slim                          $NC 16 $NC  Edit Rofi               │"
+    echo -e " │  $NC 15 $NC  Edit Rofi                                                        │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "            $NC Select a number and press [Enter]$NC $NC - 0 Exit jwmman$NC"
@@ -101,7 +101,7 @@ NC='\e[0m'
             ;;
         11)
             echo ""
-            wbar-config
+            nano ~/.wbar
             echo ""
             echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
             read
@@ -128,13 +128,6 @@ NC='\e[0m'
             read
             ;;
         15)
-            echo ""
-            sudo nano /etc/slim.conf
-            echo ""
-            echo -e "$NC Operation complete. To return to jwmman press [Enter] $NC"
-            read
-            ;;
-        16)
             echo ""
             nano ~/.Xresources
             echo ""

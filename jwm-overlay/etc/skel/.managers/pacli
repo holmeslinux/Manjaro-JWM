@@ -145,7 +145,7 @@ NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                       $NC ::Package Manager - pacli:: $NC "
+    echo -e "                     $NC ::Pacli Control Center Package:: $NC "
     echo ""
     echo -e "                        $NC WARNING! USE WITH CAUTION $NC"
     echo -e " ┌────────────────────────────────────────────────────────────────────────────┐"
@@ -156,8 +156,8 @@ NC='\e[0m'
     echo -e " │  $NC  9 $NC  List Local Package Files            $NC 10 $NC  Dependencies Tree         │"
     echo -e " │  $NC 11 $NC  List Installed Packages             $NC 12 $NC  Fix Errors                │"
     echo -e " │  $NC 13 $NC  Downgrade Packages                  $NC 14 $NC  Help                      │"
-    echo -e " │  $NC 15  $BLUE Force Install Package $NC              $NC 16  $BLUE Force Update System $NC      │"
-    echo -e " │  $NC 17  $BLUE Force Remove Package  $NC              $NC 18  $BLUE Empty Package Cache $NC      │"
+    echo -e " │  $NC 15 $NC  Force Install Package               $NC 16 $NC  Force Update System       │"
+    echo -e " │  $NC 17 $NC  Force Remove Package                $NC 18 $NC  Empty Package Cache       │"
     echo " └────────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo " ┌────────────────────────────────────────────────────────────────────────────┐"
