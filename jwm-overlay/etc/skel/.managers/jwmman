@@ -1,5 +1,24 @@
 #!/bin/bash
 
+function help_text() {
+	less 	<<-EOF
+JWM (Joe's Window Manager) is a light-weight window manager for the X11 Window System. JWM is written in C and uses only Xlib at a minimum. Because of its small footprint, JWM makes a good window manager for older computers and less powerful systems, such as the Raspberry Pi, though it is perfectly capable of running on modern systems. 
+JWM is included in small Linux distributions such as Puppy Linux and Damn Small Linux, and it is available as a separate package in many other distributions.Although JWM does not require them, it can use the following libraries if available:
+- libXext for the shape extension;
+- libXext for the render extension;
+- libXmu for drawing rounded windows (shape extension also needed);
+- libXinerama for Xinerama (multi-monitor) support;
+- libXpm for XPM backgrounds and icons;
+- libjpeg for JPEG backgrounds and icons;
+- libpng for PNG backgrounds and icons;
+- libRSVG and Cairo for SVG backgrounds and icons;
+- libxft for antialiased and true type fonts;
+- libfribidi for right-to-left language support.
+JWM attempts to conform to the ICCCM and supports both MWM hints and Extended Window Manager Hints (EWMH).See the configuration documentation for comprehensive documentation on configuring JWM. JWM also comes with a manual page: http://joewing.net/projects/jwm/config.shtml. 
+To exit this information page, press "q".
+	EOF
+}
+
 # set colors
 RED='\e[41m'
 BLUE='\e[44m'
@@ -12,17 +31,18 @@ NC='\e[0m'
     echo ""
     echo -e "                      $NC ::WARNING! USE WITH CAUTION:: $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC  1 $NC  Refresh Configuration JWM          $NC  2  $NC  Check Error JWM        │"
-    echo -e " │  $NC  3 $NC  Edit Menu JWM                      $NC  4  $NC  Edit Panel JWM         │"
-    echo -e " │  $NC  5 $NC  Edit Start JWM                     $NC  6  $NC  Edit Theme JWM         │"
-    echo -e " │  $NC  7 $NC  Edit Keys JWM                      $NC  8  $NC  Edit Groups JWM        │"
-    echo -e " │  $NC  9 $NC  Edit Preferences JWM               $NC  10 $NC  Edit JWMrc             │"
+    echo -e " │  $NC  1  $NC  Refresh Configuration JWM          $NC  2  $NC  Check Error JWM       │"
+    echo -e " │  $NC  3  $NC  Edit Menu JWM                      $NC  4  $NC  Edit Panel JWM        │"
+    echo -e " │  $NC  5  $NC  Edit Start JWM                     $NC  6  $NC  Edit Theme JWM        │"
+    echo -e " │  $NC  7  $NC  Edit Keys JWM                      $NC  8  $NC  Edit Groups JWM       │"
+    echo -e " │  $NC  9  $NC  Edit Preferences JWM               $NC  10 $NC  Edit JWMrc            │"
+    echo -e " │  $NC  11 $NC  General Commands Manual            $NC  12 $NC  Informations          │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 11 $NC  Edit Wbar                          $NC 12 $NC  Edit Conky              │"
-    echo -e " │  $NC 13 $NC  Edit Dunst                         $NC 14 $NC  Edit Top                │"
-    echo -e " │  $NC 15 $NC  Edit Rofi                                                        │"
+    echo -e " │  $NC  13 $NC  Edit Wbar                         $NC  14 $NC  Edit Conky             │"
+    echo -e " │  $NC  15 $NC  Edit Dunst                        $NC  16 $NC  Edit Top               │"
+    echo -e " │  $NC  17 $NC  Edit Rofi                                                       │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "            $NC Select a number and press [Enter]$NC $NC - 0 Exit JWMman$NC"
@@ -99,42 +119,56 @@ NC='\e[0m'
             echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
             read
             ;;
+
         11)
+            echo ""
+            man jwm
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            read
+            ;;
+
+        12)
+            echo
+            help_text
+            echo
+            ;;
+        13)
             echo ""
             nano ~/.wbar
             echo ""
             echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
             read
             ;;
-        12)
+        14)
             echo ""
             nano ~/.conkyrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
             read
             ;;
-        13)
+        15)
             echo ""
             nano ~/.config/dunst/dunstrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
             read
             ;;
-        14)
+        16)
             echo ""
             nano ~/.toprc
             echo ""
             echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
             read
             ;;
-        15)
+        17)
             echo ""
             nano ~/.Xresources
             echo ""
             echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
             read
             ;;
-        0)
+         0)
             clear && exit
             read
             ;;

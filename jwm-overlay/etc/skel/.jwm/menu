@@ -4,9 +4,9 @@
     <RootMenu onroot="3">
 	<Program label="Execute">gmrun</Program>
 	<Program label="Terminal">sakura</Program>
+        <Program label="Pacli">xterm ~/.managers/pacli</Program>        
         <Program label="JWMman">xterm ~/.managers/jwmman</Program>
-        <Program label="Pacli">xterm ~/.managers/pacli</Program>
-	<Program label="Explore Files">sunflower</Program>
+        <Program label="Explore Files">sunflower</Program>
 	<Program label="Browser">palemoon</Program>
      <Menu label="Screenshot">	
         <Program label="Full Screen">scrot -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
@@ -44,7 +44,7 @@
         <Program label="Privilege Granting">gksu-properties</Program>
     </Menu>
     <Menu label="System">
-        <Program label="Pacli Package">xterm ~/.managers/pacli</Program>
+        <Program label="Pacli Packager">xterm ~/.managers/pacli</Program>
 	<Program label="JWMman Configure">xterm ~/.managers/jwmman</Program>
         <Program label="Root Sunflower">gksu sunflower</Program>
         <Program label="Htop Process">xterm -e 'htop'</Program>
