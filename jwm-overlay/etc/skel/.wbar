@@ -7,8 +7,8 @@ c: xterm ~/.managers/pacli
 t: Pacli
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/aptana.png
-c: xterm ~/.managers/jwmman
-t: JWMman
+c: xterm ~/.managers/jwmconf
+t: JWMConf
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/terminal2.png
 c: sakura

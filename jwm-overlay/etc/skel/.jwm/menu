@@ -5,7 +5,7 @@
 	<Program label="Execute">gmrun</Program>
 	<Program label="Terminal">sakura</Program>
         <Program label="Pacli">xterm ~/.managers/pacli</Program>        
-        <Program label="JWMman">xterm ~/.managers/jwmman</Program>
+        <Program label="JWMconf">xterm ~/.managers/jwmconf</Program>
         <Program label="Explore Files">sunflower</Program>
 	<Program label="Browser">palemoon</Program>
      <Menu label="Screenshot">	
@@ -45,7 +45,7 @@
     </Menu>
     <Menu label="System">
         <Program label="Pacli Packager">xterm ~/.managers/pacli</Program>
-	<Program label="JWMman Configure">xterm ~/.managers/jwmman</Program>
+	<Program label="JWMconf Configure">xterm ~/.managers/jwmconf</Program>
         <Program label="Root Sunflower">gksu sunflower</Program>
         <Program label="Htop Process">xterm -e 'htop'</Program>
         <Program label="Top Analysis">xterm top</Program>
