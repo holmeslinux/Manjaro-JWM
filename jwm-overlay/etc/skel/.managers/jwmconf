@@ -67,14 +67,14 @@ NC='\e[0m'
     echo -e " │  $NC  3  $NC  Edit Menu JWM                      $NC  4  $NC  Edit Panel JWM        │"
     echo -e " │  $NC  5  $NC  Edit Start JWM                     $NC  6  $NC  Edit Theme JWM        │"
     echo -e " │  $NC  7  $NC  Edit Keys JWM                      $NC  8  $NC  Edit Groups JWM       │"
-    echo -e " │  $NC  9  $NC  Edit Preferences JWM               $NC 10 $NC   Edit JWMrc            │"
-    echo -e " │  $NC 11  $NC  General Commands Manual            $NC 12 $NC   Informations          │"
+    echo -e " │  $NC  9  $NC  Edit Preferences JWM               $NC 10  $NC  Edit JWMrc            │"
+    echo -e " │  $NC 11  $NC  General Commands Manual            $NC 12  $NC  Informations          │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 13 $NC  Edit Wbar                          $NC 14 $NC  Edit Conky              │"
-    echo -e " │  $NC 15 $NC  Edit Dunst                         $NC 16 $NC  Edit Top                │"
-    echo -e " │  $NC 17 $NC  Edit Rofi                                                        │"
+    echo -e " │  $NC 13  $NC  Edit Wbar                          $NC 14  $NC  Edit Conky            │"
+    echo -e " │  $NC 15  $NC  Edit Dunst                         $NC 16  $NC  Edit Top              │"
+    echo -e " │  $NC 17  $NC  Edit Rofi                          $NC 18  $NC  Edit GMRun            │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "            $NC Select a number and press [Enter]$NC $NC - 0 Exit JWMman$NC"
@@ -196,6 +196,13 @@ NC='\e[0m'
         17)
             echo ""
             nano ~/.Xresources
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            read
+            ;;
+        18)
+            echo ""
+            nano ~/.gmrunrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
             read
