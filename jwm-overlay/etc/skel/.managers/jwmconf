@@ -1,5 +1,35 @@
 #!/bin/bash
 
+#  updated on 01.11.2015 16:11:24
+
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#  
+
+#########################################################################################
+# Design based on IceFox script                                                         #
+# Modified, adapted and improved by pekman and excalibur1234                            #
+# Some modifications based on the pacli and mhwd-tui (thx @Chrysostomus) made by Holmes #                     
+# translation by spylinux					                        #
+# Contact and suggestions: pekman@openmailbox.org (jwmconf holmes_holmes@live.com)      #
+# Freenode: #manjaropek #manjaro-geek #manjaro			                        #
+# Topic discussion 						                        #
+#			http://polr.me/Pacli1			                        #
+#			http://polr.me/Pacli2			                        #  
+#########################################################################################
+
 function help_text() {
 	less 	<<-EOF
 JWM (Joe's Window Manager) is a light-weight window manager for the X11 Window System. JWM is written in C and uses only Xlib at a minimum. Because of its small footprint, JWM makes a good window manager for older computers and less powerful systems, such as the Raspberry Pi, though it is perfectly capable of running on modern systems. 
@@ -27,7 +57,7 @@ NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                    $NC JWMconf Control Center Configure $NC "
+    echo -e "                  $NC JWMconf Control Center Shell Configure $NC "
     echo ""
     echo -e "                      $NC ::WARNING! USE WITH CAUTION:: $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"

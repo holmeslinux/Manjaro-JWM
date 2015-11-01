@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-#  updated on 17.05.2015 16:11:02
+#  updated on 01.11.2015 16:11:46
 
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -19,16 +19,17 @@
 #  MA 02110-1301, USA.
 #  
 
-#################################################################
-# Design based on IceFox script                                 #
-# Modified, adapted and improved by pekman and excalibur1234    #
-# translation by spylinux					#
-# Contact and suggestions: pekman@openmailbox.org               #
-# Freenode: #manjaropek #manjaro-geek #manjaro			#
-# Topic discussion 						#
-#			http://polr.me/Pacli1			#
-#			http://polr.me/Pacli2			#
-#################################################################
+############################################################################################################
+# Design based on IceFox script                                                                            #
+# Modified, adapted and improved by pekman and excalibur1234                                               #
+# Some modifications made by Holmes Linux                                                                  # 
+# translation by spylinux					                                           #
+# Contact and suggestions: pekman@openmailbox.org (version for Manjaro JWM Edition holmes_holmes@live.com) #
+# Freenode: #manjaropek #manjaro-geek #manjaro			                                           #
+# Topic discussion 						                                           #
+#			http://polr.me/Pacli1			                                           #
+#			http://polr.me/Pacli2			                                           #
+############################################################################################################
 
 # set colors
 RED='\e[41m'
@@ -38,7 +39,7 @@ NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                        $NC Pacli Control Center Packager $NC "
+    echo -e "                     $NC Pacli Control Center Shell Packager $NC "
     echo ""
     echo -e "                        $NC ::WARNING! USE WITH CAUTION:: $NC"
     echo -e " ┌────────────────────────────────────────────────────────────────────────────┐"
