@@ -23,7 +23,7 @@
 # Modified, adapted and improved by pekman and excalibur1234                            #
 # Some modifications based on the pacli and mhwd-tui (thx @Chrysostomus) made by Holmes #                     
 # translation by spylinux					                        #
-# Contact and suggestions: pekman@openmailbox.org (jwmconf holmes_holmes@live.com)      #
+# Contact and suggestions: pekman@openmailbox.org (JWMconf holmes_holmes@live.com)      #
 # Freenode: #manjaropek #manjaro-geek #manjaro			                        #
 # Topic discussion 						                        #
 #			http://polr.me/Pacli1			                        #
@@ -46,7 +46,7 @@ JWM is included in small Linux distributions such as Puppy Linux and Damn Small 
 - libRSVG and Cairo for SVG backgrounds and icons;
 - libxft for antialiased and true type fonts;
 - libfribidi for right-to-left language support.
-JWM attempts to conform to the ICCCM and supports both MWM hints and Extended Window Manager Hints (EWMH).See the configuration documentation for comprehensive documentation on configuring JWM. JWM also comes with a manual page: http://joewing.net/projects/jwm/config.shtml. 
+JWM attempts to conform to the ICCCM and supports both MWM hints and Extended Window Manager Hints (EWMH).See the configuration documentation for comprehensive documentation on configuring JWM. JWM also comes with a manual page: <http://joewing.net/projects/jwm/config.shtml>. 
 To exit this information page, press "q".
 	EOF
 }
