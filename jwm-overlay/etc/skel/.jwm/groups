@@ -21,5 +21,10 @@
       <Name>rofi</Name>
       <Option>centered</Option>
     </Group>
+
+    <Group>
+      <Name>sunflower</Name>
+      <Option>centered</Option>
+    </Group>
     
 </JWM>
