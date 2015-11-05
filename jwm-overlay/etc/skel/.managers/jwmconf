@@ -68,7 +68,7 @@ NC='\e[0m'
     echo -e " │  $NC  5  $NC  Edit Start JWM                     $NC  6  $NC  Edit Theme JWM        │"
     echo -e " │  $NC  7  $NC  Edit Keys JWM                      $NC  8  $NC  Edit Groups JWM       │"
     echo -e " │  $NC  9  $NC  Edit Preferences JWM               $NC 10  $NC  Edit JWMrc            │"
-    echo -e " │  $NC 11  $NC  General Commands Manual            $NC 12  $NC  Informations          │"
+    echo -e " │  $NC 11  $NC  General Commands Manual            $NC 12  $NC  Information           │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
