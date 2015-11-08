@@ -1,16 +1,15 @@
 <JWM>
 
     <!-- Startup for program. -->
-    <StartupCommand>nitrogen --restore</StartupCommand>
-    <StartupCommand>pamac-tray</StartupCommand>    
-    <StartupCommand>volumeicon</StartupCommand>
-    <StartupCommand>nm-applet</StartupCommand>
-    <StartupCommand>conky</StartupCommand>
+    <StartupCommand>sleep 1s && nitrogen --restore</StartupCommand>
+    <StartupCommand>sleep 2s && pamac-tray</StartupCommand>    
+    <StartupCommand>sleep 3s && volumeicon</StartupCommand>
+    <StartupCommand>sleep 4s && nm-applet</StartupCommand>
+    <StartupCommand>sleep 6s && conky</StartupCommand>
     <StartupCommand>compton -c --shadow-exclude 'g:e:wbar'</StartupCommand>
-    <StartupCommand>wbar</StartupCommand>
-    <StartupCommand>xautolock -time 20 -locker 'i3lock -i $HOME/.i3lock/pretending_about_the_future.png'</StartupCommand>
-    <StartupCommand>notify-send "Welcome to Manjaro JWM Edition"</StartupCommand>
-    <StartupCommand>/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</StartupCommand>
+    <StartupCommand>sleep 8s && wbar</StartupCommand>
+    <StartupCommand>sleep 10s && xautolock -time 20 -locker 'i3lock -i $HOME/.i3lock/pretending_about_the_future.png'</StartupCommand>
+    <StartupCommand>sleep 12s && /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</StartupCommand>
     <StartupCommand>xrdb merge .Xresources</StartupCommand>
 
 </JWM>

@@ -63,21 +63,22 @@ NC='\e[0m'
     echo ""
     echo -e "                      $NC ::WARNING! USE WITH CAUTION:: $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC  1  $NC  Refresh Configuration JWM          $NC  2  $NC  Check Error JWM       │"
-    echo -e " │  $NC  3  $NC  Edit Menu JWM                      $NC  4  $NC  Edit Panel JWM        │"
-    echo -e " │  $NC  5  $NC  Edit Start JWM                     $NC  6  $NC  Edit Theme JWM        │"
-    echo -e " │  $NC  7  $NC  Edit Keys JWM                      $NC  8  $NC  Edit Groups JWM       │"
-    echo -e " │  $NC  9  $NC  Edit Preferences JWM               $NC 10  $NC  Edit JWMrc            │"
-    echo -e " │  $NC 11  $NC  General Commands Manual            $NC 12  $NC  Information           │"
+    echo -e " │  $NC  1  $NC  Refresh Configuration JWM          $NC  2  $NC  Refresh Menu JWM      │"
+    echo -e " │  $NC  3  $NC  Check Error JWM                    $NC  4  $NC  Edit Menu JWM         │"
+    echo -e " │  $NC  5  $NC  Edit Panel JWM                     $NC  6  $NC  Edit Start JWM        │"
+    echo -e " │  $NC  7  $NC  Edit Theme JWM                     $NC  8  $NC  Edit Keys JWM         │"
+    echo -e " │  $NC  9  $NC  Edit Groups JWM                    $NC 10  $NC  Edit Preferences      │"
+    echo -e " │  $NC 11  $NC  Edit jwmrc                         $NC 12  $NC  Commands Manual       │"
+    echo -e " │  $NC 13  $NC  Information                                                     │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 13  $NC  Edit Wbar                          $NC 14  $NC  Edit Conky            │"
-    echo -e " │  $NC 15  $NC  Edit Dunst                         $NC 16  $NC  Edit Top              │"
-    echo -e " │  $NC 17  $NC  Edit Rofi                          $NC 18  $NC  Edit GMRun            │"
+    echo -e " │  $NC 14  $NC  Edit Wbar                          $NC 15  $NC  Edit Conky            │"
+    echo -e " │  $NC 16  $NC  Edit Dunst                         $NC 17  $NC  Edit Top              │"
+    echo -e " │  $NC 18  $NC  Edit Rofi                          $NC 19  $NC  Edit GMRun            │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "            $NC Select a number and press [Enter]$NC $NC - 0 Exit JWMman$NC"
+    echo -e "            $NC Select a number and press [Enter]$NC $NC - 0 Exit JWMconf$NC"
     echo ""
     read choix
     case $choix in
@@ -85,126 +86,133 @@ NC='\e[0m'
             echo
             jwm -restart
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         2)
             echo
-            jwm -p
+            jwm -reload
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         3)
             echo
-            nano ~/.jwm/menu
+            jwm -p
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         4)
             echo
-            nano ~/.jwm/tray
+            nano ~/.jwm/menu
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         5)
+            echo
+            nano ~/.jwm/tray
             echo ""
-            nano ~/.jwm/start
-            echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         6)
             echo ""
+            nano ~/.jwm/start
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
+            read
+            ;;
+        7)
+            echo ""
             nano ~/.jwm/theme
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read 
 	    ;;
-        7)
+        8)
             echo ""
             nano ~/.jwm/keys
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
-            read
-            ;;
-        8)
-            echo ""
-            nano ~/.jwm/groups
-            echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         9)
             echo ""
-            nano ~/.jwm/preferences
+            nano ~/.jwm/groups
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         10)
             echo ""
-            nano ~/.jwmrc
+            nano ~/.jwm/preferences
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-
         11)
             echo ""
-            man jwm
+            nano ~/.jwmrc
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 
         12)
+            echo ""
+            man jwm
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
+            read
+            ;;
+
+        13)
             echo
             help_text
             echo
             ;;
-        13)
+        14)
             echo ""
             nano ~/.wbar
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
-            read
-            ;;
-        14)
-            echo ""
-            nano ~/.conkyrc
-            echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         15)
             echo ""
-            nano ~/.config/dunst/dunstrc
+            nano ~/.conkyrc
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         16)
             echo ""
-            nano ~/.toprc
+            nano ~/.config/dunst/dunstrc
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         17)
             echo ""
-            nano ~/.Xresources
+            nano ~/.toprc
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         18)
             echo ""
+            nano ~/.Xresources
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
+            read
+            ;;
+        19)
+            echo ""
             nano ~/.gmrunrc
             echo ""
-            echo -e "$NC Operation complete. To return to JWMman press [Enter] $NC"
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
          0)

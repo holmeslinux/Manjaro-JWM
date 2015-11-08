@@ -19,7 +19,7 @@
 	<Program label="CLI">sudo xterm /usr/bin/setup</Program>
      </Menu>
         <Separator/>
-     <Menu label="Accesories">
+    <Menu label="Accesories">
 	<Program label="Medit Editor">medit</Program>
 	<Program label="Leafpad Editor">leafpad</Program>
     </Menu>

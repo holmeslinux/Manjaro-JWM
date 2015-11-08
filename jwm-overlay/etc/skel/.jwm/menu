@@ -14,7 +14,7 @@
         <Program label="Select Area">notify-send 'selection will be saved in ~/Pictures' & scrot -se 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
      </Menu>
         <Separator/>
-    <Menu label="Accesories">
+     <Menu label="Accesories">
 	<Program label="Medit Editor">medit</Program>
 	<Program label="Leafpad Editor">leafpad</Program>
     </Menu>

@@ -10,6 +10,6 @@
     <StartupCommand>sleep 8s && wbar</StartupCommand>
     <StartupCommand>sleep 10s && xautolock -time 20 -locker 'i3lock -i $HOME/.i3lock/pretending_about_the_future.png'</StartupCommand>
     <StartupCommand>sleep 12s && /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</StartupCommand>
-    <StartupCommand>xrdb merge .Xresources</StartupCommand>
+    <StartupCommand>sleep 13s && xrdb merge .Xresources</StartupCommand>
 
 </JWM>
