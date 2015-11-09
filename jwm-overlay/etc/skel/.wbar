@@ -37,3 +37,7 @@ t: LXMusic
 i: /usr/share/icons/AwOkenWhite/clear/128x128/mimetypes/video-x-generic2.png
 c: smplayer
 t: SMPlayer
+
+i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/gnome-log-out.png
+c: systemctl poweroff
+t: Shutdown
