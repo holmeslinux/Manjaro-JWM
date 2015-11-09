@@ -36,7 +36,7 @@
     </Menu>
     <Menu label="Settings">
 	<Program label="Nitrogen Wall">nitrogen</Program>
-        <Program label="MSM">gksu manjaro-settings-managers-gui</Program>
+        <Program label="Manjaro Settings">gksu manjaro-settings-managers-gui</Program>
         <Program label="Monitor Manager">arandr</Program>
 	<Program label="Configure keyboard">lxinput</Program>
         <Program label="Customize Look">lxappearance</Program>

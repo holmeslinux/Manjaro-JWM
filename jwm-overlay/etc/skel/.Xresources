@@ -1,4 +1,4 @@
-! XTerm
+! XTerm Settings
 *background: #b1222b
 *foreground: #161616
 XTerm*reverseVideo: on
@@ -6,7 +6,7 @@ xterm*faceName: Monospace:size=10:antialias=true
 xterm*font: 7x13
 xterm*geometry: 80x26
 
-! Rofi
+! Rofi Settings
 rofi.opacity: 90
 rofi.width: 50
 rofi.lines: 5
