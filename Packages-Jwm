@@ -49,7 +49,7 @@ i3lock
 xautolock
 lxappearance
 rofi
-prelink
+#prelink
 preload
 
 ## Desktop Configuration

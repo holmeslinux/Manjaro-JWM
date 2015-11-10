@@ -19,7 +19,7 @@
 	<Program label="CLI">sudo xterm /usr/bin/setup</Program>
      </Menu>
         <Separator/>
-    <Menu label="Accesories">
+     <Menu label="Accesories">
 	<Program label="Medit Editor">medit</Program>
 	<Program label="Leafpad Editor">leafpad</Program>
     </Menu>
@@ -41,7 +41,7 @@
     </Menu>
     <Menu label="Settings">
 	<Program label="Nitrogen Wall">nitrogen</Program>
-        <Program label="MSM">gksu manjaro-settings-managers-gui</Program>
+        <Program label="Manjaro Settings">gksu manjaro-settings-managers-gui</Program>
         <Program label="Monitor Manager">arandr</Program>
 	<Program label="Configure keyboard">lxinput</Program>
         <Program label="Customize Look">lxappearance</Program>
