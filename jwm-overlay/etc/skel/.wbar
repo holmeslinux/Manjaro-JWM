@@ -1,5 +1,5 @@
 i: /usr/share/pixmaps/wbar/dock1.png
-c: wbar --above-desk --pos bottom --offset 5 --isize 32 --idist 5 --nanim 5 --filter 1 --fc 0xffb1222b --zoomf 2.0
+c: wbar --pos bottom --offset 5 --isize 32 --idist 5 --nanim 5 --filter 1 --fc 0xffb1222b
 t: /usr/share/fonts/TTF/Roboto-Bold/9
 
 i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/alunn-pacman-24.png
@@ -38,6 +38,6 @@ i: /usr/share/icons/AwOkenWhite/clear/128x128/mimetypes/video-x-generic2.png
 c: smplayer
 t: SMPlayer
 
-i: /usr/share/icons/AwOkenWhite/clear/128x128/apps/gnome-log-out.png
-c: systemctl poweroff
-t: Shutdown
+i: /usr/share/icons/AwOkenWhite/clear/128x128/actions/lxde-logout.png
+c: systemctl reboot
+t: Reboot
