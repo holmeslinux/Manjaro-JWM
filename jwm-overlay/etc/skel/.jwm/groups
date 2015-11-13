@@ -10,6 +10,7 @@
     <Group>
       <Name>xterm</Name>
       <Option>centered</Option>
+      <Option>nolist</Option>
     </Group>
 
     <Group>
