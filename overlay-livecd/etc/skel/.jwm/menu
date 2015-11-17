@@ -32,7 +32,7 @@
     </Menu>
     <Menu label="Network">
 	<Program label="Pale Moon Browser">palemoon</Program>
-        <Program label="XChat IRC">xchat</Program>
+        <Program label="Hexchat IRC">hexchat</Program>
     </Menu>
     <Menu label="Office">
 	<Program label="AbiWord Write">abiword</Program>
@@ -41,7 +41,7 @@
     </Menu>
     <Menu label="Settings">
 	<Program label="Nitrogen Wall">nitrogen</Program>
-        <Program label="Manjaro Settings">gksu manjaro-settings-managers-gui</Program>
+        <Program label="Manjaro Settings">gksu manjaro-settings-manager-gui</Program>
         <Program label="Monitor Manager">arandr</Program>
 	<Program label="Configure keyboard">lxinput</Program>
         <Program label="Customize Look">lxappearance</Program>

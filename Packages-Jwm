@@ -8,10 +8,11 @@ volumeicon
 alsa-plugins
 
 ## File Management
-sunflower
+pcmanfn
 gvfs		 
 gvfs-afc	 
 gvfs-gphoto2
+gvfs-smb
 
 ## Package Management
 pamac
@@ -51,6 +52,7 @@ lxappearance
 rofi
 #prelink
 preload
+oblogout
 
 ## Desktop Configuration
 lxinput
@@ -70,7 +72,7 @@ leafpad
 abiword
 gnumeric
 palemoon-bin
-xchat
+hexchat
 lxmusic
 smplayer
 viewnior
