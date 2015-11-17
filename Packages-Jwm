@@ -8,11 +8,13 @@ volumeicon
 alsa-plugins
 
 ## File Management
-pcmanfn
+pcmanfm
 gvfs		 
 gvfs-afc	 
 gvfs-gphoto2
 gvfs-smb
+xarchiver
+p7zip
 
 ## Package Management
 pamac
