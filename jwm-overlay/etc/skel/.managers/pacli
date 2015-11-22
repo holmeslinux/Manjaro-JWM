@@ -380,7 +380,7 @@ NC='\e[0m'
             read
             ;;
         *)
-            echo -e "$RED Wrong option $NC"
+            echo -e "$NC ::WRONG OPTION:: $NC"
             echo "Wait and try again later..."
             echo
             sleep 2
