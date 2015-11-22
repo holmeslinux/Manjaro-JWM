@@ -21,7 +21,7 @@
 #########################################################################################
 # Design based on IceFox script                                                         #
 # Modified, adapted and improved by pekman and excalibur1234                            #
-# Some modifications based on the pacli and mhwd-tui (thx @Chrysostomus) made by Holmes #                     			                        #
+# Some modifications based on the pacli and mhwd-tui (thx @Chrysostomus) made by Holmes #                     			                        
 # Contact and suggestions: pekman@openmailbox.org (JWMconf holmes_holmes@live.com)      #
 # Freenode: #manjaropek #manjaro-geek #manjaro			                        #
 # Topic discussion 						                        #
@@ -68,13 +68,13 @@ NC='\e[0m'
     echo -e " │  $NC  7  $NC  Edit Theme JWM                     $NC  8  $NC  Edit Keys JWM         │"
     echo -e " │  $NC  9  $NC  Edit Groups JWM                    $NC 10  $NC  Edit Preferences JWM  │"
     echo -e " │  $NC 11  $NC  Edit jwmrc                         $NC 12  $NC  Commands Manual       │"
-    echo -e " │  $NC 13  $NC  Information                                                     │"
-    echo " └─────────────────────────────────────────────────────────────────────────┘"
+     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 14  $NC  Edit Wbar                          $NC 15  $NC  Edit Conky            │"
-    echo -e " │  $NC 16  $NC  Edit Dunst                         $NC 17  $NC  Edit Top              │"
-    echo -e " │  $NC 18  $NC  Edit Rofi                          $NC 19  $NC  Edit Gmrun            │"
+    echo -e " │  $NC 13  $NC  Edit Wbar                          $NC 14  $NC  Edit Conky            │"
+    echo -e " │  $NC 15  $NC  Edit Dunst                         $NC 16  $NC  Edit Top              │"
+    echo -e " │  $NC 17  $NC  Edit Rofi                          $NC 18  $NC  Edit Gmrun            │"
+    echo -e " │  $NC 19  $NC  Information                                                     │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "            $NC Select a number and press [Enter]$NC $NC - 0 Exit JWMconf$NC"
@@ -168,51 +168,51 @@ NC='\e[0m'
             ;;
 
         13)
-            echo
-            help_text
-            echo
-            ;;
-        14)
             echo ""
             nano ~/.wbar
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        15)
+        14)
             echo ""
             nano ~/.conkyrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        16)
+        15)
             echo ""
             nano ~/.config/dunst/dunstrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        17)
+        16)
             echo ""
             nano ~/.toprc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        18)
+        17)
             echo ""
             nano ~/.Xresources
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        19)
+        18)
             echo ""
             nano ~/.gmrunrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
+            ;;
+        19)
+            echo
+            help_text
+            echo
             ;;
          0)
             clear && exit
