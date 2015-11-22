@@ -55,6 +55,8 @@ rofi
 #prelink
 preload
 oblogout
+pmenu
+downgrade
 
 ## Desktop Configuration
 lxinput

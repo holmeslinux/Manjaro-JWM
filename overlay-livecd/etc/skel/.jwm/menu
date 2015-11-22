@@ -6,12 +6,13 @@
 	<Program label="Terminal">sakura</Program>
         <Program label="Pacli">xterm ~/.managers/pacli</Program>        
         <Program label="JWMconf">xterm ~/.managers/jwmconf</Program>
-        <Program label="Explore Files">sunflower</Program>
+        <Program label="Explore Files">pcmanfm</Program>
 	<Program label="Browser">palemoon</Program>
-     <Menu label="Screenshot">	
+          <Menu label="Screenshot">	
         <Program label="Full Screen">scrot -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
         <Program label="Active Window">scrot -ue 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
-        <Program label="Select Area">notify-send 'selection will be saved in ~/Pictures' & scrot -se 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+        <Program label="Active Window Delay">notify-send 'Selection will be saved in ~/Pictures in 5s' & scrot -ud 5 -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+        <Program label="Select Area">notify-send 'Selection will be saved in ~/Pictures' & scrot -se 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
      </Menu>
         <Separator/>
      <Menu label="Install Manjaro">
@@ -32,7 +33,7 @@
     </Menu>
     <Menu label="Network">
 	<Program label="Pale Moon Browser">palemoon</Program>
-        <Program label="Hexchat IRC">hexchat</Program>
+        <Program label="HexChat IRC">hexchat</Program>
     </Menu>
     <Menu label="Office">
 	<Program label="AbiWord Write">abiword</Program>
@@ -51,7 +52,7 @@
     <Menu label="System">
         <Program label="Pacli Packager">xterm ~/.managers/pacli</Program>
 	<Program label="JWMconf Configure">xterm ~/.managers/jwmconf</Program>
-        <Program label="Root Sunflower">gksu sunflower</Program>
+        <Program label="Root PCManFM">gksu pcmanfm</Program>
         <Program label="Htop Process">xterm -e 'htop'</Program>
         <Program label="Top Analysis">xterm top</Program>
 	<Program label="Hard Info">hardinfo</Program>    
@@ -67,12 +68,11 @@
     </Menu>
     </Menu>
        <Separator/>
-    <Menu label="Session">
+        <Menu label="Session">
+        <Program label="Lock">i3lock -i $HOME/.i3lock/pretending_about_the_future.png</Program>
         <Exit label="Logout" confirm="false"/>
 	<Program label="Restart">systemctl reboot</Program>
-        <Program label="Suspend">systemctl suspend</Program>
         <Program label="Shutdown">systemctl poweroff</Program>
-        <Program label="Lock">i3lock -i $HOME/.i3lock/pretending_about_the_future.png</Program>
     </Menu>
     </RootMenu>
 
