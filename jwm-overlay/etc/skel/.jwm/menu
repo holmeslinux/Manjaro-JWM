@@ -20,7 +20,7 @@
 	<Program label="Leafpad Editor">leafpad</Program>
     </Menu>
     <Menu label="Graphics">
-	<Program label="Viewnior Image">viewnior</Program>
+	<Program label="Image Viewer">feh</Program>
     </Menu>
     <Menu label="Multimedia">
 	<Program label="SMPlayer Video">smplayer</Program>
