@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#  updated on 24.11.2015 - 22:57:24
+
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation; either version 2 of the License, or
@@ -30,19 +32,22 @@
 
 function help_text() {
 	less 	<<-EOF
-Welcome to Pacli Control Center Shell Packager's Information Page.
-Pacli is an interactive package manager for your command line terminal. It provides an easy user interface and uses Pacman and Yaourt as back ends. Additionally, it uses some Manjaro exclusive commands. Pacli offers you the most common and useful features for managing your packages. Options, which can break your system, are marked in red. 
-On the following Help Page all options Pacli offers are described in detail:
+Welcome to Pacli Control Center Shell Packager's information page.
+Pacli is an interactive package manager for your command line terminal. It provides an easy user interface and uses Pacman and Yaourt as back ends. Additionally, it uses some Manjaro exclusive commands. Pacli offers you the most common and useful features for managing your packages. Options, which can break your system, are are the numbers: 16, 17, 18 and 19. 
+On the following Help Page all options Pacli offers are described in detail.
 
 HOME SCREEN
 Pacli Control Center Shell Packager's home screen is split into two parts: 
-The upper part focuses on gerneral options and options exclusive to packages from Manjaro's repositories. Options, which can break your system, are marked in red. 
+The upper part focuses on gerneral options and options exclusive to packages from Manjaro's repositories. Options, which can break your system, are the numbers: 16, 17, 18 and 19. 
 The lower part offers Arch User Repository (AUR) management options.
 Choose an option by entering its number and pressing [Enter].
 
 0 - EXIT PACLI
 "clear && exit"
 This will exit Pacli and clear your terminal.
+
+00 - INFORMATION PACLI
+Display this information page.
 
 1 - UPDATE SYSTEM
 "sudo pacman -Syu"
@@ -158,9 +163,6 @@ Attention: Experienced users can install packages from the AUR without the need 
 "pacman -Qem"
 This command lists all installed packages, which are from the AUR or which were manually installed.
 
-24 - INFORMATION
-Display this help page.
-
 To exit this Help Page, press "q".
 	EOF
 }
@@ -196,10 +198,9 @@ NC='\e[0m'
     echo " ┌────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC 20 $NC  Update AUR                  $NC 21 $NC  Search + Install from AUR │"
     echo -e " │  $NC 22 $NC  Install from AUR            $NC 23 $NC  List Installed from AUR   │"
-    echo -e " │  $NC 24 $NC  Information						      │"
     echo " └────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "          $NC Select a number and press [Enter]$NC $NC - 0 Exit Pacli$NC"
+    echo -e "     $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
     echo ""
     read choix
     case $choix in
@@ -369,15 +370,15 @@ NC='\e[0m'
             echo -e "$NC All locally installed packages listed. To return to Pacli press [Enter] $NC"
             read     
             ;;  
-        24)
-            echo
-            help_text
-            echo
-            ;;
-        0)
+         0)
             echo
             clear && exit
             read
+            ;;        
+        00)
+            echo
+            help_text
+            echo
             ;;
         *)
             echo -e "$NC ::WRONG OPTION:: $NC"

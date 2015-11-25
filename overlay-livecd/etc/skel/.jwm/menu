@@ -25,7 +25,7 @@
 	<Program label="Leafpad Editor">leafpad</Program>
     </Menu>
     <Menu label="Graphics">
-	<Program label="Viewnior Image">viewnior</Program>
+	<Program label="Image Editor">palemoon http://www.online-image-editor.com/</Program>
     </Menu>
     <Menu label="Multimedia">
 	<Program label="SMPlayer Video">smplayer</Program>

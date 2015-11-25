@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#  updated on 01.11.2015 16:11:24
+#  updated on 24.11.2015 - 22:57:24
 
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -33,19 +33,85 @@
 
 function help_text() {
 	less 	<<-EOF
-JWM (Joe's Window Manager) is a light-weight window manager for the X11 Window System. JWM is written in C and uses only Xlib at a minimum. Because of its small footprint, JWM makes a good window manager for older computers and less powerful systems, such as the Raspberry Pi, though it is perfectly capable of running on modern systems. 
-JWM is included in small Linux distributions such as Puppy Linux and Damn Small Linux, and it is available as a separate package in many other distributions.Although JWM does not require them, it can use the following libraries if available:
-- libXext for the shape extension;
-- libXext for the render extension;
-- libXmu for drawing rounded windows (shape extension also needed);
-- libXinerama for Xinerama (multi-monitor) support;
-- libXpm for XPM backgrounds and icons;
-- libjpeg for JPEG backgrounds and icons;
-- libpng for PNG backgrounds and icons;
-- libRSVG and Cairo for SVG backgrounds and icons;
-- libxft for antialiased and true type fonts;
-- libfribidi for right-to-left language support.
-JWM attempts to conform to the ICCCM and supports both MWM hints and Extended Window Manager Hints (EWMH).See the configuration documentation for comprehensive documentation on configuring JWM. JWM also comes with a manual page: <http://joewing.net/projects/jwm/config.shtml>. 
+Welcome to JWMconf Control Center Shell Configure's information page.
+JWMconf is an interactive configure JWM for your command line terminal. It provides an easy user interface to edit configuration files of the JWM. You can also edit other files.
+
+HOME SCREEN
+JWMconf Control Center Shell Configure's home screen is split into two parts: 
+The upper part focuses on JWM files. Also has some important options for maintenance of JWM.
+The lower part provides options to edit other settings files: wbar, conky, dunst, top, rofi and gmrun.
+Choose an option by entering its number and pressing [Enter].
+
+0 - EXIT JWMCONF
+"clear && exit"
+This will exit JWMconf and clear your terminal.
+
+00 - INFORMATION JWMCONF
+Display this information page.
+
+1- REFRESH CONFIGURATION JWM
+"jwm -restart"
+Restart JWM by sending _JWM_RESTART to the root window.
+
+2- REFRESH MENU JWM
+"jwm -reload"
+Reload menu by sending _JWM_RELOAD to the root window.
+
+3- CHECK ERROR JWM
+"jwm -p"
+To check the JWM configuration and return syntax errors (including associated line numbers).
+
+4- EDIT MENU JWM
+This option is to edit the menu settings. To edit the menu is used nano editor.
+
+5- EDIT PANEL JWM
+This option is to edit the panel settings. To edit the panel is used nano editor.
+
+6- EDIT START JWM
+This option is to edit the start settings. To edit the start is used nano editor.
+
+7- EDIT THEME JWM
+This option is to edit the theme settings. To edit the theme is used nano editor.
+
+8- EDIT KEYS JWM
+This option is to edit the keys settings. To edit the keys is used nano editor.
+
+9- EDIT GROUPS JWM
+This option is to edit the groups settings. To edit the groups is used nano editor.
+
+10- EDIT PREFERENCES JWM
+This option is to edit the preferences settings. To edit the preferences is used nano editor.
+
+11- EDIT JWMRC
+This option is to edit the jwmrc settings. To edit the jwmrc is used nano editor.
+
+12- COMMANDS MANUAL
+General commands manual of the Joe's Window Manager (JWM). JWM is a window manager for X11 Window Sustem.
+
+13- EDIT WBAR
+Wbar is a simple and highly customizable quick-launch dock.
+This option is to edit the wbar settings (in ~/.wbar). To edit the wbar is used nano editor.
+
+14- EDIT CONKY
+Conky a light-weight system monitor.
+This option is to edit the conky settings ((in ~/.conkyrc). To edit the conky is used nano editor.
+
+15- EDIT DUNST
+Dunst is a lightweight replacement for the notification-daemons provided by most desktop environments.
+This option is to edit the dunst settings (in ~/.config/dunst/dunstrc). To edit the dunst is used nano editor.
+
+16- EDIT TOP
+Top command displays processor activity of your Linux box and also displays tasks managed by kernel in real-time.
+This option is to edit the top settings (in ~/.toprc). To edit the top is used nano editor.
+
+17- EDIT ROFI
+A window switcher, run dialog and dmenu replacement.
+This option is to edit the rofi settings (in ~/.Xresources). To edit the rofi is used nano editor.
+
+18- EDIT GMRUN
+Gmrun (Gnome Completion-Run) is an lightweight application launcher similar to GNOME Run, Application Finder, KRunner, etc. 
+This option is to edit the gmrun settings (in ~/.gmrunrc). To edit the gmrun is used nano editor.
+ 
 To exit this information page, press "q".
 	EOF
 }
@@ -74,10 +140,9 @@ NC='\e[0m'
     echo -e " │  $NC 13  $NC  Edit Wbar                          $NC 14  $NC  Edit Conky            │"
     echo -e " │  $NC 15  $NC  Edit Dunst                         $NC 16  $NC  Edit Top              │"
     echo -e " │  $NC 17  $NC  Edit Rofi                          $NC 18  $NC  Edit Gmrun            │"
-    echo -e " │  $NC 19  $NC  Information                                                     │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "            $NC Select a number and press [Enter]$NC $NC - 0 Exit JWMconf$NC"
+    echo -e "        $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
     echo ""
     read choix
     case $choix in
@@ -209,14 +274,14 @@ NC='\e[0m'
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        19)
-            echo
-            help_text
-            echo
-            ;;
          0)
             clear && exit
             read
+            ;;
+        00)
+            echo
+            help_text
+            echo
             ;;
         *)
             echo -e "$NC ::WRONG OPTION:: $NC"
