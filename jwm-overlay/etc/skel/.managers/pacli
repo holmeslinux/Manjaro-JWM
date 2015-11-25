@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#  updated on 24.11.2015 - 22:57:24
-
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation; either version 2 of the License, or
@@ -33,14 +31,16 @@
 function help_text() {
 	less 	<<-EOF
 Welcome to Pacli Control Center Shell Packager's information page.
-Pacli is an interactive package manager for your command line terminal. It provides an easy user interface and uses Pacman and Yaourt as back ends. Additionally, it uses some Manjaro exclusive commands. Pacli offers you the most common and useful features for managing your packages. Options, which can break your system, are are the numbers: 16, 17, 18 and 19. 
-On the following Help Page all options Pacli offers are described in detail.
+Pacli is an interactive package manager for your command line terminal. It provides an easy user interface and uses Pacman and Yaourt as back ends. Additionally, it uses some Manjaro exclusive commands. Pacli offers you the most common and useful features for managing your packages.
 
 HOME SCREEN
 Pacli Control Center Shell Packager's home screen is split into two parts: 
-The upper part focuses on gerneral options and options exclusive to packages from Manjaro's repositories. Options, which can break your system, are the numbers: 16, 17, 18 and 19. 
+The upper part focuses on gerneral options and options exclusive to packages from Manjaro's repositories. 
 The lower part offers Arch User Repository (AUR) management options.
 Choose an option by entering its number and pressing [Enter].
+
+ATTENTION
+*The numbers 16, 17, 18 and 19 can break your system. CAUTION...
 
 0 - EXIT PACLI
 "clear && exit"
@@ -190,9 +190,9 @@ NC='\e[0m'
     echo -e " │  $NC  9 $NC  Package Information         $NC 10 $NC  Installed Package Info    │"
     echo -e " │  $NC 11 $NC  Dependency Tree             $NC 12 $NC  Reverse Dependency Tree   │"
     echo -e " │  $NC 13 $NC  List Installed Packages     $NC 14 $NC  Fix Errors                │"
-    echo -e " │  $NC 15 $NC  Downgrade Packages          $NC 16 $NC  Empty Package Cache       │"
-    echo -e " │  $NC 17 $NC  Force Update System         $NC 18 $NC  Force Install Package     │"
-    echo -e " │  $NC 19 $NC  Force Remove Package                                        │"
+    echo -e " │  $NC 15 $NC  Downgrade Packages          $NC 16 $NC  *Empty Package Cache      │"
+    echo -e " │  $NC 17 $NC  *Force Update System        $NC 18 $NC  *Force Install Package    │"
+    echo -e " │  $NC 19 $NC  *Force Remove Package                                       │"
     echo " └────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo " ┌────────────────────────────────────────────────────────────────────┐"
