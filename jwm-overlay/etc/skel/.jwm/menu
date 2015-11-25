@@ -48,8 +48,8 @@
         <Program label="Pacli Packager">xterm ~/.managers/pacli</Program>
 	<Program label="JWMconf Configure">xterm ~/.managers/jwmconf</Program>
         <Program label="Root PCManFM">gksu pcmanfm</Program>
-        <Program label="Htop Process">xterm -e 'htop'</Program>
-        <Program label="Top Analysis">xterm top</Program>
+        <Program label="Htop Process">sakura -e htop</Program>
+        <Program label="Top Analysis">sakura -e top</Program>
 	<Program label="Hard Info">hardinfo</Program>    
         <Program label="Root Sakura">gksu sakura</Program>
         <Program label="Rofi Run">rofi -show run</Program>

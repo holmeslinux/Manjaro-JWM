@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#  updated on 24.11.2015 - 22:57:24
+#  updated on 01.11.2015 16:11:24
 
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -85,30 +85,34 @@ This option is to edit the preferences settings. To edit the preferences is used
 11- EDIT JWMRC
 This option is to edit the jwmrc settings. To edit the jwmrc is used nano editor.
 
-12- COMMANDS MANUAL
+12- COMMANDS MANUAL JWM
 General commands manual of the Joe's Window Manager (JWM). JWM is a window manager for X11 Window Sustem.
 
-13- EDIT WBAR
+13- VERSION JWM
+"jwm -v"
+Display version information JWM.
+
+14- EDIT WBAR
 Wbar is a simple and highly customizable quick-launch dock.
 This option is to edit the wbar settings (in ~/.wbar). To edit the wbar is used nano editor.
 
-14- EDIT CONKY
+15- EDIT CONKY
 Conky a light-weight system monitor.
 This option is to edit the conky settings ((in ~/.conkyrc). To edit the conky is used nano editor.
 
-15- EDIT DUNST
+16- EDIT DUNST
 Dunst is a lightweight replacement for the notification-daemons provided by most desktop environments.
 This option is to edit the dunst settings (in ~/.config/dunst/dunstrc). To edit the dunst is used nano editor.
 
-16- EDIT TOP
+17- EDIT TOP
 Top command displays processor activity of your Linux box and also displays tasks managed by kernel in real-time.
 This option is to edit the top settings (in ~/.toprc). To edit the top is used nano editor.
 
-17- EDIT ROFI
+18- EDIT ROFI
 A window switcher, run dialog and dmenu replacement.
 This option is to edit the rofi settings (in ~/.Xresources). To edit the rofi is used nano editor.
 
-18- EDIT GMRUN
+19- EDIT GMRUN
 Gmrun (Gnome Completion-Run) is an lightweight application launcher similar to GNOME Run, Application Finder, KRunner, etc. 
 This option is to edit the gmrun settings (in ~/.gmrunrc). To edit the gmrun is used nano editor.
  
@@ -133,13 +137,14 @@ NC='\e[0m'
     echo -e " │  $NC  5  $NC  Edit Panel JWM                     $NC  6  $NC  Edit Start JWM        │"
     echo -e " │  $NC  7  $NC  Edit Theme JWM                     $NC  8  $NC  Edit Keys JWM         │"
     echo -e " │  $NC  9  $NC  Edit Groups JWM                    $NC 10  $NC  Edit Preferences JWM  │"
-    echo -e " │  $NC 11  $NC  Edit jwmrc                         $NC 12  $NC  Commands Manual       │"
-     echo " └─────────────────────────────────────────────────────────────────────────┘"
+    echo -e " │  $NC 11  $NC  Edit jwmrc                         $NC 12  $NC  Commands Manual JWM   │"
+    echo -e " │  $NC 13  $NC  Version JWM                                                     │"
+     echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 13  $NC  Edit Wbar                          $NC 14  $NC  Edit Conky            │"
-    echo -e " │  $NC 15  $NC  Edit Dunst                         $NC 16  $NC  Edit Top              │"
-    echo -e " │  $NC 17  $NC  Edit Rofi                          $NC 18  $NC  Edit Gmrun            │"
+    echo -e " │  $NC 14  $NC  Edit Wbar                          $NC 15  $NC  Edit Conky            │"
+    echo -e " │  $NC 16  $NC  Edit Dunst                         $NC 17  $NC  Edit Top              │"
+    echo -e " │  $NC 18  $NC  Edit Rofi                          $NC 19  $NC  Edit Gmrun            │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "        $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
@@ -231,43 +236,50 @@ NC='\e[0m'
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-
         13)
+            echo
+            jwm -v
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
+            read
+            ;;
+
+        14)
             echo ""
             nano ~/.wbar
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        14)
+        15)
             echo ""
             nano ~/.conkyrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        15)
+        16)
             echo ""
             nano ~/.config/dunst/dunstrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        16)
+        17)
             echo ""
             nano ~/.toprc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        17)
+        18)
             echo ""
             nano ~/.Xresources
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        18)
+        19)
             echo ""
             nano ~/.gmrunrc
             echo ""
