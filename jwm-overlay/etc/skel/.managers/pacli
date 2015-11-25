@@ -40,7 +40,7 @@ The lower part offers Arch User Repository (AUR) management options.
 Choose an option by entering its number and pressing [Enter].
 
 ATTENTION
-*The numbers 16, 17, 18 and 19 can break your system. CAUTION...
+*The numbers 16, 17, 18 and 19 can break your system. USE WITH CAUTION...
 
 0 - EXIT PACLI
 "clear && exit"
