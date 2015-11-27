@@ -1,6 +1,6 @@
 GRUB_DEFAULT=saved
-GRUB_TIMEOUT=1
-GRUB_DISTRIBUTOR="Manjaro JWM Edition"
+GRUB_TIMEOUT=2
+GRUB_DISTRIBUTOR="Manjaro"
 GRUB_CMDLINE_LINUX_DEFAULT="quiet"
 GRUB_CMDLINE_LINUX=""
 
@@ -39,7 +39,7 @@ GRUB_DISABLE_RECOVERY=true
 # Uncomment and set to the desired menu colors.  Used by normal and wallpaper 
 # modes only.  Entries specified as foreground/background.
 GRUB_COLOR_NORMAL="light-gray/black"
-GRUB_COLOR_HIGHLIGHT="red/black"
+GRUB_COLOR_HIGHLIGHT="green/black"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
 GRUB_BACKGROUND="/usr/share/grub/background.png"

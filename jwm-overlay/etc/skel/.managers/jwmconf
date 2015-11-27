@@ -38,9 +38,7 @@ JWMconf is an interactive configure JWM for your command line terminal. It provi
 
 HOME SCREEN
 JWMconf Control Center Shell Configure's home screen is split into two parts: 
-The upper part focuses on JWM files. Also has some important options for maintenance of JWM.
-The lower part provides options to edit other settings files: wbar, conky, dunst, top, rofi and gmrun.
-Choose an option by entering its number and pressing [Enter].
+The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: wbar, conky, dunst, top, rofi and gmrun. Choose an option by entering its number and pressing [Enter].
 
 0 - EXIT JWMCONF
 "clear && exit"
@@ -62,28 +60,28 @@ Reload menu by sending _JWM_RELOAD to the root window.
 To check the JWM configuration and return syntax errors (including associated line numbers).
 
 4- EDIT MENU JWM
-This option is to edit the menu settings. To edit the menu is used nano editor.
+This option is to edit the menu settings (in ~/.jwm/menu). To edit the menu is used nano editor.
 
 5- EDIT PANEL JWM
-This option is to edit the panel settings. To edit the panel is used nano editor.
+This option is to edit the panel settings (in ~/.jwm/panel). To edit the panel is used nano editor.
 
 6- EDIT START JWM
-This option is to edit the start settings. To edit the start is used nano editor.
+This option is to edit the start settings (in ~/.jwm/start). To edit the start is used nano editor.
 
 7- EDIT THEME JWM
-This option is to edit the theme settings. To edit the theme is used nano editor.
+This option is to edit the theme settings (in ~/.jwm/theme). To edit the theme is used nano editor.
 
 8- EDIT KEYS JWM
-This option is to edit the keys settings. To edit the keys is used nano editor.
+This option is to edit the keys settings (in ~/.jwm/keys). To edit the keys is used nano editor.
 
 9- EDIT GROUPS JWM
-This option is to edit the groups settings. To edit the groups is used nano editor.
+This option is to edit the groups settings (in ~/.jwm/groups). To edit the groups is used nano editor.
 
 10- EDIT PREFERENCES JWM
-This option is to edit the preferences settings. To edit the preferences is used nano editor.
+This option is to edit the preferences settings (in ~/.jwm/preferences). To edit the preferences is used nano editor.
 
 11- EDIT JWMRC
-This option is to edit the jwmrc settings. To edit the jwmrc is used nano editor.
+This option is to edit the jwmrc settings (in ~/.jwmrc). To edit the jwmrc is used nano editor.
 
 12- COMMANDS MANUAL JWM
 General commands manual of the Joe's Window Manager (JWM). JWM is a window manager for X11 Window Sustem.
