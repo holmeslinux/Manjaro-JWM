@@ -62,7 +62,7 @@ To check the JWM configuration and return syntax errors (including associated li
 4- EDIT MENU JWM
 This option is to edit the menu settings (in ~/.jwm/menu). To edit the menu is used nano editor.
 
-5- EDIT PANEL JWM
+5- EDIT TRAY JWM
 This option is to edit the tray settings (in ~/.jwm/tray). To edit the panel is used nano editor.
 
 6- EDIT START JWM
