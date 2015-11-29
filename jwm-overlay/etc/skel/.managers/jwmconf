@@ -63,7 +63,7 @@ To check the JWM configuration and return syntax errors (including associated li
 This option is to edit the menu settings (in ~/.jwm/menu). To edit the menu is used nano editor.
 
 5- EDIT PANEL JWM
-This option is to edit the panel settings (in ~/.jwm/panel). To edit the panel is used nano editor.
+This option is to edit the tray settings (in ~/.jwm/tray). To edit the panel is used nano editor.
 
 6- EDIT START JWM
 This option is to edit the start settings (in ~/.jwm/start). To edit the start is used nano editor.
@@ -132,7 +132,7 @@ NC='\e[0m'
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC  1  $NC  Refresh Configuration JWM          $NC  2  $NC  Refresh Menu JWM      │"
     echo -e " │  $NC  3  $NC  Check Error JWM                    $NC  4  $NC  Edit Menu JWM         │"
-    echo -e " │  $NC  5  $NC  Edit Panel JWM                     $NC  6  $NC  Edit Start JWM        │"
+    echo -e " │  $NC  5  $NC  Edit Tray JWM                      $NC  6  $NC  Edit Start JWM        │"
     echo -e " │  $NC  7  $NC  Edit Theme JWM                     $NC  8  $NC  Edit Keys JWM         │"
     echo -e " │  $NC  9  $NC  Edit Groups JWM                    $NC 10  $NC  Edit Preferences JWM  │"
     echo -e " │  $NC 11  $NC  Edit jwmrc                         $NC 12  $NC  Commands Manual JWM   │"
