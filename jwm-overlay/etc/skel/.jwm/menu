@@ -34,6 +34,7 @@
 	<Program label="AbiWord Write">abiword</Program>
         <Program label="Gnumeric Calc">gnumeric</Program>
         <Program label="Epdfview Reader">epdfview</Program>
+        <Program label="PDF Tools">palemoon http://smallpdf.com/</Program>
     </Menu>
     <Menu label="Settings">
 	<Program label="Nitrogen Wall">nitrogen</Program>
