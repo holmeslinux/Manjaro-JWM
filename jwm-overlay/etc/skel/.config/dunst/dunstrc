@@ -38,7 +38,6 @@
     # This option conflicts with "word_wrap".
     # Set to 0 to disable.
     bounce_freq = 5
-
     
     # Show age of message if message is older than show_age_threshold
     # seconds.
@@ -51,7 +50,6 @@
     
     # Ignore newlines '\n' in notifications.
     ignore_newline = no
-    
     
     # The geometry of the window:
     #   [{width}]x{height}[+/-{x}+/-{y}]
@@ -140,13 +138,12 @@
     
     # Browser for opening urls in context menu.
     browser = palemoon
-    
+
 [frame]
     width = 1
     color = "#31363d"
 
 [shortcuts]
-
     # Shortcuts are specified as [modifier+][modifier+]...key
     # Available modifiers are "ctrl", "mod1" (the alt-key), "mod2",
     # "mod3" and "mod4" (windows-key).
@@ -158,7 +155,7 @@
     # Close all notifications.
     # close_all = ctrl+shift+space
     close_all = ctrl+shift+space
-
+    
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".

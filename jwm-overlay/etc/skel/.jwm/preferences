@@ -2,8 +2,7 @@
 
     <!-- Virtual Desktops -->
     <!-- Desktop tags can be contained within Desktops for desktop names. -->
-    <Desktops width="2">
-    </Desktops>
+    <Desktops width="2"></Desktops>
 
     <!-- Double click speed (in milliseconds) -->
     <DoubleClickSpeed>400</DoubleClickSpeed>
