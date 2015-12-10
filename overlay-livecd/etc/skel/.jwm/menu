@@ -39,6 +39,7 @@
 	<Program label="AbiWord Write">abiword</Program>
         <Program label="Gnumeric Calc">gnumeric</Program>
         <Program label="Epdfview Reader">epdfview</Program>
+        <Program label="PDF Tools">palemoon http://smallpdf.com/</Program>
     </Menu>
     <Menu label="Settings">
 	<Program label="Nitrogen Wall">nitrogen</Program>
@@ -70,6 +71,7 @@
        <Separator/>
         <Menu label="Session">
         <Program label="Lock">i3lock -i $HOME/.i3lock/pretending_about_the_future.png</Program>
+        <Program label="Suspend">systemctl suspend</Program>        
         <Exit label="Logout" confirm="false"/>
 	<Program label="Restart">systemctl reboot</Program>
         <Program label="Shutdown">systemctl poweroff</Program>
