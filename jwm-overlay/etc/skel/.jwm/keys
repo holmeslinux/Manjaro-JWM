@@ -29,7 +29,7 @@
     <Key mask="4" key="g">exec:gmrun</Key>
     <Key mask="4" key="t">exec:sakura</Key>
     <Key mask="4" key="r">exec:rofi -show run</Key>
-    <Key mask="4" key="d">exec:wmctrl -k on</Key>
+    <Key mask="4" key="d">showdesktop</Key>
 
     <!-- Key system. -->
     <Key mask="C" key="p">exec:xterm ~/.managers/pacli</Key>
