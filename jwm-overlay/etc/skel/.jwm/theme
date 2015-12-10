@@ -27,7 +27,7 @@
         </Active>
     </MenuStyle>
 
-<!-- Visual Style Tray. -->
+    <!-- Visual Style Tray. -->
     <TrayStyle decorations="flat">
         <Font>Roboto-9</Font>
         <Background>#161616</Background>
@@ -38,7 +38,7 @@
             <Background>#b1222b</Background>
         </Active>
     </TrayStyle>
-    
+
     <!-- Visual Style Pager. -->
     <PagerStyle>
         <Outline>#161616</Outline>
@@ -52,7 +52,7 @@
         </Active>
     </PagerStyle>
 
-<!-- Visual Style Pop. -->
+    <!-- Visual Style Pop. -->
     <PopupStyle>
         <Font>Roboto-9</Font>
         <Outline>#FFFFFF</Outline>

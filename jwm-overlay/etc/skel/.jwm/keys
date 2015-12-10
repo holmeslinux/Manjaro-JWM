@@ -12,7 +12,7 @@
     <Key key="Return">select</Key>
     <Key key="Escape">escape</Key>
 
-    <!-- Key window. -->    
+    <!-- Key window. -->
     <Key mask="A" key="Tab">nextstacked</Key>
     <Key mask="A" key="F4">close</Key>
     <Key mask="A" key="#">desktop#</Key>
@@ -37,7 +37,6 @@
     <Key mask="4" key="l">exec:i3lock -i $HOME/.i3lock/pretending_about_the_future.png</Key>
     <Key mask="C" key="r">exec:jwm -restart</Key>
     <Key mask="A" key="F1">root:1</Key>
-    
 
     <!-- Key sound. -->
     <Key mask="4" key="Down">>exec:amixer set Master 5%- </Key>
@@ -49,5 +48,5 @@
     <Key mask="C" key="Down">maxbottom</Key>
     <Key mask="C" key="Left">maxleft</Key>
     <Key mask="C" key="Right">maxright</Key>
-    
+
 </JWM>
