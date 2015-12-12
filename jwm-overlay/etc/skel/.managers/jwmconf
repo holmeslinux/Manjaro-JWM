@@ -42,7 +42,7 @@ JWMconf Control Center Shell Configure's home screen is split into two parts:
 The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Wbar, Conky, Dunst, Top, Rofi, Gmrun, Slim and Oblogout. Choose an option by entering its number and pressing [Enter].
 
 ATTENTION
-*The numbers 20 and 21 can break your system. WARNING! USE WITH CAUTION.
+*The numbers 21 and 22 can break your system. WARNING! USE WITH CAUTION.
 
 0 - EXIT JWMCONF
 "clear && exit"
@@ -94,35 +94,38 @@ General commands manual of the Joe's Window Manager (JWM). JWM is a window manag
 "jwm -v"
 Display version information JWM.
 
-14- EDIT WBAR
+14- HOMEPAGE JWM
+Visit and know the website of JWM.
+
+15- EDIT WBAR
 Wbar is a simple and highly customizable quick-launch dock.
 This option is to edit the Wbar settings (in ~/.wbar). To edit the Wbar is used nano editor.
 
-15- EDIT CONKY
+16- EDIT CONKY
 Conky a light-weight system monitor.
 This option is to edit the Conky settings ((in ~/.conkyrc). To edit the Conky is used nano editor.
 
-16- EDIT DUNST
+17- EDIT DUNST
 Dunst is a lightweight replacement for the notification-daemons provided by most desktop environments.
 This option is to edit the Dunst settings (in ~/.config/dunst/dunstrc). To edit the Dunst is used nano editor.
 
-17- EDIT TOP
+18- EDIT TOP
 Top command displays processor activity of your Linux box and also displays tasks managed by kernel in real-time.
 This option is to edit the Top settings (in ~/.toprc). To edit the Top is used nano editor.
 
-18- EDIT ROFI
+19- EDIT ROFI
 A window switcher, run dialog and dmenu replacement.
 This option is to edit the Rofi settings (in ~/.Xresources). To edit the Rofi is used nano editor.
 
-19- EDIT GMRUN
+20- EDIT GMRUN
 Gmrun (Gnome Completion-Run) is an lightweight application launcher similar to GNOME Run, Application Finder, KRunner, etc. 
 This option is to edit the Gmrun settings (in ~/.gmrunrc). To edit the Gmrun is used nano editor.
 
-20- EDIT SLIM
+21- EDIT SLIM
 Slim is an acronym for Simple Login Manager. Lightweight and easily configurable, Slim requires minimal dependencies.
 This option is to edit the Slim settings (in /etc/slim.conf). To edit the Slim is used nano editor.
 
-21- EDIT OBLOGOUT
+22- EDIT OBLOGOUT
 Oblogout is an optional, configurable logout script that presents a graphical interface (i.e. buttons) to cancel, logout, restart, etc.
 This option is to edit the Oblogout settings (in /etc/oblogout.conf). To edit the Oblogout is used nano editor.
  
@@ -148,14 +151,14 @@ NC='\e[0m'
     echo -e " │  $NC  7  $NC  Edit Theme JWM                     $NC  8  $NC  Edit Keys JWM         │"
     echo -e " │  $NC  9  $NC  Edit Groups JWM                    $NC 10  $NC  Edit Preferences JWM  │"
     echo -e " │  $NC 11  $NC  Edit jwmrc                         $NC 12  $NC  Commands Manual JWM   │"
-    echo -e " │  $NC 13  $NC  Version JWM                                                     │"
+    echo -e " │  $NC 13  $NC  Version JWM                        $NC 14  $NC  Homepage JWM          │"
      echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 14  $NC  Edit Wbar                          $NC 15  $NC  Edit Conky            │"
-    echo -e " │  $NC 16  $NC  Edit Dunst                         $NC 17  $NC  Edit Top              │"
-    echo -e " │  $NC 18  $NC  Edit Rofi                          $NC 19  $NC  Edit Gmrun            │"
-    echo -e " │  $NC 20  $NC  *Edit Slim                         $NC 21  $NC  *Edit Oblogout        │"
+    echo -e " │  $NC 15  $NC  Edit Wbar                          $NC 16  $NC  Edit Conky            │"
+    echo -e " │  $NC 17  $NC  Edit Dunst                         $NC 18  $NC  Edit Top              │"
+    echo -e " │  $NC 19  $NC  Edit Rofi                          $NC 20  $NC  Edit Gmrun            │"
+    echo -e " │  $NC 21  $NC  *Edit Slim                         $NC 22  $NC  *Edit Oblogout        │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "        $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
@@ -254,57 +257,63 @@ NC='\e[0m'
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-
-        14)
-            echo ""
-            nano ~/.wbar
+       14)
+            echo
+            elinks http://joewing.net/projects/jwm/index.shtml
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         15)
             echo ""
-            nano ~/.conkyrc
+            nano ~/.wbar
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         16)
             echo ""
-            nano ~/.config/dunst/dunstrc
+            nano ~/.conkyrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         17)
             echo ""
-            nano ~/.toprc
+            nano ~/.config/dunst/dunstrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         18)
             echo ""
-            nano ~/.Xresources
+            nano ~/.toprc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         19)
             echo ""
-            nano ~/.gmrunrc
+            nano ~/.Xresources
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         20)
             echo ""
-            sudo nano /etc/slim.conf
+            nano ~/.gmrunrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         21)
+            echo ""
+            sudo nano /etc/slim.conf
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
+            read
+            ;;
+        22)
             echo ""
             sudo nano /etc/oblogout.conf
             echo ""
