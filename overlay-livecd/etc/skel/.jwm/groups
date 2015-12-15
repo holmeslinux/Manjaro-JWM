@@ -2,35 +2,35 @@
 
     <!-- Options for program groups. -->
     <Group>
-      <Name>gmrun</Name>
-      <Option>noborder</Option>
-      <Option>nolist</Option>
+        <Name>gmrun</Name>
+        <Option>noborder</Option>
+        <Option>nolist</Option>
     </Group>
 
     <Group>
-      <Name>xterm</Name>
-      <Option>centered</Option>
-      <Option>nolist</Option>
+        <Name>xterm</Name>
+        <Option>centered</Option>
+        <Option>nolist</Option>
     </Group>
 
     <Group>
-      <Name>sakura</Name>
-      <Option>centered</Option>
+        <Name>sakura</Name>
+        <Option>centered</Option>
     </Group>
 
     <Group>
-      <Name>rofi</Name>
-      <Option>centered</Option>
+        <Name>rofi</Name>
+        <Option>centered</Option>
     </Group>
 
     <Group>
-      <Name>sunflower</Name>
-      <Option>centered</Option>
+        <Name>sunflower</Name>
+        <Option>centered</Option>
     </Group>
-    
+
     <Group>
-      <Name>oblogout</Name>
-      <Option>nolist</Option>
+        <Name>oblogout</Name>
+        <Option>nolist</Option>
     </Group>
 
 </JWM>

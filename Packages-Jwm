@@ -1,28 +1,28 @@
-#####################################################
+######################################################
 ### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
-#####################################################
+######################################################
 
 ## Sound and Audio
+alsa-plugins
 manjaro-alsa
 volumeicon
-alsa-plugins
 
 ## File Management
-pcmanfm
-gvfs		 
-gvfs-afc	 
+gvfs
+gvfs-afc
 gvfs-gphoto2
 gvfs-smb
-xarchiver
 p7zip
+pcmanfm
+xarchiver
 
 ## Package Management
 pamac
 
 ## Network and bluetooth
+network-manager-applet
 networkmanager
 networkmanager-dispatcher-ntpd
-network-manager-applet
 openresolv
 
 ## Polkit
@@ -41,54 +41,54 @@ slim
 dunst
 
 ## JWM Core Packages
-jwm
-scrot
-nitrogen
-gmrun 
 clipit
-python2-xdg 	 
-xterm
+downgrade
+gmrun 
 i3lock
-xautolock
+jwm
 lxappearance
-rofi
-prelink
-preload
+nitrogen
 oblogout
 pmenu
-downgrade
+prelink
+preload
+python2-xdg
+rofi
+scrot
+xautolock
+xterm
 
 ## Desktop Configuration
-lxinput
 arandr
+lxinput
 
 ## Artwork, Icon, Mouse, and Desktop Themes
 awoken-icon-theme
-xcursor-vanilla-dmz-aa
 gtk-engine-murrine
+xcursor-vanilla-dmz-aa
 
 ## Applications
-medit
+abiword
+cbatticon
+compton
+conky
+elinks
 epdfview
+feh
+gnumeric
 hardinfo
+hexchat
 htop
 leafpad
-abiword
-gnumeric
-palemoon-bin
-elinks
-hexchat
-lxmusic
-smplayer
-feh
-cbatticon
-tlp
-manjaro-settings-manager
-sakura
-conky
-screenfetch
 libimobiledevice
-compton
+lxmusic
+manjaro-settings-manager
+medit
+palemoon-bin
+sakura
+screenfetch
+smplayer
+tlp
 wbar
 
 ## Fonts
