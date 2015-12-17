@@ -7,29 +7,29 @@
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation; either version 2 of the License, or
 #  (at your option) any later version.
-#  
+#
 #  This program is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
-#  
+#
 #  You should have received a copy of the GNU General Public License
 #  along with this program; if not, write to the Free Software
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
-#  
+#
 
 #########################################################################################
 # Design based on IceFox script                                                         #
 # Modified, adapted and improved by pekman and excalibur1234                            #
-# Some modifications based on the pacli and mhwd-tui (thx @Chrysostomus) made by Holmes #                     			                        
+# Some modifications based on the pacli and mhwd-tui (thx @Chrysostomus) made by Holmes #
 # Contact and suggestions: pekman@openmailbox.org (JWMconf holmes_holmes@live.com)      #
-# Freenode: #manjaropek #manjaro-geek #manjaro			                        #
-# Topic discussion 						                        #
-#			http://polr.me/Pacli1			                        #
-#			http://polr.me/Pacli2					        #
-#                       http://bit.ly/1NKCL5e 						#
-#			http://bit.ly/1NKCOOp			                        #  
+# Freenode: #manjaropek #manjaro-geek #manjaro                                          #
+# Topic discussion                                                                      #
+#                       http://polr.me/Pacli1                                           #
+#                       http://polr.me/Pacli2                                           #
+#                       http://bit.ly/1NKCL5e                                           #
+#                       http://bit.ly/1NKCOOp                                           #
 #########################################################################################
 
 function help_text() {
@@ -88,7 +88,7 @@ This option is to edit the Preferences settings (in ~/.jwm/preferences). To edit
 This option is to edit the jwmrc settings (in ~/.jwmrc). To edit the jwmrc is used nano editor.
 
 12- COMMANDS MANUAL JWM
-General commands manual of the Joe's Window Manager (JWM). JWM is a window manager for X11 Window Sustem.
+General commands manual of the Joe's Window Manager (JWM). JWM is a window manager for X11 Window System.
 
 13- VERSION JWM
 "jwm -v"
@@ -102,7 +102,7 @@ Wbar is a simple and highly customizable quick-launch dock.
 This option is to edit the Wbar settings (in ~/.wbar). To edit the Wbar is used nano editor.
 
 16- EDIT CONKY
-Conky a light-weight system monitor.
+Conky a lightweight system monitor.
 This option is to edit the Conky settings ((in ~/.conkyrc). To edit the Conky is used nano editor.
 
 17- EDIT DUNST
@@ -152,7 +152,7 @@ NC='\e[0m'
     echo -e " │  $NC  9  $NC  Edit Groups JWM                    $NC 10  $NC  Edit Preferences JWM  │"
     echo -e " │  $NC 11  $NC  Edit jwmrc                         $NC 12  $NC  Commands Manual JWM   │"
     echo -e " │  $NC 13  $NC  Version JWM                        $NC 14  $NC  Homepage JWM          │"
-     echo " └─────────────────────────────────────────────────────────────────────────┘" 
+    echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC 15  $NC  Edit Wbar                          $NC 16  $NC  Edit Conky            │"
@@ -213,7 +213,7 @@ NC='\e[0m'
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read 
-	    ;;
+            ;;
         8)
             echo ""
             nano ~/.jwm/keys
@@ -242,7 +242,6 @@ NC='\e[0m'
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-
         12)
             echo ""
             man jwm
@@ -257,7 +256,7 @@ NC='\e[0m'
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-       14)
+        14)
             echo
             elinks http://joewing.net/projects/jwm/index.shtml
             echo ""
