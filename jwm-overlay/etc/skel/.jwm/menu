@@ -15,12 +15,7 @@
             <Program label="Select Area">notify-send 'Selection will be saved in ~/Pictures' & scrot -se 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
         </Menu>
         <Separator/>
-        <Menu label="Install Manjaro">
-            <Program label="Graphical">sudo calamares</Program>
-            <Program label="CLI">sudo xterm /usr/bin/setup</Program>
-        </Menu>
-        <Separator/>
-        <Menu label="Accesories">
+            <Menu label="Accesories">
             <Program label="Medit Editor">medit</Program>
             <Program label="Leafpad Editor">leafpad</Program>
         </Menu>
