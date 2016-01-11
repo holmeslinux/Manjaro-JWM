@@ -61,4 +61,4 @@ alias usbiso='sudo mkusb'		# writes ISO in pendrive (obs.: usbiso nameiso)
 
 # prompt
 PS1='┌─[\d][\u@\h:\w]\n└─> '
-BROWSER=/usr/bin/xdg-open
+export BROWSER=/usr/bin/palemoon
