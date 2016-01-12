@@ -19,6 +19,7 @@ shopt -s nocaseglob
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
+export BROWSER=/usr/bin/palemoon
 
 # Alias system
 
@@ -61,4 +62,3 @@ alias usbiso='sudo mkusb'		# writes ISO in pendrive (obs.: usbiso nameiso)
 
 # prompt
 PS1='┌─[\d][\u@\h:\w]\n└─> '
-export BROWSER=/usr/bin/palemoon
