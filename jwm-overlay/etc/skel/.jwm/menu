@@ -35,6 +35,7 @@
             <Program label="Gnumeric Calc">gnumeric</Program>
             <Program label="Epdfview Reader">epdfview</Program>
             <Program label="PDF Tools">palemoon http://smallpdf.com/</Program>
+            <Program label="Scanner Full">simple-scan</Program>
         </Menu>
         <Menu label="Settings">
             <Program label="Nitrogen Wall">nitrogen</Program>

@@ -33,4 +33,9 @@
         <Option>nolist</Option>
     </Group>
 
+    <Group>
+        <Name>simple-scan</Name>
+        <Option>centered</Option>
+    </Group>
+
 </JWM>
