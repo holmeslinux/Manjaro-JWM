@@ -48,7 +48,6 @@ i3lock
 jwm
 lxappearance
 nitrogen
-oblogout
 pmenu
 prelink
 preload
@@ -63,7 +62,6 @@ arandr
 lxinput
 
 ## Artwork, Icon, Mouse, and Desktop Themes
-awoken-icon-theme
 gtk-engine-murrine
 xcursor-vanilla-dmz-aa
 
@@ -89,7 +87,6 @@ sakura
 screenfetch
 smplayer
 tlp
-wbar
 
 ## Fonts
 adobe-source-sans-pro-fonts

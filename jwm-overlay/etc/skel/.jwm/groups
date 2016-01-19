@@ -10,7 +10,6 @@
     <Group>
         <Name>xterm</Name>
         <Option>centered</Option>
-        <Option>nolist</Option>
     </Group>
 
     <Group>
@@ -26,11 +25,6 @@
     <Group>
         <Name>pcmanfm</Name>
         <Option>centered</Option>
-    </Group>
-
-    <Group>
-        <Name>oblogout</Name>
-        <Option>nolist</Option>
     </Group>
 
     <Group>

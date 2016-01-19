@@ -1,9 +1,9 @@
 conky.config = {
 	alignment = 'top_right',
 	background = true,
-	color2 = 'ffffff',
+	color2 = 'ef7e2c',
 	cpu_avg_samples = 2,
-	default_color = 'ffffff',
+	default_color = 'db6823',
         draw_shades = false,
 	double_buffer = true,
 	font = 'Roboto:size=8',
@@ -38,13 +38,13 @@ ${goto 40}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
 ${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
 ${goto 40}$color2${top_mem name 5}$alignr$color${top_mem mem_res 5}
 #
-${voffset 10}$alignr${color2}hd ${fs_size /} - ${color ffffff}${fs_used /}${color}
-${alignr}${color2}${font Roboto:size=8}mem $memmax - ${color ffffff}$mem${color}
-${alignr}${color2}${font Roboto:size=8}swap $swapmax - ${color ffffff}$swap${color}
+${voffset 10}$alignr${color2}hd ${fs_size /} - ${fs_used /}
+${alignr}${color2}${font Roboto:size=8}mem $memmax - $mem
+${alignr}${color2}${font Roboto:size=8}swap $swapmax - $swap
 #
 ${voffset 10}$alignr$color Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 #
-${voffset 10}$alignr${execi 1200 whoami}${color ffffff}@${color}${nodename}
+${voffset 10}$alignr${execi 1200 whoami}@${nodename}
 ${alignr}${color2}${font Roboto:size=8}uptime ${color}${uptime_short}
 ${alignr}${color2}${font Roboto:size=8}${alignr}kernel ${color}${kernel}
 ${alignr}${color2}${font Roboto:size=8}${alignr}architecture ${color}${machine}

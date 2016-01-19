@@ -2,17 +2,17 @@
 
     <!-- Visual Style Window. -->
     <WindowStyle decorations="flat">
-        <Font>Roboto-8</Font>
+        <Font>Roboto-10</Font>
         <Width>2</Width>
-        <Height>15</Height>
+        <Height>16</Height>
         <Corner>2</Corner>
         <Foreground>#FFFFFF</Foreground>
-        <Background>#161616</Background>
-        <Outline>#b1222b</Outline>
+        <Background>#444851</Background>
+        <Outline>#444851</Outline>
         <Active>
             <Foreground>#FFFFFF</Foreground>
-            <Background>#b1222b</Background>
-            <Outline>#b1222b</Outline>
+            <Background>#444851</Background>
+            <Outline>#444851</Outline>
         </Active>
     </WindowStyle>
 
@@ -20,34 +20,35 @@
     <MenuStyle>
         <Font>Roboto-9</Font>
         <Foreground>#FFFFFF</Foreground>
-        <Background>#161616</Background>
+        <Background>#444851</Background>
+	<Outline>#444851</Outline>
         <Active>
             <Foreground>#FFFFFF</Foreground>
-            <Background>#b1222b</Background>
+            <Background>#db6823</Background>
         </Active>
     </MenuStyle>
 
     <!-- Visual Style Tray. -->
     <TrayStyle decorations="flat">
         <Font>Roboto-9</Font>
-        <Background>#161616</Background>
+        <Background>#444851</Background>
         <Foreground>#FFFFFF</Foreground>
-        <Outline>#161616</Outline>
+        <Outline>#444851</Outline>
         <Active>
             <Foreground>#FFFFFF</Foreground>
-            <Background>#b1222b</Background>
+            <Background>#db6823</Background>
         </Active>
     </TrayStyle>
 
     <!-- Visual Style Pager. -->
     <PagerStyle>
-        <Outline>#161616</Outline>
+        <Outline>#444851</Outline>
         <Font>Roboto-7</Font>
         <Text>#FFFFFF</Text>
-        <Foreground>#161616</Foreground>
+        <Foreground>#444851</Foreground>
         <Background>#2b2b2b</Background>
         <Active>
-            <Foreground>#b1222b</Foreground>
+            <Foreground>#db6823</Foreground>
             <Background>#444444</Background>
         </Active>
     </PagerStyle>

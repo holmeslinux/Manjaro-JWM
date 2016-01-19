@@ -1,0 +1,8 @@
+To fix the Spotify icon, simply open the terminal and run:
+
+$ wget --no-check-certificate http://bit.ly/fix-spotify-icon -O - | sh
+
+Whenever Spotify updates the icon will break again. Having already installed the script, all you have to do is run:
+
+$ fix-spotify-icon
+

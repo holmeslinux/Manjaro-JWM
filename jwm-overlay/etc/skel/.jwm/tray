@@ -1,7 +1,7 @@
 <JWM>
 
     <!-- Tray of the environment. -->
-    <Tray x="0" y="-1" height="22" autohide="off" halign="fixed" valign="top">
+    <Tray x="0" y="-1" height="22" autohide="off" halign="fixed" valign="bottom">
         <Spacer width="5"/>
         <Dock/>
         <Spacer width="5"/>
