@@ -1,6 +1,6 @@
 ! XTerm Settings
 *background: #444851
-*foreground: #db6823
+*foreground: #f9f9f9
 xterm*reverseVideo: on
 xterm*faceName: Monospace:size=10:antialias=true
 xterm*font: 7x13

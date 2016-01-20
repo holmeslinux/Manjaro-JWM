@@ -66,7 +66,7 @@
         </Menu>
         <Separator/>
         <Menu label="Session">
-            <Program label="Lock">i3lock -i $HOME/.i3lock/gray_lubridion.png</Program>
+            <Program label="Lock">i3lock -i $HOME/.i3lock/fly_chauvin.png</Program>
             <Program label="Suspend">systemctl suspend</Program>
             <Exit label="Logout" confirm="false"/>
             <Program label="Restart">systemctl reboot</Program>

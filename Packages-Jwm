@@ -35,7 +35,7 @@ dconf
 desktop-file-utils
 
 ## Display Manager
-slim
+lxdm
 
 ## Desktop Display
 dunst
