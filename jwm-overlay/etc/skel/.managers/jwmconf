@@ -117,9 +117,8 @@ This option is to edit the Rofi settings (in ~/.Xresources). To edit the Rofi is
 Gmrun (Gnome Completion-Run) is an lightweight application launcher similar to GNOME Run, Application Finder, KRunner, etc. 
 This option is to edit the Gmrun settings (in ~/.gmrunrc). To edit the Gmrun is used nano editor.
 
-20- EDIT SLIM
-Slim is an acronym for Simple Login Manager. Lightweight and easily configurable, Slim requires minimal dependencies.
-This option is to edit the Slim settings (in /etc/slim.conf). To edit the Slim is used nano editor.
+20- EDIT LXDM
+LXDM is a lightweight display manager for the LXDE desktop environment. The UI is implemented with GTK+ 2. 
 
 To exit this information page, press "q".
 	EOF
@@ -149,7 +148,7 @@ NC='\e[0m'
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC 15  $NC  Edit Conky                         $NC 16  $NC  Edit Dunst            │"
     echo -e " │  $NC 17  $NC  Edit Top                           $NC 18  $NC  Edit Rofi             │"
-    echo -e " │  $NC 19  $NC  Edit Gmrun                         $NC 20  $NC *Edit Slim             │"
+    echo -e " │  $NC 19  $NC  Edit Gmrun                         $NC 20  $NC *Edit LXDM             │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "        $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
@@ -291,7 +290,7 @@ NC='\e[0m'
             ;;
         20)
             echo ""
-            sudo nano /etc/slim.conf
+            sudo nano /etc/lxdm/lxdm.conf
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read

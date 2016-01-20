@@ -9,19 +9,6 @@
         <property name="visible">True</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkLabel" id="time">
-            <property name="visible">True</property>
-            <property name="xalign">1</property>
-            <property name="xpad">12</property>
-            <property name="ypad">12</property>
-            <property name="single_line_mode">True</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
-        <child>
           <object class="GtkAlignment" id="alignment1">
             <property name="visible">True</property>
             <property name="xscale">0</property>
