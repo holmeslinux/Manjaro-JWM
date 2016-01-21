@@ -16,7 +16,7 @@
         </Active>
     </WindowStyle>
 
-    <!-- window buttons -->
+    <!-- Window Buttons. -->
         <ButtonClose>/usr/share/pixmaps/close.png</ButtonClose>
         <ButtonMax>/usr/share/pixmaps/max.png</ButtonMax>
         <ButtonMaxActive>/usr/share/pixmaps/maxact.png</ButtonMaxActive>
