@@ -28,13 +28,12 @@
     <Key mask="4" key="e">exec:pcmanfm</Key>
     <Key mask="4" key="g">exec:gmrun</Key>
     <Key mask="4" key="t">exec:sakura</Key>
-    <Key mask="4" key="s">exec:rofi -show run</Key>
     <Key mask="4" key="d">showdesktop</Key>
 
     <!-- Key system. -->
     <Key mask="4" key="p">exec:xterm ~/.managers/pacli</Key>
     <Key mask="4" key="j">exec:xterm ~/.managers/jwmconf</Key>
-    <Key mask="4" key="l">exec:i3lock -i $HOME/.i3lock/gray_lubridion.png</Key>
+    <Key mask="4" key="l">exec:i3lock -i $HOME/.i3lock/fly-chauvin.png</Key>
     <Key mask="4" key="r">exec:jwm -restart</Key>
     <Key mask="A" key="F1">root:1</Key>
 

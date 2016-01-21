@@ -5,7 +5,7 @@
     <StartupCommand>sleep 2s && volumeicon &</StartupCommand>
     <StartupCommand>sleep 3s && nm-applet &</StartupCommand>
     <StartupCommand>sleep 4s && conky &</StartupCommand>
-    <StartupCommand>sleep 6s && xautolock -time 20 -locker 'i3lock -i $HOME/.i3lock/fly_chauvin.png' &</StartupCommand>
+    <StartupCommand>sleep 6s && xautolock -time 20 -locker 'i3lock -i $HOME/.i3lock/fly-chauvin.png' &</StartupCommand>
     <StartupCommand>sleep 7s && /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &</StartupCommand>
     <StartupCommand>sleep 8s && xrdb merge .Xresources &</StartupCommand>
     <StartupCommand>nitrogen --restore</StartupCommand>

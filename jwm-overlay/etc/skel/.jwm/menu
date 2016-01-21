@@ -54,7 +54,6 @@
             <Program label="Top Analysis">sakura -e top</Program>
             <Program label="Hard Info">hardinfo</Program>
             <Program label="Root Sakura">gksu sakura</Program>
-            <Program label="Rofi Run">rofi -show run</Program>
             <Program label="GUFW">gksu gufw</Program>
             <Menu label="Script All">
                 <Program label="AUR">gksu xterm ~/.scripts/aur.sh</Program>
@@ -66,7 +65,7 @@
         </Menu>
         <Separator/>
         <Menu label="Session">
-            <Program label="Lock">i3lock -i $HOME/.i3lock/fly_chauvin.png</Program>
+            <Program label="Lock">i3lock -i $HOME/.i3lock/fly-chauvin.png</Program>
             <Program label="Suspend">systemctl suspend</Program>
             <Exit label="Logout" confirm="false"/>
             <Program label="Restart">systemctl reboot</Program>
