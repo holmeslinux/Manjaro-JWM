@@ -4,7 +4,7 @@
     <WindowStyle decorations="flat">
         <Font>Roboto-10</Font>
         <Width>2</Width>
-        <Height>16</Height>
+        <Height>20</Height>
         <Corner>2</Corner>
         <Foreground>#FFFFFF</Foreground>
         <Background>#444851</Background>

@@ -9,10 +9,10 @@
         <Program label="Explore Files">pcmanfm</Program>
         <Program label="Browser">palemoon</Program>
         <Menu label="Screenshot">
-            <Program label="Active Window">scrot -ue 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
-            <Program label="Active Window Delay">notify-send 'Selection will be saved in ~/Pictures in 5s' & scrot -ud 5 -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
-            <Program label="Full Screen">scrot -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
-            <Program label="Select Area">notify-send 'Selection will be saved in ~/Pictures' & scrot -se 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+	    <Program label="Active Window Delay">notify-send 'Selection will be saved in ~/Screenshots in 5s' & scrot -ud 5 -e 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>            
+	    <Program label="Active Window">scrot -ue 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
+            <Program label="Full Screen">scrot -e 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
+            <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' & scrot -se 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
 	<Menu label="Accesories">
@@ -43,18 +43,19 @@
             <Program label="Monitor Manager">arandr</Program>
             <Program label="Configure keyboard">lxinput</Program>
             <Program label="Customize Look">lxappearance</Program>
+            <Program label="Personalize LXDM">gksu lxdm-config</Program>
             <Program label="Network Connections">nm-connection-editor</Program>
             <Program label="Privilege Granting">gksu-properties</Program>
         </Menu>
         <Menu label="System">
             <Program label="Pacli Packager">xterm ~/.managers/pacli</Program>
             <Program label="JWMconf Configure">xterm ~/.managers/jwmconf</Program>
-            <Program label="Root PCManFM">gksu pcmanfm</Program>
-            <Program label="Htop Process">sakura -e htop</Program>
+            <Program label="Root Explorer Files">gksu pcmanfm</Program>
+            <Program label="Root Terminal">gksu sakura</Program>            
+            <Program label="Active Process">sakura -e htop</Program>
             <Program label="Top Analysis">sakura -e top</Program>
             <Program label="Hard Info">hardinfo</Program>
-            <Program label="Root Sakura">gksu sakura</Program>
-            <Program label="GUFW">gksu gufw</Program>
+            <Program label="Obstacle">gksu gufw</Program>
             <Menu label="Script All">
                 <Program label="AUR">gksu xterm ~/.scripts/aur.sh</Program>
                 <Program label="Multimedia">gksu xterm ~/.scripts/multimedia.sh</Program>
