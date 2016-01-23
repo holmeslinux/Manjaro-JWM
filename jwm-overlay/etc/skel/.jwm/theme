@@ -16,13 +16,7 @@
         </Active>
     </WindowStyle>
 
-    <!-- Window Buttons. -->
-        <ButtonClose>/usr/share/pixmaps/close.png</ButtonClose>
-        <ButtonMax>/usr/share/pixmaps/max.png</ButtonMax>
-        <ButtonMaxActive>/usr/share/pixmaps/maxact.png</ButtonMaxActive>
-        <ButtonMin>/usr/share/pixmaps/min.png</ButtonMin> 
-
-   <!-- Visual Style Menu. -->
+    <!-- Visual Style Menu. -->
     <MenuStyle>
         <Font>Roboto-9</Font>
         <Foreground>#FFFFFF</Foreground>

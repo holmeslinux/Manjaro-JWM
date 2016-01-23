@@ -16,9 +16,6 @@ p7zip
 pcmanfm
 xarchiver
 
-## Package Management
-pamac
-
 ## Network and bluetooth
 network-manager-applet
 networkmanager
@@ -52,10 +49,10 @@ pmenu
 prelink
 preload
 python2-xdg
-rofi
 scrot
 xautolock
 xterm
+update-notifier
 
 ## Desktop Configuration
 arandr

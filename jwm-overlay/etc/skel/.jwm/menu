@@ -42,6 +42,7 @@
             <Program label="Manjaro Settings">gksu manjaro-settings-manager-gui</Program>
             <Program label="Monitor Manager">arandr</Program>
             <Program label="Configure keyboard">lxinput</Program>
+	    <Program label="Printer Settings">system-config-printer</Program>
             <Program label="Customize Look">lxappearance</Program>
             <Program label="Personalize LXDM">gksu lxdm-config</Program>
             <Program label="Network Connections">nm-connection-editor</Program>
@@ -55,7 +56,7 @@
             <Program label="Active Process">sakura -e htop</Program>
             <Program label="Top Analysis">sakura -e top</Program>
             <Program label="Hard Info">hardinfo</Program>
-            <Program label="Obstacle">gksu gufw</Program>
+            <Program label="Obstacle Fire">gksu gufw</Program>
             <Menu label="Script All">
                 <Program label="AUR">gksu xterm ~/.scripts/aur.sh</Program>
                 <Program label="Multimedia">gksu xterm ~/.scripts/multimedia.sh</Program>
