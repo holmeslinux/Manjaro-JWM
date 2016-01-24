@@ -19,6 +19,7 @@ xarchiver
 ## Network and bluetooth
 wicd-gtk
 openresolv
+blueman
 
 ## Polkit
 gksu

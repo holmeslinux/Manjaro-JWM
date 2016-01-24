@@ -15,6 +15,12 @@
             <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' & scrot -se 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
+	<Menu label="Install Manjaro">
+	    <Program label="Graphical Calamares">sudo calamares</Program>
+	    <Program label="Graphical Thus">sudo thus</Program>
+	    <Program label="CLI">sudo xterm /usr/bin/setup</Program>
+        </Menu>
+        <Separator/>
 	<Menu label="Accesories">
             <Program label="Medit Editor">medit</Program>
             <Program label="Leafpad Editor">leafpad</Program>
@@ -27,7 +33,7 @@
             <Program label="LXMusic Music">lxmusic</Program>
         </Menu>
         <Menu label="Network">
-            <Program label="Connection Manager">wicd-client</Program>
+            <Program label="Connection Manager">wicd-client -n</Program>
             <Program label="Pale Moon Browser">palemoon</Program>
             <Program label="HexChat IRC">hexchat</Program>
         </Menu>
@@ -46,7 +52,6 @@
 	    <Program label="Printer Settings">system-config-printer</Program>
             <Program label="Customize Look">lxappearance</Program>
             <Program label="Personalize LXDM">gksu lxdm-config</Program>
-            <Program label="Network Connections">nm-connection-editor</Program>
             <Program label="Privilege Granting">gksu-properties</Program>
         </Menu>
         <Menu label="System">
