@@ -17,9 +17,7 @@ pcmanfm
 xarchiver
 
 ## Network and bluetooth
-network-manager-applet
-networkmanager
-networkmanager-dispatcher-ntpd
+wicd-gtk
 openresolv
 
 ## Polkit

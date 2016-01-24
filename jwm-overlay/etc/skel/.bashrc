@@ -60,5 +60,5 @@ alias usbiso='sudo mkusb'		# writes ISO in pendrive (obs.: usbiso nameiso)
       fi
     }
 
-# prompt
+# prompt programmed
 PS1='┌─[\d][\u@\h:\w]\n└─> '

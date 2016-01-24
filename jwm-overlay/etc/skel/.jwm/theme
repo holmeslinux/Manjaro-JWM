@@ -4,7 +4,7 @@
     <WindowStyle decorations="flat">
         <Font>Roboto-10</Font>
         <Width>2</Width>
-        <Height>20</Height>
+        <Height>19</Height>
         <Corner>2</Corner>
         <Foreground>#FFFFFF</Foreground>
         <Background>#444851</Background>
@@ -15,6 +15,12 @@
             <Outline>#444851</Outline>
         </Active>
     </WindowStyle>
+
+    <!-- Buttons Style Window. -->
+       <ButtonClose>/usr/share/pixmaps/close.png</ButtonClose>
+       <ButtonMax>/usr/share/pixmaps/max.png</ButtonMax>
+       <ButtonMaxActive>/usr/share/pixmaps/maxact.png</ButtonMaxActive>
+       <ButtonMin>/usr/share/pixmaps/min.png</ButtonMin>
 
     <!-- Visual Style Menu. -->
     <MenuStyle>
@@ -49,16 +55,16 @@
         <Background>#2b2b2b</Background>
         <Active>
             <Foreground>#db6823</Foreground>
-            <Background>#444444</Background>
+            <Background>#565656</Background>
         </Active>
     </PagerStyle>
 
     <!-- Visual Style Pop. -->
     <PopupStyle>
         <Font>Roboto-9</Font>
-        <Outline>#FFFFFF</Outline>
-        <Foreground>#000000</Foreground>
-        <Background>#FFFFFF</Background>
+        <Outline>#414244</Outline>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#414244</Background>
     </PopupStyle>
 
 </JWM>
