@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <JWM>
 
     <!-- Virtual Desktops -->
@@ -11,7 +12,7 @@
     <DoubleClickDelta>2</DoubleClickDelta>
 
     <!-- The focus model (sloppy or click) -->
-    <FocusModel>sloppy</FocusModel>
+    <FocusModel>click</FocusModel>
 
     <!-- The snap mode (none, screen, or border) -->
     <SnapMode distance="10">border</SnapMode>

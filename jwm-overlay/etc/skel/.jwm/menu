@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <JWM>
 
     <!-- The root menu. -->
@@ -15,12 +16,6 @@
             <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' & scrot -se 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
-	<Menu label="Install Manjaro">
-	    <Program label="Graphical Calamares">sudo calamares</Program>
-	    <Program label="Graphical Thus">sudo thus</Program>
-	    <Program label="CLI">sudo xterm /usr/bin/setup</Program>
-        </Menu>
-        <Separator/>
 	<Menu label="Accesories">
             <Program label="Medit Editor">medit</Program>
             <Program label="Leafpad Editor">leafpad</Program>
@@ -34,6 +29,7 @@
         </Menu>
         <Menu label="Network">
             <Program label="Connection Manager">wicd-client -n</Program>
+	    <Program label="BlueMan Settings">blueman-manager</Program>
             <Program label="Pale Moon Browser">palemoon</Program>
             <Program label="HexChat IRC">hexchat</Program>
         </Menu>
@@ -46,24 +42,23 @@
         </Menu>
         <Menu label="Settings">
             <Program label="Nitrogen Wall">nitrogen</Program>
-            <Program label="Manjaro Settings">gksu manjaro-settings-manager-gui</Program>
+	    <Program label="Customize Look">lxappearance</Program>
+            <Program label="Personalize LXDM">gksu lxdm-config</Program>
             <Program label="Monitor Manager">arandr</Program>
             <Program label="Configure keyboard">lxinput</Program>
 	    <Program label="Printer Settings">system-config-printer</Program>
-            <Program label="Customize Look">lxappearance</Program>
-            <Program label="Personalize LXDM">gksu lxdm-config</Program>
-            <Program label="Privilege Granting">gksu-properties</Program>
-        </Menu>
+         </Menu>
         <Menu label="System">
             <Program label="Pacli Packager">xterm ~/.managers/pacli</Program>
             <Program label="JWMconf Configure">xterm ~/.managers/jwmconf</Program>
+	    <Program label="Manjaro Settings">gksu manjaro-settings-manager-gui</Program>
+	    <Program label="Privilege Granting">gksu-properties</Program>
+	    <Program label="GUFW Firewall">gksu gufw</Program>
             <Program label="Root Explorer Files">gksu pcmanfm</Program>
             <Program label="Root Terminal">gksu sakura</Program>            
-            <Program label="Active Process">sakura -e htop</Program>
-            <Program label="Top Analysis">sakura -e top</Program>
+            <Program label="Top Process">sakura -e htop</Program>
             <Program label="Hard Info">hardinfo</Program>
-            <Program label="Obstacle Fire">gksu gufw</Program>
-            <Menu label="Script All">
+        <Menu label="Script All">
                 <Program label="AUR">gksu xterm ~/.scripts/aur.sh</Program>
                 <Program label="Multimedia">gksu xterm ~/.scripts/multimedia.sh</Program>
                 <Program label="OpenJDK">gksu xterm ~/.scripts/jdk.sh</Program>

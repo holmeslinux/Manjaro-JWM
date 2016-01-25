@@ -39,10 +39,10 @@ JWMconf is an interactive configure JWM for your command line terminal. It provi
 
 HOME SCREEN
 JWMconf Control Center Shell Configure's home screen is split into two parts: 
-The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Top, Gmrun and LXtDM. Choose an option by entering its number and pressing [Enter].
+The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources and LXtDM. Choose an option by entering its number and pressing [Enter].
 
 ATTENTION
-*The number 19, 20, 21, 22 and 23 can break your system. WARNING! USE WITH CAUTION.
+*The number 19, 20, 21 and 22 can break your system. WARNING! USE WITH CAUTION.
 
 0 - EXIT JWMCONF
 "clear && exit"
@@ -105,27 +105,23 @@ This option is to edit the Conky settings ((in ~/.conkyrc). To edit the Conky is
 Dunst is a lightweight replacement for the notification-daemons provided by most desktop environments.
 This option is to edit the Dunst settings (in ~/.config/dunst/dunstrc). To edit the Dunst is used nano editor.
 
-17- EDIT TOP
-Top command displays processor activity of your Linux box and also displays tasks managed by kernel in real-time.
-This option is to edit the Top settings (in ~/.toprc). To edit the Top is used nano editor.
-
-18- EDIT GMRUN
+17- EDIT GMRUN
 Gmrun (Gnome Completion-Run) is an lightweight application launcher similar to GNOME Run, Application Finder, KRunner, etc. 
 This option is to edit the Gmrun settings (in ~/.gmrunrc). To edit the Gmrun is used nano editor.
 
-19- EDIT BASHRC
+18- EDIT BASHRC
 Bash (Bourne-again Shell) is a command-line shell/programming language by the GNU Project.
 
-20- EDIT GTK2
+19- EDIT GTK2
 GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off tools to complete application suites. Version 2.
 
-21- EDIT GTK3
+20- EDIT GTK3
 GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off tools to complete application suites. Version 3.
 
-22- EDIT XRESOURCES
+21- EDIT XRESOURCES
 Xresources is a user-level configuration dotfile, typically located at ~/.Xresources.
 
-23- EDIT LXDM
+22- EDIT LXDM
 LXDM is a lightweight display manager for the LXDE desktop environment. The UI is implemented with GTK+ 2.
 
 To exit this information page, press "q".
@@ -155,10 +151,9 @@ NC='\e[0m'
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC 15  $NC  Edit Conky                         $NC 16  $NC  Edit Dunst            │"
-    echo -e " │  $NC 17  $NC  Edit Top                           $NC 18  $NC  Edit Gmrun            │"
-    echo -e " │  $NC 19  $NC *Edit Bashrc 			      $NC 20  $NC *Edit GTK2             │"
-    echo -e " │  $NC 21  $NC *Edit GTK3		              $NC 22  $NC *Edit Xresources       │"
-    echo -e " │  $NC 23  $NC *Edit LXDM				                           │"
+    echo -e " │  $NC 17  $NC  Edit Gmrun                         $NC 18  $NC  Edit Bashrc           │"
+    echo -e " │  $NC 19  $NC *Edit GTK2              	      $NC 20  $NC *Edit GTK3             │"
+    echo -e " │  $NC 21  $NC *Edit Xresources 	              $NC 22  $NC *Edit LXDM             │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "        $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
@@ -279,19 +274,12 @@ NC='\e[0m'
             ;;
         17)
             echo ""
-            nano ~/.toprc
-            echo ""
-            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
-            read
-            ;;
-        18)
-            echo ""
             nano ~/.gmrunrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-        19)
+        18)
             echo ""
             nano $HOME/.bashrc
             echo ""
@@ -299,28 +287,28 @@ NC='\e[0m'
             read
             ;;
 
-	20)
+	19)
             echo ""
             nano $HOME/.gtkrc-2.0
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-	21)
+	20)
             echo ""
             nano $HOME/.config/gtk-3.0/settings.ini
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;	
-	22)
+	21)
             echo ""
             nano $HOME/.Xresources
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-	23)
+	22)
             echo ""
             sudo nano /etc/lxdm/lxdm.conf
             echo ""

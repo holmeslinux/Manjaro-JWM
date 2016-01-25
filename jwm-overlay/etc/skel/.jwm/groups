@@ -1,5 +1,4 @@
-#version 16.1
-
+<?xml version="1.0"?>
 <JWM>
 
     <!-- Options for program groups. -->
@@ -16,11 +15,6 @@
 
     <Group>
         <Name>sakura</Name>
-        <Option>centered</Option>
-    </Group>
-
-    <Group>
-        <Name>rofi</Name>
         <Option>centered</Option>
     </Group>
 

@@ -1,14 +1,14 @@
 conky.config = {
 	alignment = 'top_right',
 	background = true,
-	color2 = 'ef7e2c',
+	color2 = 'f9f9f9',
 	cpu_avg_samples = 2,
-	default_color = 'db6823',
+	default_color = 'f9f9f9',
         draw_shades = false,
 	double_buffer = true,
-	font = 'Roboto:size=8',
+	font = 'Cantarell:size=9',
 	gap_x = 10,
-	gap_y = 80,
+	gap_y = 60,
 	minimum_width = 200,
 	no_buffers = true,
 	own_window = true,
@@ -19,9 +19,9 @@ conky.config = {
 	use_xft = true,
 }
 conky.text = [[
-${voffset 8}$color${font Roboto:size=16}${time %a}$font${voffset -8}$alignr$color${font Roboto:size=38}${time %e}$font
-$color${voffset -30}$color${font Roboto:size=18}${time %b}$font${voffset -3} $color${font Roboto:size=20}${time %Y}$font
-#
+${voffset 8}$color${font Cantarell:size=16}${time %a}$font${voffset -8}$alignr${color db6823}${font Cantarell:size=38}${time %e}$font
+$color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} $color${font Cantarell:size=20}${time %Y}$font
+
 ${voffset 10}$alignr$color Vitória (ES) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBVT temperature temperature 15}°C
 #
 ${voffset 10}${goto 40}${color}CPU$alignr$cpu%
@@ -39,13 +39,14 @@ ${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
 ${goto 40}$color2${top_mem name 5}$alignr$color${top_mem mem_res 5}
 #
 ${voffset 10}$alignr${color2}hd ${fs_size /} - ${fs_used /}
-${alignr}${color2}${font Roboto:size=8}mem $memmax - $mem
-${alignr}${color2}${font Roboto:size=8}swap $swapmax - $swap
+${alignr}${color2}${font Cantarell:size=9}mem $memmax - $mem
+${alignr}${color2}${font Cantarell:size=9}swap $swapmax - $swap
 #
-${voffset 10}$alignr$color Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
+${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 #
 ${voffset 10}$alignr${execi 1200 whoami}@${nodename}
-${alignr}${color2}${font Roboto:size=8}uptime ${color}${uptime_short}
-${alignr}${color2}${font Roboto:size=8}${alignr}kernel ${color}${kernel}
-${alignr}${color2}${font Roboto:size=8}${alignr}architecture ${color}${machine}
+${alignr}${color2}${font Cantarell:size=9}uptime ${color}${uptime_short}
+${alignr}${color2}${font Cantarell:size=9}${alignr}kernel ${color}${kernel}
+${alignr}${color2}${font Cantarell:size=9}${alignr}architecture ${color}${machine}
+${voffset 10}${alignr}${color} you can install ${font Cantarell:bold:size=10}${execpi 12000 checkupdates | wc -l} ${font} update(s)
 ]]

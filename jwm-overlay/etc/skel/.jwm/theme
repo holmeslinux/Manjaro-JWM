@@ -1,47 +1,42 @@
+<?xml version="1.0"?>
 <JWM>
 
     <!-- Visual Style Window. -->
     <WindowStyle decorations="flat">
-        <Font>Roboto-10</Font>
+        <Font>Cantarell-10</Font>
         <Width>2</Width>
-        <Height>19</Height>
+        <Height>17</Height>
         <Corner>2</Corner>
-        <Foreground>#FFFFFF</Foreground>
+        <Foreground>#F9F9F9</Foreground>
         <Background>#444851</Background>
         <Outline>#444851</Outline>
         <Active>
-            <Foreground>#FFFFFF</Foreground>
+            <Foreground>#F9F9F9</Foreground>
             <Background>#444851</Background>
             <Outline>#444851</Outline>
         </Active>
     </WindowStyle>
 
-    <!-- Buttons Style Window. -->
-       <ButtonClose>/usr/share/pixmaps/close.png</ButtonClose>
-       <ButtonMax>/usr/share/pixmaps/max.png</ButtonMax>
-       <ButtonMaxActive>/usr/share/pixmaps/maxact.png</ButtonMaxActive>
-       <ButtonMin>/usr/share/pixmaps/min.png</ButtonMin>
-
     <!-- Visual Style Menu. -->
     <MenuStyle>
-        <Font>Roboto-9</Font>
-        <Foreground>#FFFFFF</Foreground>
+        <Font>Cantarell-10</Font>
+        <Foreground>#F9F9F9</Foreground>
         <Background>#444851</Background>
 	<Outline>#444851</Outline>
         <Active>
-            <Foreground>#FFFFFF</Foreground>
+            <Foreground>#F9F9F9</Foreground>
             <Background>#db6823</Background>
         </Active>
     </MenuStyle>
 
     <!-- Visual Style Tray. -->
     <TrayStyle decorations="flat">
-        <Font>Roboto-9</Font>
+        <Font>Cantarell-10</Font>
         <Background>#444851</Background>
-        <Foreground>#FFFFFF</Foreground>
+        <Foreground>#F9F9F9</Foreground>
         <Outline>#444851</Outline>
         <Active>
-            <Foreground>#FFFFFF</Foreground>
+            <Foreground>#F9F9F9</Foreground>
             <Background>#db6823</Background>
         </Active>
     </TrayStyle>
@@ -49,8 +44,8 @@
     <!-- Visual Style Pager. -->
     <PagerStyle>
         <Outline>#444851</Outline>
-        <Font>Roboto-7</Font>
-        <Text>#FFFFFF</Text>
+        <Font>Cantarell-8</Font>
+        <Text>#F9F9F9</Text>
         <Foreground>#444851</Foreground>
         <Background>#2b2b2b</Background>
         <Active>
@@ -61,9 +56,9 @@
 
     <!-- Visual Style Pop. -->
     <PopupStyle>
-        <Font>Roboto-9</Font>
+        <Font>Cantarell-10</Font>
         <Outline>#414244</Outline>
-        <Foreground>#FFFFFF</Foreground>
+        <Foreground>#F9F9F9</Foreground>
         <Background>#414244</Background>
     </PopupStyle>
 

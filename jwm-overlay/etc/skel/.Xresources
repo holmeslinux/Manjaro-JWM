@@ -1,10 +1,10 @@
 ! XTerm Settings
-*background: #db6823
-*foreground: #444851
+*background: #444851
+*foreground: #f9f9f9
 xterm*reverseVideo: on
-xterm*faceName: Monospace:size=10:antialias=true
+xterm*faceName: Terminus:size=11:antialias=true
 xterm*font: 7x13
-xterm*geometry: 80x26
+xterm*geometry: 79x24
 
 ! Rofi Settings
 rofi.opacity: 90

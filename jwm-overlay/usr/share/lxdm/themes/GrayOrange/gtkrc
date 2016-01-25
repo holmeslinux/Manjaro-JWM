@@ -23,13 +23,13 @@ style "time"
 style "prompt"
 {
 	fg[NORMAL]="#db6823"
-	font_name="Roboto Bold 12"
+	font_name="Cantarell Bold 12"
 }
 
 # Normally this won't paint an invisible event box, but we did some hacks in greeter.c.
 style "bottom"
 {
-	font_name="Roboto 11"
+	font_name="Cantarell 11"
 	fg[NORMAL] = "#db6823"
 	engine "pixmap"
 	{
@@ -45,7 +45,7 @@ style "bottom"
 
 style "login"
 {
-	font_name="Roboto 11"
+	font_name="Cantarell 11"
 	fg[NORMAL] = "#db6823"
 	engine "pixmap"
 	{
