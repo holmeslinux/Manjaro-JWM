@@ -10,6 +10,7 @@
         <Foreground>#F9F9F9</Foreground>
         <Background>#444851</Background>
         <Outline>#444851</Outline>
+        <Opacity>0.8</Opacity>
         <Active>
             <Foreground>#F9F9F9</Foreground>
             <Background>#444851</Background>
