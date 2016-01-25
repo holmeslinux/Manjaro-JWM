@@ -28,7 +28,7 @@
             <Program label="LXMusic Music">lxmusic</Program>
         </Menu>
         <Menu label="Network">
-            <Program label="Connection Manager">wicd-client -n</Program>
+            <Program label="Connection Manager">wicd-client --tray</Program>
 	    <Program label="BlueMan Settings">blueman-manager</Program>
             <Program label="Pale Moon Browser">palemoon</Program>
             <Program label="HexChat IRC">hexchat</Program>
