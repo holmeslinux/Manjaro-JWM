@@ -29,14 +29,12 @@ ${voffset 5}${goto 40}$font$color2${top name 1}$alignr$color${top cpu 1}%
 ${goto 40}$color2${top name 2}$alignr$color${top cpu 2}%
 ${goto 40}$color2${top name 3}$alignr$color${top cpu 3}%
 ${goto 40}$color2${top name 4}$alignr$color${top cpu 4}%
-${goto 40}$color2${top name 5}$alignr$color${top cpu 5}%
 #
 ${voffset 10}${goto 40}${color}RAM$alignr$mem$font
 ${goto 40}${voffset 5}$color2${top_mem name 1}$alignr$color${top_mem mem_res 1}
 ${goto 40}$color2${top_mem name 2}$alignr$color${top_mem mem_res 2}
 ${goto 40}$color2${top_mem name 3}$alignr$color${top_mem mem_res 3}
 ${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
-${goto 40}$color2${top_mem name 5}$alignr$color${top_mem mem_res 5}
 #
 ${voffset 10}$alignr${color2}hd ${fs_size /} - ${fs_used /}
 ${alignr}${color2}${font Cantarell:size=9}mem $memmax - $mem
@@ -48,5 +46,5 @@ ${voffset 10}$alignr${execi 1200 whoami}@${nodename}
 ${alignr}${color2}${font Cantarell:size=9}uptime ${color}${uptime_short}
 ${alignr}${color2}${font Cantarell:size=9}${alignr}kernel ${color}${kernel}
 ${alignr}${color2}${font Cantarell:size=9}${alignr}architecture ${color}${machine}
-${voffset 10}${alignr}${color} you can install ${font Cantarell:bold:size=10}${execpi 12000 checkupdates | wc -l} ${font} update(s)
+${voffset 10}${alignr}${color} you can install ${font Cantarell:bold:size=10}${execpi 12000 checkupdates | wc -l}${font} update(s)
 ]]

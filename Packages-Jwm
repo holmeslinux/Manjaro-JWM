@@ -5,7 +5,7 @@
 ## Sound and Audio
 alsa-plugins
 manjaro-alsa
-volumeicon
+volumeicon-gtk2
 
 ## File Management
 gvfs

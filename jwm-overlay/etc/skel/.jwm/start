@@ -3,7 +3,7 @@
 
     <!-- Startup for program. -->
     <StartupCommand>sleep 1s && volumeicon &</StartupCommand>
-    <StartupCommand>sleep 2s && cbatticon -u 120 -i standard -c "systemctl suspend" -l 20 -r 5 &</StartupCommand>
+    <StartupCommand>sleep 2s && wicd-client --tray &</StartupCommand>
     <StartupCommand>sleep 3s && conky &</StartupCommand>
     <StartupCommand>sleep 5s && xautolock -time 20 -locker 'i3lock -i $HOME/.i3lock/fly-chauvin.png' &</StartupCommand>
     <StartupCommand>sleep 6s && /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &</StartupCommand>
