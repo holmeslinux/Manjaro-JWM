@@ -5,7 +5,7 @@
     <WindowStyle decorations="flat">
         <Font>Cantarell-10</Font>
         <Width>2</Width>
-        <Height>17</Height>
+        <Height>18</Height>
         <Corner>2</Corner>
         <Foreground>#F9F9F9</Foreground>
         <Background>#444851</Background>
@@ -17,6 +17,12 @@
             <Outline>#444851</Outline>
         </Active>
     </WindowStyle>
+
+    <!-- Visual Style Window Buttons. -->
+        <ButtonClose>/usr/share/pixmaps/close.png</ButtonClose>
+        <ButtonMax>/usr/share/pixmaps/max.png</ButtonMax>
+        <ButtonMaxActive>/usr/share/pixmaps/maxact.png</ButtonMaxActive>
+        <ButtonMin>/usr/share/pixmaps/min.png</ButtonMin>
 
     <!-- Visual Style Menu. -->
     <MenuStyle>

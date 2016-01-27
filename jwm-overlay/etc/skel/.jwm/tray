@@ -2,12 +2,12 @@
 <JWM>
 
     <!-- Tray of the environment. -->
-    <Tray x="0" y="-1" width="1300" height="22" autohide="off" halign="center" valign="bottom">
+    <Tray x="0" y="-1" height="23" autohide="off" halign="fixed" valign="bottom">
 	<Spacer width="5"/>    
         <TrayButton icon="/usr/share/icons/Faenza/places/96/logotray.png" label="Menu">root:3</TrayButton>
         <Spacer width="5"/>
         <Pager labeled="true"/>
-        <TaskList maxwidth="120" border="false"/>
+        <TaskList maxwidth="130" border="false"/>
 	<Dock/>        
 	<Spacer width="5"/>
         <Clock format="%H : %M : %S"></Clock>

@@ -4,7 +4,7 @@
 xterm*reverseVideo: on
 xterm*faceName: Terminus:size=11:antialias=true
 xterm*font: 7x13
-xterm*geometry: 79x24
+xterm*geometry: 80x25
 
 ! Rofi Settings
 rofi.opacity: 90
