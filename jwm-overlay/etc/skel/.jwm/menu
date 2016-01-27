@@ -16,13 +16,7 @@
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/imagemagick.svg" label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' & scrot -se 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
-	<Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/grub-customizer.svg" label="Install Manjaro">
-	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/grub-customizer.svg" label="Graphical Calamares">sudo calamares</Program>
-	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/grub-customizer.svg" label="Graphical Thus">sudo thus</Program>
-	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/grub-customizer.svg" label="CLI">sudo xterm /usr/bin/setup</Program>
-        </Menu>
-        <Separator/>
-        <Menu icon="/usr/share/icons/Ultra Flat Orange/categories/scalable/applications-utilities.svg" label="Accesories">
+	<Menu icon="/usr/share/icons/Ultra Flat Orange/categories/scalable/applications-utilities.svg" label="Accesories">
             <Program icon="/usr/share/icons/hicolor/48x48/apps/medit.png" label="Medit Editor">medit</Program>
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/textwrangler.svg" label="Leafpad Editor">leafpad</Program>
         </Menu>
@@ -74,13 +68,7 @@
             </Menu>
         </Menu>
         <Separator/>
-        <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/xkill.svg" label="Session">
-            <Program icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/media-record.svg" label="Lock">i3lock -i $HOME/.i3lock/fly-chauvin.png</Program>
-            <Program icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/appointment.svg" label="Suspend">systemctl suspend</Program>
-            <Exit icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-logout.svg" label="Logout" confirm="false"/>
-            <Program icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-reboot.svg" label="Restart">systemctl reboot</Program>
-            <Program icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-shutdown.svg" label="Shutdown">systemctl poweroff</Program>
-        </Menu>
-    </RootMenu>
+              <Program icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-logout.svg" label="Logout">oblogout</Program>
+        </RootMenu>
 
 </JWM>

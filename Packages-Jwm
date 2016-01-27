@@ -14,7 +14,7 @@ gvfs-gphoto2
 gvfs-smb
 p7zip
 pcmanfm
-xarchiver
+xarchiver-gtk2
 
 ## Network and bluetooth
 wicd-gtk
@@ -60,7 +60,6 @@ lxinput
 ## Artwork, Icon, Mouse, and Desktop Themes
 gtk-engine-murrine
 xcursor-vanilla-dmz-aa
-cantarell-fonts
 
 ## Applications
 abiword
@@ -88,3 +87,4 @@ tlp
 ## Fonts
 adobe-source-sans-pro-fonts
 ttf-droid
+cantarell-fonts

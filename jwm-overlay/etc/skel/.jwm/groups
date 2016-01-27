@@ -28,4 +28,10 @@
         <Option>centered</Option>
     </Group>
 
+    <Group>
+        <Name>oblogout</Name>
+        <Option>nolist</Option>
+	<Option>centered</Option>
+    </Group>
+
 </JWM>
