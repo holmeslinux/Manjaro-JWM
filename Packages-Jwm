@@ -52,6 +52,7 @@ scrot
 xautolock
 xterm
 update-notifier
+oblogout
 
 ## Desktop Configuration
 arandr

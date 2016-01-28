@@ -12,7 +12,7 @@
 	<Spacer width="5"/>
         <Clock format="%H : %M : %S"></Clock>
 	<Spacer width="5"/>
-	<TrayButton icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-logout.svg" popup="Logout">exec:oblogout</TrayButton>
+	<TrayButton icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-reboot.svg" popup="Leave">exec:oblogout</TrayButton>
         <Spacer width="5"/>
     </Tray>
 
