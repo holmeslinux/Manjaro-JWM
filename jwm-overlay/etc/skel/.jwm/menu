@@ -68,7 +68,7 @@
             </Menu>
         </Menu>
         <Separator/>
-              <Program icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-logout.svg" label="Logout">oblogout</Program>
+              <Program icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-logout.svg" label="Leave">oblogout</Program>
         </RootMenu>
 
 </JWM>
