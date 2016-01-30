@@ -53,6 +53,8 @@ xautolock
 xterm
 update-notifier
 oblogout
+lm_sensors
+xsensors
 
 ## Desktop Configuration
 arandr
@@ -63,7 +65,7 @@ gtk-engine-murrine
 xcursor-vanilla-dmz-aa
 
 ## Applications
-abiword
+abiword-gtk2
 cbatticon
 compton
 conky

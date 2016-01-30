@@ -21,8 +21,6 @@
     <Key mask="A" key="F10">maximize</Key>
     <Key mask="CA" key="Right">rdesktop</Key>
     <Key mask="CA" key="Left">ldesktop</Key>
-    <Key mask="A" key="Up">udesktop</Key>
-    <Key mask="A" key="Down">ddesktop</Key>
     <Key mask="SA" key="Right">sendr</Key>
     <Key mask="SA" key="Left">sendl</Key>
 
@@ -44,6 +42,7 @@
     <!-- Key sound. -->
     <Key mask="4" key="PgDn">>exec:amixer set Master 5%- </Key>
     <Key mask="4" key="PgUp">exec:amixer set Master 5%+ </Key>
+    <Key mask="4" key="0">exec:amixer set Master toggle</Key>
     
     <!-- Key toggle. -->
     <Key mask="4" key="Up">maxtop</Key>
