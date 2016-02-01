@@ -46,5 +46,4 @@ ${voffset 10}$alignr${execi 1200 whoami}@${nodename}
 ${alignr}${color2}${font Cantarell:size=9}uptime ${color}${uptime_short}
 ${alignr}${color2}${font Cantarell:size=9}${alignr}kernel ${color}${kernel}
 ${alignr}${color2}${font Cantarell:size=9}${alignr}architecture ${color}${machine}
-${voffset 10}${alignr}${color} you can install ${font Cantarell:bold:size=10}${execpi 12000 checkupdates | wc -l}${font} update(s)
 ]]

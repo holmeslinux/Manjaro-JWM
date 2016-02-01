@@ -1,1 +1,6 @@
-0 091420 * * * /usr/bin/update-notifier
+#update-notifier
+* */3 * * * /usr/bin/update-notifier
+
+#battery ibam
+*/3 * * * * ~/.battery/battery.sh
+
