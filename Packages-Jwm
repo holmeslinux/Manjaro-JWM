@@ -17,9 +17,13 @@ pcmanfm
 xarchiver-gtk2
 
 ## Network and bluetooth
-wicd-gtk
 openresolv
 blueman
+network-manager-applet
+networkmanager-dispatcher-ntpd
+networkmanager-openvpn
+networkmanager-vpnc
+json-c	
 
 ## Polkit
 gksu
@@ -92,3 +96,20 @@ tlp
 adobe-source-sans-pro-fonts
 ttf-droid
 cantarell-fonts
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+git
+libconfig
+libtool
+m4
+make
+patch
+subversion
+yaourt

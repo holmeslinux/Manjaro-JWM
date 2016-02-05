@@ -39,10 +39,10 @@ JWMconf is an interactive configure JWM for your command line terminal. It provi
 
 HOME SCREEN
 JWMconf Control Center Shell Configure's home screen is split into two parts: 
-The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources and LXtDM. Choose an option by entering its number and pressing [Enter].
+The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LXDM and Oblogout. Choose an option by entering its number and pressing [Enter].
 
 ATTENTION
-*The number 19, 20, 21 and 22 can break your system. WARNING! USE WITH CAUTION.
+*The number 19, 20, 21, 22 and 23 can break your system. WARNING! USE WITH CAUTION.
 
 0 - EXIT JWMCONF
 "clear && exit"
@@ -124,6 +124,9 @@ Xresources is a user-level configuration dotfile, typically located at ~/.Xresou
 22- EDIT LXDM
 LXDM is a lightweight display manager for the LXDE desktop environment. The UI is implemented with GTK+ 2.
 
+23- EDIT OBLOGOUT
+Oblogout is an optional, configurable logout script that presents a graphical interface (i.e. buttons) to cancel, logout, restart, shutdown, suspend.
+
 To exit this information page, press "q".
 	EOF
 }
@@ -154,6 +157,7 @@ NC='\e[0m'
     echo -e " │  $NC 17  $NC  Edit Gmrun                         $NC 18  $NC  Edit Bashrc           │"
     echo -e " │  $NC 19  $NC *Edit GTK2              	      $NC 20  $NC *Edit GTK3             │"
     echo -e " │  $NC 21  $NC *Edit Xresources 	              $NC 22  $NC *Edit LXDM             │"
+    echo -e " │  $NC 23  $NC *Edit Oblogout			                           │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "        $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
@@ -315,7 +319,13 @@ NC='\e[0m'
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
-
+	23)
+            echo ""
+            sudo nano /etc/oblogout.conf
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
+            read
+            ;;
 
         0)
             clear && exit

@@ -1,8 +1,8 @@
 ! XTerm Settings
-*background: #444851
-*foreground: #f9f9f9
+*background: #db6823
+*foreground: #444851
 xterm*reverseVideo: on
-xterm*faceName: Terminus:size=11:antialias=true
+xterm*faceName: Liberation Mono:size=10:antialias=true
 xterm*font: 7x13
 xterm*geometry: 80x25
 

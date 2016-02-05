@@ -6,14 +6,15 @@
 	<Spacer width="5"/>    
         <TrayButton icon="/usr/share/icons/Faenza/places/96/logotray.png" label="Menu">root:3</TrayButton>
         <Spacer width="5"/>
+	<TrayButton icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/file-manager.svg" popup="Arquivos">exec:pcmanfm</TrayButton>        
+	<TrayButton icon="/usr/share/icons/hicolor/48x48/apps/palemoon.png" popup="Browser">exec:palemoon</TrayButton>
+	<Spacer width="5"/>
         <Pager labeled="true"/>
         <TaskList maxwidth="130" border="false"/>
 	<Dock/>        
 	<Spacer width="5"/>
         <Clock format="%H : %M : %S"></Clock>
 	<Spacer width="5"/>
-	<TrayButton icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/exit.png" popup="Exit">exec:oblogout</TrayButton>
-        <Spacer width="5"/>
-    </Tray>
+     </Tray>
 
 </JWM>
