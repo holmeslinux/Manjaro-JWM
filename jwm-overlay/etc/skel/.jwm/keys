@@ -37,7 +37,7 @@
     <Key mask="4" key="F1">root:3</Key>
     <Key mask="4" key="p">exec:xterm ~/.managers/pacli</Key>
     <Key mask="4" key="j">exec:xterm ~/.managers/jwmconf</Key>
-    <Key mask="4" key="l">exec:i3lock -i $HOME/.i3lock/fly-chauvin.png</Key>
+    <Key mask="4" key="l">exec:i3lock -c 414244</Key>
     <Key mask="4" key="u">exec:jwm -restart</Key>
 
     <!-- Key sound. -->

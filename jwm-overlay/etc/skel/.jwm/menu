@@ -19,15 +19,15 @@
 	<Menu icon="/usr/share/icons/Ultra Flat Orange/categories/scalable/applications-utilities.svg" label="Accesories">
             <Program icon="/usr/share/icons/hicolor/48x48/apps/medit.png" label="Medit Editor">medit</Program>
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/textwrangler.svg" label="Leafpad Editor">leafpad</Program>
-	    <Program icon="/usr/share/pixmaps/xarchiver/xarchiver-extract.png.svg" label="Xarchiver File">xarchiver</Program>
-	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/kate.svg" label="Clipit Manager">medit</Program>
+	    <Program icon="/usr/share/pixmaps/xarchiver/xarchiver-extract.png" label="Xarchiver File">xarchiver</Program>
+	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/braindump.svg" label="Clipit Manager">medit</Program>
         </Menu>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/applications-graphics.svg" label="Graphics">
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/goa-panel.svg" label="Image Editor">palemoon http://www.online-image-editor.com/</Program>
         </Menu>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/midia.svg" label="Multimedia">
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/smplayer.svg" label="SMPlayer Video">smplayer</Program>
-            <Program icon="/usr/share/pixmaps/lxmusic.png" label="LXMusic Music">lxmusic</Program>
+            <Program icon="/usr/share/pixmaps/lxmusic.png" label="LXMusic Player">lxmusic</Program>
         </Menu>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/network.svg" label="Network">
             <Program icon="/usr/share/icons/hicolor/48x48/apps/palemoon.png" label="Pale Moon Browser">palemoon</Program>
@@ -43,7 +43,7 @@
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/settings.svg" label="Settings">
             <Program icon="/usr/share/icons/hicolor/48x48/apps/nitrogen.png" label="Nitrogen Wall">nitrogen</Program>
 	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/preferences-desktop-theme.svg" label="Customize Look">lxappearance</Program>
-	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/snes9x.svg" label="Manjaro Settings">manjaro-settings-manager -style=gtk</Program>
+	    <Program icon="/usr/share/icons/Faenza/places/96/logotray.png" label="Manjaro Settings">manjaro-settings-manager -style=gtk</Program>
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/meld.svg" label="Personalize LXDM">lxdm-config-pkexec</Program>
 	    <Program icon="/usr/share/icons/hicolor/scalable/devices/blueman-device.svg" label="BlueMan Adapters">blueman-adapters</Program>
 	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/blueman.svg" label="BlueMan Manager">blueman-manager</Program> 
@@ -61,7 +61,7 @@
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/htop.svg" label="HTop Process">sakura -e htop</Program>
 	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/rocket.svg" label="Temp Sensors">xsensors</Program>
             <Program icon="/usr/share/hardinfo/pixmaps/logo.png" label="Hard Info">hardinfo</Program>
-        <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Script All">
+        <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Script Install">
                 <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Multimedia">gksu xterm ~/.scripts/multimedia.sh</Program>
                 <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="OpenJDK">gksu xterm ~/.scripts/jdk.sh</Program>
                 <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Printing">gksu xterm ~/.scripts/printing.sh</Program>

@@ -2,14 +2,17 @@
 <JWM>
 
     <!-- Startup for program. -->
+    <StartupCommand>nitrogen --restore</StartupCommand>
+    <StartupCommand>compton -c</StartupCommand>    
     <StartupCommand>sleep 1s && volumeicon &</StartupCommand>
     <StartupCommand>sleep 2s && nm-applet &</StartupCommand>
     <StartupCommand>sleep 3s && conky &</StartupCommand>
     <StartupCommand>sleep 5s && notify-send "Welcome to Manjaro JWM Edition" &</StartupCommand>
-    <StartupCommand>sleep 6s && xautolock -time 20 -locker 'i3lock -i 414244' &</StartupCommand>
+    <StartupCommand>sleep 6s && xautolock -time 20 -locker 'i3lock -c 414244' &</StartupCommand>
     <StartupCommand>sleep 7s && /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &</StartupCommand>
     <StartupCommand>sleep 8s && xrdb merge .Xresources &</StartupCommand>
-    <StartupCommand>nitrogen --restore</StartupCommand>
-    <StartupCommand>compton -c</StartupCommand>
-
+    
 </JWM>
+
+
+

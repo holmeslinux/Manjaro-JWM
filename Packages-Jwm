@@ -70,8 +70,7 @@ xcursor-vanilla-dmz-aa
 
 ## Applications
 abiword-gtk2
-ibam
-#cbatticon
+cbatticon-gtk2
 compton
 conky
 elinks
