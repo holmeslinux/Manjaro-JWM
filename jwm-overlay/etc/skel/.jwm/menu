@@ -16,12 +16,11 @@
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/imagemagick.svg" label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' & scrot -se 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
-	<Menu icon="/usr/share/icons/Ultra Flat Orange/categories/scalable/applications-utilities.svg" label="Accesories">
+        <Menu icon="/usr/share/icons/Ultra Flat Orange/categories/scalable/applications-utilities.svg" label="Accesories">
             <Program icon="/usr/share/icons/hicolor/48x48/apps/medit.png" label="Medit Editor">medit</Program>
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/textwrangler.svg" label="Leafpad Editor">leafpad</Program>
 	    <Program icon="/usr/share/pixmaps/xarchiver/xarchiver-extract.png" label="Xarchiver Compressed">xarchiver</Program>
-	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/braindump.svg" label="Clipit Clipboard">medit</Program>
-        </Menu>
+	</Menu>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/applications-graphics.svg" label="Graphics">
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/goa-panel.svg" label="Online Image Editor">palemoon http://www.online-image-editor.com/</Program>
         </Menu>
