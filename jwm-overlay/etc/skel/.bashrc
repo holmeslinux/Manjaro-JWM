@@ -32,10 +32,6 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
 
-# Alias programmed 
-
-alias usbiso='sudo mkusb'		# writes ISO in pendrive (obs.: usbiso nameiso)
-
 # ex - archive extractor
 # usage: ex <file>
   ex ()
