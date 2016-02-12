@@ -372,8 +372,8 @@ NC='\e[0m'
             echo
             echo -e "$NC All locally installed packages listed. To return to Pacli press [Enter] $NC"
             read     
-            ;;  
-         0)
+            ;;
+	0)
             echo
             clear && exit
             read
