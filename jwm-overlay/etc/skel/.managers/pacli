@@ -33,11 +33,11 @@
 
 function help_text() {
 	less 	<<-EOF
-Welcome to Pacli Control Center Shell Packager's information page.
+Welcome to Pacli Package Manager's information page.
 Pacli is an interactive package manager for your command line terminal. It provides an easy user interface and uses Pacman and Yaourt as back ends. Additionally, it uses some Manjaro exclusive commands. Pacli offers you the most common and useful features for managing your packages.
 
 HOME SCREEN
-Pacli Control Center Shell Packager's home screen is split into two parts: 
+Pacli Package Manager's home screen is split into two parts: 
 The upper part focuses on gerneral options and options exclusive to packages from Manjaro's repositories. 
 The lower part offers Arch User Repository (AUR) management options.
 Choose an option by entering its number and pressing [Enter].
@@ -182,7 +182,7 @@ NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                 $NC Pacli Control Center Shell Packager $NC "
+    echo -e "                        $NC Pacli Package Manager $NC "
     echo ""
     echo -e "                    $NC ::WARNING! USE WITH CAUTION:: $NC"
     echo -e " ┌────────────────────────────────────────────────────────────────────┐"

@@ -23,7 +23,7 @@
 # Design based on IceFox script                                                         #
 # Modified, adapted and improved by pekman and excalibur1234                            #
 # Some modifications based on the pacli and mhwd-tui (thx @Chrysostomus) made by Holmes #
-# Contact and suggestions: pekman@openmailbox.org (JWMconf holmes_holmes@live.com)      #
+# Contact and suggestions: pekman@openmailbox.org (JWMConf holmes_holmes@live.com)      #
 # Freenode: #manjaropek #manjaro-geek #manjaro                                          #
 # Topic discussion                                                                      #
 #                       http://polr.me/Pacli1                                           #
@@ -34,11 +34,11 @@
 
 function help_text() {
 	less 	<<-EOF
-Welcome to JWMconf Control Center Shell Configure's information page.
+Welcome to JWMConf Configuration Tool's information page.
 JWMconf is an interactive configure JWM for your command line terminal. It provides an easy user interface to edit configuration files of the JWM. You can also edit other files.
 
 HOME SCREEN
-JWMconf Control Center Shell Configure's home screen is split into two parts: 
+JWMConf Configuration Tool's home screen is split into two parts: 
 The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LXDM and Oblogout. Choose an option by entering its number and pressing [Enter].
 
 ATTENTION
@@ -139,7 +139,7 @@ NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                  $NC JWMconf Control Center Shell Configure $NC "
+    echo -e "                       $NC JWMConf Configuration Tool $NC "
     echo ""
     echo -e "                      $NC ::WARNING! USE WITH CAUTION:: $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
