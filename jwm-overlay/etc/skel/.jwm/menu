@@ -22,7 +22,7 @@
         <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/pacli.svg" label="Pacli">xterm ~/.managers/pacli</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/jwmconf.svg" label="JWMConf">xterm ~/.managers/jwmconf</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder.svg" label="File Manager">pcmanfm</Program>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/nave.svg" label="Web Browser">palemoon</Program>
+        <Program icon="/usr/share/icons/hicolor/48x48/apps/xfce-internet.png" label="Web Browser">palemoon</Program>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/imagemagick.svg" label="Screenshot">
 	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/imagemagick.svg" label="Active Window Delay">notify-send 'Selection will be saved in ~/Screenshots in 5s' & scrot -ud 5 -e 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>            
 	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/imagemagick.svg" label="Active Window">scrot -ue 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
@@ -31,10 +31,10 @@
         </Menu>
         <Separator/>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/categories/scalable/applications-utilities.svg" label="Accesories">
-            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/isomaster.svg" label="ImageWriter ISO/USB">imagewriter</Program>
+            <Program icon="/usr/share/icons/hicolor/48x48/apps/tvm-burn-cd.png" label="ImageWriter ISO/USB">imagewriter</Program>
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/textwrangler.svg" label="Leafpad Editor">leafpad</Program>
             <Program icon="/usr/share/icons/hicolor/48x48/apps/medit.png" label="Medit Editor">medit</Program>
-           <Program icon="/usr/share/pixmaps/xarchiver/xarchiver-extract.png" label="Xarchiver Compressed">xarchiver</Program>
+           <Program icon="/usr/share/icons/hicolor/48x48/apps/xarchiver.png" label="Xarchiver Compressed">xarchiver</Program>
         </Menu>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/applications-graphics.svg" label="Graphics">
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/goa-panel.svg" label="Online Image Editor">palemoon http://www.online-image-editor.com/</Program>
