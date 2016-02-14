@@ -3,6 +3,9 @@
 
     <!-- The root menu. -->
     <RootMenu onroot="7">
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-home.svg" label="Home">pcmanfm $HOME/</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-locked.svg" label="Root">pcmanfm ~/</Program>
+   <Separator/>
         <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-documents.svg" label="Documents">pcmanfm ~/Documents</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-download.svg" label="Downloads">pcmanfm ~/Downloads</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-music.svg" label="Music">pcmanfm ~/Music</Program>
@@ -73,8 +76,8 @@
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/gufw.svg" label="Gufw Firewall">gksu gufw</Program>
        	    <Program icon="/usr/share/hardinfo/pixmaps/logo.png" label="HardInfo">hardinfo</Program>
 	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/htop.svg" label="HTop Processes">sakura -e htop</Program>
-            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/jwmconf.svg" label="JWMConf Configure">xterm ~/.managers/jwmconf</Program>            
-            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/pacli.svg" label="Pacli Packager">xterm ~/.managers/pacli</Program>
+            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/jwmconf.svg" label="JWMConf Configuration">xterm ~/.managers/jwmconf</Program>            
+            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/pacli.svg" label="Pacli Package">xterm ~/.managers/pacli</Program>
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/preferences-desktop-user-password.svg" label="Privilege Granting">gksu-properties</Program>
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/krusader_root.svg" label="Root File Manager">gksu pcmanfm</Program>         
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/utilities-terminal_su.svg" label="Root Terminal">gksu sakura</Program>            
