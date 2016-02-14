@@ -2,12 +2,23 @@
 <JWM>
 
     <!-- The root menu. -->
+    <RootMenu onroot="7">
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-documents.svg" label="Documents">pcmanfm ~/Documents</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-download.svg" label="Downloads">pcmanfm ~/Downloads</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-music.svg" label="Music">pcmanfm ~/Music</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-pictures.svg" label="Pictures">pcmanfm ~/Pictures</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-pictures.svg" label="Screenshots">pcmanfm ~/Screenshots</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-videos.svg" label="Videos">pcmanfm ~/Videos</Program>
+    <Separator/>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/computer.svg" label="Devices">pcmanfm computer:///</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/emptytrash.svg" label="Trash">pcmanfm trash:///</Program>
+    </RootMenu>
     <RootMenu onroot="3">
         <Program icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-run.svg" label="Run Applications">gmrun</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/yakuake.svg" label="Terminal">sakura</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/pacli.svg" label="Pacli">xterm ~/.managers/pacli</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/jwmconf.svg" label="JWMConf">xterm ~/.managers/jwmconf</Program>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/file-manager.svg" label="File Manager">pcmanfm</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder.svg" label="File Manager">pcmanfm</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/nave.svg" label="Web Browser">palemoon</Program>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/imagemagick.svg" label="Screenshot">
 	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/imagemagick.svg" label="Active Window Delay">notify-send 'Selection will be saved in ~/Screenshots in 5s' & scrot -ud 5 -e 'mv $f ~/Screenshots' && sleep 1 && notify-send 'Screenshot has been saved in ~/Screenshots'</Program>            

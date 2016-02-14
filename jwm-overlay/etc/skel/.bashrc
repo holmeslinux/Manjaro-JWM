@@ -60,5 +60,8 @@ alias np='nano PKGBUILD'
       fi
     }
 
+# greetings
+echo Hello, welcome to Manjaro JWM Community Edition!
+
 # prompt programmed
 PS1='┌─[\d][\u@\h:\w]\n└─> '

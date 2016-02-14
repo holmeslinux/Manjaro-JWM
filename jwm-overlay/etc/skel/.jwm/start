@@ -8,7 +8,7 @@
     <StartupCommand>sleep 2s && volumeicon &</StartupCommand>
     <StartupCommand>sleep 3s && nm-applet &</StartupCommand>
     <StartupCommand>sleep 4s && conky &</StartupCommand>
-    <StartupCommand>sleep 6s && notify-send "Welcome to Manjaro JWM Edition" &</StartupCommand>
+    <StartupCommand>sleep 6s && notify-send "Hello, welcome to Manjaro JWM Community Edition!" &</StartupCommand>
     <StartupCommand>sleep 7s && xautolock -time 20 -locker 'i3lock -c 414244' &</StartupCommand>
     <StartupCommand>sleep 8s && /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &</StartupCommand>
     <StartupCommand>sleep 9s && xrdb merge .Xresources &</StartupCommand>
