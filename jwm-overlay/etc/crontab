@@ -1,4 +1,0 @@
-#update-notifier
-* */3 * * * /usr/bin/update-notifier
-
-

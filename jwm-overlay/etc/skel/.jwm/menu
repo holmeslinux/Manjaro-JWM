@@ -5,13 +5,6 @@
     <RootMenu onroot="7">
         <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-home.svg" label="Home">pcmanfm $HOME/</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-locked.svg" label="Root">pcmanfm ~/</Program>
-   <Separator/>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-documents.svg" label="Documents">pcmanfm ~/Documents</Program>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-download.svg" label="Downloads">pcmanfm ~/Downloads</Program>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-music.svg" label="Music">pcmanfm ~/Music</Program>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-pictures.svg" label="Pictures">pcmanfm ~/Pictures</Program>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-pictures.svg" label="Screenshots">pcmanfm ~/Screenshots</Program>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder-videos.svg" label="Videos">pcmanfm ~/Videos</Program>
     <Separator/>
         <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/computer.svg" label="Devices">pcmanfm computer:///</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/emptytrash.svg" label="Trash">pcmanfm trash:///</Program>

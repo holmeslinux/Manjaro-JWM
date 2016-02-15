@@ -55,10 +55,10 @@ python2-xdg
 scrot
 xautolock
 xterm
-update-notifier
 oblogout
 lm_sensors
 xsensors
+perl-file-mimeinfo
 
 ## Desktop Configuration
 arandr
