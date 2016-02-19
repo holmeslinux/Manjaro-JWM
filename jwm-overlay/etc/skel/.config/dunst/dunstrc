@@ -188,9 +188,3 @@ appname = HexChat
 timeout = 0
 background = "#db6823"
 foreground = "#444851"
-
-[Volumeicon]
-appname = Volumeicon
-timeout = 0
-background = "#db6823"
-foreground = "#444851"

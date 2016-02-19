@@ -64,28 +64,28 @@ Reload menu by sending _JWM_RELOAD to the root window.
 To check the JWM configuration and return syntax errors (including associated line numbers).
 
 4- EDIT MENU JWM
-This option is to edit the Menu settings (in ~/.jwm/menu). To edit the Menu is used nano editor.
+This option is to edit the Menu settings (in ~/.jwm/menu). To edit the Menu is used medit editor.
 
 5- EDIT TRAY JWM
-This option is to edit the Tray settings (in ~/.jwm/tray). To edit the Tray is used nano editor.
+This option is to edit the Tray settings (in ~/.jwm/tray). To edit the Tray is used medit editor.
 
 6- EDIT START JWM
-This option is to edit the Start settings (in ~/.jwm/start). To edit the Start is used nano editor.
+This option is to edit the Start settings (in ~/.jwm/start). To edit the Start is used medit editor.
 
 7- EDIT THEME JWM
-This option is to edit the Theme settings (in ~/.jwm/theme). To edit the Theme is used nano editor.
+This option is to edit the Theme settings (in ~/.jwm/theme). To edit the Theme is used medit editor.
 
 8- EDIT KEYS JWM
-This option is to edit the Keys settings (in ~/.jwm/keys). To edit the Keys is used nano editor.
+This option is to edit the Keys settings (in ~/.jwm/keys). To edit the Keys is used medit editor.
 
 9- EDIT GROUPS JWM
-This option is to edit the Groups settings (in ~/.jwm/groups). To edit the Groups is used nano editor.
+This option is to edit the Groups settings (in ~/.jwm/groups). To edit the Groups is used medit editor.
 
 10- EDIT PREFERENCES JWM
-This option is to edit the Preferences settings (in ~/.jwm/preferences). To edit the Preferences is used nano editor.
+This option is to edit the Preferences settings (in ~/.jwm/preferences). To edit the Preferences is used medit editor.
 
 11- EDIT JWMRC
-This option is to edit the jwmrc settings (in ~/.jwmrc). To edit the jwmrc is used nano editor.
+This option is to edit the jwmrc settings (in ~/.jwmrc). To edit the jwmrc is used medit editor.
 
 12- COMMANDS MANUAL JWM
 General commands manual of the Joe's Window Manager (JWM). JWM is a window manager for X11 Window System.
@@ -99,15 +99,15 @@ Visit and know the website of JWM.
 
 15- EDIT CONKY
 Conky a lightweight system monitor.
-This option is to edit the Conky settings ((in ~/.conkyrc). To edit the Conky is used nano editor.
+This option is to edit the Conky settings ((in ~/.conkyrc). To edit the Conky is used medit editor.
 
 16- EDIT DUNST
 Dunst is a lightweight replacement for the notification-daemons provided by most desktop environments.
-This option is to edit the Dunst settings (in ~/.config/dunst/dunstrc). To edit the Dunst is used nano editor.
+This option is to edit the Dunst settings (in ~/.config/dunst/dunstrc). To edit the Dunst is used medit editor.
 
 17- EDIT GMRUN
 Gmrun (Gnome Completion-Run) is an lightweight application launcher similar to GNOME Run, Application Finder, KRunner, etc. 
-This option is to edit the Gmrun settings (in ~/.gmrunrc). To edit the Gmrun is used nano editor.
+This option is to edit the Gmrun settings (in ~/.gmrunrc). To edit the Gmrun is used medit editor.
 
 18- EDIT BASHRC
 Bash (Bourne-again Shell) is a command-line shell/programming language by the GNU Project.
@@ -187,56 +187,56 @@ NC='\e[0m'
             ;;
         4)
             echo
-            nano ~/.jwm/menu
+            medit ~/.jwm/menu
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         5)
             echo
-            nano ~/.jwm/tray
+            medit ~/.jwm/tray
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         6)
             echo ""
-            nano ~/.jwm/start
+            medit ~/.jwm/start
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         7)
             echo ""
-            nano ~/.jwm/theme
+            medit ~/.jwm/theme
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read 
             ;;
         8)
             echo ""
-            nano ~/.jwm/keys
+            medit ~/.jwm/keys
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         9)
             echo ""
-            nano ~/.jwm/groups
+            medit ~/.jwm/groups
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         10)
             echo ""
-            nano ~/.jwm/preferences
+            medit ~/.jwm/preferences
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         11)
             echo ""
-            nano ~/.jwmrc
+            medit ~/.jwmrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
@@ -264,28 +264,28 @@ NC='\e[0m'
             ;;
         15)
             echo ""
-            nano ~/.conkyrc
+            medit ~/.conkyrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         16)
             echo ""
-            nano ~/.config/dunst/dunstrc
+            medit ~/.config/dunst/dunstrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         17)
             echo ""
-            nano ~/.gmrunrc
+            medit ~/.gmrunrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         18)
             echo ""
-            nano $HOME/.bashrc
+            medit $HOME/.bashrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
@@ -293,35 +293,35 @@ NC='\e[0m'
 
 	19)
             echo ""
-            nano $HOME/.gtkrc-2.0
+            medit $HOME/.gtkrc-2.0
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	20)
             echo ""
-            nano $HOME/.config/gtk-3.0/settings.ini
+            medit $HOME/.config/gtk-3.0/settings.ini
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;	
 	21)
             echo ""
-            nano $HOME/.Xresources
+            medit $HOME/.Xresources
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	22)
             echo ""
-            sudo nano /etc/lxdm/lxdm.conf
+            sudo medit /etc/lxdm/lxdm.conf
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	23)
             echo ""
-            sudo nano /etc/oblogout.conf
+            sudo medit /etc/oblogout.conf
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
