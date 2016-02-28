@@ -22,7 +22,7 @@ conky.text = [[
 ${voffset 8}$color${font Cantarell:size=16}${time %a}$font${voffset -8}$alignr${color db6823}${font Cantarell:size=38}${time %e}$font
 $color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} $color${font Cantarell:size=20}${time %Y}$font
 
-${voffset 10}$alignr$color Vitória (ES) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBVT temperature temperature 15}°C
+${voffset 10}$alignr$color Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C
 #
 ${voffset 10}${goto 40}${color}CPU$alignr$cpu%
 ${voffset 5}${goto 40}$font$color2${top name 1}$alignr$color${top cpu 1}%
