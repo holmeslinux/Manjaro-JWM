@@ -71,7 +71,7 @@ xcursor-vanilla-dmz-aa
 ## Applications
 abiword-gtk2
 cbatticon-gtk2
-compton
+xcompmgr
 conky
 elinks
 epdfview

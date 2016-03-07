@@ -2,7 +2,8 @@
 <JWM>
 
     <!-- Startup for program. -->
-    <StartupCommand>nitrogen --restore</StartupCommand>
+    <StartupCommand>nitrogen --restore &</StartupCommand>
+    <StartupCommand>xcompmgr -c &</StartupCommand>
     <StartupCommand>sleep 1s && volumeicon &</StartupCommand>
     <StartupCommand>sleep 2s && clipit &</StartupCommand>
     <StartupCommand>sleep 3s && conky &</StartupCommand>
