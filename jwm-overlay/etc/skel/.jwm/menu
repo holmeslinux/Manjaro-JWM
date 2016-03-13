@@ -13,8 +13,8 @@
     <RootMenu onroot="3">
         <Program icon="/usr/share/icons/Ultra Flat Orange/actions/scalable/system-run.svg" label="Run Applications">gmrun</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/terminal.svg" label="Terminal">sakura</Program>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/gnome-mines.svg" label="Pacli">xterm ~/.managers/pacli</Program>
-        <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/unity-control-center-info.svg" label="JWMConf">xterm ~/.managers/jwmconf</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/gnome-mines.svg" label="Pacli">xterm /usr/bin/pacli</Program>
+        <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/unity-control-center-info.svg" label="JWMConf">xterm /usr/bin/jwmconf</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/places/scalable/folder.svg" label="File Manager">pcmanfm</Program>
         <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/cs-language.svg" label="Web Browser">palemoon</Program>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/imagemagick.svg" label="Screenshot">
@@ -71,8 +71,8 @@
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/gufw.svg" label="Gufw Firewall">gksu gufw</Program>
        	    <Program icon="/usr/share/hardinfo/pixmaps/logo.png" label="HardInfo">hardinfo</Program>
 	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/htop.svg" label="HTop Processes">sakura -e htop</Program>
-            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/unity-control-center-info.svg" label="JWMConf Configuration">xterm ~/.managers/jwmconf</Program>            
-            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/gnome-mines.svg" label="Pacli Package">xterm ~/.managers/pacli</Program>
+            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/unity-control-center-info.svg" label="JWMConf Configuration">xterm /usr/bin/jwmconf</Program>            
+            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/gnome-mines.svg" label="Pacli Package">xterm /usr/bin/pacli</Program>
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/preferences-desktop-user-password.svg" label="Privilege Granting">gksu-properties</Program>
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/krusader_root.svg" label="Root File Manager">gksu pcmanfm /</Program>         
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/utilities-terminal_su.svg" label="Root Terminal">gksu sakura</Program>            
