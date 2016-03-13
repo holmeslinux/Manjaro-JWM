@@ -62,9 +62,9 @@
         </Menu>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/system.svg" label="System">
 		<Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Script Install">
-            	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Firewall">gksu xterm ~/.scripts/firewall.sh</Program>        
+            	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Firewall">gksu xterm ~/.scripts/firewall.sh</Program>
+		    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Java">gksu xterm ~/.scripts/java.sh</Program>        
                     <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Multimedia">gksu xterm ~/.scripts/multimedia.sh</Program>
-                    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="OpenJDK">gksu xterm ~/.scripts/jdk.sh</Program>
                     <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/script.svg" label="Printing">gksu xterm ~/.scripts/printing.sh</Program>
         	</Menu>
          <Separator/>
