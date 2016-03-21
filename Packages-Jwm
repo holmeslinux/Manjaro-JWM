@@ -67,6 +67,9 @@ lxinput
 ## Artwork, Icon, Mouse, and Desktop Themes
 gtk-engine-murrine
 xcursor-vanilla-dmz-aa
+ultraflatorange-icon-theme
+gtk-theme-stylishdark
+xcursor-rezowhite
 
 ## Applications
 abiword-gtk2
