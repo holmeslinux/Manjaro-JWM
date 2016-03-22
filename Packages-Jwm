@@ -59,6 +59,8 @@ oblogout
 lm_sensors
 xsensors
 perl-file-mimeinfo
+pacli-jwm
+jwmconf
 
 ## Desktop Configuration
 arandr
