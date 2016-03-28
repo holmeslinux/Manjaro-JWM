@@ -83,6 +83,8 @@
 		<Menu icon="/usr/share/lxdm/themes/GrayOrange/nobody.png" label="Manjaro">
            	    <Program icon="/usr/share/lxdm/themes/GrayOrange/nobody.png" label="Manjaro Beginner User Guide">epdfview /usr/share/doc/livecd/Beginner_User_Guide.pdf</Program>        
       	    	    <Program icon="/usr/share/lxdm/themes/GrayOrange/nobody.png" label="Manjaro JWM User Orientation Guide">epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Program>
+		    <Program icon="/usr/share/lxdm/themes/GrayOrange/nobody.png" label="Manjaro News">palemoon https://manjaro.github.io/</Program>
+		    <Program icon="/usr/share/lxdm/themes/GrayOrange/nobody.png" label="Manjaro Forum">palemoon https://forum.manjaro.org/index.php</Program>
 		    <Program icon="/usr/share/lxdm/themes/GrayOrange/nobody.png" label="Manjaro Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
 		    <Program icon="/usr/share/lxdm/themes/GrayOrange/nobody.png" label="Manjaro Mirrors">palemoon http://repo.manjaro.org/</Program>
 		    <Program icon="/usr/share/lxdm/themes/GrayOrange/nobody.png" label="Manjaro GitHub">palemoon https://github.com/manjaro</Program>
