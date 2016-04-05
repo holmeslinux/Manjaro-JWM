@@ -38,8 +38,8 @@
             <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/smplayer.svg" label="SMPlayer Video">smplayer</Program>
         </Menu>
         <Menu icon="/usr/share/icons/Adwaita/48x48/devices/network-wired.png" label="Network">
-	    <Program icon="/usr/share/icons/Ultra Flat Orange/devices/scalable/network-wired-disconected.svg" label="NetworkManager">nm-applet</Program>
-            <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/hexchat.svg" label="HexChat IRC">hexchat</Program>        
+	    <Program icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/hexchat.svg" label="HexChat IRC">hexchat</Program>
+	    <Program icon="/usr/share/icons/Ultra Flat Orange/devices/scalable/network-wired-disconected.svg" label="NetworkManager">nm-applet</Program>        
             <Program icon="/usr/share/icons/hicolor/48x48/apps/palemoon.png" label="Pale Moon Browser">palemoon</Program>
         </Menu>
         <Menu icon="/usr/share/icons/Ultra Flat Orange/apps/scalable/libreoffice.svg" label="Office">

@@ -6,6 +6,7 @@
 alsa-plugins
 manjaro-alsa
 volumeicon-gtk2
+>openrc alsa-utils-openrc
 
 ## File Management
 gvfs
@@ -23,7 +24,12 @@ network-manager-applet
 networkmanager-dispatcher-ntpd
 networkmanager-openvpn
 networkmanager-vpnc
-json-c	
+json-c
+>openrc bluez-openrc
+>openrc networkmanager-openrc
+>openrc openssh-openrc
+>openrc openvpn-openrc
+>openrc syslog-ng-openrc	
 
 ## Polkit
 gksu
@@ -61,6 +67,10 @@ xsensors
 perl-file-mimeinfo
 pacli-jwm
 jwmconf
+>openrc timeset
+>openrc ntp-openrc
+>openrc syslog-ng-openrc
+>openrc cronjobs
 
 ## Desktop Configuration
 arandr
@@ -97,6 +107,7 @@ screenfetch
 smplayer
 tlp
 imagewriter
+>openrc upower-pm-utils
 
 ## Fonts
 adobe-source-sans-pro-fonts
