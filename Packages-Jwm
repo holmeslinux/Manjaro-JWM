@@ -18,11 +18,9 @@ pcmanfm
 xarchiver-gtk2
 
 ## Network and bluetooth
-openresolv
 blueman
 network-manager-applet
 networkmanager-dispatcher-ntpd
-networkmanager-openvpn
 networkmanager-vpnc
 json-c
 >openrc bluez-openrc
@@ -79,8 +77,6 @@ lxinput
 ## Artwork, Icon, Mouse, and Desktop Themes
 gtk-engine-murrine
 xcursor-vanilla-dmz-aa
-ultraflatorange-icon-theme
-gtk-theme-stylishdark
 xcursor-rezowhite
 jwm-wallpapers
 
@@ -105,9 +101,7 @@ palemoon-bin
 sakura
 screenfetch
 smplayer
-tlp
 imagewriter
->openrc upower-pm-utils
 
 ## Fonts
 adobe-source-sans-pro-fonts

@@ -1,0 +1,57 @@
+/* NOTES to contributors:
+ * use 4 spaces indents, and keep code ALIGNED and ORDERED */
+
+* {
+    -GtkArrow-arrow-scaling: 0.6;
+    -GtkButton-child-displacement-x: 0;
+    -GtkButton-child-displacement-y: 0;
+    -GtkButton-default-border: 0;
+    -GtkButton-image-spacing: 0;
+    -GtkButton-inner-border: 1;
+    -GtkButton-interior-focus: true;
+    -GtkButtonBox-child-min-height: 24;
+    -GtkButtonBox-child-internal-pad-y: 1;
+    -GtkCheckButton-indicator-size: 15;
+    -GtkCheckMenuItem-indicator-size: 14;
+    -GtkExpander-expander-size: 12;
+    -GtkHTML-link-color: @link_color;
+    -GtkIMHtml-hyperlink-color: @link_color;
+    -GtkMenu-horizontal-padding: 0;
+    -GtkMenu-vertical-padding: 0;
+    -GtkNotebook-initial-gap: 0;
+    -GtkNotebook-tab-overlap: -2;
+    -GtkPaned-handle-size: 6;
+    -GtkProgressBar-min-horizontal-bar-height: 10;
+    -GtkProgressBar-min-vertical-bar-width: 10;
+    -GtkRange-slider-width: 10;
+    -GtkRange-stepper-spacing: 0;
+    -GtkRange-trough-border: 0;
+    -GtkRange-trough-under-steppers: 0;
+    -GtkScrollbar-has-backward-stepper: false;
+    -GtkScrollbar-has-forward-stepper: false;
+    -GtkScrollbar-min-slider-length: 50;
+    -GtkScrolledWindow-scrollbar-spacing: 0;
+    -GtkScrolledWindow-scrollbars-within-bevel: 1;
+    -GtkStatusbar-shadow-type: none;
+    -GtkTextView-error-underline-color: @error_color;
+    -GtkToolButton-icon-spacing: 6;
+    -GtkToolItemGroup-expander-size: 11;
+    -GtkTreeView-expander-size: 11;
+    -GtkWidget-focus-line-width: 0;
+    -GtkWidget-focus-padding: 0;
+    -GtkWidget-link-color: @link_color;
+    -GtkWidget-visited-link-color: @link_color;
+    -GtkWindow-resize-grip-height: 13;
+    -GtkWindow-resize-grip-width: 13;
+    -WnckTasklist-fade-overlay-rect: 0;
+
+    background-clip: padding-box;
+
+    outline-color: alpha(@theme_fg_color, 0.3);
+    outline-style: dashed;
+    outline-offset: 2px;
+/* Don't use symbolic icons */
+    -gtk-icon-style: regular;
+    box-shadow: none;
+    border-radius: 0;
+}
