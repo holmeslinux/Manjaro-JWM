@@ -19,10 +19,10 @@
     </WindowStyle>
 
     <!-- Visual Style Window Buttons. -->
-        <ButtonClose>/usr/share/themes/buttons/jwm/close.png</ButtonClose>
-        <ButtonMax>/usr/share/themes/buttons/jwm/max.png</ButtonMax>
-        <ButtonMaxActive>/usr/share/themes/buttons/jwm/maxact.png</ButtonMaxActive>
-        <ButtonMin>/usr/share/themes/buttons/jwm/min.png</ButtonMin>
+        <ButtonClose>/usr/share/themes/buttons/jwm/close.xbm</ButtonClose>
+        <ButtonMax>/usr/share/themes/buttons/jwm/max.xbm</ButtonMax>
+        <ButtonMaxActive>/usr/share/themes/buttons/jwm/maxact.xbm</ButtonMaxActive>
+        <ButtonMin>/usr/share/themes/buttons/jwm/min.xbm</ButtonMin>
 
     <!-- Visual Style Menu. -->
     <MenuStyle>

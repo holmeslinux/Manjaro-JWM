@@ -1,31 +1,32 @@
 conky.config = {
-	alignment = 'middle_right',
+	alignment = 'top_right',
 	background = true,
-	color2 = '#f0f0f0',
+	color2 = '191919',
 	cpu_avg_samples = 2,
-	default_color = 'f9f9f9',
-	draw_shades = false,
+	default_color = '191919',
+        draw_shades = false,
 	double_buffer = true,
-	font = 'Cantarell:size=8',
+	font = 'Cantarell:size=9',
 	gap_x = 10,
-	gap_y = 25,
+	gap_y = 50,
 	minimum_width = 200,
-	maximum_width = 200,
 	no_buffers = true,
 	own_window = true,
 	own_window_type = 'desktop',
 	own_window_transparent = true,
 	own_window_argb_visual = true,
         own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
-	update_interval = 2.0,
+	update_interval = 1.0,
 	use_xft = true,
 }
 conky.text = [[
-${voffset 10}${goto 5}${font Cantarell:size=12}${time %a}$font${voffset -25}$alignr${color #db6823}${font Cantarell:size=60}${time %e}$font${color}
-${voffset -35}${goto 5}${font Cantarell:size=12}${time %b}$font ${voffset 0}${font Cantarell:size=20}${time %Y}$font
+${voffset 8}$color${font Cantarell:size=16}${time %a}$font${voffset -8}$alignr${color 191919}${font Cantarell:size=38}${time %e}$font
+$color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} $color${font Cantarell:size=20}${time %Y}$font
+
+${voffset 10}$alignr$color Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C
 #
 ${voffset 10}CPU$alignr$cpu%
-${cpubar 5,200}
+${cpubar 5,198}
 ${voffset 5}$color2${top name 1}$alignr${top cpu 1}%$color
 $color2${top name 2}$alignr${top cpu 2}%$color
 $color2${top name 3}$alignr${top cpu 3}%$color
@@ -33,32 +34,23 @@ $color2${top name 4}$alignr${top cpu 4}%$color
 $color2${top name 5}$alignr${top cpu 5}%$color
 #
 ${voffset 10}RAM$alignr$mem/$memmax
-${membar 5,200}
+${membar 5,198}
 ${voffset 5}$color2${top_mem name 1}$alignr${top_mem mem_res 1}$color
 $color2${top_mem name 2}$alignr${top_mem mem_res 2}$color
 $color2${top_mem name 3}$alignr${top_mem mem_res 3}$color
 $color2${top_mem name 4}$alignr${top_mem mem_res 4}$color
 $color2${top_mem name 5}$alignr${top_mem mem_res 5}$color
 #
-${voffset 10}SWAP$alignr$swap/$swapmax
-${swapbar 5,200}
+${voffset 10}$alignr${color2}hd ${fs_size /} - ${fs_used /}
+${alignr}${color2}${font Cantarell:size=9}mem $memmax - $mem
+${alignr}${color2}${font Cantarell:size=9}swap $swapmax - $swap
 #
-${voffset 10}Root$alignr${fs_used /}/${fs_size /}
-${fs_bar 5,200 /}
-## uncomment below if you have your own /home
-## Home$alignr${fs_used /home}/${fs_size /home}
-## ${fs_bar 5,200 /home}
+${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 #
-## uncomment below, and replace device name enp7s0/wlp4s0 with yours. run "ip link" in terminal to find out device name.
-##${voffset 10}E: Down :${downspeed enp7s0}${alignr}${upspeed enp7s0} :Up$color
-##W: Down :${downspeed wlp4s0}${alignr}${upspeed wlp4s0} :Up$color
-#
-${voffset 10}#$alignc${execi 86400 whoami}@${nodename}
-uptime ${uptime_short}
-#
-${voffset 10}Manjaro Linux ${execi 86400 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
-${kernel}-${machine}
-#
-${voffset 10}${alignr} Vitória (ES) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBVT temperature temperature 15}°C
-#
+${voffset 10}$alignr${execi 1200 whoami}@${nodename}
+${alignr}${color2}${font Cantarell:size=9}uptime ${color}${uptime_short}
+${alignr}${color2}${font Cantarell:size=9}${alignr}kernel ${color}${kernel}
+${alignr}${color2}${font Cantarell:size=9}${alignr}architecture ${color}${machine}
+${alignr}${color2}${font Cantarell:size=9}${alignr}file system ${color}${fs_type}
+${voffset 10}${alignr}${color} updates currently available ${color 191919}${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
 ]]

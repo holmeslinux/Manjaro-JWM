@@ -1,4 +1,7 @@
-<?xml version="1.0  <!-- The root menu. -->
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- The root menu. -->
     <RootMenu onroot="7">
         <Program label="Home">pcmanfm ~/</Program>
         <Program label="Root">gksu pcmanfm /</Program>

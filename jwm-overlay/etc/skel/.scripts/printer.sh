@@ -12,6 +12,6 @@ This will install the necessary software to run printer.
 Press ${grnb}[Enter]${nrml} to proceed. You may still cancel the process when prompted."
 
 read
-pacman -S manjaro-printer simple-scan && systemctl enable org.cups.cupsd.service && systemctl start org.cups.cupsd.service
+pacman -S manjaro-printer simple-scan cups-openrc && rc-update add cupsd default && rc-service cupsd start
 read -p $'\n'"Process Complete. Press ${grnb}[Enter]${nrml} to continue."$'\n'
 exit 0
