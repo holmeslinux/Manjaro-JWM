@@ -14,6 +14,8 @@
 	<Spacer width="5"/>
         <Clock format="%H:%M"></Clock>
 	<Spacer width="5"/>
+	<TrayButton label="Exit">exec:oblogout</TrayButton>
+	<Spacer width="5"/>
      </Tray>
 
 </JWM>
