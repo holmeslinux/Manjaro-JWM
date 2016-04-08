@@ -39,7 +39,8 @@ dconf
 desktop-file-utils
 
 ## Display Manager
-lxdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
 
 ## Desktop Display
 dunst
@@ -78,7 +79,6 @@ lxinput
 gtk-engine-murrine
 xcursor-vanilla-dmz-aa
 xcursor-rezowhite
-jwm-wallpapers
 
 ## Applications
 abiword-gtk2
