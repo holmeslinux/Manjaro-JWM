@@ -62,6 +62,7 @@ alias np='nano PKGBUILD'
 
 # greetings
 echo Welcome to Manjaro JWM OpenRC Community Edition!
+echo
 
 # prompt programmed
 PS1="┌─[\d][\u@\h:\w]\n└─> "

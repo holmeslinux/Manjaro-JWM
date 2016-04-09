@@ -48,10 +48,10 @@
         <Font>Cantarell-8:antialias=true:encoding=utf8</Font>
         <Text>#191919</Text>
         <Foreground>#b1b862</Foreground>
-        <Background>#2b2b2b</Background>
+        <Background>#565656</Background>
         <Active>
             <Foreground>#b1b862</Foreground>
-            <Background>#565656</Background>
+            <Background>#707070</Background>
         </Active>
     </PagerStyle>
 
