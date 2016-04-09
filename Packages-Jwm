@@ -65,7 +65,6 @@ lm_sensors
 xsensors
 perl-file-mimeinfo
 pacli-jwm
-jwmconf
 >openrc timeset
 >openrc ntp-openrc
 >openrc syslog-ng-openrc
@@ -100,7 +99,7 @@ medit
 palemoon-bin
 sakura
 screenfetch
-smplayer
+mplayer
 imagewriter
 
 ## Fonts
