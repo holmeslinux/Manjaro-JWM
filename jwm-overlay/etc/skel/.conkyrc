@@ -33,7 +33,7 @@ $color2${top name 3}$alignr${top cpu 3}%$color
 $color2${top name 4}$alignr${top cpu 4}%$color
 $color2${top name 5}$alignr${top cpu 5}%$color
 #
-${voffset 10}RAM$alignr$mem/$memmax
+${voffset 10}RAM$alignr$memax/$mem
 ${membar 5,198}
 ${voffset 5}$color2${top_mem name 1}$alignr${top_mem mem_res 1}$color
 $color2${top_mem name 2}$alignr${top_mem mem_res 2}$color
@@ -41,9 +41,8 @@ $color2${top_mem name 3}$alignr${top_mem mem_res 3}$color
 $color2${top_mem name 4}$alignr${top_mem mem_res 4}$color
 $color2${top_mem name 5}$alignr${top_mem mem_res 5}$color
 #
-${voffset 10}$alignr${color2}hd ${fs_size /} - ${fs_used /}
-${alignr}${color2}${font Cantarell:size=9}mem $memmax - $mem
-${alignr}${color2}${font Cantarell:size=9}swap $swapmax - $swap
+${voffset 10}HD$alignr${fs_size /}/${fs_used /}
+${fs_bar 5,198}
 #
 ${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 #

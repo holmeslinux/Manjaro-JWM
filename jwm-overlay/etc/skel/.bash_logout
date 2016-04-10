@@ -1,3 +1,7 @@
+#
+# ~/.bash_logout
+#
+#
 #!/bin/sh
 
 static=cudli20y.default.backup

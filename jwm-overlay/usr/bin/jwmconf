@@ -39,7 +39,7 @@ JWMconf is an interactive configure JWM for your command line terminal. It provi
 
 HOME SCREEN
 JWMConf Configuration Tool's home screen is split into two parts: 
-The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LXDM and Oblogout. Choose an option by entering its number and pressing [Enter].
+The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LightDM and Oblogout. Choose an option by entering its number and pressing [Enter].
 
 ATTENTION
 *The number 19, 20, 21, 22 and 23 can break your system. WARNING! USE WITH CAUTION.
@@ -121,8 +121,8 @@ GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical us
 21- EDIT XRESOURCES
 Xresources is a user-level configuration dotfile, typically located at ~/.Xresources.
 
-22- EDIT LXDM
-LXDM is a lightweight display manager for the LXDE desktop environment. The UI is implemented with GTK+ 2.
+22- EDIT LightDM
+LightDM is a cross-desktop display manager. A display manager is a daemon that: runs display servers (e.g. X) where necessary, runs greeters to allow users to pick which user account and session type to use, etc.
 
 23- EDIT OBLOGOUT
 Oblogout is an optional, configurable logout script that presents a graphical interface (i.e. buttons) to cancel, logout, restart, shutdown, suspend.
