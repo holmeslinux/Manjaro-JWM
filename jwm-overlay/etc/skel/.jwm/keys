@@ -30,7 +30,7 @@
     <Key mask="4" key="r">exec:gmrun</Key>
     <Key mask="4" key="t">exec:sakura</Key>
     <Key mask="4" key="d">showdesktop</Key>
-    <Key mask="4" key="m">exec:mplayer</Key>
+    <Key mask="4" key="m">exec:gnome-mplayer</Key>
     <Key key="Print">exec:scrot -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Key>
 
     <!-- Key system. -->

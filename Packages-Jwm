@@ -9,12 +9,13 @@ volumeicon-gtk2
 >openrc alsa-utils-openrc
 
 ## File Management
+pcmanfm
+udisks
 gvfs
 gvfs-afc
 gvfs-gphoto2
 gvfs-smb
 p7zip
-pcmanfm
 xarchiver-gtk2
 
 ## Network and bluetooth
@@ -46,11 +47,11 @@ lightdm-gtk-greeter-settings
 dunst
 
 ## JWM Core Packages
+jwm
 clipit
 downgrade
 gmrun 
 i3lock
-jwm
 lxappearance
 nitrogen
 pmenu
@@ -93,13 +94,13 @@ hexchat
 htop
 leafpad
 libimobiledevice
+gnome-mplayer
 lxmusic
 manjaro-settings-manager
 medit
 palemoon-bin
 sakura
 screenfetch
-mplayer
 imagewriter
 
 ## Fonts

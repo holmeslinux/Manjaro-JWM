@@ -35,7 +35,7 @@
         </Menu>
         <Menu label="Multimedia">
             <Program label="LXMusic Music">lxmusic</Program>        
-            <Program label="MPlayer Video">mplayer</Program>
+            <Program label="GnomeMPlayer Video">gnome-mplayer</Program>
         </Menu>
         <Menu label="Network">
 	    <Program label="HexChat IRC">hexchat</Program>
