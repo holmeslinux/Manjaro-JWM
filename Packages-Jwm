@@ -15,6 +15,7 @@ gvfs
 gvfs-afc
 gvfs-gphoto2
 gvfs-smb
+gvfs-mtp
 p7zip
 xarchiver-gtk2
 
@@ -70,6 +71,7 @@ pacli-jwm
 >openrc ntp-openrc
 >openrc syslog-ng-openrc
 >openrc cronjobs
+timeset-gui
 
 ## Desktop Configuration
 arandr
