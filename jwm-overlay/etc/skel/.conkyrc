@@ -26,23 +26,23 @@ $color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} 
 ${voffset 10}$alignr$color Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C
 #
 ${voffset 10}${goto 30}CPU$alignr$cpu%
-${goto 30}${cpubar 5,198}
+${goto 30}${cpubar 5,175}
 ${voffset 5}${goto 30}$color2${top name 1}$alignr${top cpu 1}%$color
 ${goto 30}$color2${top name 2}$alignr${top cpu 2}%$color
 ${goto 30}$color2${top name 3}$alignr${top cpu 3}%$color
 ${goto 30}$color2${top name 4}$alignr${top cpu 4}%$color
 #
 ${voffset 10}${goto 30}RAM$alignr$memmax/$mem
-${goto 30}${membar 5,198}
+${goto 30}${membar 5,175}
 ${voffset 5}${goto 30}$color2${top_mem name 1}$alignr${top_mem mem_res 1}$color
 ${goto 30}$color2${top_mem name 2}$alignr${top_mem mem_res 2}$color
 ${goto 30}$color2${top_mem name 3}$alignr${top_mem mem_res 3}$color
 ${goto 30}$color2${top_mem name 4}$alignr${top_mem mem_res 4}$color
 #
 ${voffset 10}${goto 30}HD$alignr${fs_size /}/${fs_used /}
-${goto 30}${fs_bar 5,198}
+${goto 30}${fs_bar 5,175}
 #
-${voffset 10}BATT$alignr${battery_percent BAT1}% 
+${voffset 10}${goto 30}BATT$alignr${battery_percent BAT1}% 
 ${goto 30}${battery_bar BAT1}
 #
 ${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
