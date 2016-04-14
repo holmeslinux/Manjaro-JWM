@@ -25,6 +25,7 @@
         </Menu>
         <Separator/>
 	<Menu label="Accesories">
+	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
 	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
             <Program label="Leafpad Editor">leafpad</Program>
             <Program label="Medit Editor">medit</Program>

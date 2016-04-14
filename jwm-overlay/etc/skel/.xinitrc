@@ -32,13 +32,6 @@ if [ -x /usr/bin/xdg-user-dirs-update ]; then
   /usr/bin/xdg-user-dirs-update
 fi
 
-## Enable SLiM to enable selection of multiple desktop environments, or
-## set a single session. Only one or the other must be unhashed! In either
-## instance, /etc/slim.conf must also be amended accordingly.
-## Enable multiple desktop environments
-
-#exec $1
-
 ## Set a single desktop environment
 
 exec /usr/bin/jwm

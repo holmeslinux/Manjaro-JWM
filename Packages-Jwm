@@ -10,12 +10,7 @@ volumeicon-gtk2
 
 ## File Management
 pcmanfm
-udisks
 gvfs
-gvfs-afc
-gvfs-gphoto2
-gvfs-smb
-gvfs-mtp
 p7zip
 xarchiver-gtk2
 
@@ -129,4 +124,3 @@ yaourt
 
 ## Documentation
 manjaro-documentation
-jwm-documentation
