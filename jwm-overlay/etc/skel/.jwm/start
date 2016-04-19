@@ -11,5 +11,6 @@
     <StartupCommand>sleep 6s &amp;&amp; /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &amp;</StartupCommand>
     <StartupCommand>sleep 7s &amp;&amp; xrdb merge .Xresources &amp;</StartupCommand>
     <StartupCommand>sleep 8s &amp;&amp; dbus-launch pcmanfm -d &amp;</StartupCommand>
+    <StartupCommand>sleep 9s &amp;&amp; mplayer $HOME/.mplayer/service-login.ogg -loop 1 &amp;</StartupCommand>
 
 </JWM>
