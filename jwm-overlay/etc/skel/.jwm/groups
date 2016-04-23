@@ -34,4 +34,24 @@
 	<Option>centered</Option>
     </Group>
 
+    <Group>
+        <Name>lxmusic</Name>
+        <Option>centered</Option>
+    </Group>
+
+    <Group>
+        <Name>gnome-mplayer</Name>
+        <Option>centered</Option>
+    </Group>
+
+    <Group>
+        <Name>hexchat</Name>
+        <Option>centered</Option>
+    </Group>
+
+    <Group>
+        <Name>palemoon</Name>
+        <Option>maximized</Option>
+    </Group>
+
 </JWM>

@@ -32,14 +32,14 @@ ${goto 30}$color2${top name 2}$alignr${top cpu 2}%$color
 ${goto 30}$color2${top name 3}$alignr${top cpu 3}%$color
 ${goto 30}$color2${top name 4}$alignr${top cpu 4}%$color
 #
-${voffset 10}${goto 30}RAM$alignr$memmax/$mem
+${voffset 10}${goto 30}RAM$alignr$memmax I $mem
 ${goto 30}${membar 5,175}
 ${voffset 5}${goto 30}$color2${top_mem name 1}$alignr${top_mem mem_res 1}$color
 ${goto 30}$color2${top_mem name 2}$alignr${top_mem mem_res 2}$color
 ${goto 30}$color2${top_mem name 3}$alignr${top_mem mem_res 3}$color
 ${goto 30}$color2${top_mem name 4}$alignr${top_mem mem_res 4}$color
 #
-${voffset 10}${goto 30}HD$alignr${fs_size /}/${fs_used /}
+${voffset 10}${goto 30}HD$alignr${fs_size /} I ${fs_used /}
 ${goto 30}${fs_bar 5,175}
 #
 ${voffset 10}${goto 30}BATT$alignr${battery_percent BAT1}% 
@@ -50,5 +50,6 @@ ${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_REL
 ${voffset 10}$alignr${execi 1200 whoami}@${nodename}
 ${alignr}${color2}${font Cantarell:size=9}uptime ${color}${uptime_short}
 ${alignr}${color2}${font Cantarell:size=9}${alignr}kernel ${color}${kernel}
+${alignr}${color2}${font Cantarell:size=9}${alignr}architecture ${color}${machine} OpenRC
 ${voffset 10}${alignr}${color} updates currently available ${color 191919}${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
 ]]

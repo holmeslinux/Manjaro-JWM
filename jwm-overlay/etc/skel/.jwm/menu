@@ -24,7 +24,7 @@
             <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' &amp; scrot -se 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
-	<Menu label="Accesories">
+        <Menu label="Accesories">
 	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
 	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
             <Program label="Leafpad Editor">leafpad</Program>
@@ -59,8 +59,7 @@
 	    <Program label="LightDM Settings">gksu lightdm-gtk-greeter-settings</Program>
             <Program label="Manjaro Settings Manager">manjaro-settings-manager -style=gtk</Program>
             <Program label="Nitrogen Wallpaper">nitrogen</Program>
-            <Program label="Personalize LXDM">lxdm-config-pkexec</Program>
-	    <Program label="Printer Settings">system-config-printer</Program>
+            <Program label="Printer Settings">system-config-printer</Program>
         </Menu>
         <Menu label="System">
 		<Menu label="Script Install">

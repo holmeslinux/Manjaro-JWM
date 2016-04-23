@@ -38,7 +38,7 @@
     <Key mask="4" key="p">exec:xterm /usr/bin/pacli</Key>
     <Key mask="4" key="j">exec:xterm /usr/bin/jwmconf</Key>
     <Key mask="4" key="l">exec:i3lock -c bfc674</Key>
-    <Key mask="4" key="u">exec:jwm -restart</Key>
+    <Key mask="4" key="u">exec:jwm -restart &amp;&amp; mplayer $HOME/.mplayer/service-logout.ogg</Key>
 
     <!-- Key sound. -->
     <Key mask="4" key="Next">exec:amixer set Master 5%- </Key>
