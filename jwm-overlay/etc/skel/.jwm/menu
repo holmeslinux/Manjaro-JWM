@@ -47,6 +47,7 @@
             <Program label="AbiWord Word">abiword</Program>
             <Program label="Epdfview PDF">epdfview</Program>
             <Program label="Gnumeric Calc">gnumeric</Program>
+	    <Program label="Online Open365 Tools">palemoon https://cloud.open365.io/applogin/</Program>
             <Program label="Online PDF Tools">palemoon http://smallpdf.com/</Program>
             <Program label="Simple Scan">simple-scan</Program>
         </Menu>
