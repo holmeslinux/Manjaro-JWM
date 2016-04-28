@@ -64,10 +64,10 @@
         </Menu>
         <Menu label="System">
 		<Menu label="Script Install">
-            	    <Program label="Firewall">gksu xterm ~/.scripts/firewall.sh</Program>
-		    <Program label="Java">gksu xterm ~/.scripts/java.sh</Program>        
-                    <Program label="Multimedia">gksu xterm ~/.scripts/multimedia.sh</Program>
-                    <Program label="Printer">gksu xterm ~/.scripts/printer.sh</Program>
+            	    <Program label="Firewall">sudo xterm -e ~/.scripts/firewall.sh</Program>
+		    <Program label="Java">sudo xterm -e ~/.scripts/java.sh</Program>        
+                    <Program label="Multimedia">sudo xterm -e ~/.scripts/multimedia.sh</Program>
+                    <Program label="Printer">sudo xterm -e ~/.scripts/printer.sh</Program>
         	</Menu>
          <Separator/>
             <Program label="Gufw Firewall">gksu gufw</Program>
