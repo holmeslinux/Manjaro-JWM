@@ -13,8 +13,8 @@
     <RootMenu onroot="3">
         <Program label="Run Applications">gmrun</Program>
         <Program label="Terminal">sakura</Program>
-        <Program label="Pacli">xterm /usr/bin/pacli</Program>
-        <Program label="JWMConf">xterm /usr/bin/jwmconf</Program>
+        <Program label="Pacli">xterm -e /usr/bin/pacli</Program>
+        <Program label="JWMConf">xterm -e /usr/bin/jwmconf</Program>
         <Program label="File Manager">pcmanfm</Program>
         <Program label="Web Browser">palemoon</Program>
         <Menu label="Screenshot">
@@ -72,9 +72,9 @@
          <Separator/>
             <Program label="Gufw Firewall">gksu gufw</Program>
        	    <Program label="HardInfo">hardinfo</Program>
-	    <Program label="HTop Processes">sakura -e htop</Program>
-            <Program label="JWMConf Configuration">xterm /usr/bin/jwmconf</Program>            
-            <Program label="Pacli Package">xterm /usr/bin/pacli</Program>
+	    <Program label="HTop Processes">xterm -e htop</Program>
+            <Program label="JWMConf Configuration">xterm -e /usr/bin/jwmconf</Program>            
+            <Program label="Pacli Package">xterm -e /usr/bin/pacli</Program>
             <Program label="Privilege Granting">gksu-properties</Program>
             <Program label="Root File Manager">gksu pcmanfm /</Program>         
             <Program label="Root Terminal">gksu sakura</Program>            
