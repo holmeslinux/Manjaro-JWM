@@ -13,8 +13,8 @@
     <RootMenu onroot="3">
         <Program label="Run Applications">gmrun</Program>
         <Program label="Terminal">sakura</Program>
-        <Program label="Pacli">xterm -e /usr/bin/pacli</Program>
-        <Program label="JWMConf">xterm -e /usr/bin/jwmconf</Program>
+        <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program>
+        <Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program>
         <Program label="File Manager">pcmanfm</Program>
         <Program label="Web Browser">palemoon</Program>
         <Menu label="Screenshot">
@@ -24,7 +24,7 @@
             <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' &amp; scrot -se 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
-        <Menu label="Accesories">
+	<Menu label="Accesories">
 	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
 	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
             <Program label="Leafpad Editor">leafpad</Program>
@@ -64,17 +64,17 @@
         </Menu>
         <Menu label="System">
 		<Menu label="Script Install">
-            	    <Program label="Firewall">sudo xterm -e ~/.scripts/firewall.sh</Program>
-		    <Program label="Java">sudo xterm -e ~/.scripts/java.sh</Program>        
-                    <Program label="Multimedia">sudo xterm -e ~/.scripts/multimedia.sh</Program>
-                    <Program label="Printer">sudo xterm -e ~/.scripts/printer.sh</Program>
+            	    <Program label="Firewall">sudo xterm -T "Script Firewall" ~/.scripts/firewall.sh</Program>
+		    <Program label="Java">sudo xterm -T "Script Java" ~/.scripts/java.sh</Program>        
+                    <Program label="Multimedia">sudo xterm -T "Script Multimedia" ~/.scripts/multimedia.sh</Program>
+                    <Program label="Printer">sudo xterm -T "Script Printer" ~/.scripts/printer.sh</Program>
         	</Menu>
          <Separator/>
             <Program label="Gufw Firewall">gksu gufw</Program>
        	    <Program label="HardInfo">hardinfo</Program>
-	    <Program label="HTop Processes">xterm -e htop</Program>
-            <Program label="JWMConf Configuration">xterm -e /usr/bin/jwmconf</Program>            
-            <Program label="Pacli Package">xterm -e /usr/bin/pacli</Program>
+	    <Program label="HTop Processes">xterm -T HTop -e htop</Program>
+            <Program label="JWMConf Configuration">xterm -T JWMConf /usr/bin/jwmconf</Program>            
+            <Program label="Pacli Package">xterm -T Pacli /usr/bin/pacli</Program>
             <Program label="Privilege Granting">gksu-properties</Program>
             <Program label="Root File Manager">gksu pcmanfm /</Program>         
             <Program label="Root Terminal">gksu sakura</Program>            
