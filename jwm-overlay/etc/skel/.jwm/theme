@@ -7,50 +7,56 @@
         <Width>2</Width>
         <Height>18</Height>
         <Corner>2</Corner>
-        <Foreground>#191919</Foreground>
-        <Background>#ccccad</Background>
-        <Outline>#ccccad</Outline>
+        <Foreground>#ffffff</Foreground>
+        <Background>#2b2c2b</Background>
+        <Outline>#2b2c2b</Outline>
         <Opacity>0.8</Opacity>
         <Active>
-            <Foreground>#191919</Foreground>
-            <Background>#ccccad</Background>
-            <Outline>#ccccad</Outline>
+            <Foreground>#ffffff</Foreground>
+            <Background>#2b2c2b</Background>
+            <Outline>#2b2c2b</Outline>
         </Active>
     </WindowStyle>
+
+    <!-- Visual Style Window Buttons. -->
+        <ButtonClose>/usr/share/themes/buttons/jwm/close.png</ButtonClose>
+        <ButtonMax>/usr/share/themes/buttons/jwm/max.png</ButtonMax>
+        <ButtonMaxActive>/usr/share/themes/buttons/jwm/maxact.png</ButtonMaxActive>
+        <ButtonMin>/usr/share/themes/buttons/jwm/min.png</ButtonMin>
 
     <!-- Visual Style Menu. -->
     <MenuStyle>
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
-        <Foreground>#191919</Foreground>
-        <Background>#ccccad</Background>
-	<Outline>#ccccad</Outline>
+        <Foreground>#ffffff</Foreground>
+        <Background>#2b2c2b</Background>
+	<Outline>#2b2c2b</Outline>
         <Active>
-            <Foreground>#191919</Foreground>
-            <Background>#b1b862</Background>
+            <Foreground>#2b2c2b</Foreground>
+            <Background>#16a085</Background>
         </Active>
     </MenuStyle>
 
     <!-- Visual Style Tray. -->
     <TrayStyle decorations="flat">
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
-        <Background>#ccccad</Background>
-        <Foreground>#191919</Foreground>
-        <Outline>#ccccad</Outline>
+        <Background>#2b2c2b</Background>
+        <Foreground>#ffffff</Foreground>
+        <Outline>#2b2c2b</Outline>
         <Active>
-            <Foreground>#191919</Foreground>
-            <Background>#b1b862</Background>
+            <Foreground>#2b2c2b</Foreground>
+            <Background>#16a085</Background>
         </Active>
     </TrayStyle>
 
     <!-- Visual Style Pager. -->
     <PagerStyle>
-        <Outline>#b1b862</Outline>
+        <Outline>#454947</Outline>
         <Font>Cantarell-8:antialias=true:encoding=utf8</Font>
-        <Text>#191919</Text>
-        <Foreground>#b1b862</Foreground>
+        <Text>#ffffff</Text>
+        <Foreground>#454947</Foreground>
         <Background>#565656</Background>
         <Active>
-            <Foreground>#b1b862</Foreground>
+            <Foreground>#454947</Foreground>
             <Background>#707070</Background>
         </Active>
     </PagerStyle>
@@ -59,7 +65,7 @@
     <PopupStyle>
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
         <Outline>#a3a38a</Outline>
-        <Foreground>#191919</Foreground>
+        <Foreground>#2b2c2b</Foreground>
         <Background>#a3a381</Background>
     </PopupStyle>
 
