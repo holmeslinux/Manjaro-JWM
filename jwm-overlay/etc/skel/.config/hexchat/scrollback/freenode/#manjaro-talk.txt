@@ -27,3 +27,22 @@ T 1462669605 23*	Manj-1604-Lxqt (~manjaro@71-83-154-140.dhcp.snbr.ca.charter.co
 T 1462669621 24*	Manj-1604-Lxqt desconectou-se (Client Quit)
 T 1462670131 Python interface unloaded
 T 1462670131 FiSHLiM plugin unloaded
+T 1462673028 19*	Agora falando em 22#manjaro-talk
+T 1462673028 22*	Tópico para 22#manjaro-talk é: #Manjaro-talk off-topic channel check #manjaro for support
+T 1462673028 22*	Tópico do 22#manjaro-talk definido por 26ringo32!~ringo_man@unaffiliated/ringo32 (24Fri Apr 29 10:10:24 2016)
+T 1462673028 -18ChanServ-	[#manjaro-talk] * Welcome <user> to #manjaro-talk offtopic please see this -> [Irc-channels]   #manjaro (main) -  #manjaro-talk (off-topic)  - #manjaro-br (brasil) - #manjaro-es (spanish) - #manjaro-de (German) - #manjaro-nl (dutch) - #manjaro-fr (fench) - #linuxpark (Turkish) #manjaro-ru (russia ) Read for IRC NewB: http://bit.ly/ircmag  ******** READ :) ****
+T 1462673072 24*	gagiD desconectou-se (Ping timeout: 276 seconds)
+T 1462673196 23*	xangua (uid19036@gateway/web/irccloud.com/x-uslahnhagrcccsfi23) entrou
+T 1462673328 24*	gagiD_ desconectou-se (Quit: Konversation terminated!)
+T 1462677369 20*	Desconectado (20Não há rota para o host)
+T 1462677393 19*	Agora falando em 22#manjaro-talk
+T 1462677393 22*	Tópico para 22#manjaro-talk é: #Manjaro-talk off-topic channel check #manjaro for support
+T 1462677393 22*	Tópico do 22#manjaro-talk definido por 26ringo32!~ringo_man@unaffiliated/ringo32 (24Fri Apr 29 10:10:24 2016)
+T 1462677393 -18ChanServ-	[#manjaro-talk] * Welcome <user> to #manjaro-talk offtopic please see this -> [Irc-channels]   #manjaro (main) -  #manjaro-talk (off-topic)  - #manjaro-br (brasil) - #manjaro-es (spanish) - #manjaro-de (German) - #manjaro-nl (dutch) - #manjaro-fr (fench) - #linuxpark (Turkish) #manjaro-ru (russia ) Read for IRC NewB: http://bit.ly/ircmag  ******** READ :) ****
+T 1462708557 20*	Desconectado (20A rede está fora de alcance)
+T 1462708583 19*	Agora falando em 22#manjaro-talk
+T 1462708583 22*	Tópico para 22#manjaro-talk é: #Manjaro-talk off-topic channel check #manjaro for support
+T 1462708583 22*	Tópico do 22#manjaro-talk definido por 26ringo32!~ringo_man@unaffiliated/ringo32 (24Fri Apr 29 10:10:24 2016)
+T 1462708583 -18ChanServ-	[#manjaro-talk] * Welcome <user> to #manjaro-talk offtopic please see this -> [Irc-channels]   #manjaro (main) -  #manjaro-talk (off-topic)  - #manjaro-br (brasil) - #manjaro-es (spanish) - #manjaro-de (German) - #manjaro-nl (dutch) - #manjaro-fr (fench) - #linuxpark (Turkish) #manjaro-ru (russia ) Read for IRC NewB: http://bit.ly/ircmag  ******** READ :) ****
+T 1462708791 23*	yuta (~ippan@PPPa195.e3.eacc.dti.ne.jp23) entrou
+T 1462708810 24*	yuta desconectou-se (Client Quit)

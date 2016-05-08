@@ -155,6 +155,7 @@ NC='\e[0m'
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC 15  $NC  Edit Conky                         $NC 16  $NC  Edit Dunst            │"
     echo -e " │  $NC 17  $NC  Edit Gmrun                         $NC 18  $NC  Edit Bashrc           │"
+    echo -e " │-------------------------------------------------------------------------│"
     echo -e " │  $NC 19  $NC *Edit GTK2              	      $NC 20  $NC *Edit GTK3             │"
     echo -e " │  $NC 21  $NC *Edit Xresources 	              $NC 22  $NC *Edit LightDM          │"
     echo -e " │  $NC 23  $NC *Edit Oblogout			                           │"

@@ -5,14 +5,14 @@
 ## Sound and Audio
 alsa-plugins
 manjaro-alsa
-volumeicon-gtk2
+volumeicon
 >openrc alsa-utils-openrc
 
 ## File Management
 pcmanfm
 gvfs
 p7zip
-xarchiver-gtk2
+xarchiver
 
 ## Network and bluetooth
 blueman
@@ -61,7 +61,6 @@ oblogout
 lm_sensors
 xsensors
 perl-file-mimeinfo
-pacli-jwm
 >openrc timeset
 >openrc ntp-openrc
 >openrc syslog-ng-openrc
@@ -79,8 +78,8 @@ vertex-maia-themes
 vertex-maia-icon-theme
 
 ## Applications
-abiword-gtk2
-cbatticon-gtk2
+abiword
+cbatticon
 xcompmgr
 conky
 elinks
