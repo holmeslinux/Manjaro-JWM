@@ -23,3 +23,32 @@ T 1460169095 22*	Tópico para 22#manjaro é: Welcome to official Manjaro Lin
 T 1460169095 22*	Tópico do 22#manjaro definido por 26ringo32!~ringo_man@unaffiliated/ringo32 (24Mon Feb 22 08:06:48 2016)
 T 1460169095 -18ChanServ-	[#manjaro] Crypt luks error look at conversation philm: http://echelog.com/logs/browse/manjaro/1456009200   or http://bit.ly/1Qbsr99
 T 1460169095 22*	Canal 22#manjaro url: 24www.manjaro.org/blog
+T 1462666407 19*	Agora falando em 22#manjaro
+T 1462666407 22*	Tópico para 22#manjaro é: Welcome to official Manjaro Linux IRC channel | See the Logs  @ http://echelog.com/?manjaro | http://www.manjaro.org/ - wiki.manjaro.org -http://irc.manjaro-nl.org |  15.12 Release! [Upd news:] http://bit.ly/1Qbsr99
+T 1462666407 22*	Tópico do 22#manjaro definido por 26Esclapion!~pat@2a01:e35:2e32:3600:325a:3aff:fe54:9770 (24Fri May  6 10:37:47 2016)
+T 1462666407 -18ChanServ-	[#manjaro] Crypt luks error look at conversation philm: http://echelog.com/logs/browse/manjaro/1456009200   or http://bit.ly/1Qbsr99
+T 1462666407 22*	Canal 22#manjaro url: 24www.manjaro.org/blog
+T 1462666413 24*	Macrobiotic desconectou-se (Quit: Connection closed for inactivity)
+T 1462666705 23*	johnvan (~johnvan@TOROON2634W-LP140-03-2925478808.dsl.bell.ca23) entrou
+T 1462666995 23*	manjaroCinnamon1 (~Manjarous@181.23.220.9123) entrou
+T 1462666995 24*	28manjaroCinnamon1 mudou de apelido para 18sugux
+T 1462667111 23*	sugus (~zoolander@181.23.220.9123) entrou
+T 1462667119 24*	sugux desconectou-se (Client Quit)
+T 1462667151 24*	sugus desconectou-se (Client Quit)
+T 1462667511 23*	alexandros_c (~alexandro@unaffiliated/alexandros-c/x-168453123) entrou
+T 1462667607 23*	manjaro-kde5 (~manjaro-k@host-31-6-194-76.dynamic.mm.pl23) entrou
+T 1462667645 23*	manjaro-kde5- (~manjaro-k@81-224-159-195-no225.tbcn.telia.com23) entrou
+T 1462667658 24*	manjaro-kde5 desconectou-se (Client Quit)
+T 1462667703 24*	manjaro-kde6 desconectou-se (Quit: Leaving.)
+T 1462668108 23*	Deepin1603 (~Manjarous@247.red-88-18-87.staticip.rima-tde.net23) entrou
+T 1462668392 24*	manjaro-kde5- desconectou-se (Ping timeout: 260 seconds)
+T 1462668468 24*	johnvan desconectou-se (Remote host closed the connection)
+T 1462668568 23*	linux_dream (~linux_dre@unaffiliated/linux-dream/x-583940223) entrou
+T 1462668601 23*	ZiggyS (~Ziggys@unaffiliated/ziggys23) entrou
+T 1462668640 24*	ZiggyS desconectou-se (Client Quit)
+T 1462668663 24*	Petham desconectou-se (Ping timeout: 240 seconds)
+T 1462668673 23*	johnvan (~johnvan@TOROON2634W-LP140-03-2925478808.dsl.bell.ca23) entrou
+T 1462668794 24*	heril|bin desconectou-se (Quit: Leaving)
+T 1462669168 24*	discipolo desconectou-se (Quit: discipolo)
+T 1462669605 23*	Manj-1604-Lxqt (~manjaro@71-83-154-140.dhcp.snbr.ca.charter.com23) entrou
+T 1462669621 24*	Manj-1604-Lxqt desconectou-se (Client Quit)
