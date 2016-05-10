@@ -50,6 +50,6 @@ ${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_REL
 ${voffset 10}$alignr${execi 1200 whoami}@${nodename}
 ${alignr}${color2}${font Cantarell:size=9}uptime ${color}${uptime_short}
 ${alignr}${color2}${font Cantarell:size=9}${alignr}kernel ${color}${kernel}
-${alignr}${color2}${font Cantarell:size=9}${alignr}architecture ${color}${machine} OpenRC
+${alignr}${color2}${font Cantarell:size=9}${alignr}architecture ${color}${machine} Systemd
 ${voffset 10}${alignr}${color} updates currently available ${color 2b2c2b}${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
 ]]

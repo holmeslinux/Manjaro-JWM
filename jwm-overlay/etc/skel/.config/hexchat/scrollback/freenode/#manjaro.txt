@@ -118,3 +118,14 @@ T 1462709349 18<25louis__218>	freedom is taken away from us for sure. bu
 T 1462709354 18<26ringo3218>	whatsapp works also :p
 T 1462709357 Python interface unloaded
 T 1462709357 FiSHLiM plugin unloaded
+T 1462831730 19*	Agora falando em 22#manjaro
+T 1462831730 22*	Tópico para 22#manjaro é: Welcome to official Manjaro Linux IRC channel | See the Logs  @ http://echelog.com/?manjaro | http://www.manjaro.org/ - wiki.manjaro.org -http://irc.manjaro-nl.org |  15.12 Release! [Upd news:] http://bit.ly/1Qbsr99
+T 1462831730 22*	Tópico do 22#manjaro definido por 26Esclapion!~pat@2a01:e35:2e32:3600:325a:3aff:fe54:9770 (24Fri May  6 10:37:47 2016)
+T 1462831733 -18ChanServ-	[#manjaro] Crypt luks error look at conversation philm: http://echelog.com/logs/browse/manjaro/1456009200   or http://bit.ly/1Qbsr99
+T 1462831733 22*	Canal 22#manjaro url: 24www.manjaro.org/blog
+T 1462832171 19*	Agora falando em 22#manjaro
+T 1462832171 22*	Tópico para 22#manjaro é: Welcome to official Manjaro Linux IRC channel | See the Logs  @ http://echelog.com/?manjaro | http://www.manjaro.org/ - wiki.manjaro.org -http://irc.manjaro-nl.org |  15.12 Release! [Upd news:] http://bit.ly/1Qbsr99
+T 1462832171 22*	Tópico do 22#manjaro definido por 26Esclapion!~pat@2a01:e35:2e32:3600:325a:3aff:fe54:9770 (24Fri May  6 10:37:47 2016)
+T 1462832171 -18ChanServ-	[#manjaro] Crypt luks error look at conversation philm: http://echelog.com/logs/browse/manjaro/1456009200   or http://bit.ly/1Qbsr99
+T 1462832171 22*	Canal 22#manjaro url: 24www.manjaro.org/blog
+T 1462832208 23*	louis__2 (~louis@cpc87039-finc18-2-0-cust127.4-2.cable.virginm.net23) entrou

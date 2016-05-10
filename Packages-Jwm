@@ -6,25 +6,24 @@
 alsa-plugins
 manjaro-alsa
 volumeicon
->openrc alsa-utils-openrc
 
 ## File Management
-pcmanfm
 gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-smb
 p7zip
+pcmanfm
 xarchiver
 
 ## Network and bluetooth
+openresolv
 blueman
 network-manager-applet
 networkmanager-dispatcher-ntpd
+networkmanager-openvpn
 networkmanager-vpnc
 json-c
->openrc bluez-openrc
->openrc networkmanager-openrc
->openrc openssh-openrc
->openrc openvpn-openrc
->openrc syslog-ng-openrc	
 
 ## Polkit
 gksu
@@ -61,11 +60,6 @@ oblogout
 lm_sensors
 xsensors
 perl-file-mimeinfo
->openrc timeset
->openrc ntp-openrc
->openrc syslog-ng-openrc
->openrc cronjobs
-timeset-gui
 
 ## Desktop Configuration
 arandr
@@ -93,7 +87,7 @@ leafpad
 libimobiledevice
 gnome-mplayer
 lxmusic
-manjaro-settings-manager
+manjaro-settings-manager-notifier
 medit
 palemoon-bin
 sakura

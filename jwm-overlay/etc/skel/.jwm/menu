@@ -58,7 +58,7 @@
             <Program label="Configure Mouse/keyboard">lxinput</Program>
             <Program label="Customize Look/Feel">lxappearance</Program>
 	    <Program label="LightDM Settings">gksu lightdm-gtk-greeter-settings</Program>
-            <Program label="Manjaro Settings Manager">manjaro-settings-manager -style=gtk</Program>
+            <Program label="Manjaro Settings Manager">manjaro-settings-manager</Program>
             <Program label="Nitrogen Wallpaper">nitrogen</Program>
             <Program label="Printer Settings">system-config-printer</Program>
         </Menu>
