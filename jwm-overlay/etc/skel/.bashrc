@@ -61,7 +61,7 @@ alias np='nano PKGBUILD'
     }
 
 # greetings
-echo Welcome to Manjaro JWM OpenRC Community Edition!
+echo Welcome to Manjaro JWM Community Edition!
 echo
 
 # prompt programmed
