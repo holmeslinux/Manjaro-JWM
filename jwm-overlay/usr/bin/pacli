@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#  updated on 04.12.2015 14:11:24
-#  version 0.1-1
+#  updated on 14.05.2016 14:11:24
+#  version 0.1-2
 
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@
 # Modified, adapted and improved by pekman and excalibur1234    #
 # translation by spylinux					#
 # Pmenu and Downgrade support added by Chrysostomus		#
-# Adapted to Manjaro JWM COmmunity Edition by Holmes		#
+# Adapted to Manjaro JWM Community Edition by Holmes		#
 # Contact and suggestions: pekman@openmailbox.org               #
 # Freenode: #manjaropek #manjaro-geek #manjaro			#
 # Topic discussion 						#

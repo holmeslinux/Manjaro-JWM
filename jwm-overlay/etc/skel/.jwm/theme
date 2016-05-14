@@ -64,9 +64,9 @@
     <!-- Visual Style Pop. -->
     <PopupStyle>
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
-        <Outline>#707070</Outline>
+        <Outline>#000000</Outline>
         <Foreground>#ffffff</Foreground>
-        <Background>#707070</Background>
+        <Background>#000000</Background>
     </PopupStyle>
 
     <!-- Visual Style Clock. -->
