@@ -5,19 +5,10 @@ Version:0.16:$
 Arch:x86_64-gcc3:$
 
 [PLUGINS]
-libflashplayer.so:$
-/usr/lib/mozilla/plugins/libflashplayer.so:$
-11.2.202.577:$
-1457716382000:0:0:$
-Shockwave Flash 11.2 r202:$
-Shockwave Flash:$
-2
-0:application/x-shockwave-flash:Shockwave Flash:swf:$
-1:application/futuresplash:FutureSplash Player:spl:$
 IcedTeaPlugin.so:$
 /usr/share/icedtea-web/lib/IcedTeaPlugin.so:$
 :$
-1454518715000:0:0:$
+1463051993000:0:0:$
 The <a href="http://icedtea.classpath.org/wiki/IcedTea-Web">IcedTea-Web Plugin</a> executes Java applets.:$
 IcedTea-Web Plugin (using IcedTea-Web 1.6.2):$
 36
@@ -57,5 +48,14 @@ IcedTea-Web Plugin (using IcedTea-Web 1.6.2):$
 33:application/x-java-bean;version=1.7:IcedTea:class,jar:$
 34:application/x-java-bean;jpi-version=1.7.0_50:IcedTea:class,jar:$
 35:application/x-java-vm-npruntime:IcedTea::$
+libflashplayer.so:$
+/usr/lib/mozilla/plugins/libflashplayer.so:$
+11.2.202.621:$
+1463049254000:0:0:$
+Shockwave Flash 11.2 r202:$
+Shockwave Flash:$
+2
+0:application/x-shockwave-flash:Shockwave Flash:swf:$
+1:application/futuresplash:FutureSplash Player:spl:$
 
 [INVALID]
