@@ -87,8 +87,10 @@ hexchat
 htop
 leafpad
 libimobiledevice
-gnome-mplayer
-lxmusic
+#gnome-mplayer
+smplayer
+#lxmusic
+deadbeef
 manjaro-settings-manager-notifier
 medit
 palemoon-bin
@@ -102,21 +104,21 @@ ttf-droid
 cantarell-fonts
 
 ## AUR Access
-autoconf
-automake
-binutils
-bison
-fakeroot
-flex
-gcc
-git
-libconfig
-libtool
-m4
-make
-patch
-subversion
-yaourt
+#autoconf
+#automake
+#binutils
+#bison
+#fakeroot
+#flex
+#gcc
+#git
+#libconfig
+#libtool
+#m4
+#make
+#patch
+#subversion
+#yaourt
 
 ## Documentation
 manjaro-documentation

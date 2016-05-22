@@ -58,3 +58,9 @@ T 1462832171 22*	Tópico do 22#manjaro-talk definido por 26ringo32!~ringo_m
 T 1462832171 -18ChanServ-	[#manjaro-talk] * Welcome <user> to #manjaro-talk offtopic please see this -> [Irc-channels]   #manjaro (main) -  #manjaro-talk (off-topic)  - #manjaro-br (brasil) - #manjaro-es (spanish) - #manjaro-de (German) - #manjaro-nl (dutch) - #manjaro-fr (fench) - #linuxpark (Turkish) #manjaro-ru (russia ) Read for IRC NewB: http://bit.ly/ircmag  ******** READ :) ****
 T 1462832220 Python interface unloaded
 T 1462832220 FiSHLiM plugin unloaded
+T 1463335403 19*	Agora falando em 22#manjaro-talk
+T 1463335403 22*	Tópico para 22#manjaro-talk é: #Manjaro-talk off-topic channel check #manjaro for support
+T 1463335403 22*	Tópico do 22#manjaro-talk definido por 26ringo32!~ringo_man@unaffiliated/ringo32 (24Fri Apr 29 10:10:24 2016)
+T 1463335403 -18ChanServ-	[#manjaro-talk] * Welcome <user> to #manjaro-talk offtopic please see this -> [Irc-channels]   #manjaro (main) -  #manjaro-talk (off-topic)  - #manjaro-br (brasil) - #manjaro-es (spanish) - #manjaro-de (German) - #manjaro-nl (dutch) - #manjaro-fr (fench) - #linuxpark (Turkish) #manjaro-ru (russia ) Read for IRC NewB: http://bit.ly/ircmag  ******** READ :) ****
+T 1463335481 Python interface unloaded
+T 1463335481 FiSHLiM plugin unloaded

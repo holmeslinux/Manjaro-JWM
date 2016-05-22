@@ -129,3 +129,11 @@ T 1462832171 22*	Tópico do 22#manjaro definido por 26Esclapion!~pat@2a01:e
 T 1462832171 -18ChanServ-	[#manjaro] Crypt luks error look at conversation philm: http://echelog.com/logs/browse/manjaro/1456009200   or http://bit.ly/1Qbsr99
 T 1462832171 22*	Canal 22#manjaro url: 24www.manjaro.org/blog
 T 1462832208 23*	louis__2 (~louis@cpc87039-finc18-2-0-cust127.4-2.cable.virginm.net23) entrou
+T 1463335402 19*	Agora falando em 22#manjaro
+T 1463335402 22*	Tópico para 22#manjaro é: Welcome to the official Manjaro Linux IRC channel | Channel logs: http://echelog.com/?manjaro | www.manjaro.org - wiki.manjaro.org - irc.manjaro-nl.org | 16.06 preview 3 released! | New forum is active! forum.manjaro.org
+T 1463335402 22*	Tópico do 22#manjaro definido por 26jonathon!~jonathonf@unaffiliated/jonathon (24Wed May 11 17:26:15 2016)
+T 1463335403 -18ChanServ-	[#manjaro] Crypt luks error look at conversation philm: http://echelog.com/logs/browse/manjaro/1456009200   or http://bit.ly/1Qbsr99
+T 1463335403 22*	Canal 22#manjaro url: 24www.manjaro.org/blog
+T 1463335430 24*	NoirLess desconectou-se (Quit: Leaving)
+T 1463335435 23*	Sail0r (~Sailor@2a01:4f8:190:3484:1::ffec23) entrou
+T 1463335437 23*	u53R (~u53r@unaffiliated/u53r23) entrou

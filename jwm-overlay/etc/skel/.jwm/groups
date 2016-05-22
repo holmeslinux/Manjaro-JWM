@@ -35,12 +35,12 @@
     </Group>
 
     <Group>
-        <Name>lxmusic</Name>
+        <Name>deadbeef</Name>
         <Option>centered</Option>
     </Group>
 
     <Group>
-        <Name>gnome-mplayer</Name>
+        <Name>smplayer</Name>
         <Option>centered</Option>
     </Group>
 
@@ -52,6 +52,11 @@
     <Group>
         <Name>palemoon</Name>
         <Option>maximized</Option>
+    </Group>
+
+    <Group>
+        <Name>epdfview</Name>
+        <Option>centered</Option>
     </Group>
 
 </JWM>

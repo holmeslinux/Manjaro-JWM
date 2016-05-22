@@ -23,11 +23,7 @@
             <Program label="Full Screen">scrot -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
             <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' &amp; scrot -se 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
-        <Separator/><Menu label="Install Manjaro">
-            <Program label="Graphical Thus">sudo thus</Program>
-            <Program label="Text-Based CLI">sudo xterm /usr/bin/setup</Program>
-	</Menu>
-	<Separator/>
+        <Separator/>
 	<Menu label="Accesories">
 	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
 	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
@@ -39,8 +35,8 @@
             <Program label="Online Image Editor">palemoon http://www.online-image-editor.com/</Program>
         </Menu>
         <Menu label="Multimedia">
-            <Program label="LXMusic Music">lxmusic</Program>        
-            <Program label="GnomeMPlayer Video">gnome-mplayer</Program>
+            <Program label="DeaDBeeF Music">deadbeef</Program>        
+            <Program label="SMPlayer Video">smplayer</Program>
         </Menu>
         <Menu label="Network">
 	    <Program label="HexChat IRC">hexchat</Program>
@@ -61,12 +57,13 @@
             <Program label="BlueMan Manager">blueman-manager</Program> 
             <Program label="Configure Mouse/keyboard">lxinput</Program>
             <Program label="Customize Look/Feel">lxappearance</Program>
-	    <Program label="Manjaro Settings Manager">manjaro-settings-manager -style=gtk</Program>
+	    <Program label="Manjaro Settings Manager">manjaro-settings-manager-gui</Program>
             <Program label="Nitrogen Wallpaper">nitrogen</Program>
             <Program label="Printer Settings">system-config-printer</Program>
         </Menu>
         <Menu label="System">
 		<Menu label="Script Install">
+		    <Program label="AUR">sudo xterm -T "Script AUR" ~/.scripts/aur.sh</Program>
             	    <Program label="Firewall">sudo xterm -T "Script Firewall" ~/.scripts/firewall.sh</Program>
 		    <Program label="Java">sudo xterm -T "Script Java" ~/.scripts/java.sh</Program>        
                     <Program label="Multimedia">sudo xterm -T "Script Multimedia" ~/.scripts/multimedia.sh</Program>

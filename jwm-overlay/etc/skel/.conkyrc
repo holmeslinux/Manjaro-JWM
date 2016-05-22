@@ -1,9 +1,9 @@
 conky.config = {
 	alignment = 'top_right',
 	background = true,
-	color2 = '2b2c2b',
+	color2 = 'ffffff',
 	cpu_avg_samples = 2,
-	default_color = '2b2c2b',
+	default_color = 'ffffff',
         draw_shades = false,
 	double_buffer = true,
 	font = 'Cantarell:size=9',
@@ -20,7 +20,7 @@ conky.config = {
 	use_xft = true,
 }
 conky.text = [[
-${voffset 8}$color${font Cantarell:size=16}${time %a}$font${voffset -8}$alignr${color 2b2c2b}${font Cantarell:size=38}${time %e}$font
+${voffset 8}$color${font Cantarell:size=16}${time %a}$font${voffset -8}$alignr${color ffffff}${font Cantarell:size=38}${time %e}$font
 $color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} $color${font Cantarell:size=20}${time %Y}$font
 
 ${voffset 10}$alignr$color Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C
@@ -51,5 +51,5 @@ ${voffset 10}$alignr${execi 1200 whoami}@${nodename}
 ${alignr}${color2}${font Cantarell:size=9}uptime ${color}${uptime_short}
 ${alignr}${color2}${font Cantarell:size=9}${alignr}kernel ${color}${kernel}
 ${alignr}${color2}${font Cantarell:size=9}${alignr}architecture ${color}${machine} Systemd
-${voffset 10}${alignr}${color} updates currently available ${color 2b2c2b}${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
+${voffset 10}${alignr}${color} updates currently available ${color ffffff}${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
 ]]
