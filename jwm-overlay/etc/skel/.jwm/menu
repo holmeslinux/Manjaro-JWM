@@ -71,10 +71,11 @@
         	</Menu>
          <Separator/>
             <Program label="Gufw Firewall">gksu gufw</Program>
-       	    <Program label="HardInfo">hardinfo</Program>
+            <Program label="HardInfo">hardinfo</Program>
 	    <Program label="HTop Processes">xterm -T HTop -e htop</Program>
             <Program label="JWMConf Configuration">xterm -T JWMConf /usr/bin/jwmconf</Program>            
-            <Program label="Pacli Package">xterm -T Pacli /usr/bin/pacli</Program>
+	    <Program label="Memory Usage">gksu /usr/local/sbin/ps_mem.py</Program>            
+	    <Program label="Pacli Package">xterm -T Pacli /usr/bin/pacli</Program>
             <Program label="Privilege Granting">gksu-properties</Program>
             <Program label="Root File Manager">gksu pcmanfm /</Program>         
             <Program label="Root Terminal">gksu sakura</Program>            
