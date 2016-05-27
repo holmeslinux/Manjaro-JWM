@@ -24,6 +24,11 @@
             <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' &amp; scrot -se 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
+	<Menu label="Install Manjaro">
+            <Program label="Graphical Thus">sudo thus</Program>
+            <Program label="Text-Based CLI">sudo xterm /usr/bin/setup</Program>
+	</Menu>
+	<Separator/>
 	<Menu label="Accesories">
 	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
 	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
@@ -63,19 +68,19 @@
         </Menu>
         <Menu label="System">
 		<Menu label="Script Install">
-		    <Program label="AUR">sudo xterm -T "Script AUR" ~/.scripts/aur.sh</Program>
-            	    <Program label="Firewall">sudo xterm -T "Script Firewall" ~/.scripts/firewall.sh</Program>
-		    <Program label="Java">sudo xterm -T "Script Java" ~/.scripts/java.sh</Program>        
-                    <Program label="Multimedia">sudo xterm -T "Script Multimedia" ~/.scripts/multimedia.sh</Program>
-                    <Program label="Printer">sudo xterm -T "Script Printer" ~/.scripts/printer.sh</Program>
+		    <Program label="AUR">sudo xterm -T "Script AUR" ~/.scripts/aur</Program>
+            	    <Program label="Firewall">sudo xterm -T "Script Firewall" ~/.scripts/firewall</Program>
+		    <Program label="Java">sudo xterm -T "Script Java" ~/.scripts/java</Program>        
+                    <Program label="Multimedia">sudo xterm -T "Script Multimedia" ~/.scripts/multimedia</Program>
+                    <Program label="Printer">sudo xterm -T "Script Printer" ~/.scripts/printer</Program>
         	</Menu>
          <Separator/>
             <Program label="Gufw Firewall">gksu gufw</Program>
             <Program label="HardInfo">hardinfo</Program>
-	    <Program label="HTop Processes">xterm -T HTop -e htop</Program>
+	    <Program label="HTop Processes">xterm -T "HTop" -e htop</Program>
             <Program label="JWMConf Configuration">xterm -T JWMConf /usr/bin/jwmconf</Program>            
-	    <Program label="Memory Usage">gksu /usr/local/sbin/ps_mem.py</Program>            
-	    <Program label="Pacli Package">xterm -T Pacli /usr/bin/pacli</Program>
+	    <Program label="Memory Usage">sudo xterm -e "bash -c '/usr/bin/ps_mem;exec bash'"</Program>            
+	    <Program label="Pacli Package">xterm -T "Pacli" /usr/bin/pacli</Program>
             <Program label="Privilege Granting">gksu-properties</Program>
             <Program label="Root File Manager">gksu pcmanfm /</Program>         
             <Program label="Root Terminal">gksu sakura</Program>            

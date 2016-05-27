@@ -5,15 +5,12 @@
 ## Sound and Audio
 alsa-plugins
 manjaro-alsa
-volumeicon
+volumeicon-gtk2
 
 ## File Management
-gvfs
-gvfs-afc
-gvfs-gphoto2
-gvfs-smb
-p7zip
 pcmanfm
+gvfs
+p7zip
 xarchiver
 
 ## Network and bluetooth
@@ -60,6 +57,8 @@ oblogout
 lm_sensors
 xsensors
 perl-file-mimeinfo
+ps_mem
+tmpwatch
 
 ## Desktop Configuration
 arandr
@@ -67,29 +66,26 @@ lxinput
 
 ## Artwork, Icon, Mouse, and Desktop Themes
 gtk-engine-murrine
-xcursor-vanilla-dmz-aa
 adwaita-manjaro-themes
 gnome-themes-standard
 vertex-maia-themes
 vertex-maia-icon-theme
 
 ## Applications
-abiword
 cbatticon
 xcompmgr
 conky-lua-nv
 elinks
 epdfview
 feh
+abiword-gtk2
 gnumeric
 hardinfo
 hexchat
 htop
 leafpad
 libimobiledevice
-#gnome-mplayer
 smplayer
-#lxmusic
 deadbeef
 manjaro-settings-manager-notifier
 medit
@@ -102,23 +98,6 @@ imagewriter
 adobe-source-sans-pro-fonts
 ttf-droid
 cantarell-fonts
-
-## AUR Access
-#autoconf
-#automake
-#binutils
-#bison
-#fakeroot
-#flex
-#gcc
-#git
-#libconfig
-#libtool
-#m4
-#make
-#patch
-#subversion
-#yaourt
 
 ## Documentation
 manjaro-documentation
