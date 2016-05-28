@@ -8,7 +8,7 @@
  * To make a manual change to preferences, you can visit the URL about:config
  */
 
-user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1453918215);
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1464472485);
 user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1453918335);
 user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1454706873);
 user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1458612346);
@@ -25,9 +25,9 @@ user_pref("browser.places.smartBookmarksVersion", 4);
 user_pref("browser.preferences.advanced.selectedTabIndex", 4);
 user_pref("browser.rights.3.shown", true);
 user_pref("browser.search.useDBForOrder", true);
-user_pref("browser.slowStartup.averageTime", 0);
-user_pref("browser.slowStartup.samples", 0);
-user_pref("browser.startup.homepage", "https://manjaro.github.io/");
+user_pref("browser.slowStartup.averageTime", 3601);
+user_pref("browser.slowStartup.samples", 2);
+user_pref("browser.startup.homepage", "http://www.fsf.org/");
 user_pref("browser.startup.homepage_override.buildID", "20160504085022");
 user_pref("browser.startup.homepage_override.mstone", "2.0.2");
 user_pref("browser.syncPromoViewsLeftMap", "{\"bookmarks\":0}");
@@ -67,5 +67,5 @@ user_pref("services.sync.tabs.lastSync", "0");
 user_pref("services.sync.tabs.lastSyncLocal", "0");
 user_pref("status4evar.firstRun", false);
 user_pref("status4evar.migration", 6);
-user_pref("toolkit.startup.last_success", 1463276779);
+user_pref("toolkit.startup.last_success", 1464472534);
 user_pref("xpinstall.whitelist.add", "");
