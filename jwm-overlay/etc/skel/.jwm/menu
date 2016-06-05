@@ -57,7 +57,7 @@
             <Program label="BlueMan Manager">blueman-manager</Program> 
             <Program label="Configure Mouse/keyboard">lxinput</Program>
             <Program label="Customize Look/Feel">lxappearance</Program>
-	    <Program label="Manjaro Settings Manager">manjaro-settings-manager-gui</Program>
+	    <Program label="Manjaro Settings Manager">gksu manjaro-settings-manager-gui</Program>
             <Program label="Nitrogen Wallpaper">nitrogen</Program>
             <Program label="Printer Settings">system-config-printer</Program>
         </Menu>

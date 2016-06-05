@@ -59,6 +59,7 @@ xsensors
 perl-file-mimeinfo
 ps_mem
 tmpwatch
+update-notifier
 
 ## Desktop Configuration
 arandr

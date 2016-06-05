@@ -1,1 +1,2 @@
-00 14 * * * root /usr/bin/clearcache
+* * /14 * * * root /usr/bin/clearcache
+* */3 * * * update-notifier
