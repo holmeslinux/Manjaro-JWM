@@ -90,6 +90,7 @@
 		    <Program label="Manjaro News">palemoon https://manjaro.github.io/</Program>
 		    <Program label="Manjaro Forum">palemoon https://forum.manjaro.org/index.php</Program>
 		    <Program label="Manjaro Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
+		    <Program label="ArchLinux Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
 		</Menu>
 		<Menu label="JWM">
            	    <Program label="JWM Projet">palemoon http://joewing.net/projects/jwm/index.shtml</Program>        

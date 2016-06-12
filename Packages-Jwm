@@ -60,6 +60,7 @@ perl-file-mimeinfo
 ps_mem
 tmpwatch
 update-notifier
+conky-lua-nv
 
 ## Desktop Configuration
 arandr
@@ -75,7 +76,6 @@ vertex-maia-icon-theme
 ## Applications
 cbatticon-gtk2
 xcompmgr
-conky-lua-nv
 elinks
 epdfview
 feh
