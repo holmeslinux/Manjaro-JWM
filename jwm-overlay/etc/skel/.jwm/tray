@@ -12,9 +12,7 @@
         <TaskList maxwidth="130" border="false"/>
 	<Dock/>
 	<Spacer width="5"/>
-        <Clock format="%H:%M"></Clock>
-	<Spacer width="5"/>
-	<TrayButton label="Exit">exec:oblogout</TrayButton>
+        <Clock format="%H:%M:%S"></Clock>
 	<Spacer width="5"/>
      </Tray>
 

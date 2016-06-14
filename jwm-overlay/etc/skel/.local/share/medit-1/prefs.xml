@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- -*- xml -*- -->
+<moo-prefs version="1.0"/>
+  <Prefs>
+    <item name="Editor/color_scheme" type="string">tango</item>
+    <item name="Editor/font" type="string">Monospace 11</item>
+  </Prefs>
+</moo-prefs>

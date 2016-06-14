@@ -3,9 +3,9 @@
 
     <!-- Visual Style Window. -->
     <WindowStyle decorations="flat">
-        <Font align="center">Cantarell-10:antialias=true:encoding=utf8</Font>
+        <Font align="center">Cantarell-11:antialias=true:encoding=utf8</Font>
         <Width>2</Width>
-        <Height>18</Height>
+        <Height>19</Height>
         <Corner>2</Corner>
         <Foreground>#ffffff</Foreground>
         <Background>#2b2c2b</Background>
@@ -38,7 +38,7 @@
 
     <!-- Visual Style Tray. -->
     <TrayStyle decorations="flat">
-        <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
+        <Font>Cantarell-11:antialias=true:encoding=utf8</Font>
         <Background>#2b2c2b</Background>
         <Foreground>#ffffff</Foreground>
         <Outline>#2b2c2b</Outline>
@@ -71,7 +71,7 @@
 
     <!-- Visual Style Clock. -->
     <ClockStyle>
-        <Font>Cantarell-10:weight=demibold:antialias=true:encoding=utf8</Font>
+        <Font>Cantarell-11:weight=demibold:antialias=true:encoding=utf8</Font>
     </ClockStyle>
 
 </JWM>

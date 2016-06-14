@@ -39,6 +39,7 @@
             <Program label="SMPlayer Video">smplayer</Program>
         </Menu>
         <Menu label="Network">
+	    <Program label="ELinks Browser">xterm elinks</Program>
 	    <Program label="HexChat IRC">hexchat</Program>
 	    <Program label="NetworkManager">nm-applet</Program>        
             <Program label="Pale Moon Browser">palemoon</Program>
