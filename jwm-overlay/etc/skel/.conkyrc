@@ -25,7 +25,7 @@ $color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} 
 
 ${voffset 10}$alignr$color Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C
 #
-${voffset 10}${goto 30}CPU$alignr$cpu%
+${voffset 10}${goto 30}CPU$alignr${cpu}%
 ${goto 30}${cpubar 5,175}
 ${voffset 5}${goto 30}$color2${top name 1}$alignr${top cpu 1}%
 ${goto 30}$color2${top name 2}$alignr${top cpu 2}%
