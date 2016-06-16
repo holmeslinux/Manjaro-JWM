@@ -31,6 +31,13 @@
             <Program label="Medit Editor">medit</Program>
            <Program label="Xarchiver Compressed">xarchiver</Program>
         </Menu>
+        <Menu label="Games">
+	    <Program label="Columns">xterm -T Columns ~/.games/columns</Program>
+	    <Program label="Housenka">xterm -T Housenka ~/.games/housenka</Program>
+	    <Program label="Space Invaders">xterm -T Space Invaders ~/.games/space</Program>
+	    <Program label="Tic-tac-toe">xterm -T Tic-tac-toe ~/.games/tic</Program>
+	    <Program label="2048">xterm -T 2048 ~/.games/2048</Program>
+        </Menu>
         <Menu label="Graphics">
             <Program label="Online Image Editor">palemoon http://www.online-image-editor.com/</Program>
         </Menu>
