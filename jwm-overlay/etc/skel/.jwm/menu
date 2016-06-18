@@ -24,11 +24,6 @@
             <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' &amp; scrot -se 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
-	<Menu label="Install Manjaro">
-            <Program label="Graphical Thus">sudo thus</Program>
-            <Program label="Text-Based CLI">sudo xterm /usr/bin/setup</Program>
-	</Menu>
-	<Separator/>
 	<Menu label="Accesories">
 	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
 	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
@@ -37,12 +32,10 @@
            <Program label="Xarchiver Compressed">xarchiver</Program>
         </Menu>
         <Menu label="Games">
-	    <Program label="Columns">xterm -T Columns ~/.games/columns</Program>
-	    <Program label="Housenka">xterm -T Housenka ~/.games/housenka</Program>
-	    <Program label="Space Invaders">xterm -T Space Invaders ~/.games/space</Program>
-	    <Program label="Tic-tac-toe">xterm -T Tic-tac-toe ~/.games/tic</Program>
-	    <Program label="2048">xterm -T 2048 ~/.games/2048</Program>
-        </Menu>
+	   <Program label="GNU Chess">gnuchess</Program>	    
+	   <Program label="Gweled">gweled</Program>
+	   <Program label="LBreakout">lbreakout2</Program>
+	</Menu>
         <Menu label="Graphics">
             <Program label="Online Image Editor">palemoon http://www.online-image-editor.com/</Program>
         </Menu>
