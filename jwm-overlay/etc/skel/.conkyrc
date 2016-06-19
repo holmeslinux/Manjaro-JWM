@@ -1,23 +1,23 @@
 conky.config = {
-	alignment = 'top_right',
-	background = true,
-	color2 = 'ffffff',
-	cpu_avg_samples = 2,
-	default_color = 'ffffff',
-        draw_shades = false,
-	double_buffer = true,
-	font = 'Cantarell:size=9',
-	gap_x = 10,
-	gap_y = 40,
-	minimum_width = 200,
-	no_buffers = true,
-	own_window = true,
-	own_window_type = 'desktop',
-	own_window_transparent = true,
-	own_window_argb_visual = true,
-        own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
-	update_interval = 1.0,
-	use_xft = true,
+alignment = 'top_right',
+background = true,
+color2 = 'ffffff',
+cpu_avg_samples = 2,
+default_color = 'ffffff',
+draw_shades = false,
+double_buffer = true,
+font = 'Cantarell:size=9',
+gap_x = 10,
+gap_y = 60,
+minimum_width = 200,
+no_buffers = true,
+own_window = true,
+own_window_type = 'desktop',
+own_window_transparent = true,
+own_window_argb_visual = true,
+own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+update_interval = 1.0,
+use_xft = true,
 }
 conky.text = [[
 ${voffset 8}$color${font Cantarell:size=16}${time %a}$font${voffset -8}$alignr${color ffffff}${font Cantarell:size=38}${time %e}$font
@@ -36,13 +36,22 @@ ${goto 30}$color2${top_mem name 2}$alignr${top_mem mem_res 2}
 ${goto 30}$color2${top_mem name 3}$alignr${top_mem mem_res 3}
 ${goto 30}${hr 1}
 ${voffset 10}${goto 30}ROOT$alignr${fs_size /} I ${fs_used /}
-${goto 30}${fs_bar 5,175 /}
 ${goto 30}HOME$alignr${fs_size /home} I ${fs_used /home}
-${goto 30}${fs_bar 5,175 /home}
 ${goto 30}SWAP$alignr$swapmax I $swap
-${goto 30}${swapbar 5,175}
 #
-${voffset 10}${goto 30}BATT$alignr${battery_percent BAT1}%
+${voffset -7}${if_existing /proc/net/route wlp3s0}
+${goto 30}CONNE${alignr}wiriless
+${goto 30}SIGN${alignr}${wireless_link_qual wlp3s0}%
+${goto 30}SPEED ${alignr}${downspeedf wlp3s0}KiB D I ${alignr}${upspeedf wlp3s0}KiB U
+${else}
+${if_existing /proc/net/route enp6s0}
+${voffset -17}${goto 30}CONNE${alignr}cable
+${goto 30}SPEED ${alignr}${downspeedf enp6s0}KiB D I ${alignr}${upspeedf enp6s0}KiB U
+${else}
+${voffset -15}${goto 30}CONNE${alignr}no available
+${endif}${endif}
+#
+${voffset -7}${goto 30}BATT$alignr${battery BAT1}
 ${goto 30}${hr 1}
 ${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 #

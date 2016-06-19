@@ -59,4 +59,19 @@
         <Option>centered</Option>
     </Group>
 
+    <Group>
+        <Name>lbreakout2</Name>
+        <Option>centered</Option>
+    </Group>
+
+    <Group>
+        <Name>gweled</Name>
+        <Option>centered</Option>
+    </Group>
+
+    <Group>
+        <Name>xboard</Name>
+        <Option>centered</Option>
+    </Group>
+
 </JWM>

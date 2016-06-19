@@ -32,7 +32,7 @@
            <Program label="Xarchiver Compressed">xarchiver</Program>
         </Menu>
         <Menu label="Games">
-	   <Program label="GNU Chess">gnuchess</Program>	    
+	   <Program label="GNU Chess">xboard</Program>
 	   <Program label="Gweled">gweled</Program>
 	   <Program label="LBreakout">lbreakout2</Program>
 	</Menu>
