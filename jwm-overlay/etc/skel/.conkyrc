@@ -25,12 +25,12 @@ $color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} 
 
 ${voffset 5}$alignr$color Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C
 #
-${voffset 20}${goto 30}TOP CPU${alignr}
+${voffset 20}${goto 30}TOP THREE CPU${alignr}
 ${voffset 5}${goto 30}$color2${top name 1}$alignr${top cpu 1}%
 ${goto 30}$color2${top name 2}$alignr${top cpu 2}%
 ${goto 30}$color2${top name 3}$alignr${top cpu 3}%
 ${goto 30}${hr 1}
-${voffset 10}${goto 30}TOP RAM${alignr}
+${voffset 10}${goto 30}TOP THREE RAM${alignr}
 ${voffset 5}${goto 30}$color2${top_mem name 1}$alignr${top_mem mem_res 1}
 ${goto 30}$color2${top_mem name 2}$alignr${top_mem mem_res 2}
 ${goto 30}$color2${top_mem name 3}$alignr${top_mem mem_res 3}
@@ -48,7 +48,7 @@ ${if_existing /proc/net/route enp6s0}
 ${voffset -17}${goto 30}CONNE${alignr}cable
 ${goto 30}SPEED ${alignr}${downspeedf enp6s0}KiB D I ${alignr}${upspeedf enp6s0}KiB U
 ${else}
-${voffset -15}${goto 30}CONNE${alignr}no available
+${voffset -17}${goto 30}CONNE${alignr}no available
 ${endif}${endif}
 #
 ${voffset -7}${goto 30}BATT$alignr${battery BAT1}
