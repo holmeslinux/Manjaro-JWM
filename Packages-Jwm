@@ -32,8 +32,7 @@ dconf
 desktop-file-utils
 
 ## Display Manager
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
+lxdm
 
 ## Desktop Display
 dunst
@@ -70,8 +69,7 @@ lxinput
 gtk-engine-murrine
 adwaita-manjaro-themes
 gnome-themes-standard
-vertex-maia-themes
-vertex-maia-icon-theme
+FaenzaFlattr-Black
 
 ## Applications
 cbatticon-gtk2

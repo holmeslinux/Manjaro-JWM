@@ -1,5 +1,0 @@
-T 1464989042 19*	Agora falando em 22#manjaro
-T 1464989042 22*	Tópico para 22#manjaro é: Welcome to the official Manjaro Linux IRC channel | Channel logs: http://echelog.com/?manjaro | www.manjaro.org - wiki.manjaro.org - irc.manjaro-nl.org | 16.06 RC 1 released! | New forum is active! forum.manjaro.org
-T 1464989042 22*	Tópico do 22#manjaro definido por 26jonathon!~jonathonf@unaffiliated/jonathon (24Tue May 17 05:58:31 2016)
-T 1464989042 -18ChanServ-	[#manjaro] Crypt luks error look at conversation philm: http://echelog.com/logs/browse/manjaro/1456009200   or http://bit.ly/1Qbsr99
-T 1464989042 22*	Canal 22#manjaro url: 24www.manjaro.org/blog

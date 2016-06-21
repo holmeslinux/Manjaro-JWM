@@ -2,15 +2,7 @@
 <JWM>
 
     <!-- The root menu. -->
-    <RootMenu onroot="7">
-        <Program label="Home">pcmanfm ~/</Program>
-        <Program label="Root">gksu pcmanfm /</Program>
-    <Separator/>
-	<Program label="Applications">pcmanfm menu://applications/</Program>
-        <Program label="Devices">pcmanfm computer:///</Program>
-        <Program label="Trash">pcmanfm trash:///</Program>
-    </RootMenu>
-    <RootMenu onroot="3">
+        <RootMenu onroot="3">
         <Program label="Run Applications">gmrun</Program>
         <Program label="Terminal">sakura</Program>
         <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program>
@@ -24,7 +16,7 @@
             <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' &amp; scrot -se 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
-	<Menu label="Accesories">
+        <Menu label="Accesories">
 	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
 	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
             <Program label="Leafpad Editor">leafpad</Program>
