@@ -7,8 +7,8 @@
 }
 
 #time {
-	font: Roboto 12;
-	color: #db6823
+	font: Cantarell 12;
+	color: #191919
 }
 
 #user_list, #login_entry {
@@ -16,5 +16,5 @@
 }
 
 #prompt, #bottom_pane GtkLabel {
-	color: #db6823
+	color: #191919
 }

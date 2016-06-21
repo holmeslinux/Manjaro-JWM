@@ -18,5 +18,5 @@ gap_y = 20,
 default_color = '191919',
 }
 conky.text = [[
-${time %a %e, %b %Y}, Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C | Uptime: ${uptime_short} | Root: ${fs_used_perc /}% (${fs_free /} - ${fs_used /}) | CPU: ${cpu cpuN}% | RAM: $memperc% ($mem) | Battery: ${battery BAT1} |${if_existing /proc/net/route wlp3s0} Connection: wiriless ${wireless_link_qual wlp3s0}% ${else} ${if_existing /proc/net/route enp6s0}Connection: cable ${else}Connection: no available ${endif}${endif} | Updates: ${execpi 10800 checkupdates | wc -l}
+${time %a %e, %b %Y}, Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C | Uptime: ${uptime_short} | Root: ${fs_used_perc /}% (${fs_free /} - ${fs_used /}) | CPU: ${cpu cpuN}% | RAM: $memperc% ($mem) | Battery: ${battery BAT1} |${if_existing /proc/net/route wlp3s0} Connection: wiriless ${wireless_essid} ${wireless_link_qual wlp3s0}% ${else} ${if_existing /proc/net/route enp6s0}Connection: cable ${else}Connection: no available ${endif}${endif} | Updates: ${execpi 10800 checkupdates | wc -l}
 ]]

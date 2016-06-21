@@ -2,12 +2,12 @@
 <JWM>
 
     <!-- Tray of the environment. -->
-    <Tray x="0" y="-1" height="23" width="'1300" halign="center">
-	<Spacer width="5"/>
-        <TrayButton icon="/usr/share/icons/Faenza/places/96/logotray.png" popup="Applications">root:3</TrayButton>
+    <Tray x="0" y="-1" height="23" width="1300" halign="center">
+	<TrayButton icon="/usr/share/icons/Faenza/places/96/jwm.svg" popup="Applications">root:3</TrayButton>
         <Spacer width="5"/>
         <TaskList maxwidth="130" border="false"/>	
         <Pager labeled="true"/>
+        <Spacer width="5"/>        
         <Dock/>
 	<Spacer width="5"/>
         <Clock format="%H:%M:%S"></Clock>
