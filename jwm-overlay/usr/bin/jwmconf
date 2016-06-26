@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#  updated on 14.05.2016 09:45:49
-#  version 0.1-2
+#  updated on 25.06.2016 09:45:49
+#  version 0.1-3
 
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -64,28 +64,28 @@ Reload menu by sending _JWM_RELOAD to the root window.
 To check the JWM configuration and return syntax errors (including associated line numbers).
 
 4- EDIT MENU JWM
-This option is to edit the Menu settings (in ~/.jwm/menu). To edit the Menu is used leafpad editor.
+This option is to edit the Menu settings (in ~/.jwm/menu). To edit the Menu is used nano editor.
 
 5- EDIT TRAY JWM
-This option is to edit the Tray settings (in ~/.jwm/tray). To edit the Tray is used leafpad editor.
+This option is to edit the Tray settings (in ~/.jwm/tray). To edit the Tray is used nano editor.
 
 6- EDIT START JWM
-This option is to edit the Start settings (in ~/.jwm/start). To edit the Start is used leafpad editor.
+This option is to edit the Start settings (in ~/.jwm/start). To edit the Start is used nano editor.
 
 7- EDIT THEME JWM
-This option is to edit the Theme settings (in ~/.jwm/theme). To edit the Theme is used leafpad editor.
+This option is to edit the Theme settings (in ~/.jwm/theme). To edit the Theme is used nano editor.
 
 8- EDIT KEYS JWM
-This option is to edit the Keys settings (in ~/.jwm/keys). To edit the Keys is used leafpad editor.
+This option is to edit the Keys settings (in ~/.jwm/keys). To edit the Keys is used nano editor.
 
 9- EDIT GROUPS JWM
-This option is to edit the Groups settings (in ~/.jwm/groups). To edit the Groups is used leafpad editor.
+This option is to edit the Groups settings (in ~/.jwm/groups). To edit the Groups is used nano editor.
 
 10- EDIT PREFERENCES JWM
-This option is to edit the Preferences settings (in ~/.jwm/preferences). To edit the Preferences is used leafpad editor.
+This option is to edit the Preferences settings (in ~/.jwm/preferences). To edit the Preferences is used nano editor.
 
 11- EDIT JWMRC
-This option is to edit the jwmrc settings (in ~/.jwmrc). To edit the jwmrc is used leafpad editor.
+This option is to edit the jwmrc settings (in ~/.jwmrc). To edit the jwmrc is used nano editor.
 
 12- COMMANDS MANUAL JWM
 General commands manual of the Joe's Window Manager (JWM). JWM is a window manager for X11 Window System.
@@ -99,15 +99,15 @@ Visit and know the website of JWM.
 
 15- EDIT CONKY
 Conky a lightweight system monitor.
-This option is to edit the Conky settings ((in ~/.conkyrc). To edit the Conky is used leafpad editor.
+This option is to edit the Conky settings ((in ~/.conkyrc). To edit the Conky is used nano editor.
 
 16- EDIT DUNST
 Dunst is a lightweight replacement for the notification-daemons provided by most desktop environments.
-This option is to edit the Dunst settings (in ~/.config/dunst/dunstrc). To edit the Dunst is used leafpad editor.
+This option is to edit the Dunst settings (in ~/.config/dunst/dunstrc). To edit the Dunst is used nano editor.
 
 17- EDIT GMRUN
 Gmrun (Gnome Completion-Run) is an lightweight application launcher similar to GNOME Run, Application Finder, KRunner, etc. 
-This option is to edit the Gmrun settings (in ~/.gmrunrc). To edit the Gmrun is used leafpad editor.
+This option is to edit the Gmrun settings (in ~/.gmrunrc). To edit the Gmrun is used nano editor.
 
 18- EDIT BASHRC
 Bash (Bourne-again Shell) is a command-line shell/programming language by the GNU Project.
@@ -121,8 +121,8 @@ GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical us
 21- EDIT XRESOURCES
 Xresources is a user-level configuration dotfile, typically located at ~/.Xresources.
 
-22- EDIT LightDM
-LightDM is a cross-desktop display manager. A display manager is a daemon that: runs display servers (e.g. X) where necessary, runs greeters to allow users to pick which user account and session type to use, etc.
+22- EDIT LXDM
+LXDM is a lightweight display manager for the LXDE desktop environment. The UI is implemented with GTK+ 2.
 
 23- EDIT OBLOGOUT
 Oblogout is an optional, configurable logout script that presents a graphical interface (i.e. buttons) to cancel, logout, restart, shutdown, suspend.
@@ -158,7 +158,7 @@ NC='\e[0m'
     echo -e " │  $NC 17  $NC  Edit Gmrun                         $NC 18  $NC  Edit Bashrc           │"
     echo -e " │-------------------------------------------------------------------------│"
     echo -e " │  $NC 19  $NC *Edit GTK2              	      $NC 20  $NC *Edit GTK3             │"
-    echo -e " │  $NC 21  $NC *Edit Xresources 	              $NC 22  $NC *Edit LightDM          │"
+    echo -e " │  $NC 21  $NC *Edit Xresources 	              $NC 22  $NC *Edit LXDM             │"
     echo -e " │  $NC 23  $NC *Edit Oblogout			                           │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
@@ -210,119 +210,119 @@ NC='\e[0m'
             ;;
 	7)
             echo
-            leafpad ~/.jwm/tray
+            nano ~/.jwm/tray
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	8)
             echo ""
-            leafpad ~/.jwm/start
+            nano ~/.jwm/start
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	9)
             echo ""
-            leafpad ~/.jwm/theme
+            nano ~/.jwm/theme
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read 
             ;;
 	10)
             echo ""
-            leafpad ~/.jwm/keys
+            nano ~/.jwm/keys
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	11)
             echo ""
-            leafpad ~/.jwm/groups
+            nano ~/.jwm/groups
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	12)
             echo ""
-            leafpad ~/.jwm/preferences
+            nano ~/.jwm/preferences
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	13)
             echo
-            leafpad ~/.jwm/menu
+            nano ~/.jwm/menu
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	14)
             echo ""
-            leafpad ~/.jwmrc
+            nano ~/.jwmrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;        
         15)
             echo ""
-            leafpad ~/.conkyrc
+            nano ~/.conkyrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         16)
             echo ""
-            leafpad ~/.config/dunst/dunstrc
+            nano ~/.config/dunst/dunstrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         17)
             echo ""
-            leafpad ~/.gmrunrc
+            nano ~/.gmrunrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         18)
             echo ""
-            leafpad $HOME/.bashrc
+            nano $HOME/.bashrc
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	19)
             echo ""
-            leafpad $HOME/.gtkrc-2.0
+            nano $HOME/.gtkrc-2.0
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	20)
             echo ""
-            leafpad $HOME/.config/gtk-3.0/settings.ini
+            nano $HOME/.config/gtk-3.0/settings.ini
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;	
 	21)
             echo ""
-            leafpad $HOME/.Xresources
+            nano $HOME/.Xresources
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	22)
             echo ""
-            sudo leafpad /etc/lightdm/lightdm-gtk-greeter.conf
+            sudo nano /etc/lxdm/lxdm.conf
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	23)
             echo ""
-            sudo leafpad /etc/oblogout.conf
+            sudo nano /etc/oblogout.conf
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read

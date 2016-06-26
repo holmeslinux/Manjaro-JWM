@@ -1,24 +1,66 @@
 conky.config = {
-alignment = 'top_middle',
+alignment = 'top_right',
 background = true,
+color2 = '191919',
+cpu_avg_samples = 2,
 default_color = '191919',
-double_buffer = true,
 draw_shades = false,
+double_buffer = true,
 font = 'Cantarell:size=9',
-gap_x = 5,
+gap_x = 10,
 gap_y = 20,
-out_to_console = true,
-out_to_x = yes,
+minimum_width = 200,
+no_buffers = true,
 own_window = true,
-own_window_class = 'Conky',
-own_window_hints='below',
-own_window_transparent = true,
 own_window_type = 'desktop',
-total_run_times = 0,
+own_window_transparent = true,
+own_window_argb_visual = true,
+own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
 update_interval = 1.0,
-use_spacer = 'none',
 use_xft = true,
 }
 conky.text = [[
-${time %a %e, %b %Y}, Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C • Uptime: ${uptime_short} • Root: ${fs_used_perc /}% (${fs_free /} - ${fs_used /}) • CPU: ${cpu cpuN}% • RAM: $memperc% ($mem) • Battery: ${battery BAT1} •${if_existing /proc/net/route wlp3s0} Connection: wiriless ${wireless_essid} ${wireless_link_qual wlp3s0}% ${else} ${if_existing /proc/net/route enp6s0}Connection: cable ${else}Connection: no available ${endif}${endif} • Updates: ${execpi 10800 checkupdates | wc -l}
+${voffset -8}$alignr${color 5f9fdc}${font Cantarell:size=38}${time %e}$font
+$color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} $color${font Cantarell:size=20}${time %Y}$font
+
+${voffset 5}$alignr$color Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C
+#
+${voffset 20}${goto 30}Top${alignr}CPU
+${voffset 5}${goto 30}$color2${top name 1}$alignr${top cpu 1}%
+${goto 30}$color2${top name 2}$alignr${top cpu 2}%
+${goto 30}$color2${top name 3}$alignr${top cpu 3}%
+${goto 30}$color2${top name 4}$alignr${top cpu 4}%
+${goto 30}${hr 1}
+${voffset 10}${goto 30}Top${alignr}RAM
+${voffset 5}${goto 30}$color2${top_mem name 1}$alignr${top_mem mem_res 1}
+${goto 30}$color2${top_mem name 2}$alignr${top_mem mem_res 2}
+${goto 30}$color2${top_mem name 3}$alignr${top_mem mem_res 3}
+${goto 30}$color2${top_mem name 4}$alignr${top_mem mem_res 4}
+${goto 30}${hr 1}
+${voffset 10}${goto 30}Root$alignr${fs_size /} I ${fs_used /}
+${goto 30}Home$alignr${fs_size /home} I ${fs_used /home}
+${goto 30}Swap$alignr$swapmax I $swap
+#
+${voffset -7}${if_existing /proc/net/route wlp3s0}
+${goto 30}Connection${alignr}wiriless
+${goto 30}Name${alignr}${wireless_essid}
+${goto 30}Signal${alignr}${wireless_link_qual wlp3s0}%
+${goto 30}Speed${alignr}${downspeedf wlp3s0}KiB D I ${alignr}${upspeedf wlp3s0}KiB U
+${else}
+${if_existing /proc/net/route enp6s0}
+${voffset -17}${goto 30}Connection${alignr}cable
+${goto 30}Speed${alignr}${downspeedf enp6s0}KiB D I ${alignr}${upspeedf enp6s0}KiB U
+${else}
+${voffset -17}${goto 30}Connection${alignr}no available
+${endif}${endif}
+#
+${voffset -7}${goto 30}Battery$alignr${battery_percent BAT1}%
+${goto 30}${hr 1}
+${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
+#
+${voffset 10}$alignr${execi 1200 whoami}@${nodename}
+${alignr}${color2}${font Cantarell:size=9}Uptime ${uptime_short}
+${alignr}${color2}${font Cantarell:size=9}${alignr}Kernel ${kernel}
+${alignr}${color2}${font Cantarell:size=9}${alignr}Architecture ${machine} I Systemd
+${voffset 10}${alignr} Updates ${color 191919}${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
 ]]
