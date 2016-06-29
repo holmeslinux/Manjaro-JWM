@@ -62,13 +62,13 @@
             <Program label="Printer Settings">system-config-printer</Program>
         </Menu>
         <Menu label="System">
-		<Menu label="Script Install">
-		    <Program label="AUR">sudo xterm -T "Script AUR" ~/.scripts/aur</Program>
-            	    <Program label="Firewall">sudo xterm -T "Script Firewall" ~/.scripts/firewall</Program>
-		    <Program label="Java">sudo xterm -T "Script Java" ~/.scripts/java</Program>        
-                    <Program label="Multimedia">sudo xterm -T "Script Multimedia" ~/.scripts/multimedia</Program>
-                    <Program label="Printer">sudo xterm -T "Script Printer" ~/.scripts/printer</Program>
-        	</Menu>
+	<Menu label="Script Install">
+	    <Program label="AUR">sudo xterm -T "Script AUR" ~/.scripts/aur</Program>
+            <Program label="Firewall">sudo xterm -T "Script Firewall" ~/.scripts/firewall</Program>
+	    <Program label="Java">sudo xterm -T "Script Java" ~/.scripts/java</Program>        
+            <Program label="Multimedia">sudo xterm -T "Script Multimedia" ~/.scripts/multimedia</Program>
+            <Program label="Printer">sudo xterm -T "Script Printer" ~/.scripts/printer</Program>
+        </Menu>
          <Separator/>
             <Program label="Gufw Firewall">gksu gufw</Program>
             <Program label="HardInfo">hardinfo</Program>
@@ -83,20 +83,20 @@
         </Menu>
         <Separator/>
         <Menu label="Help">
-		<Menu label="Manjaro">
-           	    <Program label="Manjaro Beginner User Guide">epdfview /usr/share/doc/livecd/Beginner_User_Guide.pdf</Program>        
-      	    	    <Program label="Manjaro JWM User Orientation Guide">epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Program>
-		<Separator/>		    
-		    <Program label="Manjaro News">palemoon https://manjaro.github.io/</Program>
-		    <Program label="Manjaro Forum">palemoon https://forum.manjaro.org/index.php</Program>
-		    <Program label="Manjaro Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
-		    <Program label="ArchLinux Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
-		</Menu>
-		<Menu label="JWM">
-           	    <Program label="JWM Projet">palemoon http://joewing.net/projects/jwm/index.shtml</Program>        
-           	    <Program label="JWM Configuration">palemoon http://joewing.net/projects/jwm/config.shtml</Program>
-		    <Program label="JWM Wiki ArchLinux">palemoon https://wiki.archlinux.org/index.php/JWM</Program>
-        	</Menu>
+	<Menu label="Manjaro">
+            <Program label="Manjaro Beginner User Guide">epdfview /usr/share/doc/livecd/Beginner_User_Guide.pdf</Program>        
+      	    <Program label="Manjaro JWM User Orientation Guide">epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Program>
+	<Separator/>		    
+	    <Program label="Manjaro News">palemoon https://manjaro.github.io/</Program>
+	    <Program label="Manjaro Forum">palemoon https://forum.manjaro.org/index.php</Program>
+	    <Program label="Manjaro Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
+	    <Program label="ArchLinux Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
+	</Menu>
+	<Menu label="JWM">
+            <Program label="JWM Projet">palemoon http://joewing.net/projects/jwm/index.shtml</Program>        
+            <Program label="JWM Configuration">palemoon http://joewing.net/projects/jwm/config.shtml</Program>
+	    <Program label="JWM Wiki ArchLinux">palemoon https://wiki.archlinux.org/index.php/JWM</Program>
+        </Menu>
 	</Menu>
 	<Separator/>
           <Program label="Exit">oblogout</Program>
