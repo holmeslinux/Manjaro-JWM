@@ -5,6 +5,8 @@
     <Tray x="0" y="-1" layout="horizontal" halign="fixed" height="22">
 	<TrayButton icon="/usr/share/icons/Faenza/places/96/jwm.svg" popup="Menu">root:3</TrayButton>
         <Spacer width="5"/>
+        <TrayButton icon="/usr/share/icons/FaenzaFlattr-Black/places/scalable/folder_home.svg" popup="Places">root:7</TrayButton>
+	<Spacer width="5"/>
         <TaskList maxwidth="130" border="false"/>	
         <Pager labeled="true"/>
         <Spacer width="5"/>        

@@ -2,21 +2,23 @@
 <JWM>
 
     <!-- The root menu. -->
+    <RootMenu onroot="7">
+        <Program label="Home">pcmanfm ~/</Program>
+        <Program label="Root">gksu pcmanfm /</Program>
+    <Separator/>
+	<Program label="Applications">pcmanfm menu://applications/</Program>
+        <Program label="Devices">pcmanfm computer:///</Program>
+        <Program label="Trash">pcmanfm trash:///</Program>
+    </RootMenu>
         <RootMenu onroot="3">
-        <Program label="Run Applications">gmrun</Program>
+        <Program label="Run">gmrun</Program>
         <Program label="Terminal">sakura</Program>
         <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program>
         <Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program>
         <Program label="File Manager">pcmanfm</Program>
         <Program label="Web Browser">palemoon</Program>
-        <Menu label="Screenshot">
-	    <Program label="Active Window Delay">notify-send 'Selection will be saved in ~/Screenshots in 5s' &amp; scrot -ud 5 -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>            
-	    <Program label="Active Window">scrot -ue 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
-            <Program label="Full Screen">scrot -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
-            <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' &amp; scrot -se 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
-        </Menu>
         <Separator/>
-	<Menu label="Applications">
+        <Menu label="Applications">
 	<Menu label="Accesories">
 	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
 	    <Program label="ClipIt">clipit</Program>	    
@@ -39,7 +41,7 @@
         </Menu>
         <Menu label="Network">
 	    <Program label="ELinks Browser">xterm elinks</Program>
-	    <Program label="HexChat IRC">hexchat</Program>
+	    <Program label="XChat IRC">xchat</Program>
 	    <Program label="NetworkManager">nm-applet</Program>        
             <Program label="Pale Moon Browser">palemoon</Program>
         </Menu>
@@ -50,7 +52,6 @@
 	    <Program label="Online Open365 Tools">palemoon https://cloud.open365.io/applogin/</Program>
             <Program label="Online PDF Tools">palemoon http://smallpdf.com/</Program>
             <Program label="Simple Scan">simple-scan</Program>
-        </Menu>
         </Menu>
         <Menu label="Settings">
             <Program label="ARandR Screen Editor">arandr</Program>
@@ -81,6 +82,13 @@
             <Program label="Root File Manager">gksu pcmanfm /</Program>         
             <Program label="Root Terminal">gksu sakura</Program>            
             <Program label="Temperature Sensors">xsensors</Program>
+        </Menu>
+        </Menu>
+        <Menu label="Screenshot">
+	    <Program label="Active Window Delay">notify-send 'Selection will be saved in ~/Screenshots in 5s' &amp; scrot -ud 5 -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>            
+	    <Program label="Active Window">scrot -ue 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
+            <Program label="Full Screen">scrot -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
+            <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' &amp; scrot -se 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
         </Menu>
         <Separator/>
         <Menu label="Help">
