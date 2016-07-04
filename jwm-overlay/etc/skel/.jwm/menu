@@ -16,7 +16,7 @@
         <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program>
         <Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program>
         <Program label="File Manager">pcmanfm</Program>
-        <Program label="Web Browser">palemoon</Program>
+        <Program label="Web Browser">light</Program>
         <Separator/>
         <Menu label="Applications">
 	<Menu label="Accesories">
@@ -33,7 +33,7 @@
 	   <Program label="LBreakout">lbreakout2</Program>
 	</Menu>
         <Menu label="Graphics">
-            <Program label="Online Image Editor">palemoon http://www.online-image-editor.com/</Program>
+            <Program label="Online Image Editor">light http://www.online-image-editor.com/</Program>
         </Menu>
         <Menu label="Multimedia">
             <Program label="DeaDBeeF Music">deadbeef</Program>        
@@ -43,14 +43,14 @@
 	    <Program label="ELinks Browser">xterm elinks</Program>
 	    <Program label="XChat IRC">xchat</Program>
 	    <Program label="NetworkManager">nm-applet</Program>        
-            <Program label="Pale Moon Browser">palemoon</Program>
+            <Program label="LightFirefox Browser">light</Program>
         </Menu>
         <Menu label="Office">
             <Program label="AbiWord Word">abiword</Program>
             <Program label="Epdfview PDF">epdfview</Program>
             <Program label="Gnumeric Calc">gnumeric</Program>
-	    <Program label="Online Open365 Tools">palemoon https://cloud.open365.io/applogin/</Program>
-            <Program label="Online PDF Tools">palemoon http://smallpdf.com/</Program>
+	    <Program label="Online Open365 Tools">light https://cloud.open365.io/applogin/</Program>
+            <Program label="Online PDF Tools">light http://smallpdf.com/</Program>
             <Program label="Simple Scan">simple-scan</Program>
         </Menu>
         <Menu label="Settings">
@@ -96,15 +96,15 @@
             <Program label="Manjaro Beginner User Guide">epdfview /usr/share/doc/livecd/Beginner_User_Guide.pdf</Program>        
       	    <Program label="Manjaro JWM User Orientation Guide">epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Program>
 	<Separator/>		    
-	    <Program label="Manjaro News">palemoon https://manjaro.github.io/</Program>
-	    <Program label="Manjaro Forum">palemoon https://forum.manjaro.org/index.php</Program>
-	    <Program label="Manjaro Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
-	    <Program label="ArchLinux Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
+	    <Program label="Manjaro News">light https://manjaro.github.io/</Program>
+	    <Program label="Manjaro Forum">light https://forum.manjaro.org/index.php</Program>
+	    <Program label="Manjaro Wiki">light https://wiki.manjaro.org/index.php?title=Main_Page</Program>
+	    <Program label="ArchLinux Wiki">light https://wiki.manjaro.org/index.php?title=Main_Page</Program>
 	</Menu>
 	<Menu label="JWM">
-            <Program label="JWM Projet">palemoon http://joewing.net/projects/jwm/index.shtml</Program>        
-            <Program label="JWM Configuration">palemoon http://joewing.net/projects/jwm/config.shtml</Program>
-	    <Program label="JWM Wiki ArchLinux">palemoon https://wiki.archlinux.org/index.php/JWM</Program>
+            <Program label="JWM Projet">light http://joewing.net/projects/jwm/index.shtml</Program>        
+            <Program label="JWM Configuration">light http://joewing.net/projects/jwm/config.shtml</Program>
+	    <Program label="JWM Wiki ArchLinux">light https://wiki.archlinux.org/index.php/JWM</Program>
         </Menu>
 	</Menu>
 	<Separator/>

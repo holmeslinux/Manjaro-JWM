@@ -6,12 +6,12 @@
 
 static=cudli20y.default.backup
 link=cudli20y.default
-volatile=/dev/shm/palemoon-$USER
+volatile=/dev/shm/light-$USER
 
 IFS=
 set -efu
 
-cd ~/.moonchild\ productions/pale\ moon
+cd ~/.light/light
 
 if [ ! -r $volatile ]; then
 	mkdir -m0700 $volatile

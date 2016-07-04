@@ -25,7 +25,7 @@
     <Key mask="SA" key="Left">sendl</Key>
 
     <!-- Key applications. -->
-    <Key mask="4" key="b">exec:palemoon</Key>
+    <Key mask="4" key="b">exec:light</Key>
     <Key mask="4" key="x">exec:xchat</Key>
     <Key mask="4" key="e">exec:pcmanfm</Key>
     <Key mask="4" key="r">exec:gmrun</Key>
