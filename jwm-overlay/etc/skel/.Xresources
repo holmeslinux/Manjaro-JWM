@@ -1,7 +1,14 @@
 ! XTerm Settings
-*background: #bfc674
-*foreground: #191919
-xterm*reverseVideo: on
-xterm*faceName: Liberation Mono:size=10:antialias=true
-xterm*font: 7x13
-xterm*geometry: 76x27
+XTerm*termName: xterm-256color
+XTerm*selectToClipboard: true
+XTerm*locale: true
+XTerm*metaSendsEscape: true
+XTerm*saveLines: 4096
+XTerm*geometry: 76x27
+XTerm*foreground: #191919
+XTerm*background: #bfc674
+XTerm*faceName: Liberation Mono:antialias=true
+XTerm*faceSize: 10
+XTerm*font: 7x13
+XTerm*scrollBar: true
+XTerm*rightScrollBar: true

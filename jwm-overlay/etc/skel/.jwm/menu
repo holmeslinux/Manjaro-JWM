@@ -12,6 +12,7 @@
     </RootMenu>
         <RootMenu onroot="3">
         <Program label="Run">gmrun</Program>
+	<Program label="Locate">catfish</Program>
         <Program label="Terminal">sakura</Program>
         <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program>
         <Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program>
@@ -40,10 +41,10 @@
             <Program label="SMPlayer Video">smplayer</Program>
         </Menu>
         <Menu label="Network">
-	    <Program label="ELinks Browser">xterm elinks</Program>
+	    <Program label="ELinks Browser">xterm -maximized -fs 11 -e elinks</Program>
 	    <Program label="XChat IRC">xchat</Program>
 	    <Program label="NetworkManager">nm-applet</Program>        
-            <Program label="LightFirefox Browser">palemoon</Program>
+            <Program label="Pale Moon Browser">palemoon</Program>
         </Menu>
         <Menu label="Office">
             <Program label="AbiWord Word">abiword</Program>
