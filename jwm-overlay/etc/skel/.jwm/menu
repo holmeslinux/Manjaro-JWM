@@ -2,17 +2,9 @@
 <JWM>
 
     <!-- The root menu. -->
-    <RootMenu onroot="7">
-        <Program label="Home">pcmanfm ~/</Program>
-        <Program label="Root">gksu pcmanfm /</Program>
-    <Separator/>
-	<Program label="Applications">pcmanfm menu://applications/</Program>
-        <Program label="Devices">pcmanfm computer:///</Program>
-        <Program label="Trash">pcmanfm trash:///</Program>
-    </RootMenu>
-        <RootMenu onroot="3">
+    <RootMenu onroot="3">
         <Program label="Run">gmrun</Program>
-	<Program label="Search">catfish</Program>
+        <Program label="Search">catfish</Program>
         <Program label="Terminal">sakura</Program>
         <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program>
         <Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program>
@@ -22,11 +14,10 @@
 	<Menu label="Applications">
 	<Menu label="Accesories">
 	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
-	    <Program label="ClipIt">clipit</Program>	    
 	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
             <Program label="Leafpad Editor">leafpad</Program>
             <Program label="Medit Editor">medit</Program>
-           <Program label="Xarchiver Compressed">xarchiver</Program>
+            <Program label="Xarchiver Compressed">xarchiver</Program>
         </Menu>
         <Menu label="Games">
 	   <Program label="GNU Chess">xboard</Program>
@@ -34,25 +25,24 @@
 	   <Program label="LBreakout">lbreakout2</Program>
 	</Menu>
         <Menu label="Graphics">
-            <Program label="Online Image Editor">palemoon http://www.online-image-editor.com/</Program>
-        </Menu>
+	    <Program label="Online Image Editor">palemoon http://www.online-image-editor.com/</Program>
+	</Menu>
         <Menu label="Multimedia">
             <Program label="DeaDBeeF Music">deadbeef</Program>        
             <Program label="SMPlayer Video">smplayer</Program>
         </Menu>
         <Menu label="Network">
-	    <Program label="ELinks Browser">xterm -maximized -fs 11 -e elinks</Program>
-	    <Program label="XChat IRC">xchat</Program>
 	    <Program label="NetworkManager">nm-applet</Program>        
             <Program label="Pale Moon Browser">palemoon</Program>
+	    <Program label="XChat IRC">xchat</Program>
         </Menu>
         <Menu label="Office">
-            <Program label="AbiWord Word">abiword</Program>
+	    <Program label="AbiWord Word">abiword</Program>
             <Program label="Epdfview PDF">epdfview</Program>
             <Program label="Gnumeric Calc">gnumeric</Program>
 	    <Program label="Online Open365 Tools">palemoon https://cloud.open365.io/applogin/</Program>
             <Program label="Online PDF Tools">palemoon http://smallpdf.com/</Program>
-            <Program label="Simple Scan">simple-scan</Program>
+            <Program label="Simple Scan">simple-scan</Program>            
         </Menu>
         <Menu label="Settings">
             <Program label="ARandR Screen Editor">arandr</Program>
@@ -66,7 +56,7 @@
         </Menu>
         <Menu label="System">
 	<Menu label="Script Install">
-	    <Program label="AUR">sudo xterm -T "Script AUR" ~/.scripts/aur</Program>
+            <Program label="AUR">sudo xterm -T "Script AUR" ~/.scripts/aur</Program>
             <Program label="Firewall">sudo xterm -T "Script Firewall" ~/.scripts/firewall</Program>
 	    <Program label="Java">sudo xterm -T "Script Java" ~/.scripts/java</Program>        
             <Program label="Multimedia">sudo xterm -T "Script Multimedia" ~/.scripts/multimedia</Program>
@@ -77,15 +67,23 @@
             <Program label="HardInfo">hardinfo</Program>
 	    <Program label="HTop Processes">xterm -T "HTop" -e htop</Program>
             <Program label="JWMConf Configuration">xterm -T JWMConf /usr/bin/jwmconf</Program>            
-	    <Program label="Memory Usage">sudo xterm -e "bash -c '/usr/bin/ps_mem;exec bash'"</Program>            
+	    <Program label="Memory Usage">xterm -e "bash -c 'sudo /usr/bin/ps_mem;exec bash'"</Program>            
 	    <Program label="Pacli Package">xterm -T "Pacli" /usr/bin/pacli</Program>
             <Program label="Privilege Granting">gksu-properties</Program>
             <Program label="Root File Manager">gksu pcmanfm /</Program>         
             <Program label="Root Terminal">gksu sakura</Program>            
             <Program label="Temperature Sensors">xsensors</Program>
         </Menu>
-        </Menu>
-        <Menu label="Screenshot">
+      </Menu>
+      <Menu label="Places">
+        <Program label="Home">pcmanfm ~/</Program>
+        <Program label="Root">gksu pcmanfm /</Program>
+        <Separator/>
+	<Program label="Applications">pcmanfm menu://applications/</Program>
+        <Program label="Devices">pcmanfm computer:///</Program>
+        <Program label="Trash">pcmanfm trash:///</Program>      
+       </Menu>
+       <Menu label="Screenshot">
 	    <Program label="Active Window Delay">notify-send 'Selection will be saved in ~/Screenshots in 5s' &amp; scrot -ud 5 -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>            
 	    <Program label="Active Window">scrot -ue 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
             <Program label="Full Screen">scrot -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>

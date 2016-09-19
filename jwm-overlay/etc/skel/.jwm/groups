@@ -74,4 +74,8 @@
         <Option>centered</Option>
     </Group>
 
+    <Group>
+        <Option>aerosnap</Option>
+    </Group>
+
 </JWM>

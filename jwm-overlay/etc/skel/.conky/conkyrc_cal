@@ -1,0 +1,27 @@
+conky.config = {
+alignment = 'top_right',
+background = true,
+cpu_avg_samples = 2,
+default_color = '191919',
+draw_shades = false,
+double_buffer = true,
+font = 'Cantarell:size=11',
+gap_x = 510,
+gap_y = 30,
+minimum_width = 300,
+no_buffers = true,
+own_window = true,
+own_window_type = 'desktop',
+own_window_class = 'Conky',
+own_window_transparent = true,
+own_window_argb_visual = true,
+own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+update_interval = 1.0,
+use_xft = true,
+}
+conky.text = [[
+${voffset -8}${goto 35}${color 2e8ece}${font Cantarell:size=38}${time %e}$font
+$color${voffset -30}${goto 115}$color${font Cantarell:size=18}${time %b}$font${voffset -6} $color${font Cantarell:size=20}${time %Y}$font
+
+${font Liberation Mono:size=11}${execpi 10800 DJS=`date +%-d`; cal | sed 's/^/${goto 32} /' | sed '1d' | sed s/" $DJS "/" "'${font Liberation Mono:size=11}${color 2e8ece}'"$DJS"'${color}${font}${font Liberation Mono:size=11}'" "/}${font}${font}${voffset -14}
+]]

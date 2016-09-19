@@ -174,17 +174,18 @@ timeout = 5
 [urgency_normal]
 background = "#bfc674"
 foreground = "#191919"
-timeout = 10
+timeout = 8
 
 [urgency_critical]
 background = "#999999"
 foreground = "#191919"
-timeout = 0
+timeout = 8
 
 #Applications
 
-[HexChat]
-appname = HexChat
-timeout = 0
+[XChat]
+appname = XChat
+urgency = low
+timeout = 1
 background = "#bfc674"
 foreground = "#191919"

@@ -10,7 +10,7 @@
         <Foreground>#191919</Foreground>
         <Background>#ccccad</Background>
         <Outline>#ccccad</Outline>
-        <Opacity>0.8</Opacity>
+        <Opacity>1.0</Opacity>
         <Active>
             <Foreground>#191919</Foreground>
             <Background>#ccccad</Background>

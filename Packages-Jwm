@@ -6,6 +6,10 @@
 alsa-plugins
 manjaro-alsa
 volumeicon-gtk2
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pavucontrol
 
 ## File Management
 pcmanfm
@@ -73,7 +77,7 @@ faenzaflattr-black-icon-theme
 
 ## Applications
 cbatticon-gtk2
-xcompmgr
+compton
 elinks
 epdfview
 feh

@@ -6,13 +6,14 @@ cpu_avg_samples = 2,
 default_color = '191919',
 draw_shades = false,
 double_buffer = true,
-font = 'Cantarell:size=9',
+font = 'Cantarell:size=10',
 gap_x = 10,
-gap_y = 20,
+gap_y = 60,
 minimum_width = 200,
 no_buffers = true,
 own_window = true,
 own_window_type = 'desktop',
+own_window_class = 'Conky',
 own_window_transparent = true,
 own_window_argb_visual = true,
 own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
@@ -20,36 +21,34 @@ update_interval = 1.0,
 use_xft = true,
 }
 conky.text = [[
-${voffset -8}$alignr${color 5f9fdc}${font Cantarell:size=38}${time %e}$font
-$color${voffset -30}$color${font Cantarell:size=18}${time %b}$font${voffset -3} $color${font Cantarell:size=20}${time %Y}$font
+${voffset -8}${goto 35}${color 191919}${font Cantarell:size=20}Manjaro JWM${font}
+${voffset 5}${goto 65}${color 191919}${font Cantarell:size=9}light and beautiful${font}
 
-${voffset 5}$alignr$color Brasília (BR) ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ SBBR temperature temperature 15}°C
-#
-${voffset 20}${goto 30}Top${alignr}CPU
+${voffset 10}${goto 30}${color}CPU$alignr$cpu%
+${goto 30}${cpubar 5,175}
 ${voffset 5}${goto 30}$color2${top name 1}$alignr${top cpu 1}%
 ${goto 30}$color2${top name 2}$alignr${top cpu 2}%
 ${goto 30}$color2${top name 3}$alignr${top cpu 3}%
 ${goto 30}$color2${top name 4}$alignr${top cpu 4}%
-${goto 30}${hr 1}
-${voffset 10}${goto 30}Top${alignr}RAM
+#
+${voffset 10}${goto 30}${color}RAM$alignr$mem$font
+${goto 30}${membar 5,175}
 ${voffset 5}${goto 30}$color2${top_mem name 1}$alignr${top_mem mem_res 1}
 ${goto 30}$color2${top_mem name 2}$alignr${top_mem mem_res 2}
 ${goto 30}$color2${top_mem name 3}$alignr${top_mem mem_res 3}
 ${goto 30}$color2${top_mem name 4}$alignr${top_mem mem_res 4}
 ${goto 30}${hr 1}
-${voffset 10}${goto 30}Root$alignr${fs_size /} I ${fs_used /}
-${goto 30}Home$alignr${fs_size /home} I ${fs_used /home}
-${goto 30}Swap$alignr$swapmax I $swap
+${voffset 10}${goto 30}Root$alignr${fs_size /} | ${fs_used /}
+${goto 30}Datos$alignr${fs_size /run/media/holmes/dados} | ${fs_used /run/media/holmes/dados}
+${goto 30}Swap$alignr$swapmax | $swap
 #
 ${voffset -7}${if_existing /proc/net/route wlp3s0}
 ${goto 30}Connection${alignr}wiriless
 ${goto 30}Name${alignr}${wireless_essid}
 ${goto 30}Signal${alignr}${wireless_link_qual wlp3s0}%
-${goto 30}Speed${alignr}${downspeedf wlp3s0}KiB D I ${alignr}${upspeedf wlp3s0}KiB U
 ${else}
 ${if_existing /proc/net/route enp6s0}
 ${voffset -17}${goto 30}Connection${alignr}cable
-${goto 30}Speed${alignr}${downspeedf enp6s0}KiB D I ${alignr}${upspeedf enp6s0}KiB U
 ${else}
 ${voffset -17}${goto 30}Connection${alignr}no available
 ${endif}${endif}
@@ -59,8 +58,9 @@ ${goto 30}${hr 1}
 ${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 #
 ${voffset 10}$alignr${execi 1200 whoami}@${nodename}
-${alignr}${color2}${font Cantarell:size=9}Uptime ${uptime_short}
-${alignr}${color2}${font Cantarell:size=9}${alignr}Kernel ${kernel}
-${alignr}${color2}${font Cantarell:size=9}${alignr}Architecture ${machine} I Systemd
-${voffset 10}${alignr} Updates ${color 191919}${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
+${alignr}${color2}${font Cantarell:size=10}Uptime ${uptime_short}
+${alignr}${color2}${font Cantarell:size=10}${alignr}Kernel ${kernel}
+${alignr}${color2}${font Cantarell:size=10}${alignr}Architecture ${machine}
+${alignr}${color2}${font Cantarell:size=10}${alignr}File System ${fs_type}
+#${alignr}${color2}${font Cantarell:size=10}${alignr}JWM ${execi 7200 jwm -v}
 ]]
