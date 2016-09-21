@@ -1,0 +1,15 @@
+#!/bin/sh
+
+trap 'rm /tmp/{pacmanupdates,aurupdates} 2>/dev/null' INT TERM QUIT EXIT
+nb_pac=$(checkupdates | tee /tmp/pacmanupdates | wc -l)
+if [ -f /usr/bin/yaourt ]; then
+   nb_aur=$(yaourt -Qua | grep "^aur/" | tee /tmp/aurupdates | wc -l)
+else
+   nb_aur=0
+fi
+
+if ((nb_pac>0 || nb_aur>0)); then
+  ((nb_aur>0)) && nb_aur="+ ${nb_aur}"
+  ((nb_aur==0)) && unset nb_aur
+  notify-send "Updates currently ${nb_pac} ${nb_aur}"
+fi

@@ -56,11 +56,11 @@
         </Menu>
         <Menu label="System">
 	<Menu label="Script Install">
-            <Program label="AUR">sudo xterm -T "Script AUR" ~/.scripts/aur</Program>
-            <Program label="Firewall">sudo xterm -T "Script Firewall" ~/.scripts/firewall</Program>
-	    <Program label="Java">sudo xterm -T "Script Java" ~/.scripts/java</Program>        
-            <Program label="Multimedia">sudo xterm -T "Script Multimedia" ~/.scripts/multimedia</Program>
-            <Program label="Printer">sudo xterm -T "Script Printer" ~/.scripts/printer</Program>
+            <Program label="AUR">xterm -T "Script AUR" -e 'sudo /bin/sh ~/.scripts/aur'</Program>
+            <Program label="Firewall">xterm -T "Script Firewall" -e 'sudo /bin/sh ~/.scripts/firewall'</Program>
+	    <Program label="Java">xterm -T "Script Java" -e 'sudo /bin/sh ~/.scripts/java'</Program>        
+            <Program label="Multimedia">xterm -T "Script Multimedia" -e 'sudo /bin/sh ~/.scripts/multimedia'</Program>
+            <Program label="Printer">xterm -T "Script Printer" -e 'sudo /bin/sh ~/.scripts/printer'</Program>
         </Menu>
          <Separator/>
             <Program label="Gufw Firewall">gksu gufw</Program>
