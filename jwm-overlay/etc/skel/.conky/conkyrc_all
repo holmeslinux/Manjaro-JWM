@@ -62,6 +62,7 @@ ${alignr}${color2}${font Cantarell:size=10}Uptime ${uptime_short}
 ${alignr}${color2}${font Cantarell:size=10}${alignr}Kernel ${kernel}
 ${alignr}${color2}${font Cantarell:size=10}${alignr}Architecture ${machine}
 ${alignr}${color2}${font Cantarell:size=10}${alignr}File System ${fs_type}
+${alignr}${font Cantarell:size=10}${alignr} ${execi 1200 /usr/bin/jwm_conky_wrapper}
 
-${alignr} Updates currently ${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}
+#${alignr} Updates currently ${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
 ]]
