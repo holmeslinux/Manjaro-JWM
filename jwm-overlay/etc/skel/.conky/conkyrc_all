@@ -39,7 +39,7 @@ ${goto 30}$color2${top_mem name 3}$alignr${top_mem mem_res 3}
 ${goto 30}$color2${top_mem name 4}$alignr${top_mem mem_res 4}
 ${goto 30}$stippled_hr
 ${voffset 10}${goto 30}Root$alignr${fs_size /} | ${fs_used /}
-${goto 30}Datos$alignr${fs_size /run/media/holmes/dados} | ${fs_used /run/media/holmes/dados}
+${goto 30}Home$alignr${fs_size /home} | ${fs_used /home}
 ${goto 30}Swap$alignr$swapmax | $swap
 #
 ${voffset -7}${if_existing /proc/net/route wlp3s0}
