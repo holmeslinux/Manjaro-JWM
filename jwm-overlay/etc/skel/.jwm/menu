@@ -28,8 +28,8 @@
 	    <Program label="Online Image Editor">palemoon http://www.online-image-editor.com/</Program>
 	</Menu>
         <Menu label="Multimedia">
-            <Program label="DeaDBeeF Music">deadbeef</Program>        
-            <Program label="SMPlayer Video">smplayer</Program>
+            <Program label="DeaDBeeF Music">deadbeef</Program>
+	    <Program label="Snappy Player">snappy</Program>        
         </Menu>
         <Menu label="Network">
 	    <Program label="NetworkManager">nm-applet</Program>        
@@ -53,6 +53,7 @@
 	    <Program label="Manjaro Settings Manager">gksu manjaro-settings-manager-gui</Program>
             <Program label="Nitrogen Wallpaper">nitrogen</Program>
             <Program label="Printer Settings">system-config-printer</Program>
+            <Program label="Qt Configure Tool">sakura -e "bash -c 'sudo qt5ct;exec bash'"</Program>
         </Menu>
         <Menu label="System">
 	<Menu label="Script Install">

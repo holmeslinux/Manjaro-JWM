@@ -63,7 +63,9 @@ perl-file-mimeinfo
 ps_mem
 tmpwatch
 update-notifier
-conky-lua-nv
+conky
+qt5-styleplugins 
+qt5ct
 
 ## Desktop Configuration
 arandr
@@ -89,8 +91,8 @@ xchat
 htop
 leafpad
 libimobiledevice
-smplayer
 deadbeef
+snappy-player
 manjaro-settings-manager-notifier
 medit
 sakura
