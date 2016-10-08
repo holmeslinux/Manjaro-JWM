@@ -8,7 +8,7 @@ draw_shades = false,
 double_buffer = true,
 font = 'Cantarell:size=10',
 gap_x = 10,
-gap_y = 60,
+gap_y = 50,
 minimum_width = 200,
 no_buffers = true,
 own_window = true,
@@ -22,7 +22,7 @@ use_xft = true,
 }
 conky.text = [[
 ${voffset -8}${goto 35}${color 191919}${font Cantarell:size=20}Manjaro JWM${font}
-${voffset 5}${goto 72}${color 191919}${font Cantarell:size=9}light and beautiful${font}
+${voffset 5}${goto 60}${color 191919}${font Cantarell:size=9}Simple, Fast, Beautiful${font}
 
 ${voffset 10}${goto 30}${color}CPU$alignr$cpu%
 ${goto 30}${cpubar 4}

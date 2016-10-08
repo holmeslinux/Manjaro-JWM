@@ -33,6 +33,7 @@ Mod4 + u = Restart JWM
 Mod4 + x = IRC
 Mod4 + F1 = Menu JWM
 Mod1 + F4 = Close Win Active
+Print = Screenshot
 
 Mod4 + PgUp = Increase Sound
 Mod4 + PgDn = Decrease Sound
