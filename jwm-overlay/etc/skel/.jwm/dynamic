@@ -1,0 +1,17 @@
+<?xml version="1.0"?> 
+<JWM> 
+<!-- The root menu. --> 
+<RootMenu onroot="3"> 
+<Program label="Run">gmrun</Program> 
+<Program label="Search">catfish</Program> 
+<Program label="Terminal">sakura</Program> 
+<Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program> 
+<Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program> 
+ <Program label="File Manager">pcmanfm</Program> 
+<Program label="Web Browser">palemoon</Program> 
+<Separator/> 
+<Include>exec: xdgmenumaker -n -f jwm</Include>
+<Separator/> 
+<Program label="Exit">oblogout</Program> 
+ </RootMenu> 
+</JWM>

@@ -7,60 +7,60 @@
         <Width>2</Width>
         <Height>19</Height>
         <Corner>2</Corner>
-        <Foreground>#191919</Foreground>
-        <Background>#ccccad</Background>
-        <Outline>#ccccad</Outline>
+        <Foreground>#c59a7a</Foreground>
+        <Background>#0d1426</Background>
+        <Outline>#0d1426</Outline>‮
         <Opacity>1.0</Opacity>
         <Active>
-            <Foreground>#191919</Foreground>
-            <Background>#ccccad</Background>
-            <Outline>#ccccad</Outline>
+            <Foreground>#c59a7a</Foreground>
+            <Background>#0d1426</Background>
+            <Outline>#0d1426</Outline>
         </Active>
     </WindowStyle>
 
     <!-- Visual Style Menu. -->
     <MenuStyle>
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
-        <Foreground>#191919</Foreground>
-        <Background>#ccccad</Background>
-	<Outline>#ccccad</Outline>
+        <Foreground>#0d1426</Foreground>
+        <Background>#d9cdb3</Background>
+	<Outline>#d9cdb3</Outline>
         <Active>
-            <Foreground>#191919</Foreground>
-            <Background>#b1b862</Background>
+            <Foreground>#0d1426</Foreground>
+            <Background>#c59a7a</Background>
         </Active>
     </MenuStyle>
 
     <!-- Visual Style Tray. -->
     <TrayStyle decorations="flat">
         <Font>Cantarell-11:antialias=true:encoding=utf8</Font>
-        <Background>#ccccad</Background>
-        <Foreground>#191919</Foreground>
-        <Outline>#ccccad</Outline>
+        <Background>#d9cdb3</Background>
+        <Foreground>#0d1426</Foreground>
+        <Outline>#d9cdb3</Outline>
         <Active>
-            <Foreground>#191919</Foreground>
-            <Background>#b1b862</Background>
+            <Foreground>#0d1426</Foreground>
+            <Background>#c59a7a</Background>
         </Active>
     </TrayStyle>
 
     <!-- Visual Style Pager. -->
     <PagerStyle>
-        <Outline>#b1b862</Outline>
+        <Outline>#0d1426</Outline>
         <Font>Cantarell-8:antialias=true:encoding=utf8</Font>
-        <Text>#191919</Text>
-        <Foreground>#b1b862</Foreground>
-        <Background>#565656</Background>
+        <Text>#0d1426</Text>
+        <Foreground>#c59a7a</Foreground>
+        <Background>#6d727c</Background>
         <Active>
-            <Foreground>#b1b862</Foreground>
-            <Background>#707070</Background>
+            <Foreground>#c59a7a</Foreground>
+            <Background>#555a67</Background>
         </Active>
     </PagerStyle>
 
     <!-- Visual Style Pop. -->
     <PopupStyle>
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
-        <Outline>#eaebe0</Outline>
-        <Foreground>#191919</Foreground>
-        <Background>#eaebe0</Background>
+        <Outline>#0d1426</Outline>
+        <Foreground>#d9cdb3</Foreground>
+        <Background>#0d1426</Background>
     </PopupStyle>
 
     <!-- Visual Style Clock. -->

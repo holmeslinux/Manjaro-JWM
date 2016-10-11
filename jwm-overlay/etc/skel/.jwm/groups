@@ -40,11 +40,6 @@
     </Group>
 
     <Group>
-        <Name>snappy</Name>
-        <Option>centered</Option>
-    </Group>
-
-    <Group>
         <Name>xchat</Name>
         <Option>centered</Option>
     </Group>

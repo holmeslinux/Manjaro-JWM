@@ -141,7 +141,7 @@ browser = palemoon
 
 [frame]
 width = 1
-color = "#191919"
+color = "#0d1426"
 
 [shortcuts]
 # Shortcuts are specified as [modifier+][modifier+]...key
@@ -167,18 +167,18 @@ context = ctrl+alt+c
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-background = "#ccccad"
-foreground = "#191919"
+background = "#c59a7a"
+foreground = "#0d1426"
 timeout = 5
 
 [urgency_normal]
-background = "#bfc674"
-foreground = "#191919"
+background = "#c59a7a"
+foreground = "#0d1426"
 timeout = 8
 
 [urgency_critical]
 background = "#999999"
-foreground = "#191919"
+foreground = "#0d1426"
 timeout = 8
 
 #Applications
@@ -187,5 +187,5 @@ timeout = 8
 appname = XChat
 urgency = low
 timeout = 1
-background = "#bfc674"
-foreground = "#191919"
+background = "#c59a7a"
+foreground = "#0d1426"

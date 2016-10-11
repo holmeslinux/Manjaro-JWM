@@ -29,6 +29,7 @@
 	</Menu>
         <Menu label="Multimedia">
             <Program label="DeaDBeeF Music">deadbeef</Program>
+            <Program label="PulseAudio Volume Control">pavucontrol</Program>
 	    <Program label="Snappy Player">snappy</Program>        
         </Menu>
         <Menu label="Network">
@@ -50,6 +51,7 @@
             <Program label="BlueMan Manager">blueman-manager</Program> 
             <Program label="Configure Mouse/keyboard">lxinput</Program>
             <Program label="Customize Look/Feel">lxappearance</Program>
+            <Program label="Manjaro Notifier Settings">msm_notifier --settings</Program>
 	    <Program label="Manjaro Settings Manager">gksu manjaro-settings-manager-gui</Program>
             <Program label="Nitrogen Wallpaper">nitrogen</Program>
             <Program label="Printer Settings">system-config-printer</Program>
@@ -58,8 +60,9 @@
         <Menu label="System">
 	<Menu label="Script Install">
             <Program label="AUR">xterm -T "Script AUR" -e 'sudo /bin/sh ~/.scripts/aur'</Program>
+            <Program label="Dynamic Menu">xterm -T "Script Dynamic Menu" -e 'sudo /bin/sh ~/.scripts/menu'</Program>
             <Program label="Firewall">xterm -T "Script Firewall" -e 'sudo /bin/sh ~/.scripts/firewall'</Program>
-	    <Program label="Java">xterm -T "Script Java" -e 'sudo /bin/sh ~/.scripts/java'</Program>        
+	    <Program label="Java">xterm -T "Script Java" -e 'sudo /bin/sh ~/.scripts/java'</Program> 
             <Program label="Multimedia">xterm -T "Script Multimedia" -e 'sudo /bin/sh ~/.scripts/multimedia'</Program>
             <Program label="Printer">xterm -T "Script Printer" -e 'sudo /bin/sh ~/.scripts/printer'</Program>
         </Menu>

@@ -1,0 +1,316 @@
+# -----------------------------------------------
+# Oncremmer2 GTK2 Theme
+# https://github.com/ohnonot/oncremmer2
+# !! Leonardo Laporte <%hackdorte@sapo.pt%>
+# !! twitter.com/hackdorte
+# -----------------------------------------------
+# !! twisted and hacked by ondoho/ohnonot 2016
+# !! dt.iki.fi
+# -----------------------------------------------
+# ** DEPS: GTK-2 and Murrine Engine
+# -----------------------------------------------
+
+gtk-color-scheme = "base_color:#E5DECF\nfg_color:#141F3B\nselected_bg_color:#C59A7A\nselected_fg_color:#FDEDD0\ntext_color:#141F3B\nbg_color:#D9CDB3\ntooltip_bg_color:#141F3B\ntooltip_fg_color:#E5D7BC"
+
+style "default" {
+  xthickness = 1
+  ythickness = 1
+
+  GtkButton::child-displacement-x = 1
+  GtkButton::child-displacement-y = 1
+  GtkButton::default-border = { 0, 0, 0, 0 }
+  GtkCheckButton::indicator-size = 14
+  GtkPaned::handle-size = 6
+  GtkRange::trough-border = 3
+  GtkRange::slider-width = 12
+  GtkRange::stepper-size = 12
+  GtkScale::trough-border = 0
+  GtkScale::slider-length = 15
+  GtkScrollbar::min-slider-length = 30
+  GtkMenuBar::internal-padding = 0
+  GtkExpander::expander-size = 16
+  GtkToolbar::internal-padding = 1
+  GtkTreeView::expander-size = 14
+  GtkTreeView::vertical-separator = 0
+  GtkMenu::horizontal-padding = 0
+  GtkMenu::vertical-padding = 0
+
+  WnckTasklist::fade-overlay-rect = 0
+  GtkEntry::honors-transparent-bg-hint = 1
+
+  bg[NORMAL]        = @bg_color
+  bg[PRELIGHT]      = @bg_color
+  bg[SELECTED]      = @selected_bg_color
+  bg[INSENSITIVE]   = @bg_color
+  bg[ACTIVE]        = @bg_color
+
+  fg[NORMAL]        = @fg_color
+  fg[PRELIGHT]      = @fg_color
+  fg[SELECTED]      = @selected_fg_color
+  fg[INSENSITIVE]   = @bg_color
+  fg[ACTIVE]        = @fg_color
+
+  text[NORMAL]      = @text_color
+  text[PRELIGHT]    = @text_color
+  text[SELECTED]    = @selected_fg_color
+  text[INSENSITIVE] = @bg_color
+  text[ACTIVE]      = @selected_fg_color
+
+  base[NORMAL]      = @base_color
+  base[PRELIGHT]    = @bg_color
+  base[SELECTED]    = @selected_bg_color
+  base[INSENSITIVE] = @bg_color
+  base[ACTIVE]      = @selected_bg_color
+
+  engine "murrine" {
+    animation           = FALSE
+    colorize_scrollbar  = FALSE
+    contrast            = 0.5
+    glazestyle          = 2     # 0 = flat, 1 = curved, 2 = concave, 3 = top curved, 4 = beryl highlight, 5 = new
+    glow_shade          = 1.00
+    glowstyle           = 4     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
+    gradient_shades     = {1.0,1.0,1.0,1.0}
+    highlight_shade     = 1.00
+    lightborder_shade   = 1.00
+    lightborderstyle    = 0     # 0 = lightborder on top side, 1 = lightborder on all sides
+    listviewheaderstyle = 0     # 0 = flat, 1 = glassy, 2 = raised
+    listviewstyle       = 0     # 0 = nothing, 1 = dotted
+    menubaritemstyle    = 0     # 0 = menuitem look, 1 = button look
+    menubarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+    menuitemstyle       = 0     # 0 = flat, 1 = glassy, 2 = striped
+    menustyle           = 0     # 0 = no vertical menu stripe, 1 = display vertical menu stripe
+    progressbarstyle    = 2     # 0 = nothing, 1 = diagonal stripes, 2 = blocks
+    reliefstyle         = 0     # 0 = flat, 1 = inset, 2 = shadow
+    rgba        = TRUE
+    roundness           = 4
+    scrollbarstyle      = 0     # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
+    sliderstyle         = 0     # 0 = nothing added, 1 = handles
+    stepperstyle        = 1     # 0 = standard, 1 = integrated stepper handles
+    toolbarstyle        = 0     # 0 = flat, 1 = glassy, 2 = gradient
+  }
+}
+
+style "wide" {
+  xthickness = 2
+  ythickness = 2
+}
+
+style "wider" {
+  xthickness = 3
+  ythickness = 3
+}
+
+style "spinbutton" {
+}
+
+style "scale" {
+  bg[SELECTED]        = shade (1.07, @selected_bg_color)
+}
+
+style "vscale" {
+}
+
+style "hscale" {
+}
+
+style "scrollbar" {
+  xthickness = 2
+  ythickness = 2
+}
+
+style "hscrollbar" {
+}
+
+style "vscrollbar" {
+}
+
+style "notebook_bg" {
+  bg[NORMAL]        = shade (1.02, @bg_color)
+  bg[ACTIVE]        = shade (0.96, @bg_color)
+}
+
+style "button" {
+  xthickness = 3
+  ythickness = 3
+
+  bg[NORMAL]        = shade (1.0, @bg_color)
+  bg[PRELIGHT]      = shade (1.01, @bg_color)
+  bg[ACTIVE]        = shade (0.89, @bg_color)
+  bg[INSENSITIVE]   = shade (0.98, @bg_color)
+}
+
+style "notebook" {
+  xthickness = 3
+  ythickness = 3
+}
+
+style "statusbar" {
+}
+
+style "comboboxentry" {
+}
+
+style "menubar" {
+}
+
+style "menu" {
+  xthickness = 3
+  ythickness = 3
+
+  bg[NORMAL]        = shade (1.18, @bg_color)
+}
+
+style "menu_item" {
+  xthickness = 2
+  ythickness = 3
+
+  bg[PRELIGHT]      = @selected_bg_color
+  fg[PRELIGHT]      = @selected_fg_color
+}
+
+style "separator_menu_item" {
+  xthickness = 1
+  ythickness = 0
+
+  GtkSeparatorMenuItem::horizontal-padding = 0
+  GtkWidget::wide-separators = 1
+  GtkWidget::separator-width = 1
+  GtkWidget::separator-height = 7
+}
+
+style "frame_title" {
+  fg[NORMAL]        = lighter (@fg_color)
+}
+
+style "treeview" {
+  engine "murrine" {
+    roundness = 0
+  }
+}
+
+# The almost useless progress bar style
+style "progressbar" {
+  xthickness = 0
+  ythickness = 0
+
+  fg[PRELIGHT]      = @selected_fg_color
+}
+
+style "progressbar_menu_item" = "progressbar" {
+  engine "murrine" {
+    roundness = 0
+  }
+}
+
+style "treeview_header" = "default" {
+  xthickness = 2
+  ythickness = 1
+}
+
+style "tooltips" {
+  xthickness = 4
+  ythickness = 4
+
+  bg[NORMAL]        = @tooltip_bg_color
+  fg[NORMAL]        = @tooltip_fg_color
+}
+
+style "nautilus_location" {
+  bg[NORMAL]        = mix (0.60, shade (1.05, @bg_color), @selected_bg_color)
+}
+
+style "calendar" {
+  engine "murrine" {
+    roundness = 0
+  }
+}
+
+style "radiocheck" {
+  text[NORMAL]      = @fg_color
+  text[PRELIGHT]    = @fg_color
+}
+
+style "text_is_fg_color_workaround" {
+  text[NORMAL]      = @fg_color
+  text[PRELIGHT]    = @fg_color
+  text[SELECTED]    = @selected_fg_color
+  text[ACTIVE]      = @fg_color
+  text[INSENSITIVE] = darker (@bg_color)
+}
+
+style "menuitem_text_is_fg_color_workaround" {
+  text[NORMAL]      = @fg_color
+  text[PRELIGHT]    = @selected_fg_color
+  text[SELECTED]    = @selected_fg_color
+  text[ACTIVE]      = @fg_color
+  text[INSENSITIVE] = darker (@bg_color)
+}
+
+style "fg_is_text_color_workaround" {
+  fg[NORMAL]        = @text_color
+  fg[PRELIGHT]      = @text_color
+  fg[SELECTED]      = @selected_fg_color
+  fg[ACTIVE]        = @selected_fg_color
+  fg[INSENSITIVE]   = darker (@bg_color)
+}
+
+style "evo_new_button_workaround" {
+}
+
+class "GtkWidget" style "default"
+
+class "GtkSeparator" style "wide"
+class "GtkFrame" style "wide"
+class "GtkCalendar" style "wide"
+class "GtkEntry" style "wider"
+
+class "GtkSpinButton" style "spinbutton"
+class "GtkScale" style "scale"
+class "GtkVScale" style "vscale"
+class "GtkHScale" style "hscale"
+class "GtkScrollbar" style "scrollbar"
+class "GtkHScrollbar" style "hscrollbar"
+class "GtkVScrollbar" style "vscrollbar"
+class "GtkCalendar" style "calendar"
+class "GtkRadio*" style "radiocheck"
+class "GtkCheck*" style "radiocheck"
+
+widget_class "*<GtkNotebook>" style "notebook_bg"
+widget_class "*<GtkNotebook>*<GtkEventBox>" style "notebook_bg"
+widget_class "*<GtkNotebook>*<GtkDrawingArea>" style "notebook_bg"
+widget_class "*<GtkNotebook>*<GtkLayout>" style "notebook_bg"
+widget_class "*<GtkButton>" style "button"
+widget_class "*<GtkNotebook>" style "notebook"
+widget_class "*<GtkStatusbar>*" style "statusbar"
+widget_class "*<GtkComboBoxEntry>*" style "comboboxentry"
+widget_class "*<GtkCombo>*" style "comboboxentry"
+widget_class "*<GtkMenuBar>*" style "menubar"
+widget_class "*<GtkMenu>*" style "menu"
+widget_class "*<GtkMenuItem>*" style "menu_item"
+widget_class "*<GtkSeparatorMenuItem>*" style "separator_menu_item"
+widget_class "*.<GtkFrame>.<GtkLabel>" style "frame_title"
+widget_class "*.<GtkTreeView>*" style "treeview"
+widget_class "*<GtkProgress>" style "progressbar"
+widget_class "*.<GtkMenuItem>.*.<GtkProgressBar>" style "progressbar_menu_item"
+widget_class "*.<GtkTreeView>.<GtkButton>" style "treeview_header"
+widget_class "*.<GtkCTree>.<GtkButton>" style "treeview_header"
+widget_class "*.<GtkList>.<GtkButton>" style "treeview_header"
+widget_class "*.<GtkCList>.<GtkButton>" style "treeview_header"
+
+widget "gtk-tooltip*" style "tooltips"
+
+widget_class "*.ETable.ECanvas" style "treeview_header"
+widget_class "*.ETree.ECanvas" style "treeview_header"
+
+widget "*.nautilus-extra-view-widget" style : highest "nautilus_location"
+
+widget_class "*.<GtkComboBox>.<GtkCellView>" style "text_is_fg_color_workaround"
+widget "*.gtk-combobox-popup-menu.*" style "menuitem_text_is_fg_color_workaround"
+widget_class "*<GtkListItem>*" style "fg_is_text_color_workaround"
+widget_class "*<GtkCList>" style "fg_is_text_color_workaround"
+widget_class "*<EelEditableLabel>" style "fg_is_text_color_workaround"
+widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evo_new_button_workaround"
+
+# -----------------------------------------------
+# Hackdorte (CC0) Public Domain License.
+# -----------------------------------------------

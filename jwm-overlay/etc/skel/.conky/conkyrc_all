@@ -1,14 +1,14 @@
 conky.config = {
 alignment = 'top_right',
 background = true,
-color2 = '191919',
+color2 = 'd9cdb3',
 cpu_avg_samples = 2,
-default_color = '191919',
+default_color = 'd9cdb3',
 draw_shades = false,
 double_buffer = true,
 font = 'Cantarell:size=10',
 gap_x = 10,
-gap_y = 50,
+gap_y = 60,
 minimum_width = 200,
 no_buffers = true,
 own_window = true,
@@ -21,8 +21,8 @@ update_interval = 1.0,
 use_xft = true,
 }
 conky.text = [[
-${voffset -8}${goto 35}${color 191919}${font Cantarell:size=20}Manjaro JWM${font}
-${voffset 5}${goto 60}${color 191919}${font Cantarell:size=9}Simple, Fast, Beautiful${font}
+${voffset -8}${goto 35}${color d9cdb3}${font Cantarell:size=20}Manjaro JWM${font}
+${voffset 5}${goto 60}${color d9cdb3}${font Cantarell:size=9}Minimal, Fast, Pretty${font}
 
 ${voffset 10}${goto 30}${color}CPU$alignr$cpu%
 ${goto 30}${cpubar 4}
@@ -39,7 +39,7 @@ ${goto 30}$color2${top_mem name 3}$alignr${top_mem mem_res 3}
 ${goto 30}$color2${top_mem name 4}$alignr${top_mem mem_res 4}
 ${goto 30}$stippled_hr
 ${voffset 10}${goto 30}Root$alignr${fs_size /} | ${fs_used /}
-${goto 30}Home$alignr${fs_size /home} | ${fs_used /home}
+${goto 30}Datos$alignr${fs_size /run/media/holmes/dados} | ${fs_used /run/media/holmes/dados}
 ${goto 30}Swap$alignr$swapmax | $swap
 #
 ${voffset -7}${if_existing /proc/net/route wlp3s0}
@@ -64,5 +64,5 @@ ${alignr}${color2}${font Cantarell:size=10}${alignr}Architecture ${machine}
 ${alignr}${color2}${font Cantarell:size=10}${alignr}File System ${fs_type}
 ${alignr}${font Cantarell:size=10}${alignr} ${execi 1200 /usr/bin/jwm_conky_wrapper}
 
-${alignr} Updates currently ${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}
+#${alignr} Updates currently ${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
 ]]

@@ -8,5 +8,6 @@
     <Include>$HOME/.jwm/theme</Include>
     <Include>$HOME/.jwm/tray</Include>
     <Include>$HOME/.jwm/groups</Include>
+    <!-- <Include>$HOME/.jwm/dynamic</Include> -->
 
 </JWM>
