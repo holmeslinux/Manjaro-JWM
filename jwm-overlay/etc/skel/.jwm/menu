@@ -60,7 +60,6 @@
         <Menu label="System">
 	<Menu label="Script Install">
             <Program label="AUR">xterm -T "Script AUR" -e 'sudo /bin/sh ~/.scripts/aur'</Program>
-            <Program label="Dynamic Menu">xterm -T "Script Dynamic Menu" -e 'sudo /bin/sh ~/.scripts/menu'</Program>
             <Program label="Firewall">xterm -T "Script Firewall" -e 'sudo /bin/sh ~/.scripts/firewall'</Program>
 	    <Program label="Java">xterm -T "Script Java" -e 'sudo /bin/sh ~/.scripts/java'</Program> 
             <Program label="Multimedia">xterm -T "Script Multimedia" -e 'sudo /bin/sh ~/.scripts/multimedia'</Program>

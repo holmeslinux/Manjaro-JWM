@@ -66,6 +66,7 @@ update-notifier
 conky
 qt5-styleplugins 
 qt5ct
+ncdu
 
 ## Desktop Configuration
 arandr
