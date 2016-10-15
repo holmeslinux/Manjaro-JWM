@@ -20,8 +20,8 @@ update_interval = 1.0,
 use_xft = true,
 }
 conky.text = [[
-${voffset -8}${goto 55}${color c59a7a}${font Cantarell:size=37}${time %e}$font
-$color${voffset -30}${goto 122}$color${font Cantarell:size=17}${time %b}$font${voffset -6} $color${font Cantarell:size=19}${time %Y}$font
+${voffset -5}${goto 55}${color c59a7a}${font Cantarell:size=37}${time %e}$font
+$color${voffset -30}${goto 122}$color${font Cantarell:size=17}${time %b}$font${voffset -10} $color${font Cantarell:size=19}${time %Y}$font
 
 ${font DejaVu Sans Mono:size=10}${execpi 10800 DJS=`date +%-d`; cal | sed 's/^/${goto 50} /' | sed '1d' | sed s/" $DJS "/" "'${font DejaVu Sans Mono:size=10}${color c59a7a}'"$DJS"'${color}${font}${font DejaVu Sans Mono:size=10}'" "/}${font}${font}${voffset -14}
 ]]
