@@ -59,6 +59,7 @@ xterm
 oblogout
 lm_sensors
 xsensors
+hddtemp
 perl-file-mimeinfo
 ps_mem
 tmpwatch

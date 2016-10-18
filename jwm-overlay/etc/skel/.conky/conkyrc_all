@@ -59,6 +59,7 @@ ${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_REL
 #
 ${voffset 10}$alignr${execi 1200 whoami} in ${nodename}
 ${alignr}${color2}${font Cantarell:size=10}Uptime ${uptime_short}
+${alignr}${color2}${font Cantarell:size=10}Temperatures ${hddtemp /dev/sda}°C | ${hwmon 0 temp 1}°C
 ${alignr}${color2}${font Cantarell:size=10}${alignr}Kernel ${kernel}
 ${alignr}${color2}${font Cantarell:size=10}${alignr}Architecture ${machine}
 ${alignr}${color2}${font Cantarell:size=10}${alignr}File System ${fs_type}
