@@ -13,5 +13,6 @@
     <StartupCommand>sleep 6s &amp;&amp; /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &amp;</StartupCommand>
     <StartupCommand>sleep 7s &amp;&amp; xrdb merge .Xresources &amp;</StartupCommand>
     <StartupCommand>sleep 8s &amp;&amp; update-notifier &amp;</StartupCommand>
+    <StartupCommand>sleep 8s &amp;&amp; numlockx &amp;</StartupCommand>
         
 </JWM>
