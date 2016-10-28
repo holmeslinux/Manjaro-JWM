@@ -24,19 +24,19 @@ conky.text = [[
 ${voffset -8}${goto 35}${color d9cdb3}${font Cantarell:size=20}Manjaro JWM${font}
 ${voffset 5}${goto 60}${color d9cdb3}${font Cantarell:size=9}Minimal, Fast, Pretty${font}
 
-${voffset 10}${goto 30}${color}CPU$alignr$cpu%
+${voffset 10}${goto 30}CPU$alignr$cpu%
 ${goto 30}${cpubar 4}
-${voffset 5}${goto 30}$color2${top name 1}$alignr${top cpu 1}%
-${goto 30}$color2${top name 2}$alignr${top cpu 2}%
-${goto 30}$color2${top name 3}$alignr${top cpu 3}%
-${goto 30}$color2${top name 4}$alignr${top cpu 4}%
+${voffset 5}${goto 30}${top name 1}$alignr${top cpu 1}%
+${goto 30}${top name 2}$alignr${top cpu 2}%
+${goto 30}${top name 3}$alignr${top cpu 3}%
+${goto 30}${top name 4}$alignr${top cpu 4}%
 #
-${voffset 10}${goto 30}${color}RAM$alignr$mem$font
+${voffset 10}${goto 30}RAM$alignr$mem$font
 ${goto 30}${membar 4}
-${voffset 5}${goto 30}$color2${top_mem name 1}$alignr${top_mem mem_res 1}
-${goto 30}$color2${top_mem name 2}$alignr${top_mem mem_res 2}
-${goto 30}$color2${top_mem name 3}$alignr${top_mem mem_res 3}
-${goto 30}$color2${top_mem name 4}$alignr${top_mem mem_res 4}
+${voffset 5}${goto 30}${top_mem name 1}$alignr${top_mem mem_res 1}
+${goto 30}${top_mem name 2}$alignr${top_mem mem_res 2}
+${goto 30}${top_mem name 3}$alignr${top_mem mem_res 3}
+${goto 30}${top_mem name 4}$alignr${top_mem mem_res 4}
 ${goto 30}$stippled_hr
 ${voffset 10}${goto 30}Root$alignr${fs_size /} | ${fs_used /}
 ${goto 30}Datos$alignr${fs_size /run/media/holmes/dados} | ${fs_used /run/media/holmes/dados}
@@ -58,12 +58,12 @@ ${goto 30}$stippled_hr
 ${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 #
 ${voffset 10}$alignr${execi 1200 whoami} in ${nodename}
-${alignr}${color2}${font Cantarell:size=10}Uptime ${uptime_short}
-${alignr}${color2}${font Cantarell:size=10}Temperatures ${hddtemp /dev/sda}°C | ${hwmon 0 temp 1}°C
-${alignr}${color2}${font Cantarell:size=10}${alignr}Kernel ${kernel}
-${alignr}${color2}${font Cantarell:size=10}${alignr}Architecture ${machine}
-${alignr}${color2}${font Cantarell:size=10}${alignr}File System ${fs_type}
+${alignr}${font Cantarell:size=10}Uptime ${uptime_short}
+${alignr}${font Cantarell:size=10}Temperatures ${hddtemp /dev/sda}°C | ${hwmon 0 temp 1}°C
+${alignr}${font Cantarell:size=10}${alignr}Kernel ${kernel}
+${alignr}${font Cantarell:size=10}${alignr}Architecture ${machine}
+${alignr}${font Cantarell:size=10}${alignr}File System ${fs_type}
 ${alignr}${font Cantarell:size=10}${alignr} ${execi 1200 /usr/bin/jwm_conky_wrapper}
 
-#${alignr} Updates currently ${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}${color}
+${alignr} Updates currently ${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}
 ]]

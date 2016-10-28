@@ -266,7 +266,7 @@ NC='\e[0m'
             ;;        
         15)
             echo ""
-            nano ~/.conkyrc
+            nano ~/.conky/conkyrc_all
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
