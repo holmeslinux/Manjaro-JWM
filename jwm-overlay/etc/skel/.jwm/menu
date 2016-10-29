@@ -14,9 +14,9 @@
         <Menu label="Applications">
 	<Menu label="Accesories">
 	    <Program label="City Temperature">sakura -e "bash -c 'curl wttr.in;exec bash'"</Program>
-	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
-            <Program label="Leafpad Editor">leafpad</Program>
+	    <Program label="Leafpad Editor">leafpad</Program>
             <Program label="Medit Editor">medit</Program>
+            <Program label="Scientific Calculator">gcalculator</Program>
             <Program label="Xarchiver Compressed">xarchiver</Program>
         </Menu>
         <Menu label="Games">
@@ -66,6 +66,7 @@
             <Program label="Printer">xterm -T "Script Printer" -e 'sudo /bin/sh ~/.scripts/printer'</Program>
         </Menu>
          <Separator/>
+            <Program label="GdMap HD">gdmap</Program>
             <Program label="Gufw Firewall">gksu gufw</Program>
             <Program label="HardInfo">hardinfo</Program>
 	    <Program label="HTop Processes">xterm -T "HTop" -e htop</Program>
