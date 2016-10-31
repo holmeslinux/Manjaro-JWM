@@ -69,7 +69,6 @@ qt5-styleplugins
 qt5ct
 ncdu
 numlockx
-gdmap
 
 ## Desktop Configuration
 arandr
@@ -102,7 +101,6 @@ medit
 sakura
 screenfetch
 catfish
-gcalculator
 
 ## Games
 lbreakout2
