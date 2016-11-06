@@ -1,14 +1,14 @@
 conky.config = {
 alignment = 'top_right',
 background = true,
-color2 = 'd9cdb3',
+color2 = '0d1426',
 cpu_avg_samples = 2,
-default_color = 'd9cdb3',
+default_color = '0d1426',
 draw_shades = false,
 double_buffer = true,
 font = 'Cantarell:size=10',
 gap_x = 10,
-gap_y = 60,
+gap_y = 70,
 minimum_width = 200,
 no_buffers = true,
 own_window = true,
@@ -21,9 +21,9 @@ update_interval = 1.0,
 use_xft = true,
 }
 conky.text = [[
-${voffset -8}${goto 35}${color d9cdb3}${font Cantarell:size=20}Manjaro JWM${font}
-${voffset 5}${goto 60}${color d9cdb3}${font Cantarell:size=9}Minimal, Fast, Pretty${font}
-
+${voffset -8}${goto 35}${color 0d1426}${font Cantarell:size=20}Manjaro JWM${font}
+${voffset 5}${goto 62}${color 0d1426}${font Cantarell:size=9}Minimal, Fast, Pretty${font}
+${voffset -4}${goto 85}${color 0d1426}${font Cantarell:size=9}Oncremmer${font}
 ${voffset 10}${goto 30}CPU$alignr$cpu%
 ${goto 30}${cpubar 4}
 ${voffset 5}${goto 30}${top name 1}$alignr${top cpu 1}%
@@ -39,7 +39,7 @@ ${goto 30}${top_mem name 3}$alignr${top_mem mem_res 3}
 ${goto 30}${top_mem name 4}$alignr${top_mem mem_res 4}
 ${goto 30}$stippled_hr
 ${voffset 10}${goto 30}Root$alignr${fs_size /} | ${fs_used /}
-${goto 30}Datos$alignr${fs_size /run/media/holmes/dados} | ${fs_used /run/media/holmes/dados}
+${goto 30}Home$alignr${fs_size /home} | ${fs_used /run/media/holmes/dados}
 ${goto 30}Swap$alignr$swapmax | $swap
 #
 ${voffset -7}${if_existing /proc/net/route wlp3s0}
@@ -57,8 +57,8 @@ ${voffset -7}${goto 30}Battery$alignr${battery_percent BAT1}%
 ${goto 30}$stippled_hr
 ${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "} /CODENAME/ {print $2}' /etc/lsb-release}
 #
-${voffset 10}$alignr${execi 1200 whoami} in ${nodename}
-${alignr}${font Cantarell:size=10}Uptime ${uptime_short}
+${voffset 10}$alignr${execi 1200 whoami} on ${nodename}
+${alignr}${font Cantarell:size=10}Uptime ${uptime_short} 
 ${alignr}${font Cantarell:size=10}Temperatures ${hddtemp /dev/sda}°C | ${hwmon 0 temp 1}°C
 ${alignr}${font Cantarell:size=10}${alignr}Kernel ${kernel}
 ${alignr}${font Cantarell:size=10}${alignr}Architecture ${machine}

@@ -2,19 +2,12 @@
 <JWM>
 
     <!-- Tray of the environment. -->
-    <Tray x="0" y="-1" layout="horizontal" halign="fixed" height="22">
-        <Spacer width="3"/>
-	<TrayButton icon="/usr/share/icons/Faenza/places/96/jwm.svg" popup="Menu">root:3</TrayButton>
-        <Spacer width="10"/>
+    <Tray x="0" y="-1" layout="horizontal" halign="fixed" height="24" valign="top">
         <TaskList maxwidth="130" border="false"/>	
-        <Pager labeled="true"/>
         <Spacer width="5"/>        
         <Dock/>
 	<Spacer width="5"/>
-        <Clock format="%H:%M:%S"></Clock>
-	<Spacer width="10"/>
-        <TrayButton icon="/usr/share/icons/exit.svg" popup="Exit">exec:oblogout</TrayButton>
-        <Spacer width="3"/>     
+        <Clock format="%H  I %M  I %S"></Clock> 
     </Tray>
 
 </JWM>

@@ -35,7 +35,7 @@
         <Font>Cantarell-11:antialias=true:encoding=utf8</Font>
         <Background>#d9cdb3</Background>
         <Foreground>#0d1426</Foreground>
-        <Outline>#d9cdb3</Outline>
+        <Outline>#c59a7a</Outline>
         <Active>
             <Foreground>#0d1426</Foreground>
             <Background>#c59a7a</Background>
@@ -66,6 +66,7 @@
     <!-- Visual Style Clock. -->
     <ClockStyle>
         <Font>Cantarell-11:weight=demibold:antialias=true:encoding=utf8</Font>
+        <Background>#c59a7a</Background>
     </ClockStyle>
 
 </JWM>
