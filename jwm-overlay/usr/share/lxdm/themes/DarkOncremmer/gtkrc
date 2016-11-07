@@ -16,13 +16,13 @@ style "back"
 
 style "time"
 {
-	fg[NORMAL]="#d9cdb3"
+	fg[NORMAL]="#0d1426"
 	font_name=" 12"
 }
 
 style "prompt"
 {
-	fg[NORMAL]="#d9cdb3"
+	fg[NORMAL]="#0d1426"
 	font_name="Cantarell Bold 12"
 }
 
@@ -30,7 +30,7 @@ style "prompt"
 style "bottom"
 {
 	font_name="Cantarell 11"
-	fg[NORMAL] = "#d9cdb3"
+	fg[NORMAL] = "#0d1426"
 	engine "pixmap"
 	{
 		image
@@ -46,7 +46,7 @@ style "bottom"
 style "login"
 {
 	font_name="Cantarell 11"
-	fg[NORMAL] = "#d9cdb3"
+	fg[NORMAL] = "#0d1426"
 	engine "pixmap"
 	{
 		image

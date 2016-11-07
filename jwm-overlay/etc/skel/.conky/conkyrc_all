@@ -43,7 +43,7 @@ ${goto 30}Home$alignr${fs_size /home} | ${fs_used /run/media/holmes/dados}
 ${goto 30}Swap$alignr$swapmax | $swap
 #
 ${voffset -7}${if_existing /proc/net/route wlp3s0}
-${goto 30}Connection${alignr}wiriless
+${goto 30}Connection${alignr}wireless
 ${goto 30}Name${alignr}${wireless_essid}
 ${goto 30}Signal${alignr}${wireless_link_qual wlp3s0}%
 ${else}

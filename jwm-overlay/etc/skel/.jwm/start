@@ -7,7 +7,7 @@
     <StartupCommand>sleep 1s &amp;&amp; volumeicon &amp;</StartupCommand>
     <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_all &amp;</StartupCommand>
     <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_key &amp;</StartupCommand>
-    <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_cal &amp;</StartupCommand>
+    <!-- <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_cal &amp;</StartupCommand> -->
     <StartupCommand>sleep 4s &amp;&amp; notify-send "Welcome to Manjaro JWM Community Edition!" &amp;</StartupCommand>
     <StartupCommand>sleep 5s &amp;&amp; xautolock -time 30 -locker 'i3lock -c c59a7a' &amp;</StartupCommand>
     <StartupCommand>sleep 6s &amp;&amp; /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &amp;</StartupCommand>

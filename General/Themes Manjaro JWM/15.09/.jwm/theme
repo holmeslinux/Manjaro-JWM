@@ -1,0 +1,62 @@
+<JWM>
+
+    <!-- Visual Style Window. -->
+    <WindowStyle decorations="flat">
+        <Font>Roboto-9</Font>
+        <Width>3</Width>
+        <Height>16</Height>
+        <Corner>2</Corner>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#333333</Background>
+        <Outline>#25aedf</Outline>
+        <Active>
+            <Foreground>#FFFFFF</Foreground>
+            <Background>#25aedf</Background>
+            <Outline>#25aedf</Outline>
+        </Active>
+    </WindowStyle>
+
+    <!-- Visual Style Tray. -->
+    <TrayStyle decorations="flat">
+        <Font>Roboto-9</Font>
+        <Background>#333333</Background>
+        <Foreground>#FFFFFF</Foreground>
+        <Active>
+            <Foreground>#FFFFFF</Foreground>
+            <Background>#25aedf</Background>
+        </Active>
+    </TrayStyle>
+    
+    <!-- Visual Style Pager. -->
+    <PagerStyle>
+        <Outline>#333333</Outline>
+        <Font>Roboto-7</Font>
+        <Text>#FFFFFF</Text>
+        <Foreground>#444444</Foreground>
+        <Background>#111111</Background>
+        <Active>
+            <Foreground>#25aedf</Foreground>
+            <Background>#595959</Background>
+        </Active>
+    </PagerStyle>
+
+    <!-- Visual Style Menu. -->
+    <MenuStyle>
+        <Font>Roboto-9</Font>
+        <Foreground>#FFFFFF</Foreground>
+        <Background>#333333</Background>
+        <Active>
+            <Foreground>#FFFFFF</Foreground>
+            <Background>#25aedf</Background>
+        </Active>
+    </MenuStyle>
+
+    <!-- Visual Style Pop. -->
+    <PopupStyle>
+        <Font>Roboto-9</Font>
+        <Outline>#FFFFFF</Outline>
+        <Foreground>#000000</Foreground>
+        <Background>#FFFFFF</Background>
+    </PopupStyle>
+
+</JWM>

@@ -1,0 +1,18 @@
+The PNGS are 110X110 @ 1.9 - 5.0 KB On 8-bit PNG -- In PNG folder.
+
+The Default PNGs are @ 7.6 KB --Not included
+
+---------------------------------------------
+
+The SVGs are 110X110 @ 10.5 - 11 KB --In SVGs folder.
+
+Radius on the frame: 80px -- Inner Stroke
+Radius on the shutdown bars: 10px
+
+Drop-Shadow:
+Blend Mode -- Normal
+Opacity -- 18%
+Angle -- 90 degrees -- Use Global checked
+Distance 23px -- on Symbols
+Spread -- 0%
+Size -- 0px

@@ -1,0 +1,15 @@
+<JWM>
+
+    <!-- Startup for program. -->
+    <StartupCommand>nitrogen --restore</StartupCommand>
+    <StartupCommand>pamac-tray</StartupCommand>    
+    <StartupCommand>volumeicon</StartupCommand>
+    <StartupCommand>nm-applet</StartupCommand>
+    <StartupCommand>conky</StartupCommand>
+    <StartupCommand>compton -c</StartupCommand>
+    <StartupCommand>conky</StartupCommand>
+    <StartupCommand>xautolock -time 20 -locker 'i3lock -i $HOME/.i3lock/jolly_fusion-CharlieHenson.png'</StartupCommand>
+    <StartupCommand>notify-send "Welcome to Manjaro JWM Edition"</StartupCommand>
+    <StartupCommand>/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1</StartupCommand>
+           
+</JWM>

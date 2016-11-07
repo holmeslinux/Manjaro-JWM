@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- Startup for program. -->
+    <StartupCommand>nitrogen --restore &amp;</StartupCommand>
+    <StartupCommand>compton -cCGb &amp;</StartupCommand>
+    <StartupCommand>sleep 1s &amp;&amp; volumeicon &amp;</StartupCommand>
+    <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_all &amp;</StartupCommand>
+    <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_key &amp;</StartupCommand>
+    <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_cal &amp;</StartupCommand>
+    <StartupCommand>sleep 4s &amp;&amp; notify-send "Welcome to Manjaro JWM Community Edition!" &amp;</StartupCommand>
+    <StartupCommand>sleep 5s &amp;&amp; xautolock -time 30 -locker 'i3lock -c bfc674' &amp;</StartupCommand>
+    <StartupCommand>sleep 6s &amp;&amp; /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &amp;</StartupCommand>
+    <StartupCommand>sleep 7s &amp;&amp; xrdb merge .Xresources &amp;</StartupCommand>
+    <StartupCommand>sleep 8s &amp;&amp; update-notifier &amp;</StartupCommand>
+        
+</JWM>

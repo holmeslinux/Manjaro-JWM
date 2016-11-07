@@ -8,7 +8,7 @@
 
 #time {
 	font: Cantarell 12;
-	color: #d9cdb3
+	color: #0d1426
 }
 
 #user_list, #login_entry {
@@ -16,5 +16,5 @@
 }
 
 #prompt, #bottom_pane GtkLabel {
-	color: #d9cdb3
+	color: #0d1426
 }

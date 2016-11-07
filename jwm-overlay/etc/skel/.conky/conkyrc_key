@@ -21,6 +21,7 @@ use_xft = true,
 }
 conky.text = [[
 Mod4 + b = Web Browser
+Mod4 + d = Show Desktop
 Mod4 + e = Exit
 Mod4 + f = File Manager
 Mod4 + g = User Guide

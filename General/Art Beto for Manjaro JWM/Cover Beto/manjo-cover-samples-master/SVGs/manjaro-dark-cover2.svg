@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="8.5in"
+   height="11in"
+   viewBox="0 0 765 990"
+   sodipodi:docname="manjaro-dark-cover2.svg"
+   inkscape:export-filename="/home/burt/manjaro-guide-dark2"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#b1b1b1"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="950"
+     id="namedview4"
+     showgrid="false"
+     showborder="true"
+     inkscape:showpageshadow="false"
+     inkscape:document-units="in"
+     units="in"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.71238679"
+     inkscape:cx="33.36683"
+     inkscape:cy="545.09812"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <sodipodi:guide
+       position="0,0"
+       orientation="0,765"
+       id="guide4155" />
+    <sodipodi:guide
+       position="763.63011,1030.3392"
+       orientation="-990,0"
+       id="guide4157" />
+    <sodipodi:guide
+       position="765,990"
+       orientation="0,-765"
+       id="guide4159" />
+    <sodipodi:guide
+       position="0,990"
+       orientation="990,0"
+       id="guide4161" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="BG"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#0d1b26;fill-opacity:1;fill-rule:evenodd;stroke:#0d1b26;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect4164"
+       width="765"
+       height="990"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Logo-Big-Tilted"
+     style="display:inline;opacity:1">
+    <path
+       style="fill:#101f2a;fill-opacity:1;stroke:none;stroke-opacity:1"
+       d="m 573.96995,1027.0782 22.46509,-12.9703"
+       id="path4181"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g4211"
+       style="stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4185"
+         d="M 579.90246,990 44.493795,427.89506 287.72654,205.42609 88.987589,0 0,0 0,789.77792 186.87394,990 Z"
+         style="fill:#101f2a;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4189"
+         d="M 765,711.17222 311.45656,235.08862 105.30198,426.41193 636.26126,990 765,990 Z"
+         style="fill:#101f2a;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4209"
+         d="M 765,235.964 531.7055,0 141.57839,0 765,654.40679 Z"
+         style="opacity:1;fill:#101f2a;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="40.044415"
+       y="393.78314"
+       id="text4216"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4218"
+         x="40.044415"
+         y="393.78314" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="TEXT"
+     style="display:inline;opacity:1">
+    <g
+       inkscape:groupmode="layer"
+       id="layer5"
+       inkscape:label="Manjaro-TXT"
+       style="display:inline;opacity:0.15500004" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer6"
+       inkscape:label="User-Guide-TXT"
+       style="display:inline">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4153"
+         y="942.18042"
+         x="468.40189"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:45px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';fill:#90b29a;fill-opacity:1;stroke:#000000;stroke-width:0.40000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           y="942.18042"
+           x="468.40189"
+           id="tspan4155"
+           sodipodi:role="line">user guide</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="LOGO"
+     style="display:inline">
+    <g
+       style="display:inline;opacity:1;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none"
+       id="g4282">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150"
+         d="m 604.50362,755.89641 0,-51.37328 -106.95751,0 0,180.22759 49.68893,0 0,-128.85431 z"
+         style="fill:#35bf5c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4154"
+         d="m 556.49906,767.687 48.00456,0 0,117.06372 -48.00456,0 z"
+         style="fill:#35bf5c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4156"
+         d="m 613.19747,704.52313 48.84676,0 0,180.22759 -48.84676,0 z"
+         style="fill:#35bf5c;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+  </g>
+</svg>

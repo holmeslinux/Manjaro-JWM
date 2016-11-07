@@ -1,0 +1,101 @@
+<JWM>
+
+    <!-- The root menu. -->
+    <RootMenu onroot="3">
+	<Program label="Execute">gmrun</Program>
+	<Program label="Terminal">sakura</Program>
+        <Program label="Pacli Front">gksu xterm ~/.pacli/pacli</Program>
+	<Program label="Explore Files">spacefm</Program>
+	<Program label="Browser">palemoon</Program>
+	<Program label="Background">nitrogen</Program>
+     <Menu label="Screenshot">	
+        <Program label="Full Screen">scrot -e 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+        <Program label="Active Window">scrot -ue 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+        <Program label="Select Area">notify-send 'selection will be saved in ~/Pictures' & scrot -se 'mv $f ~/Pictures' && sleep 1 && notify-send 'Screenshot has been saved in ~/Pictures'</Program>
+     </Menu>
+        <Separator/>
+     <Menu label="Accesories">
+	<Program label="ClipIt Manager">clipit</Program>
+        <Program label="Medit Editor">medit</Program>
+	<Program label="Leafpad Editor">leafpad</Program>
+    </Menu>
+    <Menu label="Graphics">
+	<Program label="Viewnior Image">viewnior</Program>
+    </Menu>
+    <Menu label="Multimedia">
+	<Program label="SMPlayer Video">smplayer</Program>
+        <Program label="LXMusic Music">lxmusic</Program>
+        <Program label="XFBurn CD/DVD">xfburn</Program>
+    </Menu>
+    <Menu label="Network">
+	<Program label="Pale Moon Browser">palemoon</Program>
+        <Program label="XChat IRC">xchat</Program>
+    </Menu>
+    <Menu label="Office">
+	<Program label="AbiWord Write">abiword</Program>
+        <Program label="Gnumeric Calc">gnumeric</Program>
+        <Program label="Epdfview Reader">epdfview</Program>
+        <Program label="Google Drive">palemoon https://drive.google.com/</Program>
+    </Menu>
+    <Menu label="Settings">
+	<Program label="Nitrogen Wall">nitrogen</Program>
+        <Program label="Manjaro Settings">gksu manjaro-settings-manager-gui</Program>
+        <Program label="Monitor Manager">arandr</Program>
+	<Program label="Configure keyboard">lxinput</Program>
+        <Program label="Customize Look">lxappearance</Program>
+        <Program label="Network Connections">nm-connection-editor</Program>
+        <Program label="Privilege Granting">gksu-properties</Program>
+    </Menu>
+    <Menu label="System">
+        <Program label="Pacli Frontend">gksu xterm ~/.pacli/pacli</Program>
+	<Program label="Pamac Manager">pamac-manager</Program>
+        <Program label="Pamac Update">pamac-update</Program>
+        <Program label="SpaceFM Explore">spacefm</Program>
+	<Program label="Root SpaceFM">gksu spacefm</Program>
+        <Program label="GParted HD">/usr/bin/gparted_polkit</Program>
+        <Program label="Htop Process">xterm -e 'htop'</Program>
+        <Program label="Top Analysis">xterm top</Program>
+	<Program label="Hard Info">hardinfo</Program>
+        <Program label="Terminal">sakura</Program>        
+        <Program label="Root Terminal">gksu sakura</Program>
+        <Program label="Nano Editor">sakura -x nano</Program>
+        <Program label="Dmenu Run">dmenu_run -i -nb '#31363d' -nf '#25aedf' -sb '#a7a7a7' -fn 'roboto-11'</Program>
+        <Program label="GUFW">gksu gufw</Program>
+    <Menu label="Script All">
+	<Program label="AUR">gksu xterm ~/.scripts/aur.sh</Program>
+        <Program label="Multimedia">gksu xterm ~/.scripts/multimedia.sh</Program>
+        <Program label="OpenJDK">gksu xterm ~/.scripts/jdk.sh</Program>
+        <Program label="Printing">gksu xterm ~/.scripts/printing.sh</Program>
+        <Program label="Firewall">gksu xterm ~/.scripts/firewall.sh</Program>
+    </Menu>
+    </Menu>
+       <Separator/>
+    <Menu label="Configure">
+	<Program label="LightDM Settings">gksu lightdm-gtk-greeter-settings</Program>
+        <Program label="Conky Manager">leafpad ~/.conkyrc</Program>
+        <Program label="Dunst Settings">leafpad ~/.config/dunst/dunstrc</Program>
+        <Program label="Printer Manager">system-config-printer</Program>
+        <Program label="Top Settings">leafpad ~/.toprc</Program>      
+    <Menu label="JWM Manager">
+        <Restart label="Reconfigure"/>
+	<Program label="Integrity">xterm ~/.jwm/integrity.sh</Program>
+        <Program label="Menu">leafpad ~/.jwm/menu</Program>
+        <Program label="Tray">leafpad ~/.jwm/tray</Program>
+        <Program label="Start">leafpad ~/.jwm/start</Program>
+        <Program label="Theme">leafpad ~/.jwm/theme</Program>
+        <Program label="Keys">leafpad ~/.jwm/keys</Program>
+        <Program label="Groups">leafpad ~/.jwm/groups</Program>
+        <Program label="Preferences">leafpad ~/.jwm/preferences</Program>
+    </Menu>
+    </Menu>    
+        <Separator/>
+    <Menu label="Session">
+        <Exit label="Logout" confirm="false"/>
+	<Program label="Restart">systemctl reboot</Program>
+        <Program label="Suspend">systemctl suspend</Program>
+        <Program label="Shutdown">systemctl poweroff</Program>
+        <Program label="Lock">i3lock -i $HOME/.i3lock/jolly_fusion-CharlieHenson.png</Program>
+    </Menu>
+    </RootMenu>
+
+</JWM>
