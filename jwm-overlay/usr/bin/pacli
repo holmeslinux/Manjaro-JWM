@@ -81,11 +81,11 @@ By default Pacman uses this cache direcoty for downloading packages: /var/cache/
 The first command removes all packages from cache, which are not installed (anymore) on your system. The second command removes all old packages from your cache except the 2 latest versions: The version you have currently installed on your system and the previous version.
 
 6 - LIMITED LOG journalctl
-"sudo journalctl --vacuum-size=50M --vacuum-time=30days"
+sudo journalctl --vacuum-size=50M --vacuum-time=30days
 This command limits all log files in journalctl to a combined size of 50 megabytes and a maximum age of 30 days. This leaves plenty of log files behind to analyze systematic and reoccuring errors while preventing excessive amounts of log files.
 
 7 - REMOVE ORPHANED PACKAGES
-"yaourt -Qdt"
+yaourt -Qdt
 This option lists all orphaned packages on your system. Orphaned packages are old dependencies (packages not explicitly installed by you), which were never removed from your system. 
 Answer with "y" or "n" to remove all listed orphaned packages or not.
 
@@ -194,25 +194,25 @@ NC='\e[0m'
     echo -e "                        $NC Pacli Package Manager $NC "
     echo ""
     echo -e "                    $NC ::WARNING! USE WITH CAUTION:: $NC"
-    echo -e " ┌────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC  1 $NC  Update System               $NC  2 $NC  Remove Package + Deps     │"
-    echo -e " │  $NC  3 $NC  Optimize Mirrors            $NC  4 $NC  Defragment Database       │"
-    echo -e " │  $NC  5 $NC  Clean Package Cache         $NC  6 $NC  Limited log journalctl    │"
-    echo -e " │  $NC  7 $NC  Remove Orphaned Packages    $NC  8 $NC  Install Package           │"
-    echo -e " │  $NC  9 $NC  List Local Package Files    $NC 10 $NC  Package Information       │"
-    echo -e " │  $NC 11 $NC  Installed Package Info      $NC 12 $NC  Dependency Tree           │"
-    echo -e " │  $NC 13 $NC  Reverse Dependency Tree     $NC 14 $NC  List Installed Packages   │"
-    echo -e " │  $NC 15 $NC  Downgrade Packages          $NC 16 $NC  Fix Error Database Lock   │"
-    echo -e " │  $NC 17 $NC  Fix Error Keys 		 		              │"
-    echo -e " │--------------------------------------------------------------------│"
-    echo -e " │  $NC 18 $NC *Empty Package Cache	      $NC 19 $NC *Force Update System       │"
-    echo -e " │  $NC 20 $NC *Force Install Package	      $NC 21 $NC *Force Remove Package      │"
-    echo " └────────────────────────────────────────────────────────────────────┘"
+    echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
+    echo -e " │  $NC  1 $NC  Update System               	  $NC  2 $NC  Remove Package + Deps      │"
+    echo -e " │  $NC  3 $NC  Optimize Mirrors            	  $NC  4 $NC  Defragment Database        │"
+    echo -e " │  $NC  5 $NC  Clean Package Cache         	  $NC  6 $NC  Limited log journalctl     │"
+    echo -e " │  $NC  7 $NC  Remove Orphaned Packages    	  $NC  8 $NC  Install Package            │"
+    echo -e " │  $NC  9 $NC  List Local Package Files    	  $NC 10 $NC  Package Information        │"
+    echo -e " │  $NC 11 $NC  Installed Package Info      	  $NC 12 $NC  Dependency Tree            │"
+    echo -e " │  $NC 13 $NC  Reverse Dependency Tree     	  $NC 14 $NC  List Installed Packages    │"
+    echo -e " │  $NC 15 $NC  Downgrade Packages          	  $NC 16 $NC  Fix Error Database Lock    │"
+    echo -e " │  $NC 17 $NC  Fix Error Keys 		 		                   │"
+    echo -e " │-------------------------------------------------------------------------│"
+    echo -e " │  $NC 18 $NC *Empty Package Cache	          $NC 19 $NC *Force Update System        │"
+    echo -e " │  $NC 20 $NC *Force Install Package	          $NC 21 $NC *Force Remove Package       │"
+    echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo " ┌────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 22 $NC  Update AUR                  $NC 23 $NC  Search + Install from AUR │"
-    echo -e " │  $NC 24 $NC  Install from AUR            $NC 25 $NC  List Installed from AUR   │"
-    echo " └────────────────────────────────────────────────────────────────────┘"
+    echo " ┌─────────────────────────────────────────────────────────────────────────┐"
+    echo -e " │  $NC 22 $NC  Update AUR                  	  $NC 23 $NC  Search + Install from AUR  │"
+    echo -e " │  $NC 24 $NC  Install from AUR            	  $NC 25 $NC  List Installed from AUR    │"
+    echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "     $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
     echo ""

@@ -39,7 +39,7 @@ JWMconf is an interactive configure JWM for your command line terminal. It provi
 
 HOME SCREEN
 JWMConf Configuration Tool's home screen is split into two parts: 
-The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LightDM and Oblogout. Choose an option by entering its number and pressing [Enter].
+The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LXDM and Oblogout. Choose an option by entering its number and pressing [Enter].
 
 ATTENTION
 *The number 7, 8, 9, 10, 11, 12, 13, 14, 19, 20, 21, 22 and 23 can break your system. WARNING! USE WITH CAUTION.

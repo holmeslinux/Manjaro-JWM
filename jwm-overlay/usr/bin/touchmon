@@ -1,4 +1,86 @@
 #!/bin/bash
+#  updated on 25.06.2016 09:45:49
+#  version 0.1-3
+#.....................................................................................
+
+function help_text() {
+	less 	<<-EOF
+Welcome to TouchMon Configuration Tool's information page.
+TouchMon is an interactive configure xinput and xrandr for your command line terminal. It provides an easy user interface to edit configuration files of the xinput and xrandr. You can also edit other files.
+
+HOME SCREEN
+JWMConf Configuration Tool's home screen is split into two parts: 
+The upper part focuses on xinput file. Also has some important options for maintenance of touchpad: Set pointer speed, Toggle tap to click, Toggle drag lock, Toggle left handed mode, Toggle disable while typing, Toggle natural scrolling, Toggle horizontal scrolling, Help xinput and Homepage xinput. The lower part provides options to edit other settings files:   List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Help xrandr  and Homepage xrandr. Choose an option by entering its number and pressing [Enter].
+The lower part focuses on xrandr file. Also has some important options for maintenance of monitor: List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Help xrandr  and Homepage xrandr. Choose an option by entering its number and pressing [Enter].
+
+0 - EXIT JWMCONF
+"clear && exit"
+This will exit JWMconf and clear your terminal.
+
+00 - INFORMATION JWMCONF
+Display this information page.
+
+1- SET POINTER SPEED
+Set pointer speed of your touchpad.
+
+2- TOGGLE TAP TO CLICK
+Toggle tap to click of your touchpad.
+
+3- TOGGLE DRAG LOCK
+Toggle drag lock of your touchpad.
+
+4- TOGGLE LEFT HANDED MODE
+Toggle left handed mode of your touchpad.
+
+5- TOGGLE DISABLE WHILE TYPING
+Toggle disable while typing of your touchpad.
+
+6- TOGGLE NATURAL SCROLLING
+Toggle natural scrolling of your touchpad.
+
+7- TOGGLE HORIZONTAL SCROLLING
+Toggle horizontal scrolling of your touchpad.
+
+8- HELP XINPUT
+Get help xinput.
+
+9- HOMEPAGE XINPUT
+Visit the ArchLinux wiki about xinput.
+
+10- LIST MONITORS
+List the existing monitors.
+
+11- SET RESOLUTION
+Set the monitor resolution.
+
+12- SET PRIMARY MONITOR
+Set the primary monitor.
+
+13- POSITION MONITORS
+Set position the monitors.
+
+14- CONNECT/DISCONNECT MONITOR
+Connect or disconnect the monitor.
+
+15- ROTATE MONITOR
+Rotate the monitor.
+
+16- SAVE DISPLAY SETTINGS
+Save display settings
+
+17- DYNAMIC MONITOR DETECTION
+Dynamic monitor detection.
+
+18- HELP XRANDR
+Get help xrandr.
+
+19- HOMEPAGE XRANDR
+Visit the ArchLinux wiki about xrandr.
+
+To exit this information page, press "q".
+	EOF
+}
+
 ###xinput_tui###
 touchpad_id=$(xinput --list | grep -i "touchpad" | xargs -n 1 | grep "id=" | sed 's/id=//g')
 
@@ -263,11 +345,11 @@ NC='\e[0m'
     echo ""
     echo -e "                      $NC ::WARNING! USE WITH CAUTION:: $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 1  $NC  Set pointer speed            $NC  2  $NC  Toggle tap to click          │"
-    echo -e " │  $NC 3  $NC  Toggle drag lock             $NC  4  $NC  Toggle left handed mode      │"
-    echo -e " │  $NC 5  $NC  Toggle disable while typing  $NC  6  $NC  Toggle natural scrolling     │"
-    echo -e " │  $NC 7  $NC  Toggle horizontal scrolling  $NC  8  $NC  Help xinput                  │"
-    echo -e " │  $NC 9  $NC  Homepage xinput				                   │"
+    echo -e " │  $NC  1  $NC  Set pointer speed            $NC  2  $NC  Toggle tap to click         │"
+    echo -e " │  $NC  3  $NC  Toggle drag lock             $NC  4  $NC  Toggle left handed mode     │"
+    echo -e " │  $NC  5  $NC  Toggle disable while typing  $NC  6  $NC  Toggle natural scrolling    │"
+    echo -e " │  $NC  7  $NC  Toggle horizontal scrolling  $NC  8  $NC  Help xinput                 │"
+    echo -e " │  $NC  9  $NC  Homepage xinput				                   │"
     echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
@@ -278,7 +360,7 @@ NC='\e[0m'
     echo -e " │  $NC 18 $NC  Help xrandr                   $NC 19  $NC Homepage xrandr              │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "              $NC Select a number and press [Enter] - 0 Exit$NC"
+    echo -e "        $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
     echo ""
     read choix
     case $choix in
@@ -409,6 +491,11 @@ NC='\e[0m'
             ;;
         0)
             clear && exit
+            ;;
+        00)
+            echo
+            help_text
+            echo
             ;;
         *)
             echo -e "Wrong option. Press any key to continue."
