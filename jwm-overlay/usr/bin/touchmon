@@ -137,18 +137,18 @@ function save_settings {
 }
 
 function choose_monitor {
-xrandr -q | awk '/connected/ {print $1}' | fzf-tmux --reverse -e --prompt='Choose monitor to operate on >'
+xrandr -q | awk '/connected/ {print $1}' | pmenu -p 'Choose monitor to operate on >'
 }
 
 function choose_connected_monitor {
 PS3="Choose monitor to operate on: "
 # Gather the results in an array.
 monitors=($connected_monitors "proceed" "cancel")
-xrandr -q | awk '/ connected/ {print $1}' | fzf-tmux --reverse -e --prompt='Choose monitor to operate on >'
+xrandr -q | awk '/ connected/ {print $1}' | pmenu -p 'Choose monitor to operate on >'
 }
 
 function choose_second_monitor {
-xrandr -q | awk '/connected/ {print $1}' | fzf-tmux --reverse -e --prompt='Relative to which monitor? >'
+xrandr -q | awk '/connected/ {print $1}' | pmenu -p 'Relative to which monitor? >'
 }
 
 function choose_resolution {
