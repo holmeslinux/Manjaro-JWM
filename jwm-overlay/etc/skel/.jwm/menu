@@ -8,6 +8,7 @@
         <Program label="Terminal">sakura</Program>
         <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program>
         <Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program>
+	<Program label="TouchMon">xterm -T TouchMon /usr/bin/touchmon</Program>
         <Program label="File Manager">pcmanfm</Program>
         <Program label="Web Browser">palemoon</Program>
         <Separator/>
@@ -75,6 +76,7 @@
             <Program label="Root File Manager">gksu pcmanfm /</Program>         
             <Program label="Root Terminal">gksu sakura</Program>            
             <Program label="Temperature Sensors">xsensors</Program>
+            <Program label="TouchMon Configuration">xterm -T TouchMon /usr/bin/touchmon</Program>
         </Menu>
       </Menu>
       <Menu label="Places">
