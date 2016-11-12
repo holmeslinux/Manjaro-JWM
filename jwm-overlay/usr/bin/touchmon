@@ -266,14 +266,16 @@ NC='\e[0m'
     echo -e " │  $NC 1  $NC  Set pointer speed            $NC  2  $NC  Toggle tap to click          │"
     echo -e " │  $NC 3  $NC  Toggle drag lock             $NC  4  $NC  Toggle left handed mode      │"
     echo -e " │  $NC 5  $NC  Toggle disable while typing  $NC  6  $NC  Toggle natural scrolling     │"
-    echo -e " │  $NC 7  $NC  Toggle horizontal scrolling                                      │"
+    echo -e " │  $NC 7  $NC  Toggle horizontal scrolling  $NC  8  $NC  Help xinput                  │"
+    echo -e " │  $NC 9  $NC  Homepage xinput				                   │"
     echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 8  $NC  List monitors                 $NC 9   $NC Set resolution               │"
-    echo -e " │  $NC 10 $NC  Set primary monitor           $NC 11  $NC Position monitors            │"
-    echo -e " │  $NC 12 $NC  Connect/disconnect monitor    $NC 13  $NC Rotate monitor               │"
-    echo -e " │  $NC 14 $NC  Save display settings         $NC 15  $NC Dynamic monitor detection    │"
+    echo -e " │  $NC 10 $NC  List monitors                 $NC 11  $NC Set resolution               │"
+    echo -e " │  $NC 12 $NC  Set primary monitor           $NC 13  $NC Position monitors            │"
+    echo -e " │  $NC 14 $NC  Connect/disconnect monitor    $NC 15  $NC Rotate monitor               │"
+    echo -e " │  $NC 16 $NC  Save display settings         $NC 17  $NC Dynamic monitor detection    │"
+    echo -e " │  $NC 18 $NC  Help xrandr                   $NC 19  $NC Homepage xrandr              │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "              $NC Select a number and press [Enter] - 0 Exit$NC"
@@ -315,48 +317,62 @@ NC='\e[0m'
             read -s -n1
             ;;
         8)
+            echo ""
+            xinput --help
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
+            read
+            ;;
+        9)
+            echo
+            elinks https://wiki.archlinux.org/index.php/Touchpad_Synaptics
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
+            read
+            ;;
+        10)
             echo
             xrandr -q
             echo ""
             echo -e "$NC Operation complete. To return to menu press [Enter] $NC"
             read
             ;;
-        9)
+        11)
             echo
             choose_resolution
             echo ""
             echo -e "$NC Operation complete. To return to menu press [Enter] $NC"
             read
             ;;
-        10)
+        12)
             echo
             set_primary
             echo ""
             echo -e "$NC Operation complete. To return to menu press [Enter] $NC"
             read
             ;;
-        11)
+        13)
             echo
             move_monitor
             echo ""
             echo -e "$NC Operation complete. To return to menu press [Enter] $NC"
             read
             ;;
-        12)
+        14)
             echo
             choose_monitor | connect_monitor
             echo ""
             echo -e "$NC Operation complete. To return to menu press [Enter] $NC"
             read
             ;;
-        13)
+        15)
             echo
             rotate_monitor
             echo ""
             echo -e "$NC Operation complete. To return to menu press [Enter] $NC"
             read
             ;;
-        14)
+        16)
             echo
             save_settings
             echo ""
@@ -366,7 +382,7 @@ NC='\e[0m'
             echo ""
             read
             ;;
-        15)
+        17)
             echo
             sudo pacman -S srandrd
             echo ""
@@ -375,6 +391,20 @@ NC='\e[0m'
 	    echo 'to save your settings for different monitor configurations.'
             echo -e "$NC Operation complete. To return to menu press [Enter] $NC"
             echo ""
+            read
+            ;;
+        18)
+            echo ""
+            xrandr --help
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
+            read
+            ;;
+        19)
+            echo
+            elinks https://wiki.archlinux.org/index.php/xrandr
+            echo ""
+            echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         0)
