@@ -400,7 +400,7 @@ NC='\e[0m'
             ;;
         8)
             echo ""
-            xinput --help
+            man xinput
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
@@ -477,7 +477,7 @@ NC='\e[0m'
             ;;
         18)
             echo ""
-            xrandr --help
+            man xrandr
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
