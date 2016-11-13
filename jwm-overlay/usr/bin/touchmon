@@ -1,7 +1,8 @@
 #!/bin/bash
 # updated on 12.11.2016 09:45:49
 # version 0.1-1
-# Modified, adapted and improved by Chrysostomus (<https://github.com/Chrysostomus>).
+# Credits for Chrysostomus (<https://github.com/Chrysostomus>).
+# Adapted for Holmes.
 
 function help_text() {
 	less 	<<-EOF
@@ -9,15 +10,15 @@ Welcome to TouchMon Configuration Tool's information page.
 TouchMon is an interactive configure xinput and xrandr for your command line terminal. It provides an easy user interface to edit configuration files of the xinput and xrandr. You can also edit other files.
 
 HOME SCREEN
-JWMConf Configuration Tool's home screen is split into two parts: 
-The upper part focuses on xinput file. Also has some important options for maintenance of touchpad: Set pointer speed, Toggle tap to click, Toggle drag lock, Toggle left handed mode, Toggle disable while typing, Toggle natural scrolling, Toggle horizontal scrolling, Help xinput and Homepage xinput. The lower part provides options to edit other settings files:   List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Help xrandr  and Homepage xrandr. Choose an option by entering its number and pressing [Enter].
-The lower part focuses on xrandr file. Also has some important options for maintenance of monitor: List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Help xrandr  and Homepage xrandr. Choose an option by entering its number and pressing [Enter].
+TouchMon Configuration Tool's home screen is split into two parts: 
+The upper part focuses on xinput file. Also has some important options for maintenance of touchpad: Set pointer speed, Toggle tap to click, Toggle drag lock, Toggle left handed mode, Toggle disable while typing, Toggle natural scrolling, Toggle horizontal scrolling, Help xinput and Homepage xinput. The lower part provides options to edit other settings files: List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Commands Manual xrandr and Wiki xrandr. Choose an option by entering its number and pressing [Enter].
+The lower part focuses on xrandr file. Also has some important options for maintenance of monitor: List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Commands Manual xrandr and Wiki xrandr. Choose an option by entering its number and pressing [Enter].
 
-0 - EXIT JWMCONF
+0 - EXIT TOUCHMON
 "clear && exit"
-This will exit JWMconf and clear your terminal.
+This will exit TouchMon and clear your terminal.
 
-00 - INFORMATION JWMCONF
+00 - INFORMATION TOUCHMON
 Display this information page.
 
 1- SET POINTER SPEED
@@ -41,10 +42,10 @@ Toggle natural scrolling of your touchpad.
 7- TOGGLE HORIZONTAL SCROLLING
 Toggle horizontal scrolling of your touchpad.
 
-8- HELP XINPUT
+8- COMMANDS MANUAL XINPUT
 Get help xinput.
 
-9- HOMEPAGE XINPUT
+9- WIKI XINPUT
 Visit the ArchLinux wiki about xinput.
 
 10- LIST MONITORS
@@ -71,10 +72,10 @@ Save display settings
 17- DYNAMIC MONITOR DETECTION
 Dynamic monitor detection.
 
-18- HELP XRANDR
+18- COMMANDS MANUAL XRANDR
 Get help xrandr.
 
-19- HOMEPAGE XRANDR
+19- WIKI XRANDR
 Visit the ArchLinux wiki about xrandr.
 
 To exit this information page, press "q".
@@ -348,8 +349,8 @@ NC='\e[0m'
     echo -e " │  $NC  1  $NC  Set pointer speed            $NC  2  $NC  Toggle tap to click         │"
     echo -e " │  $NC  3  $NC  Toggle drag lock             $NC  4  $NC  Toggle left handed mode     │"
     echo -e " │  $NC  5  $NC  Toggle disable while typing  $NC  6  $NC  Toggle natural scrolling    │"
-    echo -e " │  $NC  7  $NC  Toggle horizontal scrolling  $NC  8  $NC  Help xinput                 │"
-    echo -e " │  $NC  9  $NC  Homepage xinput				                   │"
+    echo -e " │  $NC  7  $NC  Toggle horizontal scrolling  $NC  8  $NC  Commands Manual xinput      │"
+    echo -e " │  $NC  9  $NC  Wiki xinput				                           │"
     echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
@@ -357,10 +358,10 @@ NC='\e[0m'
     echo -e " │  $NC 12 $NC  Set primary monitor           $NC 13  $NC Position monitors            │"
     echo -e " │  $NC 14 $NC  Connect/disconnect monitor    $NC 15  $NC Rotate monitor               │"
     echo -e " │  $NC 16 $NC  Save display settings         $NC 17  $NC Dynamic monitor detection    │"
-    echo -e " │  $NC 18 $NC  Help xrandr                   $NC 19  $NC Homepage xrandr              │"
+    echo -e " │  $NC 18 $NC  Commands Manual xrandr        $NC 19  $NC Wiki xrandr                  │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "        $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
+    echo -e "       $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
     echo ""
     read choix
     case $choix in
