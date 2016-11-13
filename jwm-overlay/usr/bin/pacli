@@ -1,35 +1,8 @@
 #!/bin/bash
 
-#  updated on 11.10.2016 14:11:24
-#  version 0.1-3
-
-#  This program is free software; you can redistribute it and/or modify
-#  it under the terms of the GNU General Public License as published by
-#  the Free Software Foundation; either version 2 of the License, or
-#  (at your option) any later version.
-#  
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-#  
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-#  MA 02110-1301, USA.
-#  
-
-#################################################################
-# Design based on IceFox script                                 #
-# Modified, adapted and improved by pekman and excalibur1234    #
-# translation by spylinux					#
-# Pmenu and Downgrade support added by Chrysostomus		#
-# Adapted to Manjaro JWM Community Edition by Holmes		#
-# Contact and suggestions: pekman@openmailbox.org               #
-# Freenode: #manjaropek #manjaro-geek #manjaro			#
-# Topic discussion 						#
-#			http://polr.me/Pacli1			#
-#################################################################
+# updated on 11.10.2016 14:11:24
+# version 0.1-3
+# Modified, adapted and improved by pekman and excalibur1234 (<https://github.com/Manjaro-Pek/pacli> and <https://github.com/excalibur1234>).
 
 function help_text() {
 	less 	<<-EOF
