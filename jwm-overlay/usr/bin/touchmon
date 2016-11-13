@@ -72,10 +72,13 @@ Save display settings
 17- DYNAMIC MONITOR DETECTION
 Dynamic monitor detection.
 
-18- COMMANDS MANUAL XRANDR
+18- ACCESS ARANDR
+Is designed to provide a simple visual front end for xrandr.
+
+19- COMMANDS MANUAL XRANDR
 Get help xrandr.
 
-19- WIKI XRANDR
+20- WIKI XRANDR
 Visit the ArchLinux wiki about xrandr.
 
 To exit this information page, press "q".
@@ -349,8 +352,8 @@ NC='\e[0m'
     echo -e " │  $NC  1  $NC  Set pointer speed            $NC  2  $NC  Toggle tap to click         │"
     echo -e " │  $NC  3  $NC  Toggle drag lock             $NC  4  $NC  Toggle left handed mode     │"
     echo -e " │  $NC  5  $NC  Toggle disable while typing  $NC  6  $NC  Toggle natural scrolling    │"
-    echo -e " │  $NC  7  $NC  Toggle horizontal scrolling  $NC  8  $NC  Commands Manual xinput      │"
-    echo -e " │  $NC  9  $NC  Wiki xinput				                           │"
+    echo -e " │  $NC  7  $NC  Toggle horizontal scrolling  $NC  8  $NC  Commands Manual Xinput      │"
+    echo -e " │  $NC  9  $NC  Wiki Xinput				                           │"
     echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
@@ -358,7 +361,8 @@ NC='\e[0m'
     echo -e " │  $NC 12 $NC  Set primary monitor           $NC 13  $NC Position monitors            │"
     echo -e " │  $NC 14 $NC  Connect/disconnect monitor    $NC 15  $NC Rotate monitor               │"
     echo -e " │  $NC 16 $NC  Save display settings         $NC 17  $NC Dynamic monitor detection    │"
-    echo -e " │  $NC 18 $NC  Commands Manual xrandr        $NC 19  $NC Wiki xrandr                  │"
+    echo -e " │  $NC 18 $NC  Access ARandR                 $NC 19  $NC Commands Manual XRandR       │"    
+    echo -e " │  $NC 20 $NC  Wiki XRandR                                                      │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "       $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
@@ -476,14 +480,21 @@ NC='\e[0m'
             echo ""
             read
             ;;
-        18)
+         18)
+            echo ""
+            arandr
+            echo ""
+            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            read
+            ;;        
+         19)
             echo ""
             man xrandr
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;
-        19)
+        20)
             echo
             elinks https://wiki.archlinux.org/index.php/xrandr
             echo ""
