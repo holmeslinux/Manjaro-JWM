@@ -1,0 +1,512 @@
+#!/bin/bash
+#
+# mjscript-0.1-1  -  MJScript Post Install (MJScript)
+#
+# MJScript Post Install (MJScript) is a script which is developed for 
+# Manjaro JWM Community Edition. It's purpose is to provide an easy way for
+# users to set up their system, install drivers and download and install applications.
+#
+# Written by Culinax
+# Modified for use in BSPWM respin by Chrysostomus
+# Modified for use in Manjaro JWM Community Edition by Holmes
+PS3="▶ "
+
+in_array() {
+    local i
+    for i in "${@:2}"; do
+        [[ $i = "$1" ]] && return 0
+    done
+    return 1
+}
+
+slct() {
+    if in_array "--" "$@"; then
+        declare -A subopts subtitles
+        local sub subtitle subopt
+        until [[ $1 = "--" ]]; do
+            IFS=: read -r sub subtitle subopt<<< "$1"
+            subopts[$sub]=$subopt
+            subtitles[$sub]=$subtitle
+            shift
+        done
+        shift
+    fi
+
+    local title=$1
+    shift
+
+    local indent=0
+    for app in "$@"; do
+        (( ${#app} > indent )) && indent=${#app}
+    done
+
+    while true; do
+        local idx=1
+        print_title "$title"
+        printf '%s\n' "Select the correct number to either enable or disable a selection. Applications"\
+                      "marked with an * will be installed/reinstalled. Applications that are not marked"\
+                      "will not be installed or will be removed."
+        printf '\n%s\n\n' "0 =    Proceed to next step"
+        for app in "$@"; do
+            printf "%-$((${##}+1))s %s %-${indent}s %s\n" "${idx} =" "${work_list[${app}]:- }" "$app" "${apps_descr[$app]}"
+            ((idx++))
+        done
+        echo
+        while true; do
+            read -e -n ${##} -p "$PS3" REPLY
+
+            if [[ $REPLY != [0-9]* ]]; then
+                echo "Invalid option"
+                continue
+            elif (( 10#$REPLY == 0 )); then
+                local quitslct=1
+                clear
+                break
+            elif (( 10#$REPLY >= 1 && 10#$REPLY <= $# )); then
+                opt=${!REPLY}
+                if in_array "${opt}" "${!work_list[@]}"; then
+                    unset work_list[${opt}]
+                    if in_array "$opt" "${!subopts[@]}"; then
+                        for app in ${subopts[$opt]}; do
+                            if in_array "$app" "${!work_list[@]}"; then
+                                unset work_list[$app]
+                            fi
+                        done
+                    fi
+                else
+                    work_list[${opt}]="*"
+                    if in_array "$opt" "${!subopts[@]}"; then
+                        clear
+                        slct "$title > ${subtitles[$opt]}" ${subopts[$opt]}
+                    fi
+                fi
+                clear
+                break
+            else
+                echo "Invalid option"
+                continue
+            fi
+        done
+        (( quitslct == 1 )) && quitslct=0 && break
+    done
+}
+
+process_selections() {
+    local installation=() removal=()
+    for app in "${!work_list[@]}"; do
+        if ! in_array "${app}" "${!installed_list[@]}"; then
+            installation+=("${app,,}")
+        fi
+    done
+
+    clear
+    print_title "$1 ▶ Installing"
+    if (( ${#installation[@]} == 0 )); then
+        printf '%s\n\n' "No applications listed for installation. Press [Enter] to finish."
+        while true; do
+            read -s -n 1 -p "$PS3" input
+            if [[ $input = "" ]]; then
+                break
+            else
+                echo "Press [Enter] to finish."
+                continue
+            fi
+        done
+    else
+        if install_check i sudo pacman -S "${installation[@]}"; then
+            for app in "${installation[@]}"; do
+                installed_list[$app]=
+            done
+        fi
+    fi
+
+    for app in "${!installed_list[@]}"; do
+        if ! in_array "${app}" "${!work_list[@]}"; then
+            removal+=("${app,,}")
+        fi
+    done
+
+    clear
+    print_title "$1 ▶ Removing"
+    if (( ${#removal[@]} == 0 )); then
+        printf '%s\n\n' "No applications listed for removal. Press [Enter] to finish."
+        while true; do
+            read -s -n 1 -p "$PS3" input
+            if [[ $input = "" ]]; then
+                break
+            else
+                echo "Press [Enter] to finish."
+                continue
+            fi
+        done
+    else
+        if install_check r sudo pacman -Rns "${removal[@]}"; then
+            for app in "${removal[@]}"; do
+                unset installed_list[$app]
+            done
+        fi
+    fi
+}
+
+install_check() {
+    if [[ $1 = "i" ]]; then
+        local todo="Installation"
+    elif [[ $1 = "r" ]]; then
+        local todo="Removal"
+    fi
+
+    if "${@:2}"; then
+        while true; do
+            printf '\n%s\n\n' "$todo finished successfully. Press [Enter] to finish."
+            while true; do
+                read -s -n 1 -p "$PS3" input
+                if [[ $input = "" ]]; then
+                    return 0
+                else
+                    echo "Press [Enter] to finish."
+                    continue
+                fi
+            done
+            break
+        done
+    else
+        while true; do
+            printf '%b\n' "\nIt seems like an error occured. Please analyze the output carefully to solve the problem."\
+                          "Press [Enter] to finish.\n"
+            while true; do
+                read -s -n 1 -p "$PS3" input
+                if [[ $input = "" ]]; then
+                    return 1
+                else
+                    echo "Press [Enter] to finish."
+                    continue
+                fi
+            done
+            break
+        done
+    fi
+}
+
+print_title() {
+    printf "\033[38;5;17mMJScript Post Install%s\033[0m\n\n" "$@"
+}
+
+print_main() {
+    printf '%b\n' "Welcome to Manjaro JWM Community Edition, you're in the MJScript Post Install.\n"\
+                  "Use with care!\n"\
+                  "The purpose of this post installation script is to automate common tasks which"\
+                  "should help you to get you started using your brand new installation.\n"\
+                  "It is by no means mandatory to run this script, however it is recommended to go"\
+                  "throught this script once, as it is a very helpful addition. It is recommended"\
+                  "to start from the first step and then work your way down.\n"
+
+}
+
+main() {
+    while true; do
+        clear
+        print_title
+        print_main
+        printf '%b\n' "1 = Optimize mirrors and update system"\
+                      "2 = Install and configure firewall"\
+                      "3 = AUR support"\
+                      "4 = Multimedia support"\
+                      "5 = Printer drivers"\
+                      "6 = Install applications sorted by category"\
+                      "r = Never display at boot again"\
+                      "q = Quit\n"
+        while true; do
+            read -s -n 1 -p "$PS3" REPLY
+            case "$REPLY" in
+                1)  clear
+                    rank_sync_update && synced=1
+                    clear
+                    break
+                    ;;
+                2)  clear
+                    install_firewall
+                    clear
+                    break
+                    ;;
+                3)  clear
+                    install_aur
+                    clear
+                    break
+                    ;;
+                4)  clear
+                    install_media
+                    clear
+                    break
+                    ;;
+                5)  clear
+                    install_printer
+                    clear
+                    break
+                    ;;                        
+                6)  clear
+                    install_apps
+                    clear
+                    break
+                    ;;
+                r)  remove_from_startup
+                    ;;
+                q)  quit
+                    ;;
+                *)  echo "Invalid option"
+                    continue
+                    ;;
+            esac
+        done
+    done
+}
+
+rank_sync_update(){
+    print_title " ▶ Rank Sync Update"
+    sudo pacman-mirrors -g && sudo pacman -Syu
+}
+
+install_firewall(){
+    print_title " ▶ Install and Config Firewall"
+    sudo pacman -S gufw ufw && systemctl enable ufw -f && systemctl start ufw && ufw enable && ufw status
+}
+
+install_aur(){
+    print_title " ▶ AUR Support"
+    sudo pacman -S autoconf automake binutils bison fakeroot flex gcc git m4 make patch pkg-config subversion
+}
+
+install_media(){
+    print_title " ▶ Multimedia support"
+    sudo pacman -S gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly gstreamer0.10-bad-plugins gstreamer0.10-base-plugins gstreamer0.10-good-plugins gstreamer0.10-ugly-plugins flashplugin libdvdcss flac jre8-openjdk jre8-openjdk-headless icedtea-web
+}
+
+install_printer(){
+    print_title " ▶ Printer drivers"
+    sudo pacman -S manjaro-printer && systemctl enable org.cups.cupsd.service && systemctl start org.cups.cupsd.service
+}
+
+install_apps() {
+    local subtitle=" ▶ Install Applications"
+
+    slct "$subtitle ▶ Calendars" "${apps_cal[@]}"
+    slct "$subtitle ▶ CD/DVD Burners" "${apps_cddvd[@]}"
+    slct "$subtitle ▶ Chat Clients" "${apps_chat[@]}"
+    slct "$subtitle ▶ Email Clients" "${apps_email[@]}"
+    slct "$subtitle ▶ Graphic Manipulation" "${apps_graphic[@]}"
+    slct "$subtitle ▶ Image Viewers" "${apps_imgview[@]}"
+    slct "$subtitle ▶ IRC Clients" "${apps_irc[@]}"
+    slct "Nautilus:Nautilus:${apps_nautilus[*]}"\
+         "SpaceFM:SpaceFM:${apps_spacefm[*]}"\
+         "Thunar:Thunar:${apps_thunar[*]}"\
+         -- "$subtitle ▶ File Managers" "${apps_file[@]}"
+    slct "MPD:MPD Clients:${apps_mpd[*]}"\
+         -- "$subtitle ▶ Music Players" "${apps_music[@]}"
+    slct "$subtitle ▶ Office Apps" "${apps_office[@]}"
+    slct "$subtitle ▶ PDF Readers" "${apps_pdf[@]}"
+    slct "$subtitle ▶ RSS Readers" "${apps_rss[@]}"
+    slct "$subtitle ▶ System Monitoring" "${apps_sysmon[@]}"
+    slct "$subtitle ▶ System Tool" "${apps_systoo[@]}"
+    slct "$subtitle ▶ Terminal Emulators" "${apps_term[@]}"
+    slct "$subtitle ▶ Text Editors" "${apps_text[@]}"
+    slct "$subtitle ▶ Torrent Clients" "${apps_torrent[@]}"
+    slct "$subtitle ▶ Utilities" "${apps_util[@]}"
+    slct "$subtitle ▶ Video Players" "${apps_video[@]}"
+    slct "$subtitle ▶ Web Browsers" "${apps_web[@]}"
+
+    local installation=() removal=()
+    for app in "${!work_list[@]}"; do
+        if ! in_array "${app}" "${!installed_list[@]}"; then
+            installation+=("$app")
+        fi
+    done
+    (( ${#installation[@]} != 0 )) && slct "$subtitle ▶ Review Installation List" "${installation[@]}"
+
+    for app in "${!installed_list[@]}"; do
+        if ! in_array "${app}" "${!work_list[@]}"; then
+            removal+=("$app")
+        fi
+    done
+    (( ${#removal[@]} != 0 )) && slct "$subtitle ▶ Review Removal List" "${removal[@]}"
+
+    process_selections "$subtitle"
+}
+
+IFS=. read -r major minor _ <<< "$(uname -r)"
+local_configs=(".gtkrc-2.0" ".config/gtk-3.0" ".bashrc")
+
+apps_cal=("calcurse" "Wyrd")
+apps_cddvd=("Brasero" "K3b" "Xfburn")
+apps_chat=("BitlBee" "Pidgin" "Skype")
+apps_email=("Evolution" "Mutt" "Re-Alpine" "Thunderbird")
+apps_file=("kdebase-Dolphin" "MC" "Nautilus" "ranger" "SpaceFM" "Thunar")
+apps_graphic=("Blender" "GIMP" "ImageMagick" "Inkscape")
+apps_imgview=("GPicView" "Mirage" "sxiv" "Viewnior")
+apps_irc=("HexChat" "Irssi" "WeeChat")
+apps_mpd=("mpc" "ncmpcpp" "Sonata")
+apps_music=("Amarok" "Audacious" "Banshee" "Clementine" "cmus" "MOC" "MPD" "Rhythmbox")
+apps_nautilus=("Nautilus-Actions" "Nautilius-Terminal" "Nautilus-Open-Terminal" "Seahorse-Nautilus")
+apps_office=("Calligra" "LibreOffice" "WPS")
+apps_pcmanfm=("GVfs")
+apps_pdf=("Evince" "MuPDF" "Xpdf" "zathura-pdf-mupdf" "zathura-pdf-poppler")
+apps_rss=("Liferea" "newsbeuter")
+apps_spacefm=("udevil")
+apps_sysmon=("gdmap" "Baobab")
+apps_systoo=("Virtualbox" "GParted" "Pamac" "Octopi" "octopi-notifier-frameworks" "octopi-cachecleaner" "octopi-repoeditor")
+apps_term=("GNOME-Terminal" "kdebase-Konsole" "LilyTerm" "LXTerminal" "rxvt-unicode" "Terminator" "Xfce4-Terminal")
+apps_text=("Emacs" "Geany" "gedit" "gVim" "Vim")
+apps_thunar=("GVfs" "Thunar-Archive-Plugin" "Thunar-Media-Tags-Plugin" "Thunar-VolMan" "Tumbler")
+apps_torrent=("Deluge" "rTorrent" "Transmission-CLI" "Transmission-GTK" "Transmission-Remote-CLI" "Transmission-Qt")
+apps_util=("BleachBit" "galculator" "Parcellite" "tmux")
+apps_video=("GNOME-MPlayer" "MPlayer" "mpv" "SMPlayer" "VLC")
+apps_web=("Chromium" "dwb" "Firefox" "luakit" "Midori" "Opera" "Uzbl-Tabbed")
+
+declare -A apps=(
+    ["Amarok"]="The powerful music player"
+    ["Audacious"]="Lightweight, advanced audio player"
+    ["Baobab"]="Analyse space of the disk"
+    ["Banshee"]="Music management and playback"
+    ["BitlBee"]="Brings instant messaging"
+    ["BleachBit"]="Deletes files of the disk"
+    ["Blender"]="A suite of 3D graphics creation"
+    ["Brasero"]="A disc burning application"
+    ["calcurse"]="A text-based personal organizer"
+    ["Calligra"]="Actively developed fork of KOffice"
+    ["Chromium"]="The open-source project behind Google Chrome"
+    ["Clementine"]="The powerful music player"
+    ["cmus"]="Feature-rich ncurses-based music player"
+    ["Deluge"]="A BitTorrent client with multiple interfaces"
+    ["dwb"]="A webkit web browser with vi-like keyboard shortcuts"
+    ["Emacs"]="The extensible, customizable, self-documenting real-time display editor"
+    ["Evince"]="Simply a document viewer"
+    ["Evolution"]="Manage your email, contacts and schedule"
+    ["exfat-utils"]="Utilities for exFAT file system"
+    ["f2fs-tools"]="Tools for Flash-Friendly File System (F2FS)"
+    ["Firefox"]="Standalone web browser from mozilla.org"
+    ["fuse-exfat"]="Free exFAT file system implementation"
+    ["galculator"]="GTK+ based scientific calculator"
+    ["Gparted"]="A Partition Magic clone, frontend to GNU Parted"
+    ["gdmap"]="Is a tool which allows to visualize disk space"
+    ["Geany"]="Fast and lightweight IDE"
+    ["gedit"]="A text editor for GNOME"
+    ["GIMP"]="GNU Image Manipulation Program"
+    ["GNOME-MPlayer"]="A simple MPlayer GUI"
+    ["GNOME-Terminal"]="The GNOME Terminal Emulator"
+    ["GPicView"]="lightweight image viewer"
+    ["GVfs"]="For trash support, mounting with udisk and remote filesystems"
+    ["gVim"]="Vi Improved (with features, such as a GUI)"
+    ["HexChat"]="A popular and easy to use graphical IRC (chat client)"
+    ["ImageMagick"]="An image viewing/manipulation program"
+    ["Inkscape"]="Vector graphics editor using the SVG file format"
+    ["Irssi"]="Modular text mode IRC client with Perl scripting"
+    ["K3b"]="Feature-rich and easy to handle CD burning application"
+    ["kdebase-Dolphin"]="File Manager"
+    ["kdebase-Konsole"]="Terminal"
+    ["LibreOffice"]="A productivity suite that is compatible with other major office suites"
+    ["Liferea"]="A desktop news aggregator for online news feeds and weblogs"
+    ["LilyTerm"]="A light and easy to use libvte based X terminal emulator"
+    ["linux$major$minor-zfs"]="Kernel modules for the Zettabyte File System."
+    ["luakit"]="Fast, small, webkit based browser framework extensible by Lua"
+    ["LXTerminal"]="VTE-based terminal emulator (part of LXDE)"
+    ["manjarozfs"]="User-Mode utils and Kernel modules for Zettabyte File System."
+    ["MC"]="Midnight Commander is a text based filemanager/shell that emulates Norton Commander"
+    ["Midori"]="Lightweight web browser based on Gtk WebKit"
+    ["Mirage"]="A simple GTK+ Image Viewer"
+    ["MOC"]="An ncurses console audio player designed to be powerful and easy to use"
+    ["mpc"]="Minimalist command line interface to MPD"
+    ["MPD"]="Flexible, powerful, server-side application for playing music"
+    ["MPlayer"]="A movie player for Linux"
+    ["mpv"]="Video player based on MPlayer/mplayer2"
+    ["MuPDF"]="Lightweight PDF and XPS viewer"
+    ["Mutt"]="Small but very powerful text-based mail client"
+    ["Nautilus"]="GNOME file manager"
+    ["Nautilus-Actions"]="Configures programs to be launched when files are selected in Nautilus"
+    ["Nautilus-Open-Terminal"]="A nautilus plugin for opening terminals in arbitrary local paths"
+    ["Nautilus-Terminal"]="An integrated terminal for Nautilus"
+    ["ncmpcpp"]="Almost exact clone of ncmpc with some new features"
+    ["newsbeuter"]="A RSS feed reader for the text console with special Podcast support"
+    ["Octopi"]="Octopi is a GUI package manager built on Qt"
+    ["octopi-notifier-frameworks"]="Octopi accessory notifier"
+    ["octopi-cachecleaner"]="Octopi accessory cachecleaner"
+    ["octopi-repoeditor"]="Octopi accessory repoeditor"
+    ["Opera"]="Fast and secure web browser and Internet suite"
+    ["Parcellite"]="Lightweight GTK+ clipboard manager"
+    ["Pidgin"]="Multi-protocol instant messaging client"
+    ["ranger"]="A simple, vim-like file manager"
+    ["Rhythmbox"]="An iTunes-like music playback and management application"
+    ["Re-Alpine"]="The continuation of the Alpine email client from University of Washington"
+    ["rTorrent"]="Ncurses BitTorrent client based on libTorrent"
+    ["rxvt-unicode"]="An unicode enabled rxvt-clone terminal emulator (urxvt)"
+    ["Seahorse-Nautilus"]="PGP encryption and signing for nautilus"
+    ["Skype"]="P2P software for high-quality voice communication"
+    ["SMPlayer"]="A complete front-end for MPlayer"
+    ["Sonata"]="Elegant GTK+ music client for MPD"
+    ["SpaceFM"]="Multi-panel tabbed file manager"
+    ["sxiv"]="Simple X Image Viewer"
+    ["Terminator"]="Terminal emulator that supports tabs and grids"
+    ["Thunar"]="Modern file manager for Xfce"
+    ["Thunar-Archive-Plugin"]="Create and deflate archives"
+    ["Thunar-Media-Tags-Plugin"]="View/edit id3/ogg tags"
+    ["Thunar-VolMan"]="Manages removable devices"
+    ["Thunderbird"]="Standalone Mail/News reader"
+    ["tmux"]="A terminal multiplexer"
+    ["Transmission-CLI"]="Fast, easy, and free BitTorrent client (CLI tools, daemon and web client)"
+    ["Transmission-GTK"]="Fast, easy, and free BitTorrent client (GTK+ GUI)"
+    ["Transmission-Qt"]="Fast, easy, and free BitTorrent client (Qt GUI)"
+    ["Transmission-Remote-CLI"]="Curses interface for the daemon of the BitTorrent client Transmission"
+    ["Tumbler"]="For thumbnail previews"
+    ["udevil"]="Mount as non-root user and mount networks"
+    ["Uzbl-Tabbed"]="Tabbing manager providing multiple uzbl-browser instances in 1 window"
+    ["Viewnior"]="A simple, fast and elegant image viewer program"
+    ["Vim"]="Vi Improved, a highly configurable, improved version of the vi text editor"
+    ["Virtualbox"]="Powerful virtualization for enterprise as well as home use"
+    ["VLC"]="A multi-platform MPEG, VCD/DVD, and DivX player"
+    ["WPS"]="Kingsoft Office suite"    
+    ["WeeChat"]="Fast, light and extensible IRC client (curses UI)"
+    ["Wyrd"]="A text-based front-end to Remind."
+    ["Xfburn"]="A simple CD/DVD burning tool based on libburnia libraries"
+    ["Xfce4-Terminal"]="A modern terminal emulator primarly for the Xfce desktop environment"
+    ["Xpdf"]="Viewer for Portable Document Format (PDF files)"
+    ["zathura-pdf-mupdf"]="Adds pdf support to zathura by using the mupdf library"
+    ["zathura-pdf-poppler"]="Adds pdf support to zathura by using the poppler engine"
+)
+
+remove_from_startup() {
+    for file in "$HOME/.local/share/applications/mjscript.desktop"\
+                "$HOME/.config/autostart/mjscript.desktop"; do
+        [[ -f $file ]] && rm "$file"
+    done
+    echo "MJScript will now no longer be auto-started."
+}
+
+quit() {
+    printf '%b\n' "\nThank you for using MJScript. Come back soon!"
+    while true; do
+        read -s -n 1 -p "Press [Enter] to quit."$'\n' input
+        if [[ $input = "" ]]; then
+            exit 0
+        else
+            printf '\n%s\n\n' "Quitting has been canceled"
+            break
+        fi
+    done
+}
+
+clear
+print_title
+print_main
+printf '%b\n' "It is necessary for this script that an internet conncetion is available. Please"\
+              "make sure that you have a working connection before you continue. Press [Enter]"\
+              "to perform a connection check.\n"
+
+declare -A work_list installed_list
+pacman_query="$(pacman -Qq)"
+for app in "${!apps_descr[@]}"; do
+    if echo "$pacman_query" | grep -q "^${app,,}$"; then
+        work_list[$app]="*"
+        installed_list[$app]=
+    fi
+done
+
+while true; do
+            main
+done

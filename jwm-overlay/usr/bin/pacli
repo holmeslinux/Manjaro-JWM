@@ -200,7 +200,7 @@ NC='\e[0m'
             read
             ;;
         2)
-	        echo
+	    echo
             sudo pacman -Rsn $(pacman -Qq | pmenu -p 'Select package to remove >') --color always
             echo
             echo -e "$NC Package and all unneeded dependencies removed. To return to Pacli press [Enter] $NC"
