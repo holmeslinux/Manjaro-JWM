@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# mjscript-0.1-1  -  MJScript Post Install (MJScript)
+# mjwmpost-0.1-1 - MJWMPost Installation (MJWMPost)
 #
-# MJScript Post Install (MJScript) is a script which is developed for 
+# MJWMPost Installation (MJWMPost)is a script which is developed for 
 # Manjaro JWM Community Edition. It's purpose is to provide an easy way for
 # users to set up their system, install drivers and download and install applications.
 #
@@ -113,7 +113,7 @@ process_selections() {
             fi
         done
     else
-        if install_check i sudo pacman -S "${installation[@]}"; then
+        if install_check i sudo pacman -S --needed --noconfirm "${installation[@]}"; then
             for app in "${installation[@]}"; do
                 installed_list[$app]=
             done
@@ -188,11 +188,11 @@ install_check() {
 }
 
 print_title() {
-    printf "\033[38;5;17mMJScript Post Install%s\033[0m\n\n" "$@"
+    printf "\033[38;5;17mMJWMPost Installation%s\033[0m\n\n" "$@"
 }
 
 print_main() {
-    printf '%b\n' "Welcome to Manjaro JWM Community Edition, you're in the MJScript Post Install.\n"\
+    printf '%b\n' "Welcome to Manjaro JWM Community Edition, you're in the MJWMPost Installation.\n"\
                   "Use with care!\n"\
                   "The purpose of this post installation script is to automate common tasks which"\
                   "should help you to get you started using your brand new installation.\n"\
@@ -219,7 +219,7 @@ main() {
             read -s -n 1 -p "$PS3" REPLY
             case "$REPLY" in
                 1)  clear
-                    rank_sync_update && synced=1
+                    rank_sync_update
                     clear
                     break
                     ;;
@@ -262,27 +262,27 @@ main() {
 
 rank_sync_update(){
     print_title " ▶ Rank Sync Update"
-    sudo pacman-mirrors -g && sudo pacman -Syu
+    sudo pacman-mirrors -g && sudo pacman -Syyu
 }
 
 install_firewall(){
     print_title " ▶ Install and Config Firewall"
-    sudo pacman -S gufw ufw && systemctl enable ufw -f && systemctl start ufw && ufw enable && ufw status
+    sudo pacman -S --needed --noconfirm gufw ufw && systemctl enable ufw -f && systemctl start ufw && ufw enable && ufw status
 }
 
 install_aur(){
     print_title " ▶ AUR Support"
-    sudo pacman -S autoconf automake binutils bison fakeroot flex gcc git m4 make patch pkg-config subversion
+    sudo pacman -S --needed --noconfirm base-devel yaourt
 }
 
 install_media(){
     print_title " ▶ Multimedia support"
-    sudo pacman -S gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly gstreamer0.10-bad-plugins gstreamer0.10-base-plugins gstreamer0.10-good-plugins gstreamer0.10-ugly-plugins flashplugin libdvdcss flac jre8-openjdk jre8-openjdk-headless icedtea-web
+    sudo pacman -S --needed --noconfirm gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly gstreamer0.10-bad-plugins gstreamer0.10-base-plugins gstreamer0.10-good-plugins gstreamer0.10-ugly-plugins flashplugin libdvdcss flac jre8-openjdk jre8-openjdk-headless icedtea-web
 }
 
 install_printer(){
     print_title " ▶ Printer drivers"
-    sudo pacman -S manjaro-printer && systemctl enable org.cups.cupsd.service && systemctl start org.cups.cupsd.service
+    sudo pacman -S --needed --noconfirm manjaro-printer && systemctl enable org.cups.cupsd.service && systemctl start org.cups.cupsd.service
 }
 
 install_apps() {
@@ -471,15 +471,15 @@ declare -A apps=(
 )
 
 remove_from_startup() {
-    for file in "$HOME/.local/share/applications/mjscript.desktop"\
-                "$HOME/.config/autostart/mjscript.desktop"; do
+    for file in "$HOME/.local/share/applications/mjwmpost.desktop"\
+                "$HOME/.config/autostart/mjwmpost.desktop"; do
         [[ -f $file ]] && rm "$file"
     done
     echo "MJScript will now no longer be auto-started."
 }
 
 quit() {
-    printf '%b\n' "\nThank you for using MJScript. Come back soon!"
+    printf '%b\n' "\nThank you for using MJWMPost. Come back soon!"
     while true; do
         read -s -n 1 -p "Press [Enter] to quit."$'\n' input
         if [[ $input = "" ]]; then
