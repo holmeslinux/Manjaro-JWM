@@ -194,7 +194,7 @@ NC='\e[0m'
     case $choix in
         1)
             echo
-            sudo pacman -Syu --color always
+            sudo pacman -Syyu --color always
             echo
             echo -e "$NC Your system is updated. To return to Pacli press [Enter] $NC"
             read
@@ -208,7 +208,7 @@ NC='\e[0m'
             ;;
         3)
             echo
-            sudo pacman-mirrors -g && sudo pacman -Syy --color always
+            sudo pacman-mirrors -g && sudo pacman -Syyu --color always
             echo
             echo -e "$NC Best Manjaro mirror chosen. To return to Pacli press [Enter] $NC"
             read
