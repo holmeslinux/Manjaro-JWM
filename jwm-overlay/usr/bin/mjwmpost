@@ -261,7 +261,7 @@ main() {
 }
 
 rank_sync_update(){
-    print_title " ▶ Rank Sync Update"
+    print_title " ▶ Optimize Mirrors and Update"
     sudo pacman-mirrors -g && sudo pacman -Syyu
 }
 
@@ -276,12 +276,12 @@ install_aur(){
 }
 
 install_media(){
-    print_title " ▶ Multimedia support"
+    print_title " ▶ Multimedia Support"
     sudo pacman -S --needed --noconfirm gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly gstreamer0.10-bad-plugins gstreamer0.10-base-plugins gstreamer0.10-good-plugins gstreamer0.10-ugly-plugins flashplugin libdvdcss flac jre8-openjdk jre8-openjdk-headless icedtea-web
 }
 
 install_printer(){
-    print_title " ▶ Printer drivers"
+    print_title " ▶ Printer Drivers"
     sudo pacman -S --needed --noconfirm manjaro-printer && systemctl enable org.cups.cupsd.service && systemctl start org.cups.cupsd.service
 }
 
@@ -336,9 +336,9 @@ local_configs=(".gtkrc-2.0" ".config/gtk-3.0" ".bashrc")
 
 apps_cal=("calcurse" "wyrd")
 apps_cddvd=("brasero" "k3b" "xfburn")
-apps_chat=("bitlBee" "pidgin" "skype")
-apps_email=("evolution" "mutt" "thunderbird" "trojita")
-apps_file=("dolphin" "mc" "nautilus" "ranger" "spacefm" "thunar")
+apps_chat=("bitlbee" "pidgin" "skype")
+apps_email=("claws-mail" "evolution" "mutt" "thunderbird" "trojita")
+apps_file=("dolphin" "mc" "nautilus" "ranger" "spacefm" "sunflower" "rox" "thunar")
 apps_graphic=("blender" "gimp" "imagemagick" "inkscape")
 apps_imgview=("gpicview" "mirage" "sxiv" "viewnior")
 apps_irc=("hexchat" "irssi" "weechat")
@@ -347,18 +347,18 @@ apps_music=("amarok" "audacious" "banshee" "clementine" "cmus" "moc" "mpd" "rhyt
 apps_nautilus=("nautilus-actions" "nautilius-terminal" "nautilus-open-terminal" "seahorse-nautilus")
 apps_office=("calligra" "libreoffice-still" "wps-office")
 apps_pcmanfm=("gvfs")
-apps_pdf=("evince" "mupdf" "xpdf" "zathura-pdf-mupdf" "zathura-pdf-poppler")
+apps_pdf=("evince" "mupdf" "zathura-pdf-mupdf" "zathura-pdf-poppler" "xpdf")
 apps_rss=("liferea" "newsbeuter")
 apps_spacefm=("udevil")
-apps_sysmon=("gdmap" "baobab")
-apps_systoo=("virtualbox" "gparted" "filezilla" "pamac" "octopi" "octopi-notifier-frameworks" "octopi-cachecleaner" "octopi-repoeditor")
-apps_term=("gnome-terminal" "lilyterm" "lxterminal" "rxvt-unicode" "terminator" "xfce4-terminal")
+apps_sysmon=("baobab" "gdmap")
+apps_systoo=("gparted" "filezilla" "octopi" "octopi-notifier-frameworks" "octopi-cachecleaner" "octopi-repoeditor" "pamac" "virtualbox")
+apps_term=("gnome-terminal" "guake" "lilyterm" "lxterminal" "rxvt-unicode" "roxterm" "terminator" "tilda" "xfce4-terminal")
 apps_text=("emacs" "geany" "gedit" "gvim" "vim")
 apps_thunar=("gvfs" "thunar-archive-plugin" "thunar-media-tags-plugin" "thunar-volman" "tumbler")
-apps_torrent=("deluge" "rtorrent" "transmission-cli" "transmission-gtk" "transmission-remote-cli" "transmission-qt")
+apps_torrent=("deluge" "qbittorrent" "rtorrent" "transmission-cli" "transmission-gtk" "transmission-remote-cli" "transmission-qt")
 apps_util=("bleachbit" "galculator" "parcellite" "tmux")
-apps_video=("gnome-mplayer" "mplayer" "mpv" "smplayer" "vlc" "lxmusic")
-apps_web=("chromium" "dwb" "firefox" "luakit" "midori" "opera" "uzbl-tabbed" "qupzilla")
+apps_video=("gnome-mplayer" "lxmusic" "mplayer" "mpv" "smplayer" "vlc")
+apps_web=("chromium" "dwb" "firefox" "qupzilla" "luakit" "midori" "opera" "uzbl-tabbed")
 
 declare -A apps=(
     ["amarok"]="The powerful music player"
@@ -372,9 +372,11 @@ declare -A apps=(
     ["calcurse"]="A text-based personal organizer"
     ["calligra"]="Actively developed fork of KOffice"
     ["chromium"]="The open-source project behind Google Chrome"
+    ["claws-mail"]="Lightweight GTK-based email client and news reader"
     ["clementine"]="The powerful music player"
     ["cmus"]="Feature-rich ncurses-based music player"
     ["deluge"]="A BitTorrent client with multiple interfaces"
+    ["dolphin"]="File Manager"
     ["dwb"]="A webkit web browser with vi-like keyboard shortcuts"
     ["emacs"]="The extensible, customizable, self-documenting real-time display editor"
     ["evince"]="Simply a document viewer"
@@ -392,12 +394,12 @@ declare -A apps=(
     ["gpicview"]="lightweight image viewer"
     ["gvfs"]="For trash support, mounting with udisk and remote filesystems"
     ["gvim"]="Vi Improved (with features, such as a GUI)"
+    ["guake"]="Drop-down terminal for the GNOME desktop"
     ["hexchat"]="A popular and easy to use graphical IRC (chat client)"
     ["imagemagick"]="An image viewing/manipulation program"
     ["inkscape"]="Vector graphics editor using the SVG file format"
     ["irssi"]="Modular text mode IRC client with Perl scripting"
     ["k3b"]="Feature-rich and easy to handle CD burning application"
-    ["dolphin"]="File Manager"
     ["libreoffice-still"]="A productivity suite that is compatible with other major office suites"
     ["liferea"]="A desktop news aggregator for online news feeds and weblogs"
     ["lilyterm"]="A light and easy to use libvte based X terminal emulator"
@@ -427,23 +429,28 @@ declare -A apps=(
     ["opera"]="Fast and secure web browser and Internet suite"
     ["parcellite"]="Lightweight GTK+ clipboard manager"
     ["pidgin"]="Multi-protocol instant messaging client"
+    ["qbittorrent"]="Open source (GPLv2) BitTorrent client that strongly resembles µtorrent"
     ["qupzilla"]="Cross-platform QtWebEngine browser"
     ["ranger"]="A simple, vim-like file manager"
     ["rhythmbox"]="An iTunes-like music playback and management application"
     ["rtorrent"]="Ncurses BitTorrent client based on libTorrent"
     ["rxvt-unicode"]="An unicode enabled rxvt-clone terminal emulator (urxvt)"
+    ["roxterm"]="Tabbed terminal emulator with a small footprint"
+    ["rox"]="Small and fast file manager which can optionally manage the desktop background and panels"
     ["seahorse-nautilus"]="PGP encryption and signing for nautilus"
-    ************************************["Skype"]="P2P software for high-quality voice communication"
+    ["skype"]="P2P software for high-quality voice communication"
     ["smplayer"]="A complete front-end for MPlayer"
     ["sonata"]="Elegant GTK+ music client for MPD"
     ["spacefm"]="Multi-panel tabbed file manager"
+    ["sunflower"]="Small and highly customizable twin-panel file manager for Linux with support for plugins"
     ["sxiv"]="Simple X Image Viewer"
     ["terminator"]="Terminal emulator that supports tabs and grids"
     ["thunar"]="Modern file manager for Xfce"
     ["thunar-archive-plugin"]="Create and deflate archives"
     ["thunar-media-tags-plugin"]="View/edit id3/ogg tags"
-    ["thunar-volMan"]="Manages removable devices"
+    ["thunar-volman"]="Manages removable devices"
     ["thunderbird"]="Standalone Mail/News reader"
+    ["tilda"]="Terminal inspired by many classic terminals from first person shooter games such as Quake, Doom and Half-Life"
     ["trojita"]="Qt IMAP email client"
     ["tmux"]="A terminal multiplexer"
     ["transmission-cli"]="Fast, easy, and free BitTorrent client (CLI tools, daemon and web client)"
@@ -457,7 +464,7 @@ declare -A apps=(
     ["vim"]="Vi Improved, a highly configurable, improved version of the vi text editor"
     ["virtualbox"]="Powerful virtualization for enterprise as well as home use"
     ["vlc"]="A multi-platform MPEG, VCD/DVD, and DivX player"
-    ************************************["wps-office"]="Kingsoft Office suite"    
+    ["wps-office"]="Kingsoft Office suite"    
     ["weechat"]="Fast, light and extensible IRC client (curses UI)"
     ["wyrd"]="A text-based front-end to Remind."
     ["xfburn"]="A simple CD/DVD burning tool based on libburnia libraries"
@@ -480,7 +487,7 @@ quit() {
     while true; do
         read -s -n 1 -p "Press [Enter] to quit."$'\n' input
         if [[ $input = "" ]]; then
-            exit 0
+            clear && exit 0
         else
             printf '\n%s\n\n' "Quitting has been canceled"
             break
