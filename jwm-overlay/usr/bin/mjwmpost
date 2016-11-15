@@ -102,13 +102,13 @@ process_selections() {
     clear
     print_title "$1 ▶ Installing"
     if (( ${#installation[@]} == 0 )); then
-        printf '%s\n\n' "No applications listed for installation. Press [Enter] to finish."
+        printf '%s\n\n' "No applications listed for installation. Press [Enter] to finish!"
         while true; do
             read -s -n 1 -p "$PS3" input
             if [[ $input = "" ]]; then
                 break
             else
-                echo "Press [Enter] to finish."
+                echo "Press [Enter] to finish!"
                 continue
             fi
         done
@@ -129,13 +129,13 @@ process_selections() {
     clear
     print_title "$1 ▶ Removing"
     if (( ${#removal[@]} == 0 )); then
-        printf '%s\n\n' "No applications listed for removal. Press [Enter] to finish."
+        printf '%s\n\n' "No applications listed for removal. Press [Enter] to finish!"
         while true; do
             read -s -n 1 -p "$PS3" input
             if [[ $input = "" ]]; then
                 break
             else
-                echo "Press [Enter] to finish."
+                echo "Press [Enter] to finish!"
                 continue
             fi
         done
@@ -157,13 +157,13 @@ install_check() {
 
     if "${@:2}"; then
         while true; do
-            printf '\n%s\n\n' "$todo finished successfully. Press [Enter] to finish."
+            printf '\n%s\n\n' "$todo finished successfully. Press [Enter] to finish!"
             while true; do
                 read -s -n 1 -p "$PS3" input
                 if [[ $input = "" ]]; then
                     return 0
                 else
-                    echo "Press [Enter] to finish."
+                    echo "Press [Enter] to finish!"
                     continue
                 fi
             done
@@ -172,13 +172,13 @@ install_check() {
     else
         while true; do
             printf '%b\n' "\nIt seems like an error occured. Please analyze the output carefully to solve the problem."\
-                          "Press [Enter] to finish.\n"
+                          "Press [Enter] to finish!\n"
             while true; do
                 read -s -n 1 -p "$PS3" input
                 if [[ $input = "" ]]; then
                     return 1
                 else
-                    echo "Press [Enter] to finish."
+                    echo "Press [Enter] to finish!"
                     continue
                 fi
             done
@@ -483,7 +483,7 @@ remove_from_startup() {
 quit() {
     printf '%b\n' "\nThank you for using MJWMPost. Come back soon!"
     while true; do
-        read -s -n 1 -p "Press [Enter] to quit."$'\n' input
+        read -s -n 1 -p "Press [Enter] to quit!"$'\n' input
         if [[ $input = "" ]]; then
             clear && exit 0
         else
@@ -498,7 +498,7 @@ print_title
 print_main
 printf '%b\n' "It is necessary for this script that an internet conncetion is available. Please"\
               "make sure that you have a working connection before you continue. Press [Enter]"\
-              "to perform a connection check.\n"
+              "to perform a connection check!\n"
 
 declare -A work_list installed_list
 pacman_query="$(pacman -Qq)"
@@ -510,5 +510,19 @@ for app in "${!apps_des[@]}"; do
 done
 
 while true; do
-            main
+	read -s -n 1 -p "$PS3" input
+	if [[ $input = "" ]]; then
+	    if wget -q --spider http://google.com &> /dev/null; then
+		echo "Connection check succeeded..."
+		sleep 1
+		main
+	     else
+		printf '%s\n' "Connection check failed... Please connect to the internet and press [Enter] to"\
+			      "run a connection check again."
+		continue
+	     fi
+	else
+	     echo "Press [Enter] to run a connection check."
+	     continue
+	fi
 done

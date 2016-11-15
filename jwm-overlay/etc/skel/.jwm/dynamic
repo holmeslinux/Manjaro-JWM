@@ -6,10 +6,14 @@
   	     <Program label="Run">gmrun</Program> 
 	     <Program label="Search">catfish</Program> 
 	     <Program label="Terminal">sakura</Program> 
-	     <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program> 
-	     <Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program>
-             <Program label="File Manager">pcmanfm</Program> 
-	     <Program label="Web Browser">palemoon</Program> 
+	     <Program label="File Manager">pcmanfm</Program> 
+	     <Program label="Web Browser">palemoon</Program>
+        <Menu label="CLI Apps">
+             <Program label="MJWMPost">xterm -T MJWMPost /usr/bin/mjwmpost</Program>	     
+             <Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program>
+             <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program>
+             <Program label="TouchMon">xterm -T TouchMon /usr/bin/touchmon</Program>
+        </Menu> 
 	     <Separator/> 
 		<Include>exec: xdgmenumaker -n -f jwm</Include>
              <Separator/> 
