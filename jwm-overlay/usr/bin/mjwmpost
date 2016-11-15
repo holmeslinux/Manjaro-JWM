@@ -193,12 +193,11 @@ print_title() {
 
 print_main() {
     printf '%b\n' "Welcome to Manjaro JWM Community Edition, you're in the MJWMPost Installation.\n"\
-                  "Use with care!\n"\
                   "The purpose of this post installation script is to automate common tasks which"\
                   "should help you to get you started using your brand new installation.\n"\
                   "It is by no means mandatory to run this script, however it is recommended to go"\
                   "throught this script once, as it is a very helpful addition. It is recommended"\
-                  "to start from the first step and then work your way down.\n"
+                  "to start from the first step and then work your way down. Use with care!\n"
 
 }
 
@@ -357,10 +356,10 @@ apps_text=("emacs" "geany" "gedit" "gvim" "vim")
 apps_thunar=("gvfs" "thunar-archive-plugin" "thunar-media-tags-plugin" "thunar-volman" "tumbler")
 apps_torrent=("deluge" "qbittorrent" "rtorrent" "transmission-cli" "transmission-gtk" "transmission-remote-cli" "transmission-qt")
 apps_util=("bleachbit" "galculator" "parcellite" "tmux")
-apps_video=("gnome-mplayer" "lxmusic" "mplayer" "mpv" "smplayer" "vlc")
+apps_video=("gnome-mplayer" "lxmusic" "mpv" "smplayer" "vlc")
 apps_web=("chromium" "dwb" "firefox" "qupzilla" "luakit" "midori" "opera" "uzbl-tabbed")
 
-declare -A apps=(
+declare -A apps_des=( 
     ["amarok"]="The powerful music player"
     ["audacious"]="Lightweight, advanced audio player"
     ["baobab"]="Analyse space of the disk"
@@ -412,7 +411,6 @@ declare -A apps=(
     ["moc"]="An ncurses console audio player designed to be powerful and easy to use"
     ["mpc"]="Minimalist command line interface to MPD"
     ["mpd"]="Flexible, powerful, server-side application for playing music"
-    ["mplayer"]="A movie player for Linux"
     ["mpv"]="Video player based on MPlayer/mplayer2"
     ["mupdf"]="Lightweight PDF and XPS viewer"
     ["mutt"]="Small but very powerful text-based mail client"
@@ -504,7 +502,7 @@ printf '%b\n' "It is necessary for this script that an internet conncetion is av
 
 declare -A work_list installed_list
 pacman_query="$(pacman -Qq)"
-for app in "${!apps_descr[@]}"; do
+for app in "${!apps_des[@]}"; do
     if echo "$pacman_query" | grep -q "^${app,,}$"; then
         work_list[$app]="*"
         installed_list[$app]=
