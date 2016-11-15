@@ -8,7 +8,7 @@
 function help_text() {
 	less 	<<-EOF
 Welcome to JWMConf Configuration Tool's information page.
-JWMconf is an interactive configure JWM for your command line terminal. It provides an easy user interface to edit configuration files of the JWM. You can also edit other files.
+JWMConf is an interactive configure JWM for your command line terminal. It provides an easy user interface to edit configuration files of the JWM. You can also edit other files.
 
 HOME SCREEN
 JWMConf Configuration Tool's home screen is split into two parts: 

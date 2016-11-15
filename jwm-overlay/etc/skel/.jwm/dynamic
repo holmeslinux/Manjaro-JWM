@@ -4,20 +4,25 @@
 	<!-- The root menu. --> 
 	<RootMenu onroot="3"> 
   	     <Program label="Run">gmrun</Program> 
-	     <Program label="Search">catfish</Program> 
 	     <Program label="Terminal">sakura</Program> 
 	     <Program label="File Manager">pcmanfm</Program> 
 	     <Program label="Web Browser">palemoon</Program>
-        <Menu label="CLI Apps">
+        <Menu label="CLI App">
              <Program label="MJWMPost">xterm -T MJWMPost /usr/bin/mjwmpost</Program>	     
              <Program label="JWMConf">xterm -T JWMConf /usr/bin/jwmconf</Program>
              <Program label="Pacli">xterm -T Pacli /usr/bin/pacli</Program>
              <Program label="TouchMon">xterm -T TouchMon /usr/bin/touchmon</Program>
         </Menu> 
-	     <Separator/> 
+        <Menu label="Screenshot">
+	    <Program label="Active Window Delay">notify-send 'Selection will be saved in ~/Screenshots in 5s' &amp; scrot -ud 5 -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>            
+	    <Program label="Active Window">scrot -ue 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
+            <Program label="Full Screen">scrot -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
+            <Program label="Select Area">notify-send 'Selection will be saved in ~/Screenshots' &amp; scrot -se 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Program>
+        </Menu>
+        <Separator/> 
 		<Include>exec: xdgmenumaker -n -f jwm</Include>
-             <Separator/> 
-	     <Program label="Exit">oblogout</Program> 
-	     </RootMenu>
+        <Separator/> 
+           <Program label="Exit">oblogout</Program> 
+	</RootMenu>
  
 </JWM>

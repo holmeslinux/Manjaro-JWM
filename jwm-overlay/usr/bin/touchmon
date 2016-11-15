@@ -11,8 +11,9 @@ TouchMon is an interactive configure xinput and xrandr for your command line ter
 
 HOME SCREEN
 TouchMon Configuration Tool's home screen is split into two parts: 
-The upper part focuses on xinput file. Also has some important options for maintenance of touchpad: Set pointer speed, Toggle tap to click, Toggle drag lock, Toggle left handed mode, Toggle disable while typing, Toggle natural scrolling, Toggle horizontal scrolling, Help xinput and Homepage xinput. The lower part provides options to edit other settings files: List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Commands Manual xrandr and Wiki xrandr. Choose an option by entering its number and pressing [Enter].
-The lower part focuses on xrandr file. Also has some important options for maintenance of monitor: List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Commands Manual xrandr and Wiki xrandr. Choose an option by entering its number and pressing [Enter].
+The upper part focuses on xinput file. Also has some important options for maintenance of touchpad: Set pointer speed, Toggle tap to click, Toggle drag lock, Toggle left handed mode, Toggle disable while typing, Toggle natural scrolling, Toggle horizontal scrolling, Commands Manual xinput and Wiki xinput.
+The lower part focuses on xrandr file. Also has some important options for maintenance of monitor: List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Access ARandR, Commands Manual xrandr and Wiki xrandr. 
+Choose an option by entering its number and pressing [Enter].
 
 0 - EXIT TOUCHMON
 "clear && exit"
