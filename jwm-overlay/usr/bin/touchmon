@@ -1,8 +1,8 @@
 #!/bin/bash
 # updated on 12.11.2016 09:45:49
 # version 0.1-1
-# Credits for Chrysostomus (<https://github.com/Chrysostomus>).
-# Adapted for Holmes.
+# Credits for Chrysostomus (<https://github.com/Chrysostomus>)
+# Adapted for Holmes
 
 function help_text() {
 	less 	<<-EOF
@@ -134,7 +134,7 @@ current_speed=$(xinput --list-props $touchpad_id | awk '/Accel Speed \(/ {print 
 	echo ""
 	echo "Setting pointer speed."
 	echo "Current speed is $current_speed"
-	echo "input number between -1 and 1 and press enter"
+	echo "input number between -1 and 1 and press [Enter]"
 	read speed
 	xinput --set-prop $touchpad_id $accel_speed_code $speed
 	echo "Speed is now set to $speed."

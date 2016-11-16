@@ -69,6 +69,7 @@ qt5-styleplugins
 qt5ct
 ncdu
 numlockx
+xdgmenumaker
 
 ## Desktop Configuration
 arandr
@@ -101,12 +102,6 @@ medit
 sakura
 screenfetch
 catfish
-
-## Games
-lbreakout2
-gweled
-gnuchess
-xboard
 
 ## Fonts
 adobe-source-sans-pro-fonts
