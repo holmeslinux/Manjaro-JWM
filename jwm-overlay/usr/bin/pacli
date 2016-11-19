@@ -2,8 +2,8 @@
 
 # updated on 11.11.2016 14:11:24
 # version 0.1-4
-# Credits for pekman (<https://github.com/Manjaro-Pek/pacli>) and excalibur1234 (<https://github.com/excalibur1234>).
-# Adapted for Holmes.
+# Credits for pekman (<https://github.com/Manjaro-Pek/pacli>) and excalibur1234 (<https://github.com/excalibur1234>)
+# Adapted for Holmes
 
 function help_text() {
 	less 	<<-EOF
@@ -165,9 +165,9 @@ NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                        $NC Pacli Package Manager $NC "
+    echo -e "                            $NC Pacli Package Manager $NC "
     echo ""
-    echo -e "                    $NC ::WARNING! USE WITH CAUTION:: $NC"
+    echo -e "                        $NC ☢ WARNING! USE WITH CAUTION ☢ $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC  1 $NC  Update System               	  $NC  2 $NC  Remove Package + Deps      │"
     echo -e " │  $NC  3 $NC  Optimize Mirrors            	  $NC  4 $NC  Defragment Database        │"
@@ -188,7 +188,7 @@ NC='\e[0m'
     echo -e " │  $NC 24 $NC  Install from AUR            	  $NC 25 $NC  List Installed from AUR    │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "     $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
+    echo -e "      $NC ✓ Select a number and press [Enter] ✓ 0 Exit ✓ 00 Information$NC"
     echo ""
     read choix
     case $choix in

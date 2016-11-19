@@ -55,7 +55,6 @@ preload
 python2-xdg
 scrot
 xautolock
-xterm
 oblogout
 lm_sensors
 xsensors

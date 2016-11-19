@@ -2,8 +2,8 @@
 
 # updated on 11.11.2016 09:45:49
 # version 0.1-4
-# Credits for pekman (<https://github.com/Manjaro-Pek/pacli>) and Chrysostomus (<https://github.com/Chrysostomus>).
-# Adapted for Holmes.
+# Credits for pekman (<https://github.com/Manjaro-Pek/pacli>) and Chrysostomus (<https://github.com/Chrysostomus>)
+# Adapted for Holmes
 
 function help_text() {
 	less 	<<-EOF
@@ -114,7 +114,7 @@ NC='\e[0m'
     echo ""
     echo -e "                       $NC JWMConf Configuration Tool $NC "
     echo ""
-    echo -e "                      $NC ::WARNING! USE WITH CAUTION:: $NC"
+    echo -e "                      $NC ☢ WARNING! USE WITH CAUTION ☢ $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC  1  $NC  Refresh Configuration JWM          $NC  2  $NC  Refresh Menu JWM      │"
     echo -e " │  $NC  3  $NC  Check Error JWM                    $NC  4  $NC  Homepage JWM          │"
@@ -135,7 +135,7 @@ NC='\e[0m'
     echo -e " │  $NC 23  $NC *Edit Oblogout			                           │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "        $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
+    echo -e "      $NC ✓ Select a number and press [Enter] ✓ 0 Exit ✓ 00 Information$NC"
     echo ""
     read choix
     case $choix in

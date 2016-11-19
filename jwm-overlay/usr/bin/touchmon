@@ -11,8 +11,8 @@ TouchMon is an interactive configure xinput and xrandr for your command line ter
 
 HOME SCREEN
 TouchMon Configuration Tool's home screen is split into two parts: 
-The upper part focuses on xinput file. Also has some important options for maintenance of touchpad: Set pointer speed, Toggle tap to click, Toggle drag lock, Toggle left handed mode, Toggle disable while typing, Toggle natural scrolling, Toggle horizontal scrolling, Commands Manual xinput and Wiki xinput.
-The lower part focuses on xrandr file. Also has some important options for maintenance of monitor: List monitors, Set resolution, Set primary monitor, Position monitors, Connect/disconnect monitor, Rotate monitor, Save display settings, Dynamic monitor detection, Access ARandR, Commands Manual xrandr and Wiki xrandr. 
+The upper part focuses on xinput file, configuring some features of your touchpad.
+The lower part focuses on xrandr file, configuring some features of your monitor. 
 Choose an option by entering its number and pressing [Enter].
 
 0 - EXIT TOUCHMON
@@ -348,25 +348,25 @@ NC='\e[0m'
     echo ""
     echo -e "                       $NC TouchMon Configuration Tool $NC "
     echo ""
-    echo -e "                      $NC ::WARNING! USE WITH CAUTION:: $NC"
+    echo -e "                      $NC ☢ WARNING! USE WITH CAUTION ☢ $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC  1  $NC  Set pointer speed            $NC  2  $NC  Toggle tap to click         │"
-    echo -e " │  $NC  3  $NC  Toggle drag lock             $NC  4  $NC  Toggle left handed mode     │"
-    echo -e " │  $NC  5  $NC  Toggle disable while typing  $NC  6  $NC  Toggle natural scrolling    │"
-    echo -e " │  $NC  7  $NC  Toggle horizontal scrolling  $NC  8  $NC  Commands Manual Xinput      │"
-    echo -e " │  $NC  9  $NC  Wiki Xinput				                           │"
+    echo -e " │  $NC  1  $NC  Set pointer speed            $NC  2 $NC  Toggle tap to click          │"
+    echo -e " │  $NC  3  $NC  Toggle drag lock             $NC  4 $NC  Toggle left handed mode      │"
+    echo -e " │  $NC  5  $NC  Toggle disable while typing  $NC  6 $NC  Toggle natural scrolling     │"
+    echo -e " │  $NC  7  $NC  Toggle horizontal scrolling  $NC  8 $NC  Access LXinput               │"
+    echo -e " │  $NC  9  $NC  Commands Manual Xinput       $NC 10 $NC  Wiki Xinput                  │"
     echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 10 $NC  List monitors                 $NC 11  $NC Set resolution               │"
-    echo -e " │  $NC 12 $NC  Set primary monitor           $NC 13  $NC Position monitors            │"
-    echo -e " │  $NC 14 $NC  Connect/disconnect monitor    $NC 15  $NC Rotate monitor               │"
-    echo -e " │  $NC 16 $NC  Save display settings         $NC 17  $NC Dynamic monitor detection    │"
-    echo -e " │  $NC 18 $NC  Access ARandR                 $NC 19  $NC Commands Manual XRandR       │"    
-    echo -e " │  $NC 20 $NC  Wiki XRandR                                                      │"
+    echo -e " │  $NC 11 $NC  List monitors                 $NC 12 $NC Set resolution                │"
+    echo -e " │  $NC 13 $NC  Set primary monitor           $NC 14 $NC Position monitors             │"
+    echo -e " │  $NC 15 $NC  Connect/disconnect monitor    $NC 16 $NC Rotate monitor                │"
+    echo -e " │  $NC 17 $NC  Save display settings         $NC 18 $NC Dynamic monitor detection     │"
+    echo -e " │  $NC 19 $NC  Access ARandR                 $NC 20 $NC Commands Manual XRandR        │"    
+    echo -e " │  $NC 21 $NC  Wiki XRandR                                                      │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "       $NC Select a number and press [Enter] - 0 Exit - 00 Information$NC"
+    echo -e "      $NC ✓ Select a number and press [Enter] ✓ 0 Exit ✓ 00 Information$NC"
     echo ""
     read choix
     case $choix in
@@ -406,61 +406,68 @@ NC='\e[0m'
             ;;
         8)
             echo ""
-            man xinput
+            lxinput
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
-            ;;
+            ;;    
         9)
-            echo
-            elinks https://wiki.archlinux.org/index.php/Touchpad_Synaptics
+            echo ""
+            man xinput
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;
         10)
             echo
-            xrandr -q
+            elinks https://wiki.archlinux.org/index.php/Touchpad_Synaptics
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;
         11)
             echo
-            choose_resolution
+            xrandr -q
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;
         12)
             echo
-            set_primary
+            choose_resolution
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;
         13)
             echo
-            move_monitor
+            set_primary
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;
         14)
             echo
-            choose_monitor | connect_monitor
+            move_monitor
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;
         15)
             echo
-            rotate_monitor
+            choose_monitor | connect_monitor
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;
         16)
+            echo
+            rotate_monitor
+            echo ""
+            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            read
+            ;;
+        17)
             echo
             save_settings
             echo ""
@@ -470,7 +477,7 @@ NC='\e[0m'
             echo ""
             read
             ;;
-        17)
+        18)
             echo
             sudo pacman -S srandrd
             echo ""
@@ -481,21 +488,21 @@ NC='\e[0m'
             echo ""
             read
             ;;
-         18)
+         19)
             echo ""
             arandr
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;        
-         19)
+         20)
             echo ""
             man xrandr
             echo ""
             echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
             read
             ;;
-        20)
+        21)
             echo
             elinks https://wiki.archlinux.org/index.php/xrandr
             echo ""
