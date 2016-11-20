@@ -1,0 +1,10 @@
+T 1479602922 19*	19A conversar em #manjaro-talk
+T 1479602922 29*	29Tópico para #manjaro-talk 29é: cprabonjour
+T 1479602922 29*	29Tópico para #manjaro-talk 29colocado por jcjordyn120!~jcjordyn1@unaffiliated/jcjordyn120 29a Fri Sep 30 02:44:33 2016
+T 1479602946 Python interface unloaded
+T 1479602946 Tcl interface unloaded
+T 1479602972 19*	19A conversar em #manjaro-talk
+T 1479602972 29*	29Tópico para #manjaro-talk 29é: cprabonjour
+T 1479602972 29*	29Tópico para #manjaro-talk 29colocado por jcjordyn120!~jcjordyn1@unaffiliated/jcjordyn120 29a Fri Sep 30 02:44:33 2016
+T 1479602983 Python interface unloaded
+T 1479602983 Tcl interface unloaded

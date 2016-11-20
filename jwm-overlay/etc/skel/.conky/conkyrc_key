@@ -21,7 +21,6 @@ use_xft = true,
 }
 conky.text = [[
 Mod4 + b = Web Browser
-Mod4 + d = Show Desktop
 Mod4 + e = Exit
 Mod4 + f = File Manager
 Mod4 + g = User Guide
@@ -33,6 +32,7 @@ Mod4 + o = TouchMon
 Mod4 + p = Pacli
 Mod4 + t = Terminal
 Mod4 + u = Restart JWM
+Mod4 + w = Refresh Menu
 Mod4 + x = IRC
 Mod4 + F1 = Menu JWM
 Mod1 + F4 = Close Win Active

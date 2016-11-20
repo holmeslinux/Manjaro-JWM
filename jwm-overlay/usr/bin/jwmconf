@@ -288,7 +288,7 @@ NC='\e[0m'
             ;;
 	22)
             echo ""
-            sudo nano /etc/lxdm/lxdm.conf
+            sudo lxdm-config
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read

@@ -43,6 +43,7 @@
     <Key mask="4" key="o">exec:sakura -c 80 -r 27 -T TouchMon -e "bash -c '/usr/bin/touchmon;exec bash'"</Key>
     <Key mask="4" key="l">exec:i3lock -c c59a7a</Key>
     <Key mask="4" key="u">exec:jwm -restart</Key>
+    <Key mask="4" key="w">exec:jwm -reload</Key>
 
     <!-- Key sound. -->
     <Key mask="4" key="Next">exec:amixer set Master 5%-</Key>
