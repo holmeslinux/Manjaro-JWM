@@ -7,7 +7,7 @@ style "back"
 			function = FLAT_BOX
 			shadow=NONE
 			state = NORMAL
-			file="background-image"
+			file="background.png"
 			stretch=TRUE
 			detail = "base"
 		}
@@ -17,51 +17,16 @@ style "back"
 style "time"
 {
 	fg[NORMAL]="#0d1426"
-	font_name=" 12"
+	font_name="Cantarell 12"
 }
 
 style "prompt"
 {
 	fg[NORMAL]="#0d1426"
-	font_name="Cantarell Bold 12"
-}
-
-# Normally this won't paint an invisible event box, but we did some hacks in greeter.c.
-style "bottom"
-{
-	font_name="Cantarell 11"
-	fg[NORMAL] = "#0d1426"
-	engine "pixmap"
-	{
-		image
-		{
-			function = FLAT_BOX
-			file="shade.png"
-			stretch=TRUE
-			detail="eventbox"
-		}
-	}
-}
-
-style "login"
-{
-	font_name="Cantarell 11"
-	fg[NORMAL] = "#0d1426"
-	engine "pixmap"
-	{
-		image
-		{
-			function = FLAT_BOX
-			file="shade.png"
-			stretch=TRUE
-			detail="eventbox"
-		}
-	}
+	font_name="Cantarel 12"
 }
 
 widget "lxdm" style "back"
 widget "lxdm.*.time" style "time"
-widget "lxdm.*.prompt" style "prompt"
-widget "lxdm.*.bottom_pane" style "bottom"
-widget "lxdm.*.login_pane" style "login"
-widget_class "GtkWindow.*.GtkEventBox.*.<GtkLabel>" style "bottom"
+widget_class "GtkWindow.GtkVBox.GtkAlignment.GtkVBox.GtkAlignment.GtkHBox.<GtkLabel>" style "prompt"
+
