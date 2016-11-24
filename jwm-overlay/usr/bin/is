@@ -1,0 +1,288 @@
+#!/bin/bash
+
+# updated on 11.11.2016 09:45:49
+# version 0.1-4
+# Credits for pekman (<https://github.com/Manjaro-Pek/pacli>) and Chrysostomus (<https://github.com/Chrysostomus>)
+# Adapted for Holmes
+
+function help_text() {
+	less 	<<-EOF
+Welcome to IS Configuration Tool's information page.
+IS is an interactive configure JWM for your command line terminal. It provides an easy user interface to edit configuration files of the JWM. You can also edit other files.
+
+HOME SCREEN
+IS Configuration Tool's home screen is split into two parts: 
+The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LXDM and Oblogout. Choose an option by entering its number and pressing [Enter].
+
+ATTENTION
+*The number 7, 8, 9, 10, 11, 12, 13, 14, 19, 20, 21, 22 and 23 can break your system. WARNING! USE WITH CAUTION.
+
+0 - EXIT IS
+"clear && exit"
+This will exit IS and clear your terminal.
+
+00 - INFORMATION IS
+Display this information page.
+
+1- REFRESH CONFIGURATION JWM
+"jwm -restart"
+Restart JWM by sending _JWM_RESTART to the root window.
+
+2- REFRESH MENU JWM
+"jwm -reload"
+Reload menu by sending _JWM_RELOAD to the root window.
+
+3- CHECK ERROR JWM
+"jwm -p"
+To check the JWM configuration and return syntax errors (including associated line numbers).
+
+4- EDIT MENU JWM
+This option is to edit the Menu settings (in ~/.jwm/menu). To edit the Menu is used nano editor.
+
+5- EDIT TRAY JWM
+This option is to edit the Tray settings (in ~/.jwm/tray). To edit the Tray is used nano editor.
+
+6- EDIT START JWM
+This option is to edit the Start settings (in ~/.jwm/start). To edit the Start is used nano editor.
+
+7- EDIT THEME JWM
+This option is to edit the Theme settings (in ~/.jwm/theme). To edit the Theme is used nano editor.
+
+8- EDIT KEYS JWM
+This option is to edit the Keys settings (in ~/.jwm/keys). To edit the Keys is used nano editor.
+
+9- EDIT GROUPS JWM
+This option is to edit the Groups settings (in ~/.jwm/groups). To edit the Groups is used nano editor.
+
+10- EDIT PREFERENCES JWM
+This option is to edit the Preferences settings (in ~/.jwm/preferences). To edit the Preferences is used nano editor.
+
+11- EDIT JWMRC
+This option is to edit the jwmrc settings (in ~/.jwmrc). To edit the jwmrc is used nano editor.
+
+12- COMMANDS MANUAL JWM
+General commands manual of the Joe's Window Manager (JWM). JWM is a window manager for X11 Window System.
+
+13- VERSION JWM
+"jwm -v"
+Display version information JWM.
+
+14- HOMEPAGE JWM
+Visit and know the website of JWM.
+
+15- EDIT CONKY
+Conky a lightweight system monitor.
+This option is to edit the Conky settings ((in ~/.conkyrc). To edit the Conky is used nano editor.
+
+16- EDIT DUNST
+Dunst is a lightweight replacement for the notification-daemons provided by most desktop environments.
+This option is to edit the Dunst settings (in ~/.config/dunst/dunstrc). To edit the Dunst is used nano editor.
+
+17- EDIT GMRUN
+Gmrun (Gnome Completion-Run) is an lightweight application launcher similar to GNOME Run, Application Finder, KRunner, etc. 
+This option is to edit the Gmrun settings (in ~/.gmrunrc). To edit the Gmrun is used nano editor.
+
+18- EDIT BASHRC
+Bash (Bourne-again Shell) is a command-line shell/programming language by the GNU Project.
+
+19- EDIT GTK2
+GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off tools to complete application suites. Version 2.
+
+20- EDIT GTK3
+GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off tools to complete application suites. Version 3.
+
+21- EDIT XRESOURCES
+Xresources is a user-level configuration dotfile, typically located at ~/.Xresources.
+
+22- EDIT LXDM
+LXDM is a lightweight display manager for the LXDE desktop environment. The UI is implemented with GTK+ 2.
+
+23- EDIT OBLOGOUT
+Oblogout is an optional, configurable logout script that presents a graphical interface (i.e. buttons) to cancel, logout, restart, shutdown, suspend.
+
+To exit this information page, press "q".
+	EOF
+}
+
+# set colors
+RED='\e[41m'
+BLUE='\e[44m'
+ORANGE='\e[46m'
+NC='\e[0m'
+    while true; do
+    clear
+    echo ""
+    echo -e "                     $NC IS Information System GNU/Linux $NC "
+    echo ""
+    echo -e "                    $NC ✤ Manjaro JWM Community Edition ✤ $NC"
+    echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
+    echo -e " │  $NC  1  $NC  Memory Information                 $NC  2  $NC  Bios Information      │"
+    echo -e " │  $NC  3  $NC  Processor Information              $NC  4  $NC  System Information    │"
+    echo -e " │  $NC  5  $NC  Partitions                         $NC  6  $NC  DF                    │"
+    echo -e " │  $NC  7  $NC  Ncdu /                             $NC  8  $NC  Ncdu /home            │"
+    echo -e " │  $NC  9  $NC  Devices                            $NC 10  $NC  PCI                   │"
+    echo -e " │  $NC 11  $NC  All Hardware                                                    │"
+    echo " └─────────────────────────────────────────────────────────────────────────┘"
+    echo ""
+    echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
+    echo -e " │  $NC 12  $NC  Inxi		                      $NC 13  $NC  ScreenFetch           │"
+    echo -e " │  $NC 14  $NC  PsTree PID                         $NC 15  $NC  Ps CPU                │"
+    echo -e " │  $NC 16  $NC  HTop Processes                     $NC 17  $NC  Memory Usage          │"
+    echo -e " │  $NC 18  $NC  Temperature Disk                   $NC 19  $NC  Temperature Processor │"
+    echo -e " │  $NC 20  $NC  Boot-up Performance                $NC 21  $NC  SMART Disk            │"
+    echo -e " │  $NC 22  $NC  Systemd Status                     $NC 23  $NC  Systemd Running       │"
+    echo -e " │  $NC 24  $NC  Firewall Status                    $NC 25  $NC  ShieldsUP!            │"
+    echo " └─────────────────────────────────────────────────────────────────────────┘"
+    echo ""    
+    echo -e "      $NC ✓ Select a number and press [Enter] ✓ 0 Exit ✓ 00 Information$NC"
+    echo ""
+    read choix
+    case $choix in
+        1)
+            echo
+            sudo dmidecode -t memory
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+        2)
+            echo
+            sudo dmidecode -t bios
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+        3)
+            echo
+            sudo dmidecode -t processor
+            lscpu
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+	4)
+            echo
+            sudo dmidecode -t system
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+	5)
+            echo
+            sudo fdisk -l
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+	6)
+            echo
+            sudo lsblk
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+	7)
+            echo
+            lspci
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+	8)
+            echo
+            sudo lshw
+            sudo lshw -html > ~/AllHW.html
+            echo -e "$Red a report has been created and saved in ~/AllHW.html you can read it with your browser!"
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+	9)
+            echo
+            inxi -F
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       10)
+            echo
+            pstree -p
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       11)
+            echo
+            screenfetch -N
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       12)
+            echo
+            xterm -e "bash -c 'sudo /usr/bin/ps_mem;exec bash'"
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       13)
+            echo
+            xterm -e htop
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       14)
+            echo
+            sudo hddtemp $(df -k / | awk 'NR==2 {print $1}')
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       15)
+            echo
+            systemd-analyze blame
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       16)
+            echo
+            sensors
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       17)
+            echo
+            systemctl status
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       18)
+            echo
+            systemctl list-units
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+	0)
+            clear && exit
+            read
+            ;;
+        00)
+            echo
+            help_text
+            echo
+            ;;
+        *)
+            echo -e "$NC ::WRONG OPTION:: $NC"
+            echo "Wait and try again later..."
+            echo ""
+            sleep 3
+            clear
+            ;;
+    esac
+    done
+fi
