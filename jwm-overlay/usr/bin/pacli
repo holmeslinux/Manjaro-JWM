@@ -167,7 +167,7 @@ NC='\e[0m'
     echo ""
     echo -e "                            $NC Pacli Package Manager $NC "
     echo ""
-    echo -e "                        $NC ☢ WARNING! USE WITH CAUTION ☢ $NC"
+    echo -e "                      $NC ✤ Manjaro JWM Community Edition ✤ $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC  1 $NC  Update System               	  $NC  2 $NC  Remove Package + Deps      │"
     echo -e " │  $NC  3 $NC  Optimize Mirrors            	  $NC  4 $NC  Defragment Database        │"

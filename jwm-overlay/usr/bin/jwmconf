@@ -114,7 +114,7 @@ NC='\e[0m'
     echo ""
     echo -e "                       $NC JWMConf Configuration Tool $NC "
     echo ""
-    echo -e "                      $NC ☢ WARNING! USE WITH CAUTION ☢ $NC"
+    echo -e "                    $NC ✤ Manjaro JWM Community Edition ✤ $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC  1  $NC  Refresh Configuration JWM          $NC  2  $NC  Refresh Menu JWM      │"
     echo -e " │  $NC  3  $NC  Check Error JWM                    $NC  4  $NC  Homepage JWM          │"
@@ -124,7 +124,7 @@ NC='\e[0m'
     echo -e " │  $NC  9  $NC *Edit Theme JWM                     $NC 10  $NC *Edit Keys JWM         │"
     echo -e " │  $NC 11  $NC *Edit Groups JWM                    $NC 12  $NC *Edit Preferences JWM  │"
     echo -e " │  $NC 13  $NC *Edit Menu JWM                      $NC 14  $NC *Edit jwmrc            │"
-       echo " └─────────────────────────────────────────────────────────────────────────┘" 
+    echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC 15  $NC  Edit Conky                         $NC 16  $NC  Edit Dunst            │"
@@ -142,161 +142,161 @@ NC='\e[0m'
         1)
             echo
             jwm -restart
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         2)
             echo
             jwm -reload
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         3)
             echo
             jwm -p
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	4)
             echo
             elinks http://joewing.net/projects/jwm/index.shtml
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	5)
-            echo ""
+            echo
             man jwm
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	6)
             echo
             jwm -v
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	7)
             echo
             nano ~/.jwm/tray
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	8)
-            echo ""
+            echo
             nano ~/.jwm/start
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	9)
-            echo ""
+            echo
             nano ~/.jwm/theme
             echo ""
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read 
             ;;
 	10)
-            echo ""
+            echo
             nano ~/.jwm/keys
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	11)
-            echo ""
+            echo
             nano ~/.jwm/groups
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	12)
-            echo ""
+            echo
             nano ~/.jwm/preferences
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	13)
             echo
             nano ~/.jwm/menu
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	14)
-            echo ""
+            echo
             nano ~/.jwmrc
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;        
         15)
-            echo ""
+            echo
             nano ~/.conky/conkyrc_all
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         16)
-            echo ""
+            echo
             nano ~/.config/dunst/dunstrc
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         17)
-            echo ""
+            echo
             nano ~/.gmrunrc
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
         18)
-            echo ""
+            echo
             nano $HOME/.bashrc
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	19)
-            echo ""
+            echo
             nano $HOME/.gtkrc-2.0
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	20)
-            echo ""
+            echo
             nano $HOME/.config/gtk-3.0/settings.ini
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;	
 	21)
-            echo ""
+            echo
             nano $HOME/.Xresources
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	22)
-            echo ""
+            echo
             sudo lxdm-config
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;
 	23)
-            echo ""
+            echo
             sudo nano /etc/oblogout.conf
-            echo ""
+            echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
             ;;

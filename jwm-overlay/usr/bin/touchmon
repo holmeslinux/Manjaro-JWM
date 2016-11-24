@@ -348,7 +348,7 @@ NC='\e[0m'
     echo ""
     echo -e "                       $NC TouchMon Configuration Tool $NC "
     echo ""
-    echo -e "                      $NC ☢ WARNING! USE WITH CAUTION ☢ $NC"
+    echo -e "                    $NC ✤ Manjaro JWM Community Edition ✤ $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC  1  $NC  Set pointer speed            $NC  2 $NC  Toggle tap to click          │"
     echo -e " │  $NC  3  $NC  Toggle drag lock             $NC  4 $NC  Toggle left handed mode      │"
