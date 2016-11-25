@@ -196,7 +196,7 @@ NC='\e[0m'
             echo
             sudo pacman -Syyu --color always
             echo
-            echo -e "$NC Your system is updated. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Your system is updated! To return to Pacli press [Enter] $NC"
             read
             ;;
         2)
@@ -210,7 +210,7 @@ NC='\e[0m'
             echo
             sudo pacman-mirrors -g && sudo pacman -Syyu --color always
             echo
-            echo -e "$NC Best Manjaro mirror chosen. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Best Manjaro mirror chosen! To return to Pacli press [Enter] $NC"
             read
             ;;
         4)
@@ -239,49 +239,49 @@ NC='\e[0m'
             echo
             yaourt -Qdt
             echo
-            echo -e "$NC Task completed. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Task completed! To return to Pacli press [Enter] $NC"
             read        
             ;;
         8)
             echo
             sudo pacman -S $(pacman -Slq | pmenu -p 'Select package to install >') --color always
             echo
-            echo -e "$NC Package installation is finished. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Package installation is finished! To return to Pacli press [Enter] $NC"
             read
             ;;
         9)
             echo
             pacman -Ql $(pacman -Qq | pmenu -p 'Select a package of which to list all files >') --color always
             echo
-            echo -e "$NC All local files in package listed. To return to Pacli press [Enter] $NC"
+            echo -e "$NC All local files in package listed! To return to Pacli press [Enter] $NC"
             read 
             ;;
         10)
             echo
             yaourt -Sii $(cat /tmp/packages | pmenu -p 'Select a package to display information about >') 
             echo
-            echo -e "$NC Package information displayed. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Package information displayed! To return to Pacli press [Enter] $NC"
             read     
             ;; 
         11)
             echo
             yaourt -Qii $(pacman -Qq | pmenu -p 'Select an installed package to diplay information about >')
             echo
-            echo -e "$NC Package information listed. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Package information listed! To return to Pacli press [Enter] $NC"
             read     
             ;; 
         12)
             echo
             pactree -c -s $(pacman -Slq | pmenu -p 'Select a package >')
             echo
-            echo -e "$NC Dependency tree displayed. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Dependency tree displayed! To return to Pacli press [Enter] $NC"
             read
             ;;
         13)
             echo
             pactree -c -r $(pacman -Qq | pmenu -p 'Select a package >')
             echo
-            echo -e "$NC Reverse dependency tree displayed. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Reverse dependency tree displayed! To return to Pacli press [Enter] $NC"
             read
             ;;
         14)
@@ -296,7 +296,7 @@ NC='\e[0m'
             echo
             downgrade $(pacman -Qq | pmenu -p 'Select package to downgrade >')
             echo
-            echo -e "$NC Downgrade process finished. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Downgrade process finished! To return to Pacli press [Enter] $NC"
             read     
             ;;        
 	16)
@@ -310,42 +310,42 @@ NC='\e[0m'
             echo
             sudo pacman-key --refresh-keys && sudo pacman-key --populate archlinux manjaro && sudo pacman -Scc --color always
             echo
-            echo -e "$NC Most common Pacman errors fixed. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Most common Pacman errors fixed! To return to Pacli press [Enter] $NC"
             read     
             ;;
         18)
             echo
             yaourt -Scc
             echo
-            echo -e "$NC Entire package cache emptied. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Entire package cache emptied! To return to Pacli press [Enter] $NC"
             read
             ;;
         19)
             echo
             sudo pacman -Syu --force --color always
             echo
-            echo -e "$NC Your system is updated in force mode. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Your system is updated in force mode! To return to Pacli press [Enter] $NC"
             read
             ;;
         20)
             echo
             sudo pacman -S --force $(pacman -Slq | pmenu -p 'Select package to install >') --color always
             echo
-            echo -e "$NC Package installation in force mode is finished. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Package installation in force mode is finished! To return to Pacli press [Enter] $NC"
             read
             ;;
         21)
             echo
             sudo pacman -Rdd $(pacman -Qq | pmenu -p 'Select package to remove >') --color always
             echo
-            echo -e "$NC Dependency in force mode removed. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Dependency in force mode removed! To return to Pacli press [Enter] $NC"
             read
             ;;
         22)
             echo
             yaourt -Syua
             echo
-            echo -e "$NC Your system is updated. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Your system is updated! To return to Pacli press [Enter] $NC"
             read     
             ;;
         23)
@@ -355,21 +355,21 @@ NC='\e[0m'
             read Packcage
             yaourt $Packcage
             echo
-            echo -e "$NC Yaourt finished. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Yaourt finished! To return to Pacli press [Enter] $NC"
             read  
             ;;
         24)
             echo
             yaourt -S $(cat /tmp/packages | pmenu -p 'Select a package to install >')
             echo
-            echo -e "$NC Installation from AUR finished. To return to Pacli press [Enter] $NC"
+            echo -e "$NC Installation from AUR finished! To return to Pacli press [Enter] $NC"
             read  
             ;;
         25)
             echo
             pacman -Qem --color always
             echo
-            echo -e "$NC All locally installed packages listed. To return to Pacli press [Enter] $NC"
+            echo -e "$NC All locally installed packages listed! To return to Pacli press [Enter] $NC"
             read     
             ;;
 	0)
@@ -383,8 +383,7 @@ NC='\e[0m'
             echo
             ;;
         *)
-            echo -e "$NC ::WRONG OPTION:: $NC"
-            echo "Wait and try again later..."
+            echo "Wrong option! Wait and try again..."
             echo
             sleep 2
             clear

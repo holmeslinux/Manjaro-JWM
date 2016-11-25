@@ -408,63 +408,63 @@ NC='\e[0m'
             echo ""
             lxinput
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;    
         9)
             echo ""
             man xinput
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         10)
             echo
-            elinks https://wiki.archlinux.org/index.php/Touchpad_Synaptics
+            uxterm -fullscreen -e elinks https://wiki.archlinux.org/index.php/Touchpad_Synaptics
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         11)
             echo
             xrandr -q
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         12)
             echo
             choose_resolution
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         13)
             echo
             set_primary
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         14)
             echo
             move_monitor
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         15)
             echo
             choose_monitor | connect_monitor
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         16)
             echo
             rotate_monitor
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         17)
@@ -473,7 +473,7 @@ NC='\e[0m'
             echo ""
 	    echo 'Add "autorandr --change --default" to your autostart file' 
 	    echo 'to automatically choose profile on startup'
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             echo ""
             read
             ;;
@@ -484,7 +484,7 @@ NC='\e[0m'
             echo 'Add "sranrdrd autorandr --change --default" to your autostart file' 
 	    echo 'to load settings when monitor is plugged in. Use option 7 '
 	    echo 'to save your settings for different monitor configurations.'
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             echo ""
             read
             ;;
@@ -492,21 +492,21 @@ NC='\e[0m'
             echo ""
             arandr
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;        
          20)
             echo ""
             man xrandr
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         21)
             echo
-            elinks https://wiki.archlinux.org/index.php/xrandr
+            uxterm -fullscreen -e elinks https://wiki.archlinux.org/index.php/xrandr
             echo ""
-            echo -e "$NC Operation complete. To return to TouchMon press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
             read
             ;;
         0)
@@ -518,8 +518,9 @@ NC='\e[0m'
             echo
             ;;
         *)
-            echo -e "Wrong option. Press any key to continue."
-            read -s -n1
+            echo "Wrong option! Wait and try again..."
+            echo ""
+            sleep 2
             clear
             ;;
     esac

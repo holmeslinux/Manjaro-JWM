@@ -134,14 +134,14 @@ NC='\e[0m'
             echo
             sudo dmidecode -t memory
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
         2)
             echo
             sudo dmidecode -t bios
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
         3)
@@ -149,56 +149,56 @@ NC='\e[0m'
             sudo dmidecode -t processor
             lscpu
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
 	4)
             echo
             sudo dmidecode -t system
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
 	5)
             echo
             sudo fdisk -l
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
 	6)
             echo
             df -l
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
         7)
             echo
             ncdu -x /
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
         8)
             echo
             ncdu -x /home
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
 	9)
             echo
             sudo lsblk
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
 	10)
             echo
             lspci
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
 	11)
@@ -207,105 +207,105 @@ NC='\e[0m'
             sudo lshw -html > ~/AllHW.html
             echo -e "$Red a report has been created and saved in ~/AllHW.html you can read it with your browser!"
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
             ;;
 	12)
             echo
             inxi -c 5 -b
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
         13)
             echo
             uxterm -geometry 107x25 -e "bash -c 'screenfetch -N;exec bash'"
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        14)
             echo
             pstree -p
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        15)
             echo
             ps aux --sort=-pcpu
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        16)
             echo
             top -d 2
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        17)
             echo
             uxterm -e "bash -c 'sudo /usr/bin/ps_mem;exec bash'"
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        18)
             echo
             sudo hddtemp $(df -k / | awk 'NR==2 {print $1}')
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        19)
             echo
             sensors
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        20)
             echo
             systemd-analyze blame
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        21)
             echo
             sudo smartctl -A $(df -k / | awk 'NR==2 {print $1}')
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;       
        22)
             echo
             systemctl status
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        23)
             echo
             systemctl list-units
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        24)
             echo
             sudo ufw status
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
        25)
             echo
             uxterm -fullscreen -e elinks https://www.grc.com/x/ne.dll?bh0bkyd2
             echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 
             ;;
 	0)
@@ -318,10 +318,9 @@ NC='\e[0m'
             echo
             ;;
         *)
-            echo -e "$NC ::WRONG OPTION:: $NC"
-            echo "Wait and try again later..."
+            echo "Wrong option! Wait and try again..."
             echo ""
-            sleep 3
+            sleep 2
             clear
             ;;
     esac

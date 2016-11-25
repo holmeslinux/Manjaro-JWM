@@ -56,7 +56,7 @@ slct() {
             read -e -n ${##} -p "$PS3" REPLY
 
             if [[ $REPLY != [0-9]* ]]; then
-                echo "Invalid option"
+                echo "Wrong option! Choose a number from 1 to 6 or r/q..."
                 continue
             elif (( 10#$REPLY == 0 )); then
                 local quitslct=1
@@ -83,7 +83,7 @@ slct() {
                 clear
                 break
             else
-                echo "Invalid option"
+                echo "Wrong option! Choose a number from 1 to 6 or r/q..."
                 continue
             fi
         done
@@ -251,7 +251,7 @@ main() {
                     ;;
                 q)  quit
                     ;;
-                *)  echo "Invalid option"
+                *)  echo "Wrong option! Choose a number from 1 to 6 or r/q..."
                     continue
                     ;;
             esac
