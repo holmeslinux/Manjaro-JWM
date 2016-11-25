@@ -16,7 +16,7 @@ The lower part focuses on xrandr file, configuring some features of your monitor
 Choose an option by entering its number and pressing [Enter].
 
 0 - EXIT TOUCHMON
-"clear && killall sakura"
+"clear && exit 0"
 This will exit TouchMon and closes the sakura terminal.
 
 00 - INFORMATION TOUCHMON
@@ -510,7 +510,7 @@ NC='\e[0m'
             read
             ;;
         0)
-            clear && killall sakura
+            clear && exit 0
             ;;
         00)
             echo
@@ -524,7 +524,4 @@ NC='\e[0m'
             clear
             ;;
     esac
-    done
-}
-
-main
+done

@@ -488,7 +488,7 @@ quit() {
     while true; do
         read -s -n 1 -p "Press [Enter] to quit!"$'\n' input
         if [[ $input = "" ]]; then
-            clear && killall sakura 0
+            clear && exit 0
         else
             printf '\n%s\n\n' "Quitting has been canceled"
             break

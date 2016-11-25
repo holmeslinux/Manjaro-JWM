@@ -10,7 +10,7 @@ Welcome to IS Information System GNU/Linux.
 IS brings a set of commands to provide relevant information about our GNU/Linux system, with: memory, processor, BIOS, partitions, PCI devices, etc.
 
 0 - EXIT IS
-"clear && killall sakura"
+"clear && exit 0"
 This will exit IS and closes the sakura terminal.
 
 00 - INFORMATION IS
@@ -109,11 +109,11 @@ NC='\e[0m'
     echo -e "                    $NC ✤ Manjaro JWM Community Edition ✤ $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │  $NC  1  $NC  Memory Summary                     $NC  2  $NC  BIOS Explore          │"
-    echo -e " │  $NC  3  $NC  Processor Collect                  $NC  4  $NC  System List           │"
+    echo -e " │  $NC  3  $NC  Processor Collect                  $NC  4  $NC  List System           │"
     echo -e " │  $NC  5  $NC  Partitions                         $NC  6  $NC  DF Disk Space         │"
     echo -e " │  $NC  7  $NC  Ncdu /                             $NC  8  $NC  Ncdu /home            │"
     echo -e " │  $NC  9  $NC  Block Devices                      $NC 10  $NC  PCI Devices           │"
-    echo -e " │  $NC 11  $NC  Hardware Lister                                                 │"
+    echo -e " │  $NC 11  $NC  List Hardware                                                   │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
@@ -202,10 +202,10 @@ NC='\e[0m'
             read
             ;;
 	11)
-            echo
+            echo           
             sudo lshw
             sudo lshw -html > ~/AllHW.html
-            echo -e "$Red a report has been created and saved in ~/AllHW.html you can read it with your browser!"
+            uxterm -fullscreen -e elinks ~/AllHW.html
             echo ""
             echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read
@@ -309,7 +309,7 @@ NC='\e[0m'
             read 
             ;;
 	0)
-            clear && killall sakura 
+            clear && exit 0
             read
             ;;
         00)
@@ -324,5 +324,4 @@ NC='\e[0m'
             clear
             ;;
     esac
-    done
-fi
+done

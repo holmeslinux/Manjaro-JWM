@@ -20,7 +20,7 @@ ATTENTION
 *The numbers 18, 19, 20 and 21 can break your system. WARNING! USE WITH CAUTION.
 
 0 - EXIT PACLI
-"clear && killall sakura"
+"clear && exit 0"
 This will exit Pacli and closes the sakura terminal.
 
 00 - INFORMATION PACLI
@@ -374,7 +374,7 @@ NC='\e[0m'
             ;;
 	0)
             echo
-            clear && killall sakura
+            clear && exit 0
             read
             ;;        
         00)
@@ -391,4 +391,3 @@ NC='\e[0m'
        
     esac
     done
-fi
