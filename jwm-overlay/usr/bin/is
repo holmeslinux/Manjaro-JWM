@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# updated on 11.11.2016 09:45:49
-# version 0.1-4
-# Credits for pekman (<https://github.com/Manjaro-Pek/pacli>) and Chrysostomus (<https://github.com/Chrysostomus>)
-# Adapted for Holmes
+# updated on 24.11.2016 23:22:49
+# version 0.1-1
+# IS Information System GNU/Linux is a script based on the Pacli Package Manager (<https://github.com/Manjaro-Pek/pacli>) and was adapted by Holmes.
 
 function help_text() {
 	less 	<<-EOF
