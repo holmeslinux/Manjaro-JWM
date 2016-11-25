@@ -7,15 +7,8 @@
 
 function help_text() {
 	less 	<<-EOF
-Welcome to IS Configuration Tool's information page.
-IS is an interactive configure JWM for your command line terminal. It provides an easy user interface to edit configuration files of the JWM. You can also edit other files.
-
-HOME SCREEN
-IS Configuration Tool's home screen is split into two parts: 
-The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LXDM and Oblogout. Choose an option by entering its number and pressing [Enter].
-
-ATTENTION
-*The number 7, 8, 9, 10, 11, 12, 13, 14, 19, 20, 21, 22 and 23 can break your system. WARNING! USE WITH CAUTION.
+Welcome to IS Information System GNU/Linux.
+IS brings a set of commands to provide relevant information about our GNU/Linux system, with: memory, processor, BIOS, partitions, PCI devices, etc.
 
 0 - EXIT IS
 "clear && exit"
@@ -24,81 +17,81 @@ This will exit IS and clear your terminal.
 00 - INFORMATION IS
 Display this information page.
 
-1- REFRESH CONFIGURATION JWM
-"jwm -restart"
-Restart JWM by sending _JWM_RESTART to the root window.
+1- MEMORY SUMMARY	
+You can also use the dmidecode utility to extract hardware information by reading data from the DMI tables. This option collects information from memory.
 
-2- REFRESH MENU JWM
-"jwm -reload"
-Reload menu by sending _JWM_RELOAD to the root window.
+2- BIOS EXPLORE
+You can also use the dmidecode utility to extract hardware information by reading data from the DMI tables. This option collects information from BIOS.
 
-3- CHECK ERROR JWM
-"jwm -p"
-To check the JWM configuration and return syntax errors (including associated line numbers).
+3- PROCESSOR COLLECT
+You can also use the dmidecode utility to extract hardware information by reading data from the DMI tables. This option collects information from processor.
 
-4- EDIT MENU JWM
-This option is to edit the Menu settings (in ~/.jwm/menu). To edit the Menu is used nano editor.
+4- SYSTEM LIST 
+You can also use the dmidecode utility to extract hardware information by reading data from the DMI tables. This option collects information from system.
 
-5- EDIT TRAY JWM
-This option is to edit the Tray settings (in ~/.jwm/tray). To edit the Tray is used nano editor.
+5- PARTITIONS
+Although the main functionality of “fdisk” command is to modify file system partitions, it can also be used to view information about the different partitions on your file system.
 
-6- EDIT START JWM
-This option is to edit the Start settings (in ~/.jwm/start). To edit the Start is used nano editor.
+6- DF DISK SPACE
+The “df” command stand for disk filesystem, it is used to get full summary of available and used disk space usage of file system on Linux system.
 
-7- EDIT THEME JWM
-This option is to edit the Theme settings (in ~/.jwm/theme). To edit the Theme is used nano editor.
+7- NCDU /
+Disk usage analyzer with an ncurses interface. This option will examine the root partition.
 
-8- EDIT KEYS JWM
-This option is to edit the Keys settings (in ~/.jwm/keys). To edit the Keys is used nano editor.
+8- NCDU /HOME
+Disk usage analyzer with an ncurses interface. This option will examine the home partition.
 
-9- EDIT GROUPS JWM
-This option is to edit the Groups settings (in ~/.jwm/groups). To edit the Groups is used nano editor.
+9- BLOCK DEVICES
+The “lsblk” command is used to report information about block devices
 
-10- EDIT PREFERENCES JWM
-This option is to edit the Preferences settings (in ~/.jwm/preferences). To edit the Preferences is used nano editor.
+10- PCI DEVICES       
+The “lspci” tool is used to generate information concerning all PCI controllers on your system plus the devices that are connected to them.
 
-11- EDIT JWMRC
-This option is to edit the jwmrc settings (in ~/.jwmrc). To edit the jwmrc is used nano editor.
+11- HARDWARE LISTER          
+The “lshw” command is a relatively small tool and there are few options that you can use with it while extracting information. The information provided by “lshw” gathered form different /proc files.
 
-12- COMMANDS MANUAL JWM
-General commands manual of the Joe's Window Manager (JWM). JWM is a window manager for X11 Window System.
+12- INXI 
+Inxi is a set of scripts that will detect a whole lot of information about the hardware, including vendor details, device driver configuration, etc.
 
-13- VERSION JWM
-"jwm -v"
-Display version information JWM.
+13- SCREENFETCH    
+screenFetch is a "Bash Screenshot Information Tool". This handy Bash script can be used to generate one of those nifty terminal theme information + ASCII distribution logos you see in everyone's screenshots nowadays.	            
 
-14- HOMEPAGE JWM
-Visit and know the website of JWM.
+14- PSTREE PID
+pstree shows running processes as a tree. The tree is rooted at either pid or init if pid is omitted. If a user name is specified, all process trees rooted at processes owned by that user are shown.
 
-15- EDIT CONKY
-Conky a lightweight system monitor.
-This option is to edit the Conky settings ((in ~/.conkyrc). To edit the Conky is used nano editor.
+15- PS CPU
+Report a snapshot of the current processes. The command ps aux –sort=-pcpu sort the processes in order of CPU usage.
 
-16- EDIT DUNST
-Dunst is a lightweight replacement for the notification-daemons provided by most desktop environments.
-This option is to edit the Dunst settings (in ~/.config/dunst/dunstrc). To edit the Dunst is used nano editor.
+16- TOP PROCESSES
+The top command in Linux displays the processes running on the system. One of the most important tools for a system administrator.
 
-17- EDIT GMRUN
-Gmrun (Gnome Completion-Run) is an lightweight application launcher similar to GNOME Run, Application Finder, KRunner, etc. 
-This option is to edit the Gmrun settings (in ~/.gmrunrc). To edit the Gmrun is used nano editor.
+17- MEMORY USAGE    
+The “ps_mem” command provides current memory usage information. The information is: Private + Shared = RAM used Program   
 
-18- EDIT BASHRC
-Bash (Bourne-again Shell) is a command-line shell/programming language by the GNU Project.
+18- TEMPERATURE DISK
+The “hddtem” command gives you the temperature of your hard drive
 
-19- EDIT GTK2
-GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off tools to complete application suites. Version 2.
+19- TEMPERATURE PROCESSOR
+Collection of user space tools for general SMBus access and hardware monitoring.
 
-20- EDIT GTK3
-GTK+, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off tools to complete application suites. Version 3.
+20- BOOT-UP PERFORMANCE
+The “systemd-analyze blame” prints a list of all running units, ordered by the time they took to initialize. This information may be used to optimize boot-up times. Note that the output might be misleading as the initialization of one service might be slow simply because it waits for the initialization of another service to complete.
 
-21- EDIT XRESOURCES
-Xresources is a user-level configuration dotfile, typically located at ~/.Xresources.
+21- SMART DISK
+SMART (Self-Monitoring, Analysis, and Reporting Technology) is a supplementary component built into many modern storage devices through which devices monitor, store, and analyze the health of their operation. 
 
-22- EDIT LXDM
-LXDM is a lightweight display manager for the LXDE desktop environment. The UI is implemented with GTK+ 2.
+22- SYSTEMD STATUS
+The systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system. The “systemctl status”
+command show system status using.
 
-23- EDIT OBLOGOUT
-Oblogout is an optional, configurable logout script that presents a graphical interface (i.e. buttons) to cancel, logout, restart, shutdown, suspend.
+23- SYSTEMD RUNNING 
+The systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system. The “systemctl list-units“ command list running units.
+
+24- FIREWALL STATUS
+Checks the state of the firewall  ufw. Uncomplicated and easy to use CLI tool for managing a netfilter firewall.
+
+25- SHIELDSUP!
+It offers some services to analyze the connectivity of the PC to the internet.
 
 To exit this information page, press "q".
 	EOF
@@ -116,18 +109,18 @@ NC='\e[0m'
     echo ""
     echo -e "                    $NC ✤ Manjaro JWM Community Edition ✤ $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC  1  $NC  Memory Information                 $NC  2  $NC  Bios Information      │"
-    echo -e " │  $NC  3  $NC  Processor Information              $NC  4  $NC  System Information    │"
-    echo -e " │  $NC  5  $NC  Partitions                         $NC  6  $NC  DF                    │"
+    echo -e " │  $NC  1  $NC  Memory Summary                     $NC  2  $NC  BIOS Explore          │"
+    echo -e " │  $NC  3  $NC  Processor Collect                  $NC  4  $NC  System List           │"
+    echo -e " │  $NC  5  $NC  Partitions                         $NC  6  $NC  DF Disk Space         │"
     echo -e " │  $NC  7  $NC  Ncdu /                             $NC  8  $NC  Ncdu /home            │"
-    echo -e " │  $NC  9  $NC  Devices                            $NC 10  $NC  PCI                   │"
-    echo -e " │  $NC 11  $NC  All Hardware                                                    │"
+    echo -e " │  $NC  9  $NC  Block Devices                      $NC 10  $NC  PCI Devices           │"
+    echo -e " │  $NC 11  $NC  Hardware Lister                                                 │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 12  $NC  Inxi		                      $NC 13  $NC  ScreenFetch           │"
+    echo -e " │  $NC 12  $NC  Inxi System                        $NC 13  $NC  screenFetch Detail    │"
     echo -e " │  $NC 14  $NC  PsTree PID                         $NC 15  $NC  Ps CPU                │"
-    echo -e " │  $NC 16  $NC  HTop Processes                     $NC 17  $NC  Memory Usage          │"
+    echo -e " │  $NC 16  $NC  Top Processes                      $NC 17  $NC  Memory Usage          │"
     echo -e " │  $NC 18  $NC  Temperature Disk                   $NC 19  $NC  Temperature Processor │"
     echo -e " │  $NC 20  $NC  Boot-up Performance                $NC 21  $NC  SMART Disk            │"
     echo -e " │  $NC 22  $NC  Systemd Status                     $NC 23  $NC  Systemd Running       │"
@@ -176,19 +169,40 @@ NC='\e[0m'
             ;;
 	6)
             echo
+            df -l
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+        7)
+            echo
+            ncdu -x /
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+        8)
+            echo
+            ncdu -x /home
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read
+            ;;
+	9)
+            echo
             sudo lsblk
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read
             ;;
-	7)
+	10)
             echo
             lspci
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read
             ;;
-	8)
+	11)
             echo
             sudo lshw
             sudo lshw -html > ~/AllHW.html
@@ -197,72 +211,100 @@ NC='\e[0m'
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read
             ;;
-	9)
+	12)
             echo
-            inxi -F
+            inxi -c 5 -b
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read 
             ;;
-       10)
-            echo
-            pstree -p
-            echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
-            read 
-            ;;
-       11)
+        13)
             echo
             screenfetch -N
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read 
             ;;
-       12)
-            echo
-            xterm -e "bash -c 'sudo /usr/bin/ps_mem;exec bash'"
-            echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
-            read 
-            ;;
-       13)
-            echo
-            xterm -e htop
-            echo ""
-            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
-            read 
-            ;;
        14)
             echo
-            sudo hddtemp $(df -k / | awk 'NR==2 {print $1}')
+            pstree -p
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read 
             ;;
        15)
             echo
-            systemd-analyze blame
+            ps aux --sort=-pcpu
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read 
             ;;
        16)
             echo
-            sensors
+            top -d 2
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read 
             ;;
        17)
             echo
-            systemctl status
+            uxterm -e "bash -c 'sudo /usr/bin/ps_mem;exec bash'"
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read 
             ;;
        18)
             echo
+            sudo hddtemp $(df -k / | awk 'NR==2 {print $1}')
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       19)
+            echo
+            sensors
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       20)
+            echo
+            systemd-analyze blame
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       21)
+            echo
+            sudo smartctl -A $(df -k / | awk 'NR==2 {print $1}')
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;       
+       22)
+            echo
+            systemctl status
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       23)
+            echo
             systemctl list-units
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       24)
+            echo
+            sudo ufw status
+            echo ""
+            echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
+            read 
+            ;;
+       25)
+            echo
+            uxterm -fullscreen -e elinks https://www.grc.com/x/ne.dll?bh0bkyd2
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read 

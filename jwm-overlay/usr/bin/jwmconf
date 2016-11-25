@@ -162,7 +162,7 @@ NC='\e[0m'
             ;;
 	4)
             echo
-            elinks http://joewing.net/projects/jwm/index.shtml
+            uxterm -fullscreen -e elinks http://joewing.net/projects/jwm/index.shtml
             echo
             echo -e "$NC Operation complete. To return to JWMconf press [Enter] $NC"
             read
