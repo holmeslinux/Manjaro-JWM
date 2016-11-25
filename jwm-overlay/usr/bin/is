@@ -309,7 +309,7 @@ NC='\e[0m'
             read 
             ;;
 	0)
-            clear && exit
+            clear && killall sakura 
             read
             ;;
         00)

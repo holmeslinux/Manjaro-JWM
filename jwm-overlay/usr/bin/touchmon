@@ -510,7 +510,7 @@ NC='\e[0m'
             read
             ;;
         0)
-            clear && exit
+            clear && killall sakura
             ;;
         00)
             echo
