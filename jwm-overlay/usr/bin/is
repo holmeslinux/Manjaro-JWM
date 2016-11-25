@@ -10,8 +10,8 @@ Welcome to IS Information System GNU/Linux.
 IS brings a set of commands to provide relevant information about our GNU/Linux system, with: memory, processor, BIOS, partitions, PCI devices, etc.
 
 0 - EXIT IS
-"clear && exit"
-This will exit IS and clear your terminal.
+"clear && killall sakura"
+This will exit IS and closes the sakura terminal.
 
 00 - INFORMATION IS
 Display this information page.
@@ -117,7 +117,7 @@ NC='\e[0m'
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 12  $NC  Inxi System                        $NC 13  $NC  screenFetch Detail    │"
+    echo -e " │  $NC 12  $NC  Inxi System                        $NC 13  $NC  ScreenFetch Detail    │"
     echo -e " │  $NC 14  $NC  PsTree PID                         $NC 15  $NC  Ps CPU                │"
     echo -e " │  $NC 16  $NC  Top Processes                      $NC 17  $NC  Memory Usage          │"
     echo -e " │  $NC 18  $NC  Temperature Disk                   $NC 19  $NC  Temperature Processor │"

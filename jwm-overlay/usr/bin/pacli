@@ -20,8 +20,8 @@ ATTENTION
 *The numbers 18, 19, 20 and 21 can break your system. WARNING! USE WITH CAUTION.
 
 0 - EXIT PACLI
-"clear && exit"
-This will exit Pacli and clear your terminal.
+"clear && killall sakura"
+This will exit Pacli and closes the sakura terminal.
 
 00 - INFORMATION PACLI
 Display this information page.
