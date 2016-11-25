@@ -220,7 +220,7 @@ NC='\e[0m'
             ;;
         13)
             echo
-            screenfetch -N
+            uxterm -geometry 107x25 -e "bash -c 'screenfetch -N;exec bash'"
             echo ""
             echo -e "$NC Operation complete. To return to IS press [Enter] $NC"
             read 
