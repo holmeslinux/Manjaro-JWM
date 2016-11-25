@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# updated on 11.11.2016 09:45:49
-# version 0.1-4
-# Credits for pekman (<https://github.com/Manjaro-Pek/pacli>) and Chrysostomus (<https://github.com/Chrysostomus>)
-# Adapted for Holmes
+# updated on 24.11.2016 22:09:49
+# version 0.1-1
+# This IS Information System GNU/Linux script is based on Pacli Package Manager (<https://github.com/Manjaro-Pek/pacli>) and the adaptations were made by Holmes.
 
 function help_text() {
 	less 	<<-EOF
