@@ -16,7 +16,7 @@ The lower part focuses on xrandr file, configuring some features of your monitor
 Choose an option by entering its number and pressing [Enter].
 
 0 - EXIT TOUCHMON
-"clear && exit 0"
+"clear && kill -9 -$PPID"
 This will exit TouchMon and closes the sakura terminal.
 
 00 - INFORMATION TOUCHMON
@@ -86,7 +86,7 @@ To exit this information page, press "q".
 	EOF
 }
 
-###xinput_tui###
+###xinput###
 touchpad_id=$(xinput --list | grep -i "touchpad" | xargs -n 1 | grep "id=" | sed 's/id=//g')
 
 toggle_natural_scrolling()
@@ -194,7 +194,7 @@ fi
 
 }
 
-###brandr###
+###xrandr###
 export XAUTHORITY=/home/$(whoami)/.Xauthority
 RED='\e[41m'
 BLUE='\e[44m'
@@ -408,63 +408,63 @@ NC='\e[0m'
             echo ""
             lxinput
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;    
         9)
             echo ""
             man xinput
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         10)
             echo
-            uxterm -fullscreen -e elinks https://wiki.archlinux.org/index.php/Touchpad_Synaptics
+            palemoon https://wiki.archlinux.org/index.php/Touchpad_Synaptics
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         11)
             echo
             xrandr -q
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         12)
             echo
             choose_resolution
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         13)
             echo
             set_primary
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         14)
             echo
             move_monitor
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         15)
             echo
             choose_monitor | connect_monitor
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         16)
             echo
             rotate_monitor
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         17)
@@ -473,7 +473,7 @@ NC='\e[0m'
             echo ""
 	    echo 'Add "autorandr --change --default" to your autostart file' 
 	    echo 'to automatically choose profile on startup'
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             echo ""
             read
             ;;
@@ -484,7 +484,7 @@ NC='\e[0m'
             echo 'Add "sranrdrd autorandr --change --default" to your autostart file' 
 	    echo 'to load settings when monitor is plugged in. Use option 7 '
 	    echo 'to save your settings for different monitor configurations.'
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             echo ""
             read
             ;;
@@ -492,25 +492,25 @@ NC='\e[0m'
             echo ""
             arandr
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;        
          20)
             echo ""
             man xrandr
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         21)
             echo
-            uxterm -fullscreen -e elinks https://wiki.archlinux.org/index.php/xrandr
+            palemoon https://wiki.archlinux.org/index.php/xrandr
             echo ""
-            echo -e "$NC Operation complete! To return to TouchMon press [Enter] $NC"
+            echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
         0)
-            clear && exit 0
+            clear && kill -9 -$PPID
             ;;
         00)
             echo
