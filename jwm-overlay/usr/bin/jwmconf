@@ -162,7 +162,7 @@ NC='\e[0m'
             ;;
 	4)
             echo
-            palemonn http://joewing.net/projects/jwm/index.shtml
+            palemoon http://joewing.net/projects/jwm/index.shtml
             echo
             echo -e "Operation complete! To return to JWMconf press [Enter]"
             read
