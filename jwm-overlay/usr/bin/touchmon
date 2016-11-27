@@ -420,7 +420,7 @@ NC='\e[0m'
             ;;
         10)
             echo
-            palemoon https://wiki.archlinux.org/index.php/Touchpad_Synaptics
+            $BROWSER https://wiki.archlinux.org/index.php/Touchpad_Synaptics
             echo ""
             echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
@@ -504,7 +504,7 @@ NC='\e[0m'
             ;;
         21)
             echo
-            palemoon https://wiki.archlinux.org/index.php/xrandr
+            $BROWSER https://wiki.archlinux.org/index.php/xrandr
             echo ""
             echo -e "Operation complete! To return to TouchMon press [Enter]"
             read

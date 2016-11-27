@@ -74,7 +74,7 @@ The “hddtem” command gives you the temperature of your hard drive
 Collection of user space tools for general SMBus access and hardware monitoring.
 
 20- BOOT-UP PERFORMANCE
-The “systemd-analyze blame” prints a list of all running units, ordered by the time they took to initialize. This information may be used to optimize boot-up times. Note that the output might be misleading as the initialization of one service might be slow simply because it waits for the initialization of another service to complete.
+The “systemd-analyze plot” prints a list of all running units, ordered by the time they took to initialize. This information may be used to optimize boot-up times. Note that the output might be misleading as the initialization of one service might be slow simply because it waits for the initialization of another service to complete.
 
 21- SMART DISK
 SMART (Self-Monitoring, Analysis, and Reporting Technology) is a supplementary component built into many modern storage devices through which devices monitor, store, and analyze the health of their operation. 
@@ -301,7 +301,7 @@ NC='\e[0m'
             ;;
        25)
             echo
-            palemoon https://www.grc.com/x/ne.dll?bh0bkyd2
+            $BROWSER https://www.grc.com/x/ne.dll?bh0bkyd2
             echo ""
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
