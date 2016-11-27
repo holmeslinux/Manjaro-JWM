@@ -203,7 +203,7 @@ NC='\e[0m'
             ;;
 	11)
             echo           
-            sudo lshw > lshw && leafpad lshw
+            sudo lshw > lshw && leafpad lshw ; rm lshw
             echo ""
             echo -e "Operation complete! To return to IS press [Enter]"
             read
@@ -266,7 +266,7 @@ NC='\e[0m'
             ;;
        20)
             echo
-            systemd-analyze plot > plot.svg && palemoon --new-window plot.svg
+            systemd-analyze plot > plot.svg && pinta plot.svg ; rm plot.svg
             echo ""
             echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
             read 

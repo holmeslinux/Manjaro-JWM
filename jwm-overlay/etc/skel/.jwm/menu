@@ -17,6 +17,7 @@
         	<Program label="JWMConf">sakura -c 80 -r 27 -T JWMConf -e "bash -c '/usr/bin/jwmconf;exec bash'"</Program>
         	<Program label="MJWMPost">sakura -c 80 -r 27 -T MJWMPost -e "bash -c '/usr/bin/mjwmpost;exec bash'"</Program>
         	<Program label="TouchMon">sakura -c 80 -r 27 -T TouchMon -e "bash -c '/usr/bin/touchmon;exec bash'"</Program>
+                <Program label="IS">sakura -c 80 -r 27 -T IS -e "bash -c '/usr/bin/is;exec bash'"</Program>
 	</Menu>
 	<Menu label="Places">
         	<Program label="Home">pcmanfm ~/</Program>
