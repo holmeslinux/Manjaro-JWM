@@ -204,7 +204,7 @@ NC='\e[0m'
 	11)
             echo           
             sudo lshw > lshw && leafpad lshw
-            sleep 60            
+            sleep 2            
             rm lshw
             echo ""
             echo -e "Operation complete! To return to IS press [Enter]"
@@ -268,8 +268,8 @@ NC='\e[0m'
             ;;
        20)
             echo
-            systemd-analyze plot > plot.svg && $BROWSER --new-window plot.svg
-            sleep 60
+            systemd-analyze plot > plot.svg && $BROWSER --new-tab plot.svg
+            sleep 2
             rm plot.svg
             echo ""
             echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
