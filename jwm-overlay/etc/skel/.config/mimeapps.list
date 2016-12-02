@@ -1,0 +1,34 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Pale Moon-BBVXKY.desktop
+x-scheme-handler/https=userapp-Pale Moon-BBVXKY.desktop
+x-scheme-handler/ftp=userapp-Pale Moon-BBVXKY.desktop
+x-scheme-handler/chrome=userapp-Pale Moon-BBVXKY.desktop
+text/html=userapp-Pale Moon-BBVXKY.desktop
+application/x-extension-htm=userapp-Pale Moon-BBVXKY.desktop
+application/x-extension-html=userapp-Pale Moon-BBVXKY.desktop
+application/x-extension-shtml=userapp-Pale Moon-BBVXKY.desktop
+application/xhtml+xml=userapp-Pale Moon-BBVXKY.desktop
+application/x-extension-xhtml=userapp-Pale Moon-BBVXKY.desktop
+application/x-extension-xht=userapp-Pale Moon-BBVXKY.desktop
+image/png=feh.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Pale Moon-BBVXKY.desktop;
+x-scheme-handler/https=userapp-Pale Moon-BBVXKY.desktop;
+x-scheme-handler/ftp=userapp-Pale Moon-BBVXKY.desktop;
+x-scheme-handler/chrome=userapp-Pale Moon-BBVXKY.desktop;
+text/html=userapp-Pale Moon-BBVXKY.desktop;
+application/x-extension-htm=userapp-Pale Moon-BBVXKY.desktop;
+application/x-extension-html=leafpad.desktop;userapp-Pale Moon-BBVXKY.desktop;
+application/x-extension-shtml=userapp-Pale Moon-BBVXKY.desktop;
+application/xhtml+xml=userapp-Pale Moon-BBVXKY.desktop;
+application/x-extension-xhtml=userapp-Pale Moon-BBVXKY.desktop;
+application/x-extension-xht=userapp-Pale Moon-BBVXKY.desktop;
+application/x-executable=leafpad.desktop;
+text/plain=leafpad.desktop;
+image/x-xcf=pinta.desktop;
+application/octet-stream=medit.desktop;leafpad.desktop;
+image/png=feh.desktop;
+
+[Added Personally]
+application/xml=medit.desktop

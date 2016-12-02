@@ -20,6 +20,7 @@ update_interval = 1.0,
 use_xft = true,
 }
 conky.text = [[
+Mod1 + F4 = Close Win Active
 Mod4 + b = Web Browser
 Mod4 + e = Exit
 Mod4 + f = File Manager
@@ -28,6 +29,7 @@ Mod4 + i = IS
 Mod4 + j = JWMConf
 Mod4 + l = Lock Screen
 Mod4 + m = Player Sound
+Mod4 + n = Connect WiFi
 Mod4 + o = TouchMon
 Mod4 + p = Pacli
 Mod4 + t = Terminal
@@ -35,7 +37,7 @@ Mod4 + u = Restart JWM
 Mod4 + w = Refresh Menu
 Mod4 + x = IRC
 Mod4 + F1 = Menu JWM
-Mod1 + F4 = Close Win Active
+
 Print = Screenshot
 
 Mod4 + PgUp = Increase Sound

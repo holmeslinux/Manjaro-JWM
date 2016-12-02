@@ -34,10 +34,10 @@ Although the main functionality of “fdisk” command is to modify file system 
 6- DF DISK SPACE
 The “df” command stand for disk filesystem, it is used to get full summary of available and used disk space usage of file system on Linux system.
 
-7- NCDU /
+7- DISK USAGE
 Disk usage analyzer with an ncurses interface. This option will examine the root partition.
 
-8- NCDU /HOME
+8- HOME FOLDER USAGE
 Disk usage analyzer with an ncurses interface. This option will examine the home partition.
 
 9- BLOCK DEVICES
@@ -111,7 +111,7 @@ NC='\e[0m'
     echo -e " │  $NC  1  $NC  Memory Summary                     $NC  2  $NC  BIOS Explore          │"
     echo -e " │  $NC  3  $NC  Processor Collect                  $NC  4  $NC  List System           │"
     echo -e " │  $NC  5  $NC  Partitions                         $NC  6  $NC  DF Disk Space         │"
-    echo -e " │  $NC  7  $NC  Ncdu /                             $NC  8  $NC  Ncdu /home            │"
+    echo -e " │  $NC  7  $NC  Disk Usage                         $NC  8  $NC  Home Folder Usage     │"
     echo -e " │  $NC  9  $NC  Block Devices                      $NC 10  $NC  PCI Devices           │"
     echo -e " │  $NC 11  $NC  List Hardware                                                   │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
@@ -189,7 +189,7 @@ NC='\e[0m'
             ;;
 	9)
             echo
-            sudo lsblk
+            lsblk -o NAME,SIZE,FSTYPE,LABEL,MOUNTPOINT,UUID
             echo ""
             echo -e "Operation complete! To return to IS press [Enter]"
             read
@@ -219,7 +219,7 @@ NC='\e[0m'
             ;;
         13)
             echo
-            screenfetch -n
+            screenfetch -p
             echo ""
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
