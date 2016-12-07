@@ -1,0 +1,1 @@
+forum.manjaro.org:HSTS	0	17141	1487980135741,1,0

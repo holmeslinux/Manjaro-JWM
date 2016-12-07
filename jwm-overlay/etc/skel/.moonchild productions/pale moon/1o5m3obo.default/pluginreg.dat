@@ -1,14 +1,14 @@
 Generated File. Do not edit.
 
 [HEADER]
-Version:0.16:$
+Version:0.17:$
 Arch:x86_64-gcc3:$
 
 [PLUGINS]
 IcedTeaPlugin.so:$
 /usr/share/icedtea-web/lib/IcedTeaPlugin.so:$
 :$
-1463051993000:0:0:$
+1463051993000:0:0:0:$
 The <a href="http://icedtea.classpath.org/wiki/IcedTea-Web">IcedTea-Web Plugin</a> executes Java applets.:$
 IcedTea-Web Plugin (using IcedTea-Web 1.6.2):$
 36
@@ -50,8 +50,8 @@ IcedTea-Web Plugin (using IcedTea-Web 1.6.2):$
 35:application/x-java-vm-npruntime:IcedTea::$
 libflashplayer.so:$
 /usr/lib/mozilla/plugins/libflashplayer.so:$
-11.2.202.621:$
-1463049254000:0:0:$
+11.2.202.644:$
+1478632303000:0:0:0:$
 Shockwave Flash 11.2 r202:$
 Shockwave Flash:$
 2
