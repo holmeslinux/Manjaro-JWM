@@ -38,8 +38,6 @@ Mod4 + w = Refresh Menu
 Mod4 + x = IRC
 Mod4 + F1 = Menu JWM
 
-Print = Screenshot
-
 Mod4 + PgUp = Increase Sound
 Mod4 + PgDn = Decrease Sound
 Mod4 + 0 = Mute Sound    
