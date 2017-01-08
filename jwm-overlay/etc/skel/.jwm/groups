@@ -9,11 +9,6 @@
     </Group>
 
     <Group>
-        <Name>xterm</Name>
-        <Option>centered</Option>
-    </Group>
-
-    <Group>
         <Name>sakura</Name>
         <Option>centered</Option>
     </Group>
@@ -54,21 +49,7 @@
         <Option>centered</Option>
     </Group>
 
-    <Group>
-        <Name>lbreakout2</Name>
-        <Option>centered</Option>
-    </Group>
-
-    <Group>
-        <Name>gweled</Name>
-        <Option>centered</Option>
-    </Group>
-
-    <Group>
-        <Name>xboard</Name>
-        <Option>centered</Option>
-    </Group>
-
+    <!-- Options for system groups. -->
     <Group>
         <Option>aerosnap</Option>
     </Group>

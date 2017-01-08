@@ -42,7 +42,7 @@
     <Key mask="4" key="s">exec:sakura -c 80 -r 27 -T MJWMPost -e "bash -c '/usr/bin/mjwmpost;exec bash'"</Key>
     <Key mask="4" key="o">exec:sakura -c 80 -r 27 -T TouchMon -e "bash -c '/usr/bin/touchmon;exec bash'"</Key>
     <Key mask="4" key="i">exec:sakura -c 80 -r 27 -T IS -e "bash -c '/usr/bin/is;exec bash'"</Key>
-    <Key mask="4" key="n">exec:sakura -e nmtui</Key>
+    <Key mask="4" key="n">exec:sakura -T NMTUI -e "bash -c 'nmtui'"</Key>
     <Key mask="4" key="l">exec:i3lock -c c59a7a</Key>
     <Key mask="4" key="u">exec:jwm -restart</Key>
     <Key mask="4" key="w">exec:jwm -reload</Key>
