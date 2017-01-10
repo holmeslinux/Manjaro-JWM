@@ -64,6 +64,4 @@ ${alignr}${font Cantarell:size=10}${alignr}Kernel ${kernel}
 ${alignr}${font Cantarell:size=10}${alignr}Architecture ${machine}
 ${alignr}${font Cantarell:size=10}${alignr}File System ${fs_type}
 ${alignr}${font Cantarell:size=10}${alignr} ${execi 1200 /usr/bin/jwm_conky_wrapper}
-
-${alignr} Updates currently ${font Cantarell:bold:size=10}${execpi 10800 checkupdates | wc -l}${font}
 ]]
