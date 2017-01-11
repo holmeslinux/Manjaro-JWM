@@ -31,7 +31,7 @@ ${goto 30}${top name 2}$alignr${top cpu 2}%
 ${goto 30}${top name 3}$alignr${top cpu 3}%
 ${goto 30}${top name 4}$alignr${top cpu 4}%
 #
-${voffset 10}${goto 30}RAM$alignr$mem$font
+${voffset 10}${goto 30}RAM$alignr$cached + $mem$font
 ${goto 30}${membar 4}
 ${voffset 5}${goto 30}${top_mem name 1}$alignr${top_mem mem_res 1}
 ${goto 30}${top_mem name 2}$alignr${top_mem mem_res 2}
