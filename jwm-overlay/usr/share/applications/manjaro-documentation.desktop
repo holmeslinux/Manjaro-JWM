@@ -1,0 +1,10 @@
+[Desktop Entry]
+NoDisplay=true
+Version=1.0
+Type=Application
+Name=Manjaro User Guide
+Comment=Documentation for Beginners
+Exec=/usr/bin/manjaro-documentation
+Icon=application-pdf
+Terminal=false
+Categories=Utility;Documentation;

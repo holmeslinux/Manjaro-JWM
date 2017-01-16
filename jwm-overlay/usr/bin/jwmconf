@@ -12,10 +12,10 @@ JWMConf is an interactive configure JWM for your command line terminal. It provi
 
 HOME SCREEN
 JWMConf Configuration Tool's home screen is split into two parts: 
-The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LXDM and Oblogout. Choose an option by entering its number and pressing [Enter].
+The upper part focuses on JWM files. Also has some important options for maintenance of JWM. The lower part provides options to edit other settings files: Conky, Dunst, Gmrun, Bashrc, GTK2, GTK3, Xresources, LXDM, Oblogout and Compton. Choose an option by entering its number and pressing [Enter].
 
 ATTENTION
-*The number 7, 8, 9, 10, 11, 12, 13, 14, 19, 20, 21, 22 and 23 can break your system. WARNING! USE WITH CAUTION.
+*The number 7, 8, 9, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23 and 24 can break your system. WARNING! USE WITH CAUTION.
 
 0 - EXIT JWMCONF
 "clear && kill -9 -$PPID"
@@ -100,6 +100,9 @@ LXDM is a lightweight display manager for the LXDE desktop environment. The UI i
 23- EDIT OBLOGOUT
 Oblogout is an optional, configurable logout script that presents a graphical interface (i.e. buttons) to cancel, logout, restart, shutdown, suspend.
 
+23- EDIT COMPTON
+Compton is a standalone composite manager, suitable for use with window managers that do not natively provide compositing functionality.
+
 To exit this information page, press "q".
 	EOF
 }
@@ -132,7 +135,7 @@ NC='\e[0m'
     echo -e " │-------------------------------------------------------------------------│"
     echo -e " │  $NC 19  $NC *Edit GTK2              	      $NC 20  $NC *Edit GTK3             │"
     echo -e " │  $NC 21  $NC *Edit Xresources 	              $NC 22  $NC *Edit LXDM             │"
-    echo -e " │  $NC 23  $NC *Edit Oblogout			                           │"
+    echo -e " │  $NC 23  $NC *Edit Oblogout                      $NC 24  $NC *Edit Compton          │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e "      $NC ✓ Select a number and press [Enter] ✓ 0 Exit ✓ 00 Information$NC"
@@ -296,6 +299,13 @@ NC='\e[0m'
 	23)
             echo
             sudo medit /etc/oblogout.conf
+            echo
+            echo -e "Operation complete! To return to JWMconf press [Enter]"
+            read
+            ;;
+        24)
+            echo
+            medit $HOME/.config/compton.conf
             echo
             echo -e "Operation complete! To return to JWMconf press [Enter]"
             read
