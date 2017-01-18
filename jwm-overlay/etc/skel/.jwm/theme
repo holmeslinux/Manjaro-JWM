@@ -2,7 +2,7 @@
 <JWM>
 
     <!-- Visual Style Window. -->
-    <WindowStyle decorations="flat">
+    <WindowStyle decorations="motif">
         <Font align="center">Cantarell-10:antialias=true:encoding=utf8</Font>
         <Width>2</Width>
         <Height>19</Height>
@@ -19,7 +19,7 @@
     </WindowStyle>
 
     <!-- Visual Style Menu. -->
-    <MenuStyle>
+    <MenuStyle decorations="flat">
         <Font>Cantarell-10:antialias=true:encoding=utf8</Font>
         <Foreground>#0d1426</Foreground>
         <Background>#d9cdb3</Background>
