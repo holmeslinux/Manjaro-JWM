@@ -2,8 +2,8 @@
 <JWM>
 
     <!-- Startup for program. -->
-    <StartupCommand>pcmanfm --desktop &amp;</StartupCommand>
-    <StartupCommand>compton -cCGb &amp;</StartupCommand>
+    <!-- <StartupCommand>compton -cCGb &amp;</StartupCommand> -->    
+    <StartupCommand>~/.randwall &amp;</StartupCommand>    
     <StartupCommand>sleep 1s &amp;&amp; volumeicon &amp;</StartupCommand>
     <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_all &amp;</StartupCommand>
     <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_key &amp;</StartupCommand>

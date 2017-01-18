@@ -54,7 +54,6 @@ preload
 python2-xdg
 scrot
 xautolock
-oblogout
 lm_sensors
 xsensors
 hddtemp
@@ -69,9 +68,6 @@ ncdu
 numlockx
 xdgmenumaker
 lshw
-#python-pyqt4
-#qt4
-#pyqt4-common
 
 ## Desktop Configuration
 arandr
@@ -92,7 +88,7 @@ abiword-gtk2
 gnumeric
 hardinfo
 palemoon-bin
-xchat
+hexchat
 htop
 leafpad
 libimobiledevice

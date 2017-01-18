@@ -18,9 +18,9 @@
     <SnapMode distance="10">border</SnapMode>
 
     <!-- The move mode (outline or opaque) -->
-    <MoveMode>opaque</MoveMode>
+    <MoveMode coordinates="off">opaque</MoveMode>
 
     <!-- The resize mode (outline or opaque) -->
-    <ResizeMode>opaque</ResizeMode>
+    <ResizeMode coordinates="off">opaque</ResizeMode>
 
 </JWM>

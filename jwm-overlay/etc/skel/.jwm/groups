@@ -24,18 +24,12 @@
     </Group>
 
     <Group>
-        <Name>oblogout</Name>
-        <Option>nolist</Option>
-	<Option>centered</Option>
-    </Group>
-
-    <Group>
         <Name>deadbeef</Name>
         <Option>centered</Option>
     </Group>
 
     <Group>
-        <Name>xchat</Name>
+        <Name>hexchat</Name>
         <Option>centered</Option>
     </Group>
 
