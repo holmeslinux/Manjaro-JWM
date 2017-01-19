@@ -12,9 +12,7 @@ minimum_width = 200,
 no_buffers = true,
 own_window = true,
 own_window_type = 'desktop',
-own_window_class = 'Conky',
 own_window_transparent = true,
-own_window_argb_visual = true,
 own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
 update_interval = 1.0,
 use_xft = true,
@@ -22,7 +20,6 @@ use_xft = true,
 conky.text = [[
 Mod1 + F4 = Close Win Active
 Mod4 + b = Web Browser
-Mod4 + e = Exit
 Mod4 + f = File Manager
 Mod4 + g = User Guide
 Mod4 + i = IS
@@ -37,8 +34,6 @@ Mod4 + u = Restart JWM
 Mod4 + w = Refresh Menu
 Mod4 + x = IRC
 Mod4 + F1 = Menu JWM
-
-Prt Sc = Screenshot
 
 Mod4 + PgUp = Increase Sound
 Mod4 + PgDn = Decrease Sound
