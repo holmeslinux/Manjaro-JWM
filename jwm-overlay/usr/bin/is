@@ -9,11 +9,11 @@ function help_text() {
 Welcome to IS Information System GNU/Linux.
 IS brings a set of commands to provide relevant information about our GNU/Linux system, with: memory, processor, BIOS, partitions, PCI devices, etc.
 
-0 - EXIT IS
+e - EXIT IS
 "clear && kill -9 -$PPID"
 This will exit IS and closes the sakura terminal.
 
-00 - INFORMATION IS
+i - INFORMATION IS
 Display this information page.
 
 1- MEMORY SUMMARY	
@@ -126,7 +126,7 @@ NC='\e[0m'
     echo -e " │  $NC 24  $NC  Firewall Status                    $NC 25  $NC  ShieldsUP!            │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""    
-    echo -e "      $NC ✓ Select a number and press [Enter] ✓ 0 Exit ✓ 00 Overview$NC"
+    echo -e "      $NC ✓ Select a number and press [Enter] ✓ e Exit ✓ i Overview$NC"
     echo ""
     read choix
     case $choix in
@@ -310,11 +310,11 @@ NC='\e[0m'
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
-	0)
+	e)
             clear && kill -9 -$PPID
             read
             ;;
-        00)
+        i)
             echo
             help_text
             echo

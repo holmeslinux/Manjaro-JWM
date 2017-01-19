@@ -19,11 +19,11 @@ Choose an option by entering its number and pressing [Enter].
 ATTENTION
 *The numbers 18, 19, 20 and 21 can break your system. WARNING! USE WITH CAUTION.
 
-0 - EXIT PACLI
+e - EXIT PACLI
 "clear && kill -9 -$PPID"
 This will exit Pacli and closes the sakura terminal.
 
-00 - INFORMATION PACLI
+i - INFORMATION PACLI
 Display this information page.
 
 1 - UPDATE SYSTEM
@@ -58,10 +58,9 @@ The first command removes all packages from cache, which are not installed (anym
 sudo journalctl --vacuum-size=50M --vacuum-time=30days
 This command limits all log files in journalctl to a combined size of 50 megabytes and a maximum age of 30 days. This leaves plenty of log files behind to analyze systematic and reoccuring errors while preventing excessive amounts of log files.
 
-7 - REMOVE ORPHANED PACKAGES
-yaourt -Qdt
-This option lists all orphaned packages on your system. Orphaned packages are old dependencies (packages not explicitly installed by you), which were never removed from your system. 
-Answer with "y" or "n" to remove all listed orphaned packages or not.
+7 - UNNEEDED DEPENDENCIES TOOL
+undeps
+Tool to work with orphan packages of the system. Orphaned packages are old dependencies (packages not explicitly installed by you), which were never removed from your system. 
 
 8 - INSTALL PACKAGE
 "sudo pacman -S <PACKAGE NAME>"
@@ -172,7 +171,7 @@ NC='\e[0m'
     echo -e " │  $NC  1 $NC  Update System               	  $NC  2 $NC  Remove Package + Deps      │"
     echo -e " │  $NC  3 $NC  Optimize Mirrors            	  $NC  4 $NC  Defragment Database        │"
     echo -e " │  $NC  5 $NC  Clean Package Cache         	  $NC  6 $NC  Limited log journalctl     │"
-    echo -e " │  $NC  7 $NC  Remove Orphaned Packages    	  $NC  8 $NC  Install Package            │"
+    echo -e " │  $NC  7 $NC  Unneeded Dependencies Tool 	  $NC  8 $NC  Install Package            │"
     echo -e " │  $NC  9 $NC  List Local Package Files    	  $NC 10 $NC  Package Information        │"
     echo -e " │  $NC 11 $NC  Installed Package Info      	  $NC 12 $NC  Dependency Tree            │"
     echo -e " │  $NC 13 $NC  Reverse Dependency Tree     	  $NC 14 $NC  List Installed Packages    │"
@@ -188,7 +187,7 @@ NC='\e[0m'
     echo -e " │  $NC 24 $NC  Install from AUR            	  $NC 25 $NC  List Installed from AUR    │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "      $NC ✓ Select a number and press [Enter] ✓ 0 Exit ✓ 00 Information$NC"
+    echo -e "      $NC ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information$NC"
     echo ""
     read choix
     case $choix in
@@ -237,9 +236,9 @@ NC='\e[0m'
             ;;
         7)
             echo
-            yaourt -Qdt
+            /usr/bin/undepstui
             echo
-            echo -e "Task completed! To return to Pacli press [Enter]"
+            echo -e "Thank you for using UnDeps! To return to Pacli press [Enter]"
             read        
             ;;
         8)
@@ -372,12 +371,12 @@ NC='\e[0m'
             echo -e "All locally installed packages listed! To return to Pacli press [Enter]"
             read     
             ;;
-	0)
+	e)
             echo
             clear && kill -9 -$PPID
             read
             ;;        
-        00)
+        i)
             echo
             help_text
             echo

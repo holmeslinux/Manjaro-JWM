@@ -1,0 +1,96 @@
+#!/bin/bash
+#
+#UnDeps Unneeded Dependencies
+#
+function help_text() {
+	less 	<<-EOF
+Welcome to Undeps Tool's information page.
+This script lists and removes unneeded dependencies.
+
+ATTENTION
+*The number 1, 2 and 3 can break your system. WARNING! USE WITH CAUTION.
+
+e - EXIT UNDEPS
+"clear && exit"
+This will exit UnDeps.
+
+i - INFORMATION UNDEPS
+Display this information page.
+
+1- LIST UNNEEDED DEPENDENCIES
+"undeps -l"
+List unnecessary system dependencies.
+
+2 - REMOVE BY STAGES
+"undeps -r"
+Removes unnecessary dependencies in stages.
+
+3 - REMOVE RECURSIVE
+"undeps -ra"
+Remove all unnecessary dependencies at once (recursively).
+
+4 - WIKI UNNEEDED DEPENDENCIES
+Visit the Manjaro wiki. Title of the article: Orphan Package Removal.
+
+To exit this information page, press "q".
+	EOF
+}
+    while true; do
+    clear
+    echo ""
+    echo -e "                   UnDeps Unneeded Dependencies Tool "
+    echo ""
+    echo -e "                   ✤ Manjaro JWM Community Edition ✤ "
+    echo -e " ┌────────────────────────────────────────────────────────────────────────┐"
+    echo -e " │    1   *List unneeded dependencies    2   *Remove by stages            │"
+    echo -e " │    3   *Remove recursive    	         4    Wiki unneeded dependencies  │"
+    echo -e " └────────────────────────────────────────────────────────────────────────┘"
+    echo -e "       ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information"
+    echo ""
+    read choix
+    case $choix in
+        1)
+            echo
+            ~/undeps -l
+            echo
+            echo -e "Operation complete! To return to UnDeps press [Enter]"
+            read
+            ;;
+        2)
+            echo
+            ~/undeps -r
+            echo
+            echo -e "Operation complete! To return to UnDeps press [Enter]"
+            read
+            ;;
+        3)
+            echo
+            ~/undeps -ra
+            echo
+            echo -e "Operation complete! To return to UnDeps press [Enter]"
+            read
+            ;;
+        4)
+            echo
+            $BROWSER https://wiki.manjaro.org/index.php?title=Orphan_Package_Removal
+            echo ""
+            echo -e "Operation complete! To return to UnDeps press [Enter]"
+            read
+            ;;
+        e)
+            clear && exit
+            read
+            ;;
+        i)
+            echo
+            help_text
+            echo
+            ;;
+        *)
+            echo "Wrong option! Wait and try again..."
+            echo ""
+            sleep 2
+            clear
+            ;;
+    esac
+done

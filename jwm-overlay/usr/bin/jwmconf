@@ -17,11 +17,11 @@ The upper part focuses on JWM files. Also has some important options for mainten
 ATTENTION
 *The number 7, 8, 9, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23 and 24 can break your system. WARNING! USE WITH CAUTION.
 
-0 - EXIT JWMCONF
+e - EXIT JWMCONF
 "clear && kill -9 -$PPID"
 This will exit JWMconf and closes the sakura terminal.
 
-00 - INFORMATION JWMCONF
+i - INFORMATION JWMCONF
 Display this information page.
 
 1- REFRESH CONFIGURATION JWM
@@ -131,7 +131,7 @@ NC='\e[0m'
     echo -e " │  $NC 21  $NC *Edit Xresources 	              $NC 22  $NC *Edit LXDM             │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "      $NC ✓ Select a number and press [Enter] ✓ 0 Exit ✓ 00 Information$NC"
+    echo -e "      $NC ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information$NC"
     echo ""
     read choix
     case $choix in
@@ -289,11 +289,11 @@ NC='\e[0m'
             echo -e "Operation complete! To return to JWMconf press [Enter]"
             read
             ;;
-	0)
+	e)
             clear && kill -9 -$PPID
             read
             ;;
-        00)
+        i)
             echo
             help_text
             echo

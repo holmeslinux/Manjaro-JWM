@@ -15,11 +15,11 @@ The upper part focuses on xinput file, configuring some features of your touchpa
 The lower part focuses on xrandr file, configuring some features of your monitor. 
 Choose an option by entering its number and pressing [Enter].
 
-0 - EXIT TOUCHMON
+e - EXIT TOUCHMON
 "clear && kill -9 -$PPID"
 This will exit TouchMon and closes the sakura terminal.
 
-00 - INFORMATION TOUCHMON
+i - INFORMATION TOUCHMON
 Display this information page.
 
 1- SET POINTER SPEED
@@ -366,7 +366,7 @@ NC='\e[0m'
     echo -e " │  $NC 21 $NC  Wiki XRandR                                                      │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "      $NC ✓ Select a number and press [Enter] ✓ 0 Exit ✓ 00 Information$NC"
+    echo -e "      $NC ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information$NC"
     echo ""
     read choix
     case $choix in
@@ -509,10 +509,10 @@ NC='\e[0m'
             echo -e "Operation complete! To return to TouchMon press [Enter]"
             read
             ;;
-        0)
+        e)
             clear && kill -9 -$PPID
             ;;
-        00)
+        i)
             echo
             help_text
             echo

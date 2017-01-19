@@ -1,0 +1,81 @@
+#!/bin/sh
+#
+# UnDeps (Unneeded Dependencies Tool) - This script lists and removes unneeded dependencies
+# Options: -l <list> | -r <remove> | -ra <remove all - recursive>
+# Credits for Estêvão Valadão (Arch Linux Brasil)
+# Adapted for Holmes
+
+loopflag=0
+PACMAN=$(which pacman 2> /dev/null) 
+SUDO=$(which sudo 2> /dev/null) 
+
+function CheckPermission() {
+    if [ ! -z $SUDO ]; then
+        PACMAN="sudo $(which pacman)"
+    elif [ $(whoami) != 'root' ]; then
+        echo -e "\r\n-> Error! UnDeps must be run as root. \n"
+        exit 0
+    fi    
+}
+
+case "$1" in                      
+  -l)
+  echo -e "
+  \r:: UNNEEDED DEPENDENCIES ::
+  \r▶ Checking dependencies...
+  "
+  $PACMAN -Qdtq
+  if [ "$?" = 1 ]; then
+    echo -e "\n✔ Your system doesn't have unneeded dependencies! \n"
+  fi   
+  ;;
+  
+  -r)
+  CheckPermission
+  
+  while [ "$loopflag" = 0 ]
+  do
+    echo -e "
+    \r:: UNNEEDED DEPENDENCIES ::
+    \r▶ Checking dependencies...
+    "   
+    $PACMAN -Qdtq
+    if [ "$?" = 0 ]; then
+      echo ""
+      echo -n "Do you want to remove these packages? [Y/n] "
+      read option
+      if [ "$option" = "y" ] || [ "$option" = "" ]; then        
+          $PACMAN -Rn $(pacman -Qdtq)
+          echo -e "✔ Unneeded dependencie(s) sucessfully removed! \n"          
+      elif [ "$option" = "n" ]; then
+        exit 0
+      fi  
+    else
+      loopflag=1
+      echo -e "✔ Your system doesn't have unneeded dependencies! \n"      
+    fi
+  done
+  ;;
+  
+  -ra)
+  CheckPermission
+  $PACMAN -Qdtq > /dev/null
+  if [ "$?" = 1 ]; then
+    echo -e "
+    \r:: UNNEEDED DEPENDENCIES ::
+    \r▶ Checking dependencies...
+
+    \r✔ Your system doesn't have unneeded dependencies!
+    "    
+  else  
+    echo -e "\n** UNNEEDED DEPENDENCIES - RECURSIVE **"
+    echo -n "▶ "    
+    $PACMAN -Rsn $(pacman -Qdtq)    
+  fi
+  ;;
+  *)
+    echo "Use: $0 {-l <list> | -r <remove> | -ra <remove all - recursive>}"
+    echo ""
+esac
+
+exit 0
