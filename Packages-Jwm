@@ -1,8 +1,3 @@
-######################################################
-### THIS FILE WILL INCLUDE shared/Packages-Desktop ###
-######################################################
-
-## Sound and Audio
 alsa-plugins
 manjaro-alsa
 volumeicon-gtk2
@@ -10,14 +5,10 @@ manjaro-pulse
 pulseaudio-bluetooth
 pulseaudio-ctl
 pavucontrol
-
-## File Management
 pcmanfm
 gvfs
 p7zip
 xarchiver
-
-## Network and bluetooth
 openresolv
 blueman
 network-manager-applet
@@ -25,23 +16,13 @@ networkmanager-dispatcher-ntpd
 networkmanager-openvpn
 networkmanager-vpnc
 json-c
-
-## Polkit
 gksu
 gnome-keyring
 polkit-gnome
-
-## Basic packages
 dconf
 desktop-file-utils
-
-## Display Manager
 lxdm
-
-## Desktop Display
 dunst
-
-## JWM Core Packages
 jwm
 clipit
 downgrade
@@ -68,18 +49,12 @@ ncdu
 numlockx
 xdgmenumaker
 lshw
-
-## Desktop Configuration
 arandr
 lxinput
-
-## Artwork, Icon, Mouse, and Desktop Themes
 gtk-engine-murrine
 adwaita-manjaro-themes
 gnome-themes-standard
 faenzaflattr-black-icon-theme
-
-## Applications
 cbatticon-gtk2
 compton
 epdfview
@@ -99,11 +74,7 @@ sakura
 screenfetch
 catfish
 gparted
-
-## Fonts
 adobe-source-sans-pro-fonts
 ttf-droid
 cantarell-fonts
-
-## Documentation
 manjaro-documentation

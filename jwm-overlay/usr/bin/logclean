@@ -1,0 +1,20 @@
+#!/bin/bash
+# Autor: J
+
+DIR=/var/log/
+
+FILES=$(ls $DIR | cut -d '' -f1)
+
+echo ":: Starting cleaning ::"
+
+for FILE in $FILES
+do
+  if [ -f $DIR$FILE ]
+  then
+    if [ -s $DIR$FILE ]
+    then
+      cat /dev/null > $DIR$FILE
+      echo ":: $FILE was cleaned"
+    fi
+  fi
+done

@@ -1,14 +1,14 @@
 #!/bin/bash
 #
-#UnDeps Unneeded Dependencies
+#UnDeps Unneeded Dependencies Clean
 #
 function help_text() {
 	less 	<<-EOF
-Welcome to Undeps Tool's information page.
+Welcome to UnDeps information page.
 This script lists and removes unneeded dependencies.
 
 ATTENTION
-*The number 1, 2 and 3 can break your system. WARNING! USE WITH CAUTION.
+*The number 2, 3, 4, 5 and 6 can break your system. WARNING! USE WITH CAUTION.
 
 e - EXIT UNDEPS
 "clear && exit"
@@ -29,8 +29,25 @@ Removes unnecessary dependencies in stages.
 "undeps -ra"
 Remove all unnecessary dependencies at once (recursively).
 
-4 - WIKI UNNEEDED DEPENDENCIES
-Visit the Manjaro wiki. Title of the article: Orphan Package Removal.
+4 - CLEAN PACKAGE CACHE
+"paccache -ruvk1
+ paccache -rvk2"
+By default Pacman uses this cache direcoty for downloading packages: /var/cache/pacman/pkg/... . No cached packages get deleted automatically. This enables you to DOWNGRADE PACKAGES, which are broken, without a working internet connection. The package cache of an old and actively used Manjaro installation can become quite large. Clean it to regain space on your root partition.
+The first command removes all packages from cache, which are not installed (anymore) on your system. The second command removes all old packages from your cache except the 2 latest versions: The version you have currently installed on your system and the previous version.
+
+5 - EMPTY PACKAGE CACHE
+"yaourt -Scc"
+This command will empty your entire package cache by deleting ALL packages.
+Attention: This will make it impossible to reinstall or DOWNGRADE PACKAGES without a working internet connection.
+
+6- LOG CLEAN
+"sudo /usr/bin/logclean"
+The logclean script cleans all system logs.
+
+7 - LIMITED LOG JOURNALCTL
+"sudo journalctl --vacuum-size=50M --vacuum-time=30days"
+This command limits all log files in journalctl to a combined size of 50 megabytes and a maximum age of 30 days. This leaves plenty of log files behind to analyze systematic and reoccuring errors while preventing excessive amounts of log files.
+
 
 To exit this information page, press "q".
 	EOF
@@ -38,12 +55,14 @@ To exit this information page, press "q".
     while true; do
     clear
     echo ""
-    echo -e "                   UnDeps Unneeded Dependencies Tool "
+    echo -e "                  UnDeps Unneeded Dependencies Clean "
     echo ""
     echo -e "                   ✤ Manjaro JWM Community Edition ✤ "
     echo -e " ┌────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │    1   *List unneeded dependencies    2   *Remove by stages            │"
-    echo -e " │    3   *Remove recursive    	         4    Wiki unneeded dependencies  │"
+    echo -e " │    1    List Unneeded Dependencies       2   *Remove by Stages         │"
+    echo -e " │    3   *Remove Recursive    	            4   *Clean Package Cache      │"
+    echo -e " │    5   *Empty Package Cache              6   *Clean Log                │"
+    echo -e " │    7    Limited Log Journalctl                			  │"
     echo -e " └────────────────────────────────────────────────────────────────────────┘"
     echo -e "       ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information"
     echo ""
@@ -51,30 +70,52 @@ To exit this information page, press "q".
     case $choix in
         1)
             echo
-            ~/undeps -l
+            /usr/bin/undeps -l
             echo
             echo -e "Operation complete! To return to UnDeps press [Enter]"
             read
             ;;
         2)
             echo
-            ~/undeps -r
+            /usr/bin/undeps -r
             echo
             echo -e "Operation complete! To return to UnDeps press [Enter]"
             read
             ;;
         3)
             echo
-            ~/undeps -ra
+            /usr/bin/undeps -ra
             echo
             echo -e "Operation complete! To return to UnDeps press [Enter]"
             read
             ;;
         4)
             echo
-            $BROWSER https://wiki.manjaro.org/index.php?title=Orphan_Package_Removal
-            echo ""
-            echo -e "Operation complete! To return to UnDeps press [Enter]"
+            paccache -ruvk1
+	    paccache -rvk2
+            echo
+            echo -e "Unneeded and old package versions removed. To return to UnDeps press [Enter]"
+            read
+            ;;
+	5)
+	    echo
+            yaourt -Scc
+            echo
+            echo -e "Entire package cache emptied! To return to UnDeps press [Enter]"
+            read
+            ;;
+	6) 
+	    echo
+	    sudo /usr/bin/logclean
+	    echo
+            echo -e "Log clean. To return to UnDeps press [Enter]"
+            read
+            ;;
+	7)
+            echo
+            sudo journalctl --vacuum-size=50M --vacuum-time=30days
+            echo
+            echo -e "Log journalctl limited. To return to UnDeps press [Enter]"
             read
             ;;
         e)
