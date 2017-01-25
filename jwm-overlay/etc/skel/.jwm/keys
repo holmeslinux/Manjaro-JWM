@@ -36,7 +36,7 @@
 
     <!-- Key system. -->
     <Key mask="4" key="F1">root:3</Key>
-    <Key mask="4" key="p">exec:sakura -c 80 -r 27 -T Pacli-UnDeps -e "bash -c '/usr/bin/pacli;exec bash'"</Key>
+    <Key mask="4" key="p">exec:sakura -c 80 -r 27 -T Pacli-SysClean -e "bash -c '/usr/bin/pacli;exec bash'"</Key>
     <Key mask="4" key="j">exec:sakura -c 80 -r 27 -T JWMConf -e "bash -c '/usr/bin/jwmconf;exec bash'"</Key>
     <Key mask="4" key="s">exec:sakura -c 80 -r 27 -T MJWMPost -e "bash -c '/usr/bin/mjwmpost;exec bash'"</Key>
     <Key mask="4" key="o">exec:sakura -c 80 -r 27 -T TouchMon -e "bash -c '/usr/bin/touchmon;exec bash'"</Key>

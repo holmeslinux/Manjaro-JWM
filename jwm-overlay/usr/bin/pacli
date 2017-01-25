@@ -95,9 +95,9 @@ Then, it does the same as OPTIMIZE MIRRORS: It will search for working and good 
 Finally, the last command forces a redownload of the latest package database from the best Manjaro repository mirror. Then, all your installed packages are checked against this latest package database. If an updated package is available from the Manjaro repositories, it will get downloaded and installed on your system. If an installed package is newer than the same package in the Manjaro repositories, the installed package will get downgraded. This behavior ensures your packages are always in sync with the Manajro repositories, even if you have just switched the Manjaro mirror or switched from unstable to stable branch.
 Attention: Only run this command when no other Pacman instance (e.g. Pacman, Yaourt, Pamac, Octopi, PacmanXG4, ...) is running.
 
-15 - UNNEEDED DEPENDENCIES CLEAN
-"undeps"
-Tool to work with orphan packages of the system. Orphaned packages are old dependencies (packages not explicitly installed by you), which were never removed from your system.
+15 - SYSTEM CLEANUP GNU/LINUX
+"undepstui"
+SysClean is a script that works with some commands that help clean the system.
 
 16 - FORCE UPDATE SYSTEM
 "sudo pacman -Syu --force"
@@ -160,7 +160,7 @@ NC='\e[0m'
     echo -e " │  $NC  9 $NC  Dependency Tree                 $NC 10 $NC  Reverse Dependency Tree    │"
     echo -e " │  $NC 11 $NC  List Installed Packages         $NC 12 $NC  Downgrade Packages         │"
     echo -e " │  $NC 13 $NC  Fix Error Keys  		  $NC 14 $NC  Fix Error Database Lock    │"
-    echo -e " │  $NC 15 $NC  Unneeded Dependencies Clean                                      │"
+    echo -e " │  $NC 15 $NC  System Cleanup GNU/Linux                                         │"
     echo -e " │-------------------------------------------------------------------------│"
     echo -e " │  $NC 16 $NC *Force Update System	          $NC 17 $NC *Force Install Package      │"
     echo -e " │  $NC 18 $NC *Force Remove Package						   │"

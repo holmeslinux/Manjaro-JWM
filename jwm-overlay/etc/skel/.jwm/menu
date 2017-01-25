@@ -17,7 +17,7 @@
 		<Program label="JWMConf">sakura -c 80 -r 27 -T JWMConf -e "bash -c '/usr/bin/jwmconf;exec bash'"</Program>        	
 		<Program label="MJWMPost">sakura -c 80 -r 27 -T MJWMPost -e "bash -c '/usr/bin/mjwmpost;exec bash'"</Program>
 		<Program label="NMTUI">sakura -T NMTUI -e "bash -c 'nmtui'"</Program>
-		<Program label="Pacli-UnDeps">sakura -c 80 -r 27 -T Pacli-UnDeps -e "bash -c '/usr/bin/pacli;exec bash'"</Program>                     	
+		<Program label="Pacli-SysClean">sakura -c 80 -r 27 -T Pacli-SysClean -e "bash -c '/usr/bin/pacli;exec bash'"</Program>                     	
         	<Program label="TouchMon">sakura -c 80 -r 27 -T TouchMon -e "bash -c '/usr/bin/touchmon;exec bash'"</Program>                
 	</Menu>
 	<Menu label="Places">
