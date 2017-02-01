@@ -40,7 +40,22 @@
 
     <Group>
         <Name>epdfview</Name>
-        <Option>centered</Option>
+        <Option>maximized</Option>
+    </Group>
+
+    <Group>
+        <Name>abiword</Name>
+        <Option>maximized</Option>
+    </Group>
+
+    <Group>
+        <Name>gnumeric</Name>
+        <Option>maximized</Option>
+    </Group>
+
+    <Group>
+        <Name>leafpad</Name>
+        <Option>maximized</Option>
     </Group>
 
     <!-- Options for system groups. -->

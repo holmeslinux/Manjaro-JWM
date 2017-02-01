@@ -59,7 +59,6 @@ conky
 qt5-styleplugins 
 qt5ct
 ncdu
-numlockx
 xdgmenumaker
 lshw
 
@@ -75,7 +74,6 @@ faenzaflattr-black-icon-theme
 
 ## Applications
 cbatticon-gtk2
-compton
 epdfview
 feh
 abiword-gtk2

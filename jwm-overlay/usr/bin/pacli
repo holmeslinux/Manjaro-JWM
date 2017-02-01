@@ -277,7 +277,7 @@ NC='\e[0m'
             echo
             /usr/bin/undepstui
             echo
-            echo -e "Thank you for using UnDeps! To return to Pacli press [Enter]"
+            echo -e "Thank you for using SysClean! To return to Pacli press [Enter]"
             read        
             ;;        
         16)
