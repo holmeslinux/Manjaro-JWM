@@ -51,13 +51,7 @@
 	</Menu>
 	</Menu>
 	<Separator/>
-        <Menu label="Leave">
-	        <Program label="Lock Screen">i3lock -c c59a7a</Program>            
-	        <Program label="Logout">jwm -exit</Program>
-                <Program label="Restart">systemctl reboot</Program>
-                <Program label="Shutdown">systemctl poweroff</Program>
-                <Program label="Suspend">systemctl suspend</Program>
-        </Menu>
+                <Program label="Leave">oblogout</Program>            
 	</RootMenu>
 
 </JWM>

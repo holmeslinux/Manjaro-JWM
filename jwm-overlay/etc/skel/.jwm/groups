@@ -57,10 +57,17 @@
         <Name>leafpad</Name>
         <Option>maximized</Option>
     </Group>
+    
+    <Group>
+        <Name>conky</Name>
+        <Option>nolist</Option>
+    </Group>
 
     <!-- Options for system groups. -->
     <Group>
         <Option>aerosnap</Option>
+	<Option>noshade</Option>
+	<Option>sticky</Option>
     </Group>
 
 </JWM>

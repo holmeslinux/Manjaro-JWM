@@ -2,7 +2,8 @@
 <JWM>
 
     <!-- Startup for program. -->
-    <StartupCommand>~/.randwall &amp;</StartupCommand>    
+    <StartupCommand>~/.randwall &amp;</StartupCommand>
+    <StartupCommand>compton --config ~/.config/compton.conf --shadow-exclude 'n:a:Conky' -CGb &amp;</StartupCommand>    
     <StartupCommand>sleep 1s &amp;&amp; volumeicon &amp;</StartupCommand>
     <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_all &amp;</StartupCommand>
     <StartupCommand>sleep 2s &amp;&amp; conky -c ~/.conky/conkyrc_key &amp;</StartupCommand>

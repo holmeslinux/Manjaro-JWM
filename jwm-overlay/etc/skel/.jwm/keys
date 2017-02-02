@@ -45,6 +45,7 @@
     <Key mask="4" key="l">exec:i3lock -c c59a7a</Key>
     <Key mask="4" key="u">exec:jwm -restart</Key>
     <Key mask="4" key="w">exec:jwm -reload</Key>
+    <Key mask="4" key="e">exec:oblogout</Key>
 
     <!-- Key sound. -->
     <Key mask="4" key="Next">exec:amixer set Master 5%-</Key>
