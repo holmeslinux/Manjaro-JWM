@@ -62,6 +62,12 @@
         <Name>conky</Name>
         <Option>nolist</Option>
     </Group>
+    
+    <Group>
+        <Name>oblogout</Name>
+        <Option>nolist</Option>
+        <Option>noborder</Option>
+    </Group>
 
     <!-- Options for system groups. -->
     <Group>
