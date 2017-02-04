@@ -8,7 +8,7 @@ Welcome to SysClean information page.
 SysClean is a script that works with some commands that help clean the system.
 
 ATTENTION
-*The number 2, 3, 4, 5 and 6 can break your system. WARNING! USE WITH CAUTION.
+*The number 5, 6, 7, 8, 9 and 10 can break your system. WARNING! USE WITH CAUTION.
 
 e - EXIT SysClean
 "clear && exit"
@@ -17,40 +17,53 @@ This will exit SysClean.
 i - INFORMATION SysClean
 Display this information page.
 
-1- LIST ORPHAN PACKAGES
-"undesp -l"
+1 - REMOVE PACKAGE + DEPS
+"sudo pacman -Rsn <PACKAGE NAME>"
+This command removes <PACKAGE NAME> including all dependencies, which are no longer needed by other packages, from your system. A copy of <PACKAGE NAME> will be kept in your package cache.
+Please note that folders created by the program <PACKAGE NAME> will not get removed from your system. Look for such folders in these places and remove them manually:
+~
+~/.config/
+~/.local/
+
+2- LIST ORPHAN PACKAGES
+"undeps -l"
 List unnecessary system dependencies.
 
-2 - REMOVE ORPHAN BY STAGES
-"SysClean -r"
+3 - LIMITED LOG JOURNALCTL
+"sudo journalctl --vacuum-size=50M --vacuum-time=30days"
+This command limits all log files in journalctl to a combined size of 50 megabytes and a maximum age of 30 days. This leaves plenty of log files behind to analyze systematic and reoccuring errors while preventing excessive amounts of log files.
+
+4 - CLEANING OF THE DAY
+"sudo pacman --sync --clean"
+Pacman stores its downloaded packages in /var/cache/pacman/pkg/ and does not remove the old or uninstalled versions automatically, therefore it is necessary to deliberately clean up that folder periodically to prevent such folder to grow indefinitely in size. 
+
+5 - FORCE REMOVE PACKAGE
+"pacman -Rdd <PACKAGE NAME>"
+This command removes <PACKAGE NAME> without checking the dependencies of <PACKAGE NAME> first. This enables experienced users to remove packages and dependencies of packages. This command only removes <PACKAGE NAME> from your system. All dependencies and orphans are left: run REMOVE ORPHANED PACKAGES afterwards to remove them, too.
+Attention: This command can break pacakges on your system or even your entire system. Use with great care!
+
+6 - REMOVE ORPHAN BY STAGES
+"undeps -r"
 Removes unnecessary dependencies in stages.
 
-3 - REMOVE ORPHAN RECURSIVE
-"SysClean -ra"
+7 - REMOVE ORPHAN RECURSIVE
+"undeps -ra"
 Remove all unnecessary dependencies at once (recursively).
 
-4 - CLEAN PACKAGE CACHE
+8 - CLEAN PACKAGE CACHE
 "paccache -ruvk1
  paccache -rvk2"
 By default Pacman uses this cache direcoty for downloading packages: /var/cache/pacman/pkg/. No cached packages get deleted automatically. This enables you to DOWNGRADE PACKAGES, which are broken, without a working internet connection. The package cache of an old and actively used Manjaro installation can become quite large. Clean it to regain space on your root partition.
 The first command removes all packages from cache, which are not installed (anymore) on your system. The second command removes all old packages from your cache except the 2 latest versions: The version you have currently installed on your system and the previous version.
 
-5 - EMPTY PACKAGE CACHE
+9 - EMPTY PACKAGE CACHE
 "yaourt -Scc"
 This command will empty your entire package cache by deleting ALL packages.
 Attention: This will make it impossible to reinstall or DOWNGRADE PACKAGES without a working internet connection.
 
-6- LOG CLEAN
+10- LOG CLEAN
 "sudo /usr/bin/logclean"
 The logclean script cleans all system logs.
-
-7 - LIMITED LOG JOURNALCTL
-"sudo journalctl --vacuum-size=50M --vacuum-time=30days"
-This command limits all log files in journalctl to a combined size of 50 megabytes and a maximum age of 30 days. This leaves plenty of log files behind to analyze systematic and reoccuring errors while preventing excessive amounts of log files.
-
-8 - CLEANING OF THE DAY
-"sudo pacman -Sc"
-Pacman stores its downloaded packages in /var/cache/pacman/pkg/ and does not remove the old or uninstalled versions automatically, therefore it is necessary to deliberately clean up that folder periodically to prevent such folder to grow indefinitely in size. 
 
 To exit this information page, press "q".
 	EOF
@@ -58,41 +71,72 @@ To exit this information page, press "q".
     while true; do
     clear
     echo ""
-    echo -e "                   SysClean System Cleanup GNU/Linux"
+    echo -e "                     SysClean System Cleanup GNU/Linux"
     echo ""
-    echo -e "                   ✤ Manjaro JWM Community Edition ✤ "
-    echo -e " ┌────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │    1    List Orphan Packages	          2   *Remove Orphan by Stages    │"
-    echo -e " │    3   *Remove Orphan Recursive	  4   *Clean Package Cache        │"
-    echo -e " │    5   *Empty Package Cache            6   *Clean Log                  │"
-    echo -e " │    7    Limited Log Journalctl         8    Cleaning of the Day        │"
-    echo -e " └────────────────────────────────────────────────────────────────────────┘"
+    echo -e "                     ✤ Manjaro JWM Community Edition ✤ "
+    echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
+    echo -e " │    1    Remove Package + Deps	   2   List Orphan Packages        │"
+    echo -e " │    3    Limited Log Journalctl          4   Cleaning of the Day         │"
+    echo -e " │-------------------------------------------------------------------------│"
+    echo -e " │    5   *Force Remove Package            6  *Remove Orphan by Stages     │"
+    echo -e " │    7   *Remove Orphan Recursive         8  *Clean Package Cache         │"    
+    echo -e " │    9   *Empty Package Cache            10  *Clean Log                   │"
+    echo -e " └─────────────────────────────────────────────────────────────────────────┘"
+    echo ""    
     echo -e "       ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information"
     echo ""
     read choix
     case $choix in
-        1)
+          1)
+	    echo
+            sudo pacman -Rsn $(pacman -Qq | pmenu -p 'Select package to remove >') --color always
+            echo
+            echo -e "Package and all unneeded dependencies removed. To return to Pacli press [Enter]"
+            read
+            ;;
+          2)
             echo
             /usr/bin/undeps -l
             echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-        2)
+          3)
+            echo
+            sudo journalctl --vacuum-size=50M --vacuum-time=30days
+            echo
+            echo -e "Operation complete! To return to SysClean press [Enter]"
+            read
+            ;;
+          4)
+            echo
+            sudo pacman --sync --clean
+            echo
+            echo -e "Operation complete! To return to SysClean press [Enter]"
+            read
+            ;;
+          5)
+            echo
+            sudo pacman -Rdd $(pacman -Qq | pmenu -p 'Select package to remove >') --color always
+            echo
+            echo -e "Dependency in force mode removed! To return to Pacli press [Enter]"
+            read
+            ;;
+          6)
             echo
             /usr/bin/undeps -r
             echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-        3)
+          7)
             echo
             /usr/bin/undeps -ra
             echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-        4)
+          8)
             echo
             paccache -ruvk1
 	    paccache -rvk2
@@ -100,48 +144,35 @@ To exit this information page, press "q".
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-	5)
+	  9)
 	    echo
             yaourt -Scc
             echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-	6) 
+	 10) 
 	    echo
 	    sudo /usr/bin/logclean
 	    echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
-            ;;
-	7)
-            echo
-            sudo journalctl --vacuum-size=50M --vacuum-time=30days
-            echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
-            read
-            ;;
-	8)
-            echo
-            sudo pacman -Sc
-            echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
-            read
-            ;;
-        e)
+            ;;      
+          e)
             clear && exit
             read
             ;;
-        i)
+          i)
             echo
             help_text
             echo
             ;;
         *)
             echo "Wrong option! Wait and try again..."
-            echo ""
+            echo 
             sleep 2
             clear
             ;;
+
     esac
 done

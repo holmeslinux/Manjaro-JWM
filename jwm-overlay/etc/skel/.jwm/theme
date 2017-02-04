@@ -6,7 +6,7 @@
         <Font align="center">Cantarell-10:antialias=true:encoding=utf8</Font>
         <Width>2</Width>
         <Height>19</Height>
-        <Corner>2</Corner>
+        <Corner>0</Corner>
         <Foreground>#c59a7a</Foreground>
         <Background>#0d1426</Background>
         <Outline>#0d1426</Outline>‮
