@@ -1,11 +1,32 @@
 #!/bin/bash
-# Autor: J
+# Remove the logs in /var/log/
+# Author: J
+# Adaptation: Holmes
 
-DIR=/var/log/
+main() {
+  echo "Do you want to remove the logs in /var/log/?"
+  echo "--------------------------------------------"
+  echo
+  echo "Your options:"
+  echo
+  echo "1 = Remove"
+  echo "2 = Not Remove"
+  echo
+  echo -n "▶ Choose an option and press [Enter] "
+  read option
+  case $option in
+    1) log ;;
+    2) exit ;;
+    *) echo "Wrong option! Wait and try again..." ; echo ; sleep 2 ; main ;;
+  esac
+}
+
+log() {
+  DIR=/var/log/
 
 FILES=$(ls $DIR | cut -d '' -f1)
 
-echo ":: Starting cleaning ::"
+echo "Starting cleaning..."
 
 for FILE in $FILES
 do
@@ -14,7 +35,13 @@ do
     if [ -s $DIR$FILE ]
     then
       cat /dev/null > $DIR$FILE
-      echo ":: $FILE was cleaned"
+      echo "$FILE was cleaned.."
+      echo
+      echo -e "Operation complete! To return to SysClean press [Enter]"
+      read
     fi
   fi
 done
+}
+
+main

@@ -1,0 +1,34 @@
+#!/bin/bash
+# Remove the empty files from the Home folder
+# Author: Hugo Cisneiros
+# Adaptation: Holmes
+ 
+main() {
+  echo "Do you want to remove the empty files from the Home folder?"
+  echo "------------------------------------------------------------"
+  echo
+  echo "Your options:"
+  echo
+  echo "1 = Remove"
+  echo "2 = Not Remove"
+  echo
+  echo -n "▶ Choose an option and press [Enter] "
+  read option
+  case $option in
+    1) remove ;;
+    2) exit ;;
+    *) echo "Wrong option! Wait and try again..." ; echo ; sleep 2 ; main ;;
+  esac
+}
+
+remove() {
+  echo
+  echo -n "To remove the empty files press [Enter]"
+  read
+  find ~ -type f -empty -delete
+  echo
+  echo -e "Operation complete! To return to SysClean press [Enter]"
+  read
+}
+
+main
