@@ -291,6 +291,7 @@ install_apps() {
     slct "$subtitle ▶ CD/DVD Burners" "${apps_cddvd[@]}"
     slct "$subtitle ▶ Chat Clients" "${apps_chat[@]}"
     slct "$subtitle ▶ Email Clients" "${apps_email[@]}"
+    slct "$subtitle ▶ Games" "${apps_games[@]}"
     slct "$subtitle ▶ Graphic Manipulation" "${apps_graphic[@]}"
     slct "$subtitle ▶ Image Viewers" "${apps_imgview[@]}"
     slct "$subtitle ▶ IRC Clients" "${apps_irc[@]}"
@@ -311,7 +312,7 @@ install_apps() {
     slct "$subtitle ▶ Utilities" "${apps_util[@]}"
     slct "$subtitle ▶ Video Players" "${apps_video[@]}"
     slct "$subtitle ▶ Web Browsers" "${apps_web[@]}"
-
+    
     local installation=() removal=()
     for app in "${!work_list[@]}"; do
         if ! in_array "${app}" "${!installed_list[@]}"; then
@@ -358,6 +359,7 @@ apps_torrent=("deluge" "qbittorrent" "rtorrent" "transmission-cli" "transmission
 apps_util=("bleachbit" "galculator" "nitrogen" "parcellite" "tmux")
 apps_video=("gnome-mplayer" "lxmusic" "mpv" "smplayer" "vlc")
 apps_web=("chromium" "dwb" "firefox" "qupzilla" "qutebrowser" "luakit" "midori" "opera" "uzbl-tabbed")
+apps_games=("desmume" "pcsx2" "pcsxr" "ppsspp" "snes9x-gtk" "steam-manjaro" "stella" "vbam-gtk" "yabause-gtk")
 
 declare -A apps_des=( 
     ["amarok"]="The powerful music player"
@@ -374,6 +376,7 @@ declare -A apps_des=(
     ["claws-mail"]="Lightweight GTK-based email client and news reader"
     ["clementine"]="The powerful music player"
     ["cmus"]="Feature-rich ncurses-based music player"
+    ["desmume"]="Nintendo DS emulator"
     ["deepin-terminal"]="Default terminal emulation application for Deepin"
     ["deluge"]="A BitTorrent client with multiple interfaces"
     ["dolphin"]="File Manager"
@@ -429,6 +432,9 @@ declare -A apps_des=(
     ["nitrogen"]="Background browser and setter for X windows"
     ["parcellite"]="Lightweight GTK+ clipboard manager"
     ["pidgin"]="Multi-protocol instant messaging client"
+    ["pcsx2"]="A Sony PlayStation 2 emulator"
+    ["pcsxr"]="A Sony PlayStation (PSX) emulator based on the PCSX-df project"
+    ["ppsspp"]="A PSP emulator written in C++"
     ["qbittorrent"]="Open source (GPLv2) BitTorrent client that strongly resembles µtorrent"
     ["qupzilla"]="Cross-platform QtWebEngine browser"
     ["qutebrowser"]="A keyboard-driven, vim-like browser based on PyQt5 and QtWebKit"
@@ -444,6 +450,8 @@ declare -A apps_des=(
     ["spacefm"]="Multi-panel tabbed file manager"
     ["sunflower"]="Small and highly customizable twin-panel file manager for Linux with support for plugins"
     ["sxiv"]="Simple X Image Viewer"
+    ["steam-manjaro"]="A steam-manjaro in system"
+    ["stella"]="Atari 2600 VCS emulator"
     ["terminator"]="Terminal emulator that supports tabs and grids"
     ["thunar"]="Modern file manager for Xfce"
     ["thunar-archive-plugin"]="Create and deflate archives"
@@ -460,6 +468,7 @@ declare -A apps_des=(
     ["tumbler"]="For thumbnail previews"
     ["udevil"]="Mount as non-root user and mount networks"
     ["uzbl-tabbed"]="Tabbing manager providing multiple uzbl-browser instances in 1 window"
+    ["vbam-gtk"]="Nintendo GameBoy Advance emulator"
     ["viewnior"]="A simple, fast and elegant image viewer program"
     ["vim"]="Vi Improved, a highly configurable, improved version of the vi text editor"
     ["virtualbox"]="Powerful virtualization for enterprise as well as home use"
@@ -470,6 +479,7 @@ declare -A apps_des=(
     ["xfburn"]="A simple CD/DVD burning tool based on libburnia libraries"
     ["xfce4-terminal"]="A modern terminal emulator primarly for the Xfce desktop environment"
     ["xpdf"]="Viewer for Portable Document Format (PDF files)"
+    ["yabause-gtk"]="A Sega Saturn emulator"
     ["zathura-pdf-mupdf"]="Adds pdf support to zathura by using the mupdf library"
     ["zathura-pdf-poppler"]="Adds pdf support to zathura by using the poppler engine"
 )
