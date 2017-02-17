@@ -27,9 +27,6 @@ remove() {
   echo -n "To remove the empty files press [Enter]"
   read
   find ~ -type f -empty -delete
-  echo
-  echo -e "Operation complete! To return to SysClean press [Enter]"
-  read
 }
 
 main
