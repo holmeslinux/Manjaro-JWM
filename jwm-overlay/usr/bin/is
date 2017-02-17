@@ -89,7 +89,7 @@ The systemd is a suite of basic building blocks for a Linux system. It provides 
 24- FIREWALL STATUS
 Checks the state of the firewall  ufw. Uncomplicated and easy to use CLI tool for managing a netfilter firewall.
 
-25- SHIELDSUP!
+25- HackerWatch
 It offers some services to analyze the connectivity of the PC to the internet.
 
 To exit this information page, press "q".
@@ -123,7 +123,7 @@ NC='\e[0m'
     echo -e " │  $NC 18  $NC  Temperature Disk                   $NC 19  $NC  Temperature Processor │"
     echo -e " │  $NC 20  $NC  Boot-up Performance                $NC 21  $NC  SMART Disk            │"
     echo -e " │  $NC 22  $NC  Systemd Status                     $NC 23  $NC  Systemd Running       │"
-    echo -e " │  $NC 24  $NC  Firewall Status                    $NC 25  $NC  ShieldsUP!            │"
+    echo -e " │  $NC 24  $NC  Firewall Status                    $NC 25  $NC  HackerWatch           │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""    
     echo -e "      $NC ✓ Select a number and press [Enter] ✓ e Exit ✓ i Overview$NC"
@@ -305,7 +305,7 @@ NC='\e[0m'
             ;;
        25)
             echo
-            $BROWSER https://www.grc.com/x/ne.dll?bh0bkyd2
+            $BROWSER http://www.hackerwatch.org/probe/
             echo ""
             echo -e "Operation complete! To return to IS press [Enter]"
             read 

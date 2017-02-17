@@ -10,10 +10,11 @@ main() {
   echo "Your options:"
   echo
   echo "1 = Remove"
-  echo "2 = Not Remove"
+  echo "2 = No Remove"
   echo
   echo -n "▶ Choose an option and press [Enter] "
   read option
+  echo
   case $option in
     1) remove ;;
     2) exit ;;

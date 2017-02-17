@@ -22,26 +22,29 @@ main() {
 }
 
 log() {
-  DIR=/var/log/
+# Backing up current logs
+tar -zcvf /tmp/backuplog `date +%d.%m.%y`.tar.gz /var/log
 
-FILES=$(ls $DIR | cut -d '' -f1)
+# Move backup file current logs
+mv /var/log -name "*.tar.gz" /tmp/backuplog 
 
-echo "Starting cleaning..."
+# Removes backup files from logs with more than 10 days of creation
+find /tmp/backuplog -name "*.tar.gz" -mtime +10 -type f -exec rm {} \;
 
-for FILE in $FILES
-do
-  if [ -f $DIR$FILE ]
-  then
-    if [ -s $DIR$FILE ]
-    then
-      cat /dev/null > $DIR$FILE
-      echo "$FILE was cleaned.."
-      echo
-      echo -e "Operation complete! To return to SysClean press [Enter]"
-      read
-    fi
-  fi
-done
+# Searches all files in /var/log and performs cleanup
+  echo
+  find /var/log -type f | wc -l
+  echo
+  echo -e "To find out what the files are press [Enter]!"
+  read
+  find /var/log -type f | grep -Ev '^.*pacman.log$'
+  echo
+  echo -e "To remove the files press [Enter]!"
+  read
+  find /var/log -type f | grep -Ev '^.*pacman.log$' -exec rm {} \;
+  echo
+  echo -e "Operation complete! To return to SysClean press [Enter]"
+  read
 }
 
 main
