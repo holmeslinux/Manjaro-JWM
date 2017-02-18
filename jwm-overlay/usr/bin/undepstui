@@ -9,7 +9,7 @@ Welcome to SysClean information page.
 SysClean is a script that works with some commands that help clean the system.
 
 ATTENTION
-*The number 6, 7, 8, 9, 10, 11 and 12 can break your system. WARNING! USE WITH CAUTION.
+*The number 7, 8, 9, 10, 11 and 12 can break your system. WARNING! USE WITH CAUTION.
 
 e - EXIT SysClean
 "clear && exit"
@@ -33,47 +33,48 @@ List unnecessary system dependencies.
 3- LIST EMPTY FILES 
 "find ~ -type f -empty | wc -l"
 "find ~ -type f -empty -print"
-The above commands will look for how many empty files there are and what are these files in the /home folder.
+The above commands will look for how many empty files there are and what are these files in the /home.
 
-4 - LIMITED LOG JOURNALCTL
+4- LIST EMPTY FOLDRES 
+"find ~ -type d -empty | wc -l"
+"find ~ -type d -empty -print"
+The above commands will look for how many empty folders there are and what are these files in the /home.
+
+5 - LIMITED LOG JOURNALCTL
 "sudo journalctl --vacuum-size=50M --vacuum-time=30days"
 This command limits all log files in journalctl to a combined size of 50 megabytes and a maximum age of 30 days. This leaves plenty of log files behind to analyze systematic and reoccuring errors while preventing excessive amounts of log files.
 
-5 - CLEANING OF THE DAY
-"sudo pacman --sync --clean"
-Pacman stores its downloaded packages in /var/cache/pacman/pkg/ and does not remove the old or uninstalled versions automatically, therefore it is necessary to deliberately clean up that folder periodically to prevent such folder to grow indefinitely in size. 
-
-6 - FORCE REMOVE PACKAGE
-"pacman -Rdd <PACKAGE NAME>"
-This command removes <PACKAGE NAME> without checking the dependencies of <PACKAGE NAME> first. This enables experienced users to remove packages and dependencies of packages. This command only removes <PACKAGE NAME> from your system. All dependencies and orphans are left: run REMOVE ORPHANED PACKAGES afterwards to remove them, too.
-Attention: This command can break pacakges on your system or even your entire system. Use with great care!
-
-7 - REMOVE ORPHAN BY STAGES
-"/usr/bin/undeps -r"
-Removes unnecessary dependencies in stages.
-
-8 - REMOVE ORPHAN RECURSIVE
-"/usr/bin/undeps -ra"
-Remove all unnecessary dependencies at once (recursively).
-
-9-REMOVE EMPTY FILES
-"/usr/bin/emptyclean"
-The above command will remove all empty files in the Home folder (/home).
-
-10 - REMOVE PACKAGE CACHE
-"paccache -ruvk1
-paccache -rvk2"
-By default Pacman uses this cache direcoty for downloading packages: /var/cache/pacman/pkg/. No cached packages get deleted automatically. This enables you to DOWNGRADE PACKAGES, which are broken, without a working internet connection. The package cache of an old and actively used Manjaro installation can become quite large. Clean it to regain space on your root partition.
-The first command removes all packages from cache, which are not installed (anymore) on your system. The second command removes all old packages from your cache except the 2 latest versions: The version you have currently installed on your system and the previous version.
-
-11 - EMPTY PACKAGE CACHE
+6 - CLEANING OF THE DAY
 "yaourt -Scc"
 This command will empty your entire package cache by deleting ALL packages.
 Attention: This will make it impossible to reinstall or DOWNGRADE PACKAGES without a working internet connection.
 
-12- REMOVE LOG SYSTEM
-"sudo /usr/bin/logclean"
-The logclean script cleans all system logs (/var/log/).
+7 - FORCE REMOVE PACKAGE
+"pacman -Rdd <PACKAGE NAME>"
+This command removes <PACKAGE NAME> without checking the dependencies of <PACKAGE NAME> first. This enables experienced users to remove packages and dependencies of packages. This command only removes <PACKAGE NAME> from your system. All dependencies and orphans are left: run REMOVE ORPHANED PACKAGES afterwards to remove them, too.
+Attention: This command can break pacakges on your system or even your entire system. Use with great care!
+
+8 - REMOVE ORPHAN BY STAGES
+"/usr/bin/undeps -r"
+Removes unnecessary dependencies in stages.
+
+9 - REMOVE ORPHAN RECURSIVE
+"/usr/bin/undeps -ra"
+Remove all unnecessary dependencies at once (recursively).
+
+10 - REMOVE EMPTY FILES
+"/usr/bin/empty_fileclean"
+The above command will remove all empty files in the /home.
+
+11 - REMOVE EMPTY FOLDRES
+"/usr/bin/empty_folderclean"
+The above command will remove all empty folders in the /home.
+
+12 - REMOVE PACKAGE CACHE
+"paccache -ruvk1
+paccache -rvk2"
+By default Pacman uses this cache direcoty for downloading packages: /var/cache/pacman/pkg/. No cached packages get deleted automatically. This enables you to DOWNGRADE PACKAGES, which are broken, without a working internet connection. The package cache of an old and actively used Manjaro installation can become quite large. Clean it to regain space on your root partition.
+The first command removes all packages from cache, which are not installed (anymore) on your system. The second command removes all old packages from your cache except the 2 latest versions: The version you have currently installed on your system and the previous version.
 
 To exit this information page, press "q".
 	EOF
@@ -86,14 +87,13 @@ To exit this information page, press "q".
     echo ""
     echo -e "                     ✤ Manjaro JWM Community Edition ✤ "
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │    1    Remove Package + Deps	   2   List Orphan Packages        │"
-    echo -e " │    3    List Empty Files                4   Limited Log Journalctl      │"
-    echo -e " │    5    Cleaning of the Day                                             │"
+    echo -e " │    1   Remove Package + Deps	           2   List Orphan Packages        │"
+    echo -e " │    3   List Empty Files                 4   List Empty Folders          │"
+    echo -e " │    5   Limited Log Journalctl           6   Cleaning of the Day         │"
     echo -e " │-------------------------------------------------------------------------│"
-    echo -e " │    6   *Force Remove Package            7  *Remove Orphan by Stages     │"
-    echo -e " │    8   *Remove Orphan Recursive         9  *Remove Empty Files          │"
-    echo -e " │   10   *Remove Package Cache           11  *Empty Package Cache         │"    
-    echo -e " │   12   *Remove Log System    	                                   │"
+    echo -e " │    7  *Force Remove Package             8  *Remove Orphan by Stages     │"
+    echo -e " │    9  *Remove Orphan Recursive         10  *Remove Empty Files          │"
+    echo -e " │   11  *Remove Empty Folders            12  *Remove Package Cache        │"    
     echo -e " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""    
     echo -e "       ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information"
@@ -125,49 +125,67 @@ To exit this information page, press "q".
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-          4)
+	   4)
             echo
-            sudo journalctl --vacuum-size=50M --vacuum-time=30days
+            find ~ -type d -empty | wc -l
+            echo
+            echo -e "To find out which are the empty folders press [Enter]!"
+            read
+            find ~ -type d -empty -print
             echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
           5)
             echo
-            sudo pacman --sync --clean
+            sudo journalctl --vacuum-size=50M --vacuum-time=30days
             echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
           6)
             echo
+            yaourt -Scc
+            echo
+            echo -e "Operation complete! To return to SysClean press [Enter]"
+            read
+            ;;
+           7)
+            echo
             sudo pacman -Rdd $(pacman -Qq | pmenu -p 'Select package to remove >') --color always
             echo
             echo -e "Dependency in force mode removed! To return to Pacli press [Enter]"
             read
             ;;
-          7)
+          8)
             echo
             /usr/bin/undeps -r
             echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-          8)
+          9)
             echo
             /usr/bin/undeps -ra
             echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-          9)
+          10)
 	    echo
-            /usr/bin/emptyclean
+            /usr/bin/empty_fileclean
+            echo
+            echo -e "Operation complete! To return to SysClean press [Enter]"
+            read
+            ;;  
+          11)
+	    echo
+            /usr/bin/empty_folderclean
             echo
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-	  10)
+          12)
             echo
             paccache -ruvk1
 	    paccache -rvk2
@@ -175,20 +193,6 @@ To exit this information page, press "q".
             echo -e "Operation complete! To return to SysClean press [Enter]"
             read
             ;;
-	 11)
-	    echo
-            yaourt -Scc
-            echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
-            read
-            ;;
-	 12) 
-	    echo
-	    sudo /usr/bin/logclean
-	    echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
-            read
-            ;;      
           e)
             clear && exit
             read

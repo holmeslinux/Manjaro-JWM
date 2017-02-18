@@ -1,11 +1,11 @@
 #!/bin/bash
-# Remove the empty files from the Home folder
+# Remove the empty folders from the Home (/home)
 # Author: Hugo Cisneiros
 # Adaptation: Holmes
  
 main() {
-  echo "Do you want to remove the empty files from the Home folder?"
-  echo "------------------------------------------------------------"
+  echo "Do you want to remove the empty folders from the Home?"
+  echo "------------------------------------------------------"
   echo
   echo "Your options:"
   echo
@@ -24,9 +24,9 @@ main() {
 
 remove() {
   echo
-  echo -n "To remove the empty files press [Enter]"
+  echo -n "To remove the empty folders press [Enter]"
   read
-  find ~ -type f -empty -delete
+  rm -R $(find ~ -type d -empty | grep -Ev '^.*Desktop$|^.*Documents$|^.*Downloads$|^.*Music$|^.*Pictures$|^.*Public$|^.*Screenshots$|^.*Templates$|^.*Videos$')
 }
 
 main
