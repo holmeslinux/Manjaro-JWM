@@ -1,9 +1,14 @@
 #!/bin/bash
-
-# updated on 11.11.2016 14:11:24
-# version 0.1-4
-# Credits for pekman (<https://github.com/Manjaro-Pek/pacli>) and excalibur1234 (<https://github.com/excalibur1234>)
-# Adapted for Holmes
+#
+####################################################
+# Updated 18.02.2017 18:15:14 			   #
+# Version 0.1-5 				   #
+# Name pacli ; Pacli Package Manager 		   #
+# Use chmod +x pacli ; ~/pacli 			   #
+# Credits pekman and excalibur1234 (Manjaro Linux) #
+# Adapted Holmes (Manjaro Brasil)		   #
+# License Copyleft 			           #
+####################################################
 
 function help_text() {
 	less 	<<-EOF
@@ -146,10 +151,6 @@ function func_a
 		fi
 }
 
-# set colors
-RED='\e[41m'
-NC='\e[0m'
-
     while true; do
     clear
     echo ""
@@ -157,23 +158,23 @@ NC='\e[0m'
     echo ""
     echo -e "                       ✤ Manjaro JWM Community Edition ✤"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC  1 $NC  Update System               	  $NC  2 $NC  Install Package            │"
-    echo -e " │  $NC  3 $NC  Optimize Mirrors                $NC  4 $NC  Defragment Database        │"
-    echo -e " │  $NC  5 $NC  List Local Package Files        $NC  6 $NC  Package Information        │"
-    echo -e " │  $NC  7 $NC  Installed Package Info          $NC  8 $NC  Dependency Tree            │"
-    echo -e " │  $NC  9 $NC  Reverse Dependency Tree         $NC 10 $NC  List Installed Packages    │"
-    echo -e " │  $NC 11 $NC  Downgrade Packages              $NC 12 $NC  Fix Error Keys             │"
-    echo -e " │  $NC 13 $NC  Fix Error Database Lock         $NC 14 $NC  System Cleanup GNU/Linux   │"
+    echo -e " │    1     Update System                 2     Install Package            │"
+    echo -e " │    3     Optimize Mirrors              4     Defragment Database        │"
+    echo -e " │    5     List Local Package Files      6     Package Information        │"
+    echo -e " │    7     Installed Package Info        8     Dependency Tree            │"
+    echo -e " │    9     Reverse Dependency Tree      10     List Installed Packages    │"
+    echo -e " │   11     Downgrade Packages           12     Fix Error Keys             │"
+    echo -e " │   13     Fix Error Database Lock      14     System Cleanup GNU/Linux   │"
     echo -e " │-------------------------------------------------------------------------│"
-    echo -e " │  $NC 15 $NC *Force Update System	          $NC 16 $NC *Force Install Package      │"
+    echo -e " │   15    *Force Update System	         16    *Force Install Package      │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 17 $NC  Update AUR                  	  $NC 18 $NC  Install from AUR           │"
-    echo -e " │  $NC 19 $NC  Search + Install from AUR       $NC 20 $NC  List Installed from AUR    │"
+    echo -e " │  17     Update AUR                   18     Install from AUR            │"
+    echo -e " │  19     Search + Install from AUR    20     List Installed from AUR     │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "      $NC ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information$NC"
+    echo -e "        ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information"
     echo ""
     read choix
     case $choix in
@@ -270,7 +271,7 @@ NC='\e[0m'
             ;;
         14)
             echo
-            /usr/bin/undepstui
+            /usr/bin/sysclean
             echo
             echo -e "Thank you for using SysClean! To return to Pacli press [Enter]"
             read        

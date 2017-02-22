@@ -1,8 +1,14 @@
 #!/bin/bash
-
-# updated on 24.11.2016 23:22:49
-# version 0.1-1
-# IS Information System GNU/Linux is a script based on the Pacli Package Manager (<https://github.com/Manjaro-Pek/pacli>) and was adapted by Holmes.
+#
+###################################################################
+# Updated 18.02.2017 23:04:49 					  #
+# Version 0.1-2 						  #
+# Name is ; IS Information System GNU/Linux			  #
+# Use chmod +x is ; ~/is 					  #
+# Based pacli (credits pekman and excalibur1234 - Manjaro Linux)  #
+# Adapted Holmes (Manjaro Brasil) 				  #
+# License Copyleft						  #
+###################################################################
 
 function help_text() {
 	less 	<<-EOF
@@ -96,51 +102,46 @@ To exit this information page, press "q".
 	EOF
 }
 
-# set colors
-RED='\e[41m'
-BLUE='\e[44m'
-ORANGE='\e[46m'
-NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                     $NC IS Information System GNU/Linux $NC "
+    echo -e "                         IS Information System GNU/Linux"
     echo ""
-    echo -e "                    $NC ✤ Manjaro JWM Community Edition ✤ $NC"
+    echo -e "                        ✤ Manjaro JWM Community Edition ✤"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC  1  $NC  Memory Summary                     $NC  2  $NC  BIOS Explore          │"
-    echo -e " │  $NC  3  $NC  Processor Collect                  $NC  4  $NC  List System           │"
-    echo -e " │  $NC  5  $NC  Partitions                         $NC  6  $NC  DF Disk Space         │"
-    echo -e " │  $NC  7  $NC  Disk Usage                         $NC  8  $NC  Home Folder Usage     │"
-    echo -e " │  $NC  9  $NC  Block Devices                      $NC 10  $NC  PCI Devices           │"
-    echo -e " │  $NC 11  $NC  List Hardware                                                   │"
+    echo -e " │      1     Memory Summary                   2     BIOS Explore          │"
+    echo -e " │      3     Processor Collect                4     List System           │"
+    echo -e " │      5     Partitions                       6     DF Disk Space         │"
+    echo -e " │      7     Disk Usage                       8     Home Folder Usage     │"
+    echo -e " │      9     Block Devices                   10     PCI Devices           │"
+    echo -e " │     11     List Hardware                                                │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 12  $NC  Inxi System                        $NC 13  $NC  ScreenFetch Detail    │"
-    echo -e " │  $NC 14  $NC  PsTree PID                         $NC 15  $NC  Ps CPU                │"
-    echo -e " │  $NC 16  $NC  Top Processes                      $NC 17  $NC  Memory Usage          │"
-    echo -e " │  $NC 18  $NC  Temperature Disk                   $NC 19  $NC  Temperature Processor │"
-    echo -e " │  $NC 20  $NC  Boot-up Performance                $NC 21  $NC  SMART Disk            │"
-    echo -e " │  $NC 22  $NC  Systemd Status                     $NC 23  $NC  Systemd Running       │"
-    echo -e " │  $NC 24  $NC  Firewall Status                    $NC 25  $NC  HackerWatch           │"
+    echo -e " │     12     Inxi System                     13     ScreenFetch Detail    │"
+    echo -e " │     14     PsTree PID                      15     Ps CPU                │"
+    echo -e " │     16     Top Processes                   17     Memory Usage          │"
+    echo -e " │     18     Temperature Disk                19     Temperature Processor │"
+    echo -e " │     20     Boot-up Performance             21     SMART Disk            │"
+    echo -e " │     22     Systemd Status                  23     Systemd Running       │"
+    echo -e " │     24     Firewall Status                 25     HackerWatch           │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""    
-    echo -e "      $NC ✓ Select a number and press [Enter] ✓ e Exit ✓ i Overview$NC"
+    echo -e "        ✓ Select a number and press [Enter] ✓ e Exit ✓ i Overview"
     echo ""
     read choix
     case $choix in
         1)
             echo
             sudo dmidecode -t memory
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read
             ;;
         2)
             echo
             sudo dmidecode -t bios
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read
             ;;
@@ -148,7 +149,7 @@ NC='\e[0m'
             echo
             sudo dmidecode -t processor
             lscpu
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read
             ;;
@@ -162,21 +163,21 @@ NC='\e[0m'
 	5)
             echo
             sudo fdisk -l
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read
             ;;
 	6)
             echo
             df -l
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read
             ;;
         7)
             echo
             ncdu -x /
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read
             ;;
@@ -190,14 +191,14 @@ NC='\e[0m'
 	9)
             echo
             lsblk -o NAME,SIZE,FSTYPE,LABEL,MOUNTPOINT,UUID
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read
             ;;
 	10)
             echo
             lspci
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read
             ;;
@@ -206,7 +207,7 @@ NC='\e[0m'
             sudo lshw > lshw && leafpad lshw
             sleep 2            
             rm lshw
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read
             ;;
@@ -220,21 +221,21 @@ NC='\e[0m'
         13)
             echo
             screenfetch -p
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
        14)
             echo
             pstree -p
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
        15)
             echo
             ps aux --sort=-pcpu
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
@@ -248,21 +249,21 @@ NC='\e[0m'
        17)
             echo
             sudo ps_mem
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
        18)
             echo
             sudo hddtemp $(df -k / | awk 'NR==2 {print $1}')
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
        19)
             echo
             sensors
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
@@ -271,21 +272,21 @@ NC='\e[0m'
             systemd-analyze plot > plot.svg && $BROWSER --new-tab plot.svg
             sleep 2
             rm plot.svg
-            echo ""
-            echo -e "$NC Operation complete! To return to IS press [Enter] $NC"
+            echo 
+            echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
        21)
             echo
             sudo smartctl -A $(df -k / | awk 'NR==2 {print $1}')
-            echo ""
+            echo
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;       
        22)
             echo
             systemctl status
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
@@ -299,14 +300,14 @@ NC='\e[0m'
        24)
             echo
             sudo ufw status
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
        25)
             echo
             $BROWSER http://www.hackerwatch.org/probe/
-            echo ""
+            echo 
             echo -e "Operation complete! To return to IS press [Enter]"
             read 
             ;;
@@ -321,7 +322,7 @@ NC='\e[0m'
             ;;
         *)
             echo "Wrong option! Wait and try again..."
-            echo ""
+            echo 
             sleep 2
             clear
             ;;

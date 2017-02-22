@@ -1,14 +1,16 @@
 #!/bin/bash
 #
-# mjwmpost-0.1-1 - MJWMPost Installation (MJWMPost)
-#
-# MJWMPost Installation (MJWMPost)is a script which is developed for 
-# Manjaro JWM Community Edition. It's purpose is to provide an easy way for
-# users to set up their system, install drivers and download and install applications.
-#
-# Written by Culinax
-# Modified for use in BSPWM respin by Chrysostomus
-# Modified for use in Manjaro JWM Community Edition by Holmes
+##########################################
+# Updated 18.02.2017 23:34:49            #
+# Version 0.1-2 			 #
+# Name mjwmpost ; MJWM Post Installation #
+# Use chmod +x mjwmpost ; ~/mjwmpost     #
+# Credits Culinax (Manjaro Linux)        #
+# Modified Chrysostomus (Manjaro Linux)  #
+# Adapted Holmes (Manjaro Brasil)        #
+# License Copyleft 			 #
+##########################################
+
 PS3="▶ "
 
 in_array() {
@@ -188,11 +190,11 @@ install_check() {
 }
 
 print_title() {
-    printf "\033[38;5;17mMJWMPost Installation%s\033[0m\n\n" "$@"
+    printf "\033[38;5;17mMJWM Post Installation%s\033[0m\n\n" "$@"
 }
 
 print_main() {
-    printf '%b\n' "Welcome to Manjaro JWM Community Edition, you're in the MJWMPost Installation.\n"\
+    printf '%b\n' "Welcome to Manjaro JWM Community Edition, you're in the MJWM Post Installation.\n"\
                   "The purpose of this post installation script is to automate common tasks which"\
                   "should help you to get you started using your brand new installation.\n"\
                   "It is by no means mandatory to run this script, however it is recommended to go"\

@@ -1,9 +1,15 @@
 #!/bin/sh
 #
-# UnDeps (Unneeded Dependencies Tool) - This script lists and removes unneeded dependencies
-# Options: -l <list> | -r <remove> | -ra <remove all - recursive>
-# Credits for Estêvão Valadão (Arch Linux Brasil)
-# Adapted for Holmes
+###############################################
+# Updated 24.11.2010 11:02:02 		      #
+# Version 0.1-1 			      #
+# Name undeps ; Unneeded Dependencies Tool    #
+# Use chmod +x undeps ; ~/undeps              #
+# Link sysclean ; pacli                       #
+# Credits Estêvão Valadão (Arch Linux Brasil) #
+# Adapted Holmes (Manjaro Brasil)             #
+# License Copyleft                            #
+###############################################
 
 loopflag=0
 PACMAN=$(which pacman 2> /dev/null) 

@@ -1,8 +1,14 @@
 #!/bin/bash
-# updated on 12.11.2016 09:45:49
-# version 0.1-1
-# Credits for Chrysostomus (<https://github.com/Chrysostomus>)
-# Adapted for Holmes
+#
+###############################################
+# Updated 18.02.2017 19:07:02 		      #
+# Version 0.1-2 			      #
+# Name touchmon ; TouchMon Configuration Tool #
+# Use chmod +x touchmon ; ~/touchmon          #
+# Credits Chrysostomus (Manjaro Linux) 	      #
+# Adapted Holmes (Manjaro Brasil)             #
+# License Copyleft 			      #
+###############################################
 
 function help_text() {
 	less 	<<-EOF
@@ -338,35 +344,30 @@ function set_primary {
 	xrandr --output $mon --primary
 }
 
-# set colors
-RED='\e[41m'
-BLUE='\e[44m'
-ORANGE='\e[46m'
-NC='\e[0m'
     while true; do
     clear
     echo ""
-    echo -e "                       $NC TouchMon Configuration Tool $NC "
+    echo -e "                           TouchMon Configuration Tool"
     echo ""
-    echo -e "                    $NC ✤ Manjaro JWM Community Edition ✤ $NC"
+    echo -e "                        ✤ Manjaro JWM Community Edition ✤"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC  1  $NC  Set pointer speed            $NC  2 $NC  Toggle tap to click          │"
-    echo -e " │  $NC  3  $NC  Toggle drag lock             $NC  4 $NC  Toggle left handed mode      │"
-    echo -e " │  $NC  5  $NC  Toggle disable while typing  $NC  6 $NC  Toggle natural scrolling     │"
-    echo -e " │  $NC  7  $NC  Toggle horizontal scrolling  $NC  8 $NC  Access LXinput               │"
-    echo -e " │  $NC  9  $NC  Commands Manual Xinput       $NC 10 $NC  Wiki Xinput                  │"
+    echo -e " │    1     Set pointer speed              2     Toggle tap to click       │"
+    echo -e " │    3     Toggle drag lock               4     Toggle left handed mode   │"
+    echo -e " │    5     Toggle disable while typing    6     Toggle natural scrollin   │"
+    echo -e " │    7     Toggle horizontal scrolling    8     Access LXinput            │"
+    echo -e " │    9     Commands Manual Xinput        10     Wiki Xinput               │"
     echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 11 $NC  List monitors                 $NC 12 $NC Set resolution                │"
-    echo -e " │  $NC 13 $NC  Set primary monitor           $NC 14 $NC Position monitors             │"
-    echo -e " │  $NC 15 $NC  Connect/disconnect monitor    $NC 16 $NC Rotate monitor                │"
-    echo -e " │  $NC 17 $NC  Save display settings         $NC 18 $NC Dynamic monitor detection     │"
-    echo -e " │  $NC 19 $NC  Access ARandR                 $NC 20 $NC Commands Manual XRandR        │"    
-    echo -e " │  $NC 21 $NC  Wiki XRandR                                                      │"
+    echo -e " │   11     List monitors                 12     Set resolution            │"
+    echo -e " │   13     Set primary monitor           14     Position monit            │"
+    echo -e " │   15     Connect/disconnect monitor    16     Rotate monitor            │"
+    echo -e " │   17     Save display settings         18     Dynamic monitor detection │"
+    echo -e " │   19     Access ARandR                 20     Commands Manual XRandR    │"    
+    echo -e " │   21     Wiki XRandR                                                    │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "      $NC ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information$NC"
+    echo -e "      ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information"
     echo ""
     read choix
     case $choix in
@@ -388,7 +389,7 @@ NC='\e[0m'
             echo
             toggle_left_handed
             read -s -n1
-	   		;;
+	    ;;
 	5)
             echo
             toggle_disable_while_typing

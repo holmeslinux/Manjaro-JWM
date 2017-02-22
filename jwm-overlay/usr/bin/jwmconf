@@ -1,9 +1,14 @@
 #!/bin/bash
-
-# updated on 11.11.2016 09:45:49
-# version 0.1-4
-# Credits for pekman (<https://github.com/Manjaro-Pek/pacli>) and Chrysostomus (<https://github.com/Chrysostomus>)
-# Adapted for Holmes
+#
+##################################################################
+# Updated 18.02.2017 18:23:49 					 #
+# Version 0.1-5 						 #
+# Name jwmconf ; JWMConf Configuration Tool 			 #
+# Use chmod +x jwmconf ; ~/jwmconf 				 #
+# Based pacli (credits pekman and excalibur1234 - Manjaro Linux) #
+# Adapted Holmes (Manjaro Brasil) 				 #
+# License Copyleft 						 #
+##################################################################
 
 function help_text() {
 	less 	<<-EOF
@@ -101,11 +106,6 @@ To exit this information page, press "q".
 	EOF
 }
 
-# set colors
-RED='\e[41m'
-BLUE='\e[44m'
-ORANGE='\e[46m'
-NC='\e[0m'
     while true; do
     clear
     echo ""
@@ -113,25 +113,25 @@ NC='\e[0m'
     echo ""
     echo -e "                    $NC ✤ Manjaro JWM Community Edition ✤ $NC"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC  1  $NC  Refresh Configuration JWM          $NC  2  $NC  Refresh Menu JWM      │"
-    echo -e " │  $NC  3  $NC  Check Error JWM                    $NC  4  $NC  Homepage JWM          │"
-    echo -e " │  $NC  5  $NC  Commands Manual JWM                $NC  6  $NC  Version JWM           │"
+    echo -e " │     1     Refresh Configuration JWM         2     Refresh Menu JWM      │"
+    echo -e " │     3     Check Error JWM                   4     Homepage JWM          │"
+    echo -e " │     5     Commands Manual JWM               6     Version JWM           │"
     echo -e " │-------------------------------------------------------------------------│"
-    echo -e " │  $NC  7  $NC *Edit Tray JWM                      $NC  8  $NC *Edit Start JWM        │"
-    echo -e " │  $NC  9  $NC *Edit Theme JWM                     $NC 10  $NC *Edit Keys JWM         │"
-    echo -e " │  $NC 11  $NC *Edit Groups JWM                    $NC 12  $NC *Edit Preferences JWM  │"
-    echo -e " │  $NC 13  $NC *Edit Menu JWM                      $NC 14  $NC *Edit jwmrc            │"
+    echo -e " │     7    *Edit Tray JWM                     8    *Edit Start JWM        │"
+    echo -e " │     9    *Edit Theme JWM                   10    *Edit Keys JWM         │"
+    echo -e " │    11    *Edit Groups JWM                  12    *Edit Preferences JWM  │"
+    echo -e " │    13    *Edit Menu JWM                    14    *Edit jwmrc            │"
     echo " └─────────────────────────────────────────────────────────────────────────┘" 
     echo ""
     echo " ┌─────────────────────────────────────────────────────────────────────────┐"
-    echo -e " │  $NC 15  $NC  Edit Conky                         $NC 16  $NC  Edit Dunst            │"
-    echo -e " │  $NC 17  $NC  Edit Gmrun                         $NC 18  $NC  Edit Bashrc           │"
+    echo -e " │    15     Edit Conky                       16     Edit Dunst            │"
+    echo -e " │    17     Edit Gmrun                       18     Edit Bashrc           │"
     echo -e " │-------------------------------------------------------------------------│"
-    echo -e " │  $NC 19  $NC *Edit GTK2              	      $NC 20  $NC *Edit GTK3             │"
-    echo -e " │  $NC 21  $NC *Edit Xresources 	              $NC 22  $NC *Edit LXDM             │"
+    echo -e " │    19    *Edit GTK2              	      20    *Edit GTK3             │"
+    echo -e " │    21    *Edit Xresources 	              22    *Edit LXDM             │"
     echo " └─────────────────────────────────────────────────────────────────────────┘"
     echo ""
-    echo -e "      $NC ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information$NC"
+    echo -e "       ✓ Select a number and press [Enter] ✓ e Exit ✓ i Information"
     echo ""
     read choix
     case $choix in

@@ -1,7 +1,15 @@
 #!/bin/bash
-# SysClean System Cleanup GNU/Linux
-# Author: Holmes
-# Adaptation: Holmes
+#
+##################################################################
+# Updated 18.02.2017 19:23:01 					 #
+# Version 0.1-1 						 #
+# Name sysclean ; SysClean System Cleanup GNU/Linux 		 #
+# Use chmod +x sysclean ; ~/sysclean 				 #
+# Link pacli 							 #
+# Based pacli (credits pekman and excalibur1234 - Manjaro Linux) #
+# Adapted Holmes (Manjaro Brasil) 				 #
+# License Copyleft 						 #
+##################################################################
 
 function help_text() {
 	less 	<<-EOF
