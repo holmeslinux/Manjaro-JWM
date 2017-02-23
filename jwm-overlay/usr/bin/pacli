@@ -187,7 +187,7 @@ function func_a
             ;;
 	2)
             echo
-            sudo pacman -S $(pacman -Slq | pmenu -p 'Select package to install >') --color always
+            sudo pacman -S $(pacman -Slq | fzf --reverse --prompt='Select package to install ▶ ') --color always
             echo
             echo -e "Package installation is finished! To return to Pacli press [Enter]"
             read
@@ -208,35 +208,35 @@ function func_a
             ;;
         5)
             echo
-            pacman -Ql $(pacman -Qq | pmenu -p 'Select a package of which to list all files >') --color always
+            pacman -Ql $(pacman -Qq | fzf --reverse --prompt='Select a package of which to list all files ▶ ') --color always
             echo
             echo -e "All local files in package listed! To return to Pacli press [Enter]"
             read 
             ;;
         6)
             echo
-            yaourt -Sii $(cat /tmp/packages | pmenu -p 'Select a package to display information about >') 
+            yaourt -Sii $(cat /tmp/packages | fzf --reverse --prompt='Select a package to display information about ▶ ') 
             echo
             echo -e "Package information displayed! To return to Pacli press [Enter]"
             read     
             ;; 
         7)
             echo
-            yaourt -Qii $(pacman -Qq | pmenu -p 'Select an installed package to diplay information about >')
+            yaourt -Qii $(pacman -Qq | fzf --reverse --prompt='Select an installed package to diplay information about ▶ ')
             echo
             echo -e "Package information listed! To return to Pacli press [Enter]"
             read     
             ;; 
         8)
             echo
-            pactree -c -s $(pacman -Slq | pmenu -p 'Select a package >')
+            pactree -c -s $(pacman -Slq | fzf --reverse --prompt='Select a package ▶ ')
             echo
             echo -e "Dependency tree displayed! To return to Pacli press [Enter]"
             read
             ;;
         9)
             echo
-            pactree -c -r $(pacman -Qq | pmenu -p 'Select a package >')
+            pactree -c -r $(pacman -Qq | fzf --reverse --prompt='Select a package ▶ ')
             echo
             echo -e "Reverse dependency tree displayed! To return to Pacli press [Enter]"
             read
@@ -250,7 +250,7 @@ function func_a
             ;;
         11)
             echo
-            downgrade $(pacman -Qq | pmenu -p 'Select package to downgrade >')
+            downgrade $(pacman -Qq | fzf --reverse --prompt='Select package to downgrade ▶ ')
             echo
             echo -e "Downgrade process finished! To return to Pacli press [Enter]"
             read     
@@ -285,7 +285,7 @@ function func_a
             ;;
         16)
             echo
-            sudo pacman -S --force $(pacman -Slq | pmenu -p 'Select package to install >') --color always
+            sudo pacman -S --force $(pacman -Slq | fzf --reverse --prompt='Select package to install ▶ ') --color always
             echo
             echo -e "Package installation in force mode is finished! To return to Pacli press [Enter]"
             read
@@ -299,7 +299,7 @@ function func_a
             ;;
         18)
             echo
-            yaourt -S $(cat /tmp/packages | pmenu -p 'Select a package to install >')
+            yaourt -S $(cat /tmp/packages | fzf --reverse --prompt='Select a package to install ▶ ')
             echo
             echo -e "Installation from AUR finished! To return to Pacli press [Enter]"
             read  

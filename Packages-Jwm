@@ -42,7 +42,7 @@ downgrade
 gmrun 
 i3lock
 lxappearance
-pmenu
+fzf
 prelink
 preload
 python2-xdg

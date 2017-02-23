@@ -110,7 +110,7 @@ To exit this information page, press "q".
     case $choix in
           1)
 	    echo
-            sudo pacman -Rsn $(pacman -Qq | pmenu -p 'Select package to remove >') --color always
+            sudo pacman -Rsn $(pacman -Qq | fzf --reverse --prompt='Select package to remove ▶ ') --color always
             echo
             echo -e "Package and all unneeded dependencies removed. To return to Pacli press [Enter]"
             read
@@ -126,7 +126,7 @@ To exit this information page, press "q".
             echo
             find ~ -type f -empty | wc -l
             echo
-            echo -e "To find out which are the empty files press [Enter]!"
+            echo -e "To find out which are the empty files press [Enter]"
             read
             find ~ -type f -empty -print
             echo
@@ -137,7 +137,7 @@ To exit this information page, press "q".
             echo
             find ~ -type d -empty | wc -l
             echo
-            echo -e "To find out which are the empty folders press [Enter]!"
+            echo -e "To find out which are the empty folders press [Enter]"
             read
             find ~ -type d -empty -print
             echo
@@ -160,7 +160,7 @@ To exit this information page, press "q".
             ;;
            7)
             echo
-            sudo pacman -Rdd $(pacman -Qq | pmenu -p 'Select package to remove >') --color always
+            sudo pacman -Rdd $(pacman -Qq | fzf --reverse --prompt='Select package to remove ▶ ') --color always
             echo
             echo -e "Dependency in force mode removed! To return to Pacli press [Enter]"
             read

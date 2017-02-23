@@ -66,3 +66,9 @@ echo
 
 # prompt programmed
 PS1="\[\033[38;5;22m\]▶\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]\t\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]»\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]\u on \H\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]in\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\][\[$(tput sgr0)\]\[\033[38;5;17m\]\w\[$(tput sgr0)\]\[\033[38;5;22m\]]\[$(tput sgr0)\]\[\033[38;5;234m\]\n▶ \\$ \[$(tput sgr0)\]"
+
+# solarized colors fzf
+export FZF_DEFAULT_OPTS='
+  --color=fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3
+  --color=prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b
+'
