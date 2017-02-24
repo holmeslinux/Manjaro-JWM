@@ -110,7 +110,7 @@ To exit this information page, press "q".
     case $choix in
           1)
 	    echo
-            sudo pacman -Rsn $(pacman -Qq | fzf --reverse --prompt='Select package to remove ▶ ') --color always
+            sudo pacman -Rsn $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to remove ▶ ') --color always
             echo
             echo -e "Package and all unneeded dependencies removed. To return to Pacli press [Enter]"
             read
@@ -160,7 +160,7 @@ To exit this information page, press "q".
             ;;
            7)
             echo
-            sudo pacman -Rdd $(pacman -Qq | fzf --reverse --prompt='Select package to remove ▶ ') --color always
+            sudo pacman -Rdd $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to remove ▶ ') --color always
             echo
             echo -e "Dependency in force mode removed! To return to Pacli press [Enter]"
             read
