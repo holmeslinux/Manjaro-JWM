@@ -40,7 +40,7 @@ This command compares a list of all installed packages with package database on 
 This option downloads and installs <PACKAGE NAME> on your system. <PACKAGE NAME> must be a package from the Manjaro repositories.
 
 3 - OPTIMIZE MIRRORS
-"sudo pacman-mirrors -g && sudo pacman -Syy"
+"sudo pacman-mirrors -g -t 30 && sudo pacman -Syy"
 This command tests your connection to all available Manjaro repository mirrors/servers. The mirror with the best connection is automatically chosen for you. Additionally, the latest package database is downloaded from the chosen Manjaro repository mirror.
 If you want to speed up this command: Only test your connection quality to Manjaro mirrors/servers near you. Example: You have noticed the pings to German and French mirrors are always best for you. Then, you can run: "sudo pacman-mirrors -g -c Germany,France"
 
@@ -85,7 +85,7 @@ We all have our own unique signatures which are used to authenticate who we are 
 This is also the case with software packages available from the software repositories. They all contain encrypted codes (signature keys) unique to their developers to ensure that they are authentic and not malicious in nature.
 
 13 - FIX ERRORS DATABASE LOCK
-"sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g && sudo pacman -Syyuu"
+"sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g -t 30 && sudo pacman -Syyuu"
 This long command attempts to fix the most common issues Manjaro users have with Pacman: 
 First, it removes Pacman's database lock. 
 Then, it does the same as OPTIMIZE MIRRORS: It will search for working and good Manjaro repository mirrors/servers. 
@@ -264,7 +264,7 @@ function func_a
             ;;	
          13)
             echo
-            sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g && sudo pacman -Syyuu --color always
+            sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g -t 30 && sudo pacman -Syyuu --color always
             echo
             echo -e "Most common Pacman errors fixed. To return to Pacli press [Enter]"
             read     
