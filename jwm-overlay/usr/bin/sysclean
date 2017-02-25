@@ -97,7 +97,7 @@ To exit this information page, press "q".
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │    1   Remove Package + Deps	           2   List Orphan Packages        │"
     echo -e " │    3   List Empty Files                 4   List Empty Folders          │"
-    echo -e " │    5   Limited Log Journalctl           6   Cleaning of the Day         │"
+    echo -e " │    5   Limit Log Journalctl             6   Cleaning of the Day         │"
     echo -e " │-------------------------------------------------------------------------│"
     echo -e " │    7  *Force Remove Package             8  *Remove Orphan by Stages     │"
     echo -e " │    9  *Remove Orphan Recursive         10  *Remove Empty Files          │"
@@ -119,7 +119,7 @@ To exit this information page, press "q".
             echo
             /usr/bin/undeps -l
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "List orphan packages listed! To return to SysClean press [Enter]"
             read
             ;;
 	  3)
@@ -130,7 +130,7 @@ To exit this information page, press "q".
             read
             find ~ -type f -empty -print
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "List empty files listed! To return to SysClean press [Enter]"
             read
             ;;
 	   4)
@@ -141,21 +141,21 @@ To exit this information page, press "q".
             read
             find ~ -type d -empty -print
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "List empty folders listed! To return to SysClean press [Enter]"
             read
             ;;
           5)
             echo
             sudo journalctl --vacuum-size=50M --vacuum-time=30days
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "Log journalctl limited! To return to SysClean press [Enter]"
             read
             ;;
           6)
             echo
             yaourt -Scc
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "Cleaning performed! To return to SysClean press [Enter]"
             read
             ;;
            7)
@@ -169,28 +169,28 @@ To exit this information page, press "q".
             echo
             /usr/bin/undeps -r
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "Orphan by stages removed! To return to SysClean press [Enter]"
             read
             ;;
           9)
             echo
             /usr/bin/undeps -ra
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "Orphan recursive removed! To return to SysClean press [Enter]"
             read
             ;;
           10)
 	    echo
             /usr/bin/empty_fileclean
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "Empty files removed! To return to SysClean press [Enter]"
             read
             ;;  
           11)
 	    echo
             /usr/bin/empty_folderclean
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "Empty folders renoved! To return to SysClean press [Enter]"
             read
             ;;
           12)
@@ -198,7 +198,7 @@ To exit this information page, press "q".
             paccache -ruvk1
 	    paccache -rvk2
             echo
-            echo -e "Operation complete! To return to SysClean press [Enter]"
+            echo -e "Package cache removed! To return to SysClean press [Enter]"
             read
             ;;
           e)
@@ -216,6 +216,5 @@ To exit this information page, press "q".
             sleep 2
             clear
             ;;
-
     esac
 done

@@ -131,196 +131,196 @@ To exit this information page, press "q".
     echo ""
     read choix
     case $choix in
-        1)
+          1)
             echo
             sudo dmidecode -t memory
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Memory information displayed! To return to IS press [Enter]"
             read
             ;;
-        2)
+          2)
             echo
             sudo dmidecode -t bios
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "BIOS information displayed! To return to IS press [Enter]"
             read
             ;;
-        3)
+          3)
             echo
             sudo dmidecode -t processor
             lscpu
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Processor information displayed! To return to IS press [Enter]"
             read
             ;;
-	4)
+	  4)
             echo
             sudo dmidecode -t system
-            echo ""
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo
+            echo -e "System information displayed! To return to IS press [Enter]"
             read
             ;;
-	5)
+	  5)
             echo
             sudo fdisk -l
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Disk space information displayed! To return to IS press [Enter]"
             read
             ;;
-	6)
+	  6)
             echo
             df -l
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Distribution of space listed! To return to IS press [Enter]"
             read
             ;;
-        7)
+          7)
             echo
             ncdu -x /
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Space used /root displayed! To return to IS press [Enter]"
             read
             ;;
-        8)
+          8)
             echo
             ncdu -x
-            echo ""
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo
+            echo -e "Space used /home displayed! To return to IS press [Enter]"
             read
             ;;
-	9)
+	  9)
             echo
             lsblk -o NAME,SIZE,FSTYPE,LABEL,MOUNTPOINT,UUID
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Information block devices displayed! To return to IS press [Enter]"
             read
             ;;
-	10)
+	 10)
             echo
             lspci
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Information PCI devices listed! To return to IS press [Enter]"
             read
             ;;
-	11)
+	 11)
             echo           
             sudo lshw > lshw && leafpad lshw
             sleep 2            
             rm lshw
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Hardware listed! To return to IS press [Enter]"
             read
             ;;
-	12)
+	 12)
             echo
             inxi -c 5 -b
-            echo ""
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo 
+            echo -e "Inxi generated information! To return to IS press [Enter]"
             read 
             ;;
-        13)
+         13)
             echo
             screenfetch -p
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "ScreenFetch generated information! To return to IS press [Enter]"
             read 
             ;;
-       14)
+         14)
             echo
             pstree -p
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Processes as a tree displayed! To return to IS press [Enter]"
             read 
             ;;
-       15)
+         15)
             echo
             ps aux --sort=-pcpu
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Processes in order of use listed! To return to IS press [Enter]"
             read 
             ;;
-       16)
+         16)
             echo
             top -d 2
             echo ""
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "The processes running displayed! To return to IS press [Enter]"
             read 
             ;;
-       17)
+         17)
             echo
             sudo ps_mem
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "The memory usage displayed! To return to IS press [Enter]"
             read 
             ;;
-       18)
+         18)
             echo
             sudo hddtemp $(df -k / | awk 'NR==2 {print $1}')
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Temperature disk displayed! To return to IS press [Enter]"
             read 
             ;;
-       19)
+         19)
             echo
             sensors
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Temperature processor displayed! To return to IS press [Enter]"
             read 
             ;;
-       20)
+         20)
             echo
             systemd-analyze plot > plot.svg && $BROWSER --new-tab plot.svg
             sleep 2
             rm plot.svg
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Boot-up performance displayed! To return to IS press [Enter]"
             read 
             ;;
-       21)
+         21)
             echo
             sudo smartctl -A $(df -k / | awk 'NR==2 {print $1}')
             echo
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Information SMART disk listed! To return to IS press [Enter]"
             read 
             ;;       
-       22)
+         22)
             echo
             systemctl status
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Systemd status listed! To return to IS press [Enter]"
             read 
             ;;
-       23)
+         23)
             echo
             systemctl list-units
-            echo ""
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo 
+            echo -e "Systemd running listed! To return to IS press [Enter]"
             read 
             ;;
-       24)
+         24)
             echo
             sudo ufw status
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Information firewall status listed! To return to IS press [Enter]"
             read 
             ;;
-       25)
+         25)
             echo
             $BROWSER http://www.hackerwatch.org/probe/
             echo 
-            echo -e "Operation complete! To return to IS press [Enter]"
+            echo -e "Information HackerWatch site displayed! To return to IS press [Enter]"
             read 
             ;;
-	e)
+	  e)
             clear && kill -9 -$PPID
             read
             ;;
-        i)
+          i)
             echo
             help_text
             echo
             ;;
-        *)
+          *)
             echo "Wrong option! Wait and try again..."
             echo 
             sleep 2
