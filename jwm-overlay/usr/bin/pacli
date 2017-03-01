@@ -187,7 +187,7 @@ function func_a
             ;;
 	  2)
             echo
-            sudo pacman -S $(pacman -Slq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to install ▶ ') --color always
+            sudo pacman -S $(pacman -Slq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to install (toggle selection with TAB) ▶ ') --color always
             echo
             echo -e "Package installation is finished! To return to Pacli press [Enter]"
             read
@@ -208,7 +208,7 @@ function func_a
             ;;
           5)
             echo
-            pacman -Ql $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select a package of which to list all files ▶ ') --color always
+            pacman -Ql $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select a package of which to list all files (toggle selection with TAB) ▶ ') --color always
             echo
             echo -e "All local files in package listed! To return to Pacli press [Enter]"
             read 
@@ -285,7 +285,7 @@ function func_a
             ;;
          16)
             echo
-            sudo pacman -S --force $(pacman -Slq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to install ▶ ') --color always
+            sudo pacman -S --force $(pacman -Slq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to install (toggle selection with TAB) ▶ ') --color always
             echo
             echo -e "Package installation in force mode is finished! To return to Pacli press [Enter]"
             read
@@ -299,7 +299,7 @@ function func_a
             ;;
          18)
             echo
-            yaourt -S $(cat /tmp/packages | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select a package to install ▶ ')
+            yaourt -S $(cat /tmp/packages | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select a package to install (toggle selection with TAB) ▶ ')
             echo
             echo -e "Installation from AUR finished! To return to Pacli press [Enter]"
             read  

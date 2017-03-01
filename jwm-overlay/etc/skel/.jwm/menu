@@ -45,7 +45,7 @@
 		<Program label="ArchLinux Wiki">palemoon https://wiki.archlinux.org/</Program>
 	</Menu>
 	<Menu label="JWM">
-        	<Program label="JWM Projet">palemoon http://joewing.net/projects/jwm/index.shtml</Program>        
+        	<Program label="JWM Project">palemoon http://joewing.net/projects/jwm/index.shtml</Program>        
         	<Program label="JWM Configuration">palemoon http://joewing.net/projects/jwm/config.shtml</Program>
 		<Program label="JWM Wiki ArchLinux">palemoon https://wiki.archlinux.org/index.php/JWM</Program>
 	</Menu>

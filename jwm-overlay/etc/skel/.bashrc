@@ -60,9 +60,16 @@ alias np='nano PKGBUILD'
       fi
     }
 
-# greetings
+force_color_prompt=yes
+
+# Greetings
 echo Welcome to Manjaro JWM Community Edition!
 echo
 
-# prompt programmed
-PS1="\[\033[38;5;22m\]▶\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]\t\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]»\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]\u on \H\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]in\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\][\[$(tput sgr0)\]\[\033[38;5;17m\]\w\[$(tput sgr0)\]\[\033[38;5;22m\]]\[$(tput sgr0)\]\[\033[38;5;234m\]\n▶ \\$ \[$(tput sgr0)\]"
+# Color prompt
+CURRENTUSER=`whoami`
+if [ "$CURRENTUSER" = "root" ]; then
+  PS1="\[\033[38;5;196m\]◀\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;196m\]\t\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;196m\]»\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;196m\]\u on \H\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;196m\]in\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;196m\][\[$(tput sgr0)\]\[\033[38;5;17m\]\w\[$(tput sgr0)\]\[\033[38;5;196m\]]\[$(tput sgr0)\]\[\033[38;5;234m\]\n◀ \\$ \[$(tput sgr0)\]" #root
+else
+  PS1="\[\033[38;5;22m\]▶\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]\t\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]»\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]\u on \H\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\]in\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;22m\][\[$(tput sgr0)\]\[\033[38;5;17m\]\w\[$(tput sgr0)\]\[\033[38;5;22m\]]\[$(tput sgr0)\]\[\033[38;5;234m\]\n▶ \\$ \[$(tput sgr0)\]" #user
+fi
