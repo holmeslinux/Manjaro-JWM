@@ -182,139 +182,139 @@ function func_a
             echo
             sudo pacman -Syu --color always
             echo
-            echo -e "Your system is updated! To return to Pacli press [Enter]"
+            echo -e "Your system is updated! Return to Pacli press [Enter]"
             read
             ;;
 	  2)
             echo
             sudo pacman -S $(pacman -Slq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to install (toggle selection with TAB) ▶ ') --color always
             echo
-            echo -e "Package installation is finished! To return to Pacli press [Enter]"
+            echo -e "Package installation is finished! Return to Pacli press [Enter]"
             read
             ;;
           3)
             echo
             sudo pacman-mirrors -g -t 30 && sudo pacman -Syy --color always
             echo
-            echo -e "Best Manjaro mirror chosen! To return to Pacli press [Enter]"
+            echo -e "Best Manjaro mirror chosen! Return to Pacli press [Enter]"
             read
             ;;
 	  4)
             echo
             sudo pacman-optimize
             echo
-            echo -e "Pacman Database defragmented and optimized for HDDs. To return to Pacli press [Enter]"
+            echo -e "Pacman Database defragmented and optimized! Return to Pacli press [Enter]"
             read
             ;;
           5)
             echo
             pacman -Ql $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select a package of which to list all files (toggle selection with TAB) ▶ ') --color always
             echo
-            echo -e "All local files in package listed! To return to Pacli press [Enter]"
+            echo -e "All local files in package listed! Return to Pacli press [Enter]"
             read 
             ;;
           6)
             echo
             yaourt -Sii $(cat /tmp/packages | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select a package to display information about ▶ ') 
             echo
-            echo -e "Package information displayed! To return to Pacli press [Enter]"
+            echo -e "Package information displayed! Return to Pacli press [Enter]"
             read     
             ;; 
           7)
             echo
             yaourt -Qii $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select an installed package to diplay information about ▶ ')
             echo
-            echo -e "Package information listed! To return to Pacli press [Enter]"
+            echo -e "Package information listed! Return to Pacli press [Enter]"
             read     
             ;; 
           8)
             echo
             pactree -c -s $(pacman -Slq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select a package ▶ ')
             echo
-            echo -e "Dependency tree displayed! To return to Pacli press [Enter]"
+            echo -e "Dependency tree displayed! Return to Pacli press [Enter]"
             read
             ;;
           9)
             echo
             pactree -c -r $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select a package ▶ ')
             echo
-            echo -e "Reverse dependency tree displayed! To return to Pacli press [Enter]"
+            echo -e "Reverse dependency tree displayed! Return to Pacli press [Enter]"
             read
             ;;
          10)
             echo
             pacman -Qet --color always
             echo
-            echo -e "All your installed packages from the Manjaro repositories listed. To return to Pacli press [Enter]"
+            echo -e "All your installed packages listed! Return to Pacli press [Enter]"
             read     
             ;;
          11)
             echo
             downgrade $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to downgrade ▶ ')
             echo
-            echo -e "Downgrade process finished! To return to Pacli press [Enter]"
+            echo -e "Downgrade process finished! Return to Pacli press [Enter]"
             read     
             ;;        
          12)
             echo
             sudo pacman-key --refresh-keys && sudo pacman-key --populate archlinux manjaro && sudo pacman -Scc --color always
             echo
-            echo -e "Most common Pacman errors fixed! To return to Pacli press [Enter]"
+            echo -e "Most common Pacman errors fixed! Return to Pacli press [Enter]"
             read     
             ;;	
          13)
             echo
             sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g -t 30 && sudo pacman -Syyuu --color always
             echo
-            echo -e "Most common Pacman errors fixed. To return to Pacli press [Enter]"
+            echo -e "Most common Pacman errors fixed! Return to Pacli press [Enter]"
             read     
             ;;
          14)
             echo
             /usr/bin/sysclean
             echo
-            echo -e "Thank you for using SysClean! To return to Pacli press [Enter]"
+            echo -e "Thank you for using SysClean! Return to Pacli press [Enter]"
             read        
             ;;        
          15)
             echo
             sudo pacman -Syu --force --color always
             echo
-            echo -e "Your system is updated in force mode! To return to Pacli press [Enter]"
+            echo -e "Your system is updated in force mode! Return to Pacli press [Enter]"
             read
             ;;
          16)
             echo
             sudo pacman -S --force $(pacman -Slq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to install (toggle selection with TAB) ▶ ') --color always
             echo
-            echo -e "Package installation in force mode is finished! To return to Pacli press [Enter]"
+            echo -e "Package installation in force mode is finished! Return to Pacli press [Enter]"
             read
             ;;
          17)
             echo
             yaourt -Syua
             echo
-            echo -e "Your system is updated! To return to Pacli press [Enter]"
+            echo -e "Your system is updated! Return to Pacli press [Enter]"
             read     
             ;;
          18)
             echo
             yaourt -S $(cat /tmp/packages | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select a package to install (toggle selection with TAB) ▶ ')
             echo
-            echo -e "Installation from AUR finished! To return to Pacli press [Enter]"
+            echo -e "Installation from AUR finished! Return to Pacli press [Enter]"
             read  
             ;;
          19)
             func_a
 	    echo
-	    echo -e "Yaourt finished. To return to Pacli press [Enter]"
+	    echo -e "Yaourt finished! Return to Pacli press [Enter]"
 	    read 
             ;;
          20)
             echo
             pacman -Qm --color always
             echo
-            echo -e "All locally installed packages listed! To return to Pacli press [Enter]"
+            echo -e "All locally installed packages listed! Return to Pacli press [Enter]"
             read     
             ;;
 	  e)

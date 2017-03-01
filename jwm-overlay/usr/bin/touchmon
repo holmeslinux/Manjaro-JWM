@@ -375,7 +375,7 @@ function set_primary {
             echo
             set_pointer_speed
             echo
-            echo -e "Pointer speed defined! To return to TouchMon press [Enter]"
+            echo -e "Pointer speed defined! Return to TouchMon press [Enter]"
             read
             ;;
           2)
@@ -383,7 +383,7 @@ function set_primary {
             toggle_tap_to_click
             read -s -n1
             echo
-            echo -e "Tap to click changed! To return to TouchMon press [Enter]"
+            echo -e "Tap to click changed! Return to TouchMon press [Enter]"
             read
             ;;
           3)
@@ -391,7 +391,7 @@ function set_primary {
             toggle_drag_lock
             read -s -n1
             echo
-            echo -e "Drag lock changed! To return to TouchMon press [Enter]"
+            echo -e "Drag lock changed! Return to TouchMon press [Enter]"
             read
             ;;
           4)
@@ -399,7 +399,7 @@ function set_primary {
             toggle_left_handed
             read -s -n1
             echo
-            echo -e "Left handed mode changed! To return to TouchMon press [Enter]"
+            echo -e "Left handed mode changed! Return to TouchMon press [Enter]"
             read
 	    ;;
 	  5)
@@ -407,7 +407,7 @@ function set_primary {
             toggle_disable_while_typing
             read -s -n1
             echo
-            echo -e "Disable while typing changed! To return to TouchMon press [Enter]"
+            echo -e "Disable while typing changed! Return to TouchMon press [Enter]"
             read
             ;;
           6)
@@ -415,7 +415,7 @@ function set_primary {
             toggle_natural_scrolling
             read -s -n1
             echo
-            echo -e "Natural scrollin changed! To return to TouchMon press [Enter]"
+            echo -e "Natural scrollin changed! Return to TouchMon press [Enter]"
             read
             ;;
           7)
@@ -423,70 +423,70 @@ function set_primary {
             toggle_horizontal_scrolling
             read -s -n1
             echo
-            echo -e "Horizontal scrolling changed! To return to TouchMon press [Enter]"
+            echo -e "Horizontal scrolling changed! Return to TouchMon press [Enter]"
             read
             ;;
           8)
             echo
             lxinput
             echo
-            echo -e "LXinput accessed! To return to TouchMon press [Enter]"
+            echo -e "LXinput accessed! Return to TouchMon press [Enter]"
             read
             ;;    
           9)
             echo
             man xinput
             echo
-            echo -e "Commands manual visited! To return to TouchMon press [Enter]"
+            echo -e "Commands manual visited! Return to TouchMon press [Enter]"
             read
             ;;
          10)
             echo
             $BROWSER https://wiki.archlinux.org/index.php/Touchpad_Synaptics
             echo
-            echo -e "Homepage visited! To return to TouchMon press [Enter]"
+            echo -e "Homepage visited! Return to TouchMon press [Enter]"
             read
             ;;
          11)
             echo
             xrandr -q
             echo
-            echo -e "Monitors listed! To return to TouchMon press [Enter]"
+            echo -e "Monitors listed! Return to TouchMon press [Enter]"
             read
             ;;
          12)
             echo
             choose_resolution
             echo
-            echo -e "Resolution defined! To return to TouchMon press [Enter]"
+            echo -e "Resolution defined! Return to TouchMon press [Enter]"
             read
             ;;
          13)
             echo
             set_primary
             echo
-            echo -e "Primary monitor defined! To return to TouchMon press [Enter]"
+            echo -e "Primary monitor defined! Return to TouchMon press [Enter]"
             read
             ;;
          14)
             echo
             move_monitor
             echo
-            echo -e "Position monitor defined! To return to TouchMon press [Enter]"
+            echo -e "Position monitor defined! Return to TouchMon press [Enter]"
             read
             ;;
         15)
             echo
             choose_monitor | connect_monitor
             echo
-            echo -e "Selection made! To return to TouchMon press [Enter]"
+            echo -e "Selection made! Return to TouchMon press [Enter]"
             read
             ;;
          16)
             echo
             rotate_monitor
             echo
-            echo -e "Monitor rotated! To return to TouchMon press [Enter]"
+            echo -e "Monitor rotated! Return to TouchMon press [Enter]"
             read
             ;;
          17)
@@ -495,7 +495,7 @@ function set_primary {
             echo
 	    echo 'Add "autorandr --change --default" to your autostart file' 
 	    echo 'to automatically choose profile on startup'
-            echo -e "Saved display settings! To return to TouchMon press [Enter]"
+            echo -e "Saved display settings! Return to TouchMon press [Enter]"
             echo
             read
             ;;
@@ -506,7 +506,7 @@ function set_primary {
             echo 'Add "sranrdrd autorandr --change --default" to your autostart file' 
 	    echo 'to load settings when monitor is plugged in. Use option 7 '
 	    echo 'to save your settings for different monitor configurations.'
-            echo -e "Monitor dynamic detected! To return to TouchMon press [Enter]"
+            echo -e "Monitor dynamic detected! Return to TouchMon press [Enter]"
             echo
             read
             ;;
@@ -514,21 +514,21 @@ function set_primary {
             echo
             arandr
             echo
-            echo -e "ARandR accessed! To return to TouchMon press [Enter]"
+            echo -e "ARandR accessed! Return to TouchMon press [Enter]"
             read
             ;;        
          20)
             echo
             man xrandr
             echo
-            echo -e "Commands manual visited! To return to TouchMon press [Enter]"
+            echo -e "Commands manual visited! Return to TouchMon press [Enter]"
             read
             ;;
          21)
             echo
             $BROWSER https://wiki.archlinux.org/index.php/xrandr
             echo
-            echo -e "Homepage visited! To return to TouchMon press [Enter]"
+            echo -e "Homepage visited! Return to TouchMon press [Enter]"
             read
             ;;
           e)

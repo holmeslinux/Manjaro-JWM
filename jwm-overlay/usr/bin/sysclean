@@ -112,14 +112,14 @@ To exit this information page, press "q".
 	    echo
             sudo pacman -Rsn $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to remove (toggle selection with TAB) ▶ ') --color always
             echo
-            echo -e "Package and all unneeded dependencies removed. To return to Pacli press [Enter]"
+            echo -e "Package and all unneeded dependencies removed. Return to Pacli press [Enter]"
             read
             ;;
           2)
             echo
             /usr/bin/undeps -l
             echo
-            echo -e "List orphan packages listed! To return to SysClean press [Enter]"
+            echo -e "List orphan packages listed! Return to SysClean press [Enter]"
             read
             ;;
 	  3)
@@ -130,7 +130,7 @@ To exit this information page, press "q".
             read
             find ~ -type f -empty -print
             echo
-            echo -e "List empty files listed! To return to SysClean press [Enter]"
+            echo -e "List empty files listed! Return to SysClean press [Enter]"
             read
             ;;
 	   4)
@@ -141,56 +141,56 @@ To exit this information page, press "q".
             read
             find ~ -type d -empty -print
             echo
-            echo -e "List empty folders listed! To return to SysClean press [Enter]"
+            echo -e "List empty folders listed! Return to SysClean press [Enter]"
             read
             ;;
           5)
             echo
             sudo journalctl --vacuum-size=50M --vacuum-time=30days
             echo
-            echo -e "Log journalctl limited! To return to SysClean press [Enter]"
+            echo -e "Log journalctl limited! Return to SysClean press [Enter]"
             read
             ;;
           6)
             echo
-            yaourt -Scc
+            yaourt -Scc --noconfirm
             echo
-            echo -e "Cleaning performed! To return to SysClean press [Enter]"
+            echo -e "Cleaning performed! Return to SysClean press [Enter]"
             read
             ;;
            7)
             echo
             sudo pacman -Rdd $(pacman -Qq | fzf --color fg:#0d1426,fg+:#d9cdb3,hl:#0d1426,hl+:#d9cdb3,prompt:#0d1426,info:#c0392b,pointer:#c0392b,spinner:#c0392b --reverse --prompt='Select package to remove (toggle selection with TAB) ▶ ') --color always
             echo
-            echo -e "Dependency in force mode removed! To return to Pacli press [Enter]"
+            echo -e "Dependency in force mode removed! Return to Pacli press [Enter]"
             read
             ;;
           8)
             echo
             /usr/bin/undeps -r
             echo
-            echo -e "Orphan by stages removed! To return to SysClean press [Enter]"
+            echo -e "Orphan by stages removed! Return to SysClean press [Enter]"
             read
             ;;
           9)
             echo
             /usr/bin/undeps -ra
             echo
-            echo -e "Orphan recursive removed! To return to SysClean press [Enter]"
+            echo -e "Orphan recursive removed! Return to SysClean press [Enter]"
             read
             ;;
           10)
 	    echo
             /usr/bin/empty_fileclean
             echo
-            echo -e "Empty files removed! To return to SysClean press [Enter]"
+            echo -e "Empty files removed! Return to SysClean press [Enter]"
             read
             ;;  
           11)
 	    echo
             /usr/bin/empty_folderclean
             echo
-            echo -e "Empty folders renoved! To return to SysClean press [Enter]"
+            echo -e "Empty folders renoved! Return to SysClean press [Enter]"
             read
             ;;
           12)
@@ -198,7 +198,7 @@ To exit this information page, press "q".
             paccache -ruvk1
 	    paccache -rvk2
             echo
-            echo -e "Package cache removed! To return to SysClean press [Enter]"
+            echo -e "Package cache removed! Return to SysClean press [Enter]"
             read
             ;;
           e)
