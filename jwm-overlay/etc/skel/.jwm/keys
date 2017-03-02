@@ -62,8 +62,4 @@
     <Key mask="4" key="g">exec:epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Key>
     <Key key="Print">exec:scrot -e 'mv $f ~/Screenshots' &amp;&amp; sleep 1 &amp;&amp; notify-send 'Screenshot has been saved in ~/Screenshots'</Key>
 
-    <!-- Key desktop. -->
-    <Key mask="CA" key="Right">desktop1</Key>
-    <Key mask="CA" key="Left">desktop2</Key>
-
 </JWM>
