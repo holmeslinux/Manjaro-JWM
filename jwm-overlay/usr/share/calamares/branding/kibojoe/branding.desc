@@ -1,0 +1,23 @@
+---
+componentName:  kibojoe
+
+strings:
+    productName:         Kibojoe Linux
+    shortProductName:    Kibojoe
+    version:             17.04
+    shortVersion:        17.04
+    versionedName:       Kibojoe Linux 17.04 "Oncremmer"
+    shortVersionedName:  Kibojoe 17.04
+    bootloaderEntryName: Kibojoe
+
+images:
+    productLogo:         "squid.png"
+    productIcon:         "logo.png"
+    productWelcome:      "languages.png"
+
+slideshow:               "show.qml"
+
+style:
+   sidebarBackground:    "#292F34"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#292F34"

@@ -153,7 +153,7 @@ To exit this information page, press "q".
             ;;
           6)
             echo
-            yaourt -Scc --noconfirm
+            yaourt -Scc
             echo
             echo -e "Cleaning performed! Return to SysClean press [Enter]"
             read
