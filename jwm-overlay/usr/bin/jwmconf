@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 ##################################################################
+# Kibojoe 						         #
 # Updated 18.02.2017 18:23:49 					 #
 # Version 0.1-5 						 #
 # Name jwmconf ; JWMConf Configuration Tool 			 #
@@ -109,9 +110,9 @@ To exit this information page, press "q".
     while true; do
     clear
     echo ""
-    echo -e "                       $NC JWMConf Configuration Tool $NC "
+    echo -e "                           JWMConf Configuration Tool"
     echo ""
-    echo -e "                    $NC ✤ Manjaro JWM Community Edition ✤ $NC"
+    echo -e "                               ✤ Kibojoe Linux ✤"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │     1     Refresh Configuration JWM         2     Refresh Menu JWM      │"
     echo -e " │     3     Check Error JWM                   4     Homepage JWM          │"

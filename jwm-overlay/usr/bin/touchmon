@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 ###############################################
+# Kibojoe Linux 			      #
 # Updated 18.02.2017 19:07:02 		      #
 # Version 0.1-2 			      #
 # Name touchmon ; TouchMon Configuration Tool #
@@ -349,7 +350,7 @@ function set_primary {
     echo ""
     echo -e "                         TouchMon Configuration Tool"
     echo ""
-    echo -e "                      ✤ Manjaro JWM Community Edition ✤"
+    echo -e "                              ✤ Kibojoe Linux ✤"
     echo -e " ┌─────────────────────────────────────────────────────────────────────────┐"
     echo -e " │    1     Set pointer speed              2     Toggle tap to click       │"
     echo -e " │    3     Toggle drag lock               4     Toggle left handed mode   │"

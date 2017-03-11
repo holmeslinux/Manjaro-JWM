@@ -21,9 +21,9 @@ update_interval = 1.0,
 use_xft = true,
 }
 conky.text = [[
-${voffset -8}${goto 35}${color 0d1426}${font Cantarell:size=20}Manjaro JWM${font}
+${voffset -8}${goto 69}${color 0d1426}${font Cantarell:size=20}Kibojoe${font}
 ${voffset 5}${goto 62}${color 0d1426}${font Cantarell:size=9}Minimal, Fast, Pretty${font}
-${voffset -4}${goto 85}${color 0d1426}${font Cantarell:size=9}Oncremmer${font}
+${voffset -4}${goto 90}${color 0d1426}${font Cantarell:size=9}Begonia${font}
 ${voffset 10}${goto 30}CPU$alignr$cpu%
 ${goto 30}${cpubar 4}
 ${voffset 5}${goto 30}${top name 1}$alignr${top cpu 1}%
