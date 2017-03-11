@@ -63,7 +63,7 @@ alias np='nano PKGBUILD'
 force_color_prompt=yes
 
 # Greetings
-echo Welcome to Manjaro JWM Community Edition!
+echo Welcome to Kibojoe GNU/Linux!
 echo
 
 # Color prompt

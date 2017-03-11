@@ -22,7 +22,7 @@ use_xft = true,
 }
 conky.text = [[
 ${voffset -8}${goto 69}${color 0d1426}${font Cantarell:size=20}Kibojoe${font}
-${voffset 5}${goto 62}${color 0d1426}${font Cantarell:size=9}Minimal, Fast, Pretty${font}
+${voffset 5}${goto 58}${color 0d1426}${font Cantarell:size=9}Minimal, Fast, Elegant${font}
 ${voffset -4}${goto 90}${color 0d1426}${font Cantarell:size=9}Begonia${font}
 ${voffset 10}${goto 30}CPU$alignr$cpu%
 ${goto 30}${cpubar 4}
@@ -55,7 +55,7 @@ ${endif}${endif}
 #
 ${voffset -7}${goto 30}Battery$alignr${battery_percent BAT1}%
 ${goto 30}$stippled_hr
-${voffset 10}$alignr${color} Manjaro Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "}' /etc/lsb-release}
+${voffset 10}$alignr${color} Kibojoe GNU/Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "}' /etc/lsb-release}
 #
 ${voffset 10}$alignr${execi 1200 whoami} on ${nodename}
 ${alignr}${font Cantarell:size=10}Uptime ${uptime_short} 

@@ -12,7 +12,7 @@
 	<Menu label="Applications">
 		<Include>exec: xdgmenumaker -n -f jwm</Include>
 	</Menu>
-	<Menu label="CLI App">   
+	<Menu label="CLI Utility">   
 		<Program label="IS">sakura -c 80 -r 27 -T IS -e "bash -c '/usr/bin/is;exec bash'"</Program>
 		<Program label="JWMConf">sakura -c 80 -r 27 -T JWMConf -e "bash -c '/usr/bin/jwmconf;exec bash'"</Program>        	
 		<Program label="MJWMPost">sakura -c 80 -r 27 -T MJWMPost -e "bash -c '/usr/bin/mjwmpost;exec bash'"</Program>
@@ -35,13 +35,13 @@
 	<Separator/>
 	<Menu label="Help">
 	<Menu label="Manjaro">
+                <Program label="Kibojoe User Orientation Guide">epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Program>
         	<Program label="Manjaro Beginner User Guide">epdfview /usr/share/doc/livecd/Beginner_User_Guide.pdf</Program>        
-      		<Program label="Manjaro JWM User Orientation Guide">epdfview /usr/share/doc/livecd/User_Orientation_Guide.pdf</Program>
-	<Separator/>		    
+      	<Separator/>	
+                <Program label="ArchLinux Wiki">palemoon https://wiki.archlinux.org/</Program>	  
+                <Program label="Manjaro Forum">palemoon https://forum.manjaro.org/</Program>  
 		<Program label="Manjaro News">palemoon https://manjaro.org/news/</Program>
-		<Program label="Manjaro Forum">palemoon https://forum.manjaro.org/</Program>
 		<Program label="Manjaro Wiki">palemoon https://wiki.manjaro.org/index.php?title=Main_Page</Program>
-		<Program label="ArchLinux Wiki">palemoon https://wiki.archlinux.org/</Program>
 	</Menu>
 	<Menu label="JWM">
         	<Program label="JWM Project">palemoon http://joewing.net/projects/jwm/index.shtml</Program>        
