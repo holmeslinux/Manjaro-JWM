@@ -12,7 +12,7 @@
 	<Menu label="Applications">
 		<Include>exec: xdgmenumaker -n -f jwm</Include>
 	</Menu>
-	<Menu label="CLI Utility">   
+	<Menu label="CLI Utilitys">   
 		<Program label="IS">sakura -c 80 -r 27 -T IS -e "bash -c '/usr/bin/is;exec bash'"</Program>
 		<Program label="JWMConf">sakura -c 80 -r 27 -T JWMConf -e "bash -c '/usr/bin/jwmconf;exec bash'"</Program>        	
 		<Program label="MJWMPost">sakura -c 80 -r 27 -T MJWMPost -e "bash -c '/usr/bin/mjwmpost;exec bash'"</Program>

@@ -35,6 +35,8 @@ alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano PKGBUILD'
+alias post='~/post'
+alias clean='~/clean'
 
 # ex - archive extractor
 # usage: ex <file>
