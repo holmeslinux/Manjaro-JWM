@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 ##########################################
-# Kibojoe GNU/Linux			 #
+# Kibojoe Linux				 #
 # Updated 18.02.2017 23:34:49            #
 # Version 0.1-2 			 #
 # Name mjwmpost ; MJWM Post Installation #
@@ -195,7 +195,7 @@ print_title() {
 }
 
 print_main() {
-    printf '%b\n' "Welcome to Kibojoe GNU/Linux, you're in the MJWM Post Installation.\n"\
+    printf '%b\n' "Welcome to Kibojoe Linux, you're in the MJWM Post Installation.\n"\
                   "The purpose of this post installation script is to automate common tasks which"\
                   "should help you to get you started using your brand new installation.\n"\
                   "It is by no means mandatory to run this script, however it is recommended to go"\

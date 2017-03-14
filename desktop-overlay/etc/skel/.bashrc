@@ -65,7 +65,7 @@ alias clean='~/clean'
 force_color_prompt=yes
 
 # Greetings
-echo Welcome to Kibojoe GNU/Linux!
+echo Welcome to Kibojoe Linux!
 echo
 
 # Color prompt

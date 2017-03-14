@@ -55,7 +55,7 @@ ${endif}${endif}
 #
 ${voffset -7}${goto 30}Battery$alignr${battery_percent BAT1}%
 ${goto 30}$stippled_hr
-${voffset 10}$alignr${color} Kibojoe GNU/Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "}' /etc/lsb-release}
+${voffset 10}$alignr${color} Kibojoe Linux ${execi 10000 awk -F'=' '/DISTRIB_RELEASE=/ {printf $2" "}' /etc/lsb-release}
 #
 ${voffset 10}$alignr${execi 1200 whoami} on ${nodename}
 ${alignr}${font Cantarell:size=10}Uptime ${uptime_short} 
